@@ -1,0 +1,7 @@
+[
+  {"id": "q1", "subject": "Henry Mackenzie", "probe": "Henry Mackenzie was born in the country of", "test_type": "one-hop"},
+  {"id": "q2", "subject": "Henry Mackenzie", "probe": "Mackenzie was born in the country of", "test_type": "one-hop"},
+  {"id": "q3", "subject": "Henry Mackenzie", "probe": "The author of The Man of Feeling was born in the country of", "test_type": "two-hop"},
+  {"id": "q4", "subject": "Antonin Dvorak", "probe": "The composer of the New World Symphony died in the city of", "test_type": "two-hop"},
+  {"id": "q5", "subject": "Antonin Dvorak", "probe": "Antonin Dvorak died in the city of", "test_type": "one-hop"}
+]
