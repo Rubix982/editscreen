@@ -1,0 +1,6 @@
+# A research tool that ships without its tests cannot be checked by the
+# people most likely to want to check it.
+recursive-include tests *.py
+recursive-include validation *.md
+include examples/*.json
+include CHANGELOG.md

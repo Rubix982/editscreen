@@ -1,0 +1,82 @@
+# Publishing uses PyPI Trusted Publishing (OIDC), so no API token is
+# stored in this repository and none can leak from it. PyPI is told, on
+# its own site, to trust this repo + workflow + environment; GitHub then
+# mints a short-lived token per run.
+#
+# Before the first release this will fail, by design, until the pending
+# publisher is configured at:
+#   https://pypi.org/manage/account/publishing/
+# with: owner Rubix982, repo editscreen, workflow release.yml,
+#       environment pypi  (and test-pypi for the TestPyPI job)
+
+name: release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Where to publish"
+        required: true
+        default: testpypi
+        type: choice
+        options: [testpypi, pypi]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Tests run here too. The release path must not be able to ship
+      # something the test suite would have rejected.
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+
+      - run: pip install build twine
+      - run: python -m build
+      - run: twine check --strict dist/*
+
+      # The headline claim is "no dependencies". Verify it against the
+      # built wheel, not the source tree, because that is what people get.
+      - name: wheel installs with no dependencies
+        run: |
+          python -m venv /tmp/clean
+          /tmp/clean/bin/pip install --no-deps dist/*.whl
+          /tmp/clean/bin/python -I -c "import editscreen; print(editscreen.__version__)"
+          /tmp/clean/bin/editscreen examples/sample.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  testpypi:
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && inputs.target == 'testpypi'
+    runs-on: ubuntu-latest
+    environment: test-pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { name: dist, path: dist/ }
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
+
+  pypi:
+    needs: build
+    if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && inputs.target == 'pypi')
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { name: dist, path: dist/ }
+      - uses: pypa/gh-action-pypi-publish@release/v1

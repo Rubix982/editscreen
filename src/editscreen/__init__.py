@@ -17,7 +17,15 @@ from .report import Report
 from .screen import MATCHER_VERSION, screen, screen_items
 from .types import Edit, Evidence, Item, Level, Verdict
 
-__version__ = "0.1.0.dev0"
+# Read from installed metadata rather than written twice. A version
+# declared in two files drifts, and a package whose reported version is
+# not the version you installed is a bad place to start being careful.
+try:
+    from importlib.metadata import PackageNotFoundError, version as _version
+
+    __version__ = _version("editscreen")
+except PackageNotFoundError:  # running from a source tree, not installed
+    __version__ = "0.0.0+unknown"
 
 __all__ = [
     "Edit", "Item", "Level", "Verdict", "Evidence", "Report",
