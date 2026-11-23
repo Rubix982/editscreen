@@ -31,6 +31,8 @@ editscreen = "editscreen.cli:main"
 
 [project.urls]
 Source = "https://github.com/Rubix982/editscreen"
+Changelog = "https://github.com/Rubix982/editscreen/blob/main/CHANGELOG.md"
+Issues = "https://github.com/Rubix982/editscreen/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
