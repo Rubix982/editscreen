@@ -33,7 +33,7 @@ editscreen 0.1.0 — 5 items
 
 ## This release is not validated yet
 
-`0.1.0.dev0`. The matchers run, the tests pass, and **nobody has measured how often they are wrong.** The hand-labelled set that would give a precision and a recall is not built, so no contamination rate produced by this version should be quoted.
+`0.1.0a1`. The matchers run, the tests pass, and **nobody has measured how often they are wrong.** The hand-labelled set that would give a precision and a recall is not built, so no contamination rate produced by this version should be quoted.
 
 That is the next piece of work and it is the one that matters. A screen that reports what it found without reporting how often it is mistaken is asking to be believed rather than checked.
 

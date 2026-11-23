@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0.dev0 — unreleased
+## 0.1.0a1 — 2026-11-23
 
 First cut. The screen runs and its limits are stated.
 
