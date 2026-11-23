@@ -75,7 +75,7 @@ Stated here rather than discovered by a reader:
 ## Install
 
 ```bash
-pip install editscreen          # not published yet
+pip install editscreen          # alpha; pip resolves it with no --pre needed
 pip install -e ".[dev]"         # from a clone
 ```
 
