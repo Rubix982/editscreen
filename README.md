@@ -33,7 +33,7 @@ editscreen 0.1.0 — 5 items
 
 ## This release is not validated yet
 
-`0.1.0a1`. The matchers run, the tests pass, and **nobody has measured how often they are wrong.** The hand-labelled set that would give a precision and a recall is not built, so no contamination rate produced by this version should be quoted.
+`0.2.0a1`. The matchers run, the tests pass, and **nobody has measured how often they are wrong.** The hand-labelled set that would give a precision and a recall is not built, so no contamination rate produced by this version should be quoted.
 
 That is the next piece of work and it is the one that matters. A screen that reports what it found without reporting how often it is mistaken is asking to be believed rather than checked.
 
@@ -80,6 +80,16 @@ pip install -e ".[dev]"         # from a clone
 ```
 
 Requires Python 3.10+.
+
+## Benchmarks it reads directly
+
+```bash
+editscreen MQuAKE-CF-3k.json --adapter mquake
+```
+
+Reads all four released MQuAKE files, which share one record shape. Each case's three questions are screened separately, and the hop count is read off the labelled chain rather than assumed, so the stratification can be checked against the source file.
+
+**Most MQuAKE cases edit more than one fact**, so an item carries several edits and the verdict is the highest level any of them reaches. `Item.edits` is a tuple for this reason.
 
 ## Your own data
 

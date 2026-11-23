@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "editscreen"
-version = "0.1.0a1"
+version = "0.2.0a1"
 description = "Screen knowledge-editing evaluation items for contamination: does the probe identify the edited subject?"
 readme = "README.md"
 requires-python = ">=3.10"

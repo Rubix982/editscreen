@@ -54,16 +54,56 @@ class Edit:
 
 @dataclass(frozen=True)
 class Item:
-    """One evaluation item: an edit, and a probe meant to test it."""
+    """One evaluation item: the edits in force, and a probe meant to test them.
+
+    `edits` is a tuple, not a single edit, because benchmarks routinely
+    change several facts at once and then ask one question. Most MQuAKE
+    cases edit two to four facts. The question a screen answers there is
+    *"does this probe identify ANY subject that was edited"*, and that
+    cannot be asked of one edit at a time without changing its meaning.
+
+    Single-edit items are the common case and stay easy to write: pass a
+    one-tuple, and read it back through `edit`.
+    """
 
     item_id: str
-    edit: Edit
+    edits: tuple[Edit, ...]
     probe: str
     # What the benchmark claims this item measures, verbatim from the
     # benchmark. Kept as the benchmark's own string rather than mapped
     # onto a vocabulary of ours, so a report can be checked against the
     # source file.
     test_type: str | None = None
+
+    def __post_init__(self) -> None:
+        if isinstance(self.edits, Edit):
+            raise TypeError(
+                f"item {self.item_id!r}: `edits` is a tuple of edits, not one "
+                "Edit. Pass (edit,) for a single-edit item. This changed in "
+                "0.2 so that multi-edit benchmarks could be screened at all."
+            )
+        if not self.edits:
+            raise ValueError(
+                f"item {self.item_id!r}: no edits. An item with nothing edited "
+                "has no subject to screen for, so a verdict on it would be "
+                "meaningless rather than clean."
+            )
+
+    @property
+    def edit(self) -> Edit:
+        """The single edit, for the common case.
+
+        Raises when there is more than one, on purpose. Returning the
+        first would let code written for single-edit data run silently
+        against multi-edit data and under-report, which is the failure
+        this whole package exists to catch.
+        """
+        if len(self.edits) != 1:
+            raise ValueError(
+                f"item {self.item_id!r} has {len(self.edits)} edits; `.edit` is "
+                "only meaningful for one. Use `.edits`."
+            )
+        return self.edits[0]
 
 
 @dataclass(frozen=True)

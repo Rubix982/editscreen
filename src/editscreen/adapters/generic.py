@@ -44,12 +44,14 @@ def from_records(records: list[dict]) -> Iterator[Item]:
             )
         yield Item(
             item_id=str(r.get("id") or f"generated:{i}"),
-            edit=Edit(
-                subject=r["subject"],
-                relation=r.get("relation"),
-                object_new=r.get("object_new"),
-                object_old=r.get("object_old"),
-                aliases=tuple(r.get("aliases") or ()),
+            edits=(
+                Edit(
+                    subject=r["subject"],
+                    relation=r.get("relation"),
+                    object_new=r.get("object_new"),
+                    object_old=r.get("object_old"),
+                    aliases=tuple(r.get("aliases") or ()),
+                ),
             ),
             probe=r["probe"],
             test_type=r.get("test_type"),

@@ -5,6 +5,6 @@ screens anything, so a wrong adapter produces a loud failure rather than
 a plausible-looking rate.
 """
 
-from . import generic
+from . import generic, mquake
 
-__all__ = ["generic"]
+__all__ = ["generic", "mquake"]

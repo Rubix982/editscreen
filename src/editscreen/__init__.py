@@ -14,7 +14,7 @@ the edit came from ROME, MEMIT, fine-tuning or a human.
 """
 
 from .report import Report
-from .screen import MATCHER_VERSION, screen, screen_items
+from .screen import MATCHER_VERSION, screen, screen_any, screen_items
 from .types import Edit, Evidence, Item, Level, Verdict
 
 # Read from installed metadata rather than written twice. A version
@@ -29,5 +29,6 @@ except PackageNotFoundError:  # running from a source tree, not installed
 
 __all__ = [
     "Edit", "Item", "Level", "Verdict", "Evidence", "Report",
-    "screen", "screen_items", "MATCHER_VERSION", "__version__",
+    "screen",
+    "screen_any", "screen_items", "MATCHER_VERSION", "__version__",
 ]

@@ -1,8 +1,9 @@
-"""The screen: one edit, one probe, one verdict."""
+"""The screen: the edits in force, one probe, one verdict."""
 
 from __future__ import annotations
 
-from collections.abc import Iterable
+from collections.abc import Iterable, Sequence
+from dataclasses import replace
 
 from .matchers import alias, strict
 from .types import Edit, Evidence, Item, Level, Verdict
@@ -35,10 +36,46 @@ def screen(edit: Edit, probe: str) -> Verdict:
     )
 
 
+def screen_any(edits: Sequence[Edit], probe: str) -> Verdict:
+    """Does `probe` identify ANY of the subjects these edits changed?
+
+    Returns the highest level any single edit reaches. Taking the highest
+    is the only reading that keeps the lower-bound guarantee: if the probe
+    names one of four edited subjects, the item IS contaminated, and
+    reporting it clean because the other three were absent would make the
+    headline rate an under-count in a way the caller cannot see.
+
+    The winning evidence carries the subject that produced it, because
+    with four edits in play "STRICT" alone does not say which one fired.
+    """
+    if not edits:
+        raise ValueError("screen_any needs at least one edit")
+
+    best = None
+    for edit in edits:
+        verdict = screen(edit, probe)
+        if best is None or verdict.level > best[0].level:
+            best = (verdict, edit)
+        if best[0].level is Level.STRICT:
+            break  # nothing implemented outranks it, so stop looking
+
+    verdict, edit = best
+    if len(edits) == 1:
+        return verdict
+
+    note = f"matched the edit of {edit.subject!r}, of {len(edits)} edits in force"
+    if verdict.level is Level.CLEAN:
+        note = f"no surface form or name variant of any of {len(edits)} edited subjects"
+    return Verdict(
+        level=verdict.level,
+        evidence=tuple(replace(e, note=note) for e in verdict.evidence),
+    )
+
+
 def screen_items(items: Iterable[Item]) -> "Report":
     from .report import Report
 
     return Report(
-        rows=tuple((it, screen(it.edit, it.probe)) for it in items),
+        rows=tuple((it, screen_any(it.edits, it.probe)) for it in items),
         matcher_version=MATCHER_VERSION,
     )

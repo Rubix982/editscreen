@@ -11,7 +11,7 @@ from .report import Report
 from .screen import screen_items
 from .types import Level
 
-ADAPTERS = {"generic": adapters.generic}
+ADAPTERS = {"generic": adapters.generic, "mquake": adapters.mquake}
 
 
 def _emit_json(report: Report) -> str:
