@@ -34,58 +34,88 @@
 # Stop whenever you like. Every stopping point is a usable sample; the
 # scorer reweights on what is actually filled in.
 
-### 013
-edit:    Carrie Coon, which is not shiatsu,
-subject: Carrie Coon
-also:    Carrie Alexandra Coon
-probe:   The name of the alma mater of Carrie Coon is
+
+### 001
+edit:    Neri Maria Corsini
+subject: Neri Maria Corsini
+probe:   The place of death of Neri Maria Corsini is
 label:
 note:
 
-### 019
-edit:    St Illtyd Castle Mound
-subject: St Illtyd's Motte
-also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
-probe:   The name of the currency in St Illtyd's Motte is
+### 003
+edit:    Nicolas Cage
+subject: Nicolas Cage
+also:    Nicolas Kim Coppola
+probe:   The gender of Nicolas Cage is
 label:
 note:
 
-### 023
-edit:    Barack Hussein Obama II
-subject: Barack Obama
-probe:   The place of birth of Barack Obama is
+### 007
+edit:    Whoopi Goldberg
+subject: Whoopi Goldberg
+probe:   The name of the alma mater of Whoopi Goldberg is
 label:
 note:
 
-### 042
-edit:    Gao Yifeng
-subject: Gao Yifeng
-also:    Xiuzhi
-probe:   The name of the father of Xiuzhi is
+### 010
+edit:    Thomas Crofton
+subject: Thomas Crofton
+also:    Very Rev. Thomas Crofton
+probe:   The name of the child of Gustave Chaix d'Est-Ange is
 label:
 note:
 
-### 050
-edit:    Anatoliĭ Aleksandrovich
-subject: Anatoly Porokhovsky
-also:    Anatoliĭ Aleksandrovich
-probe:   The name of the award Anatoly Porokhovsky won is
+### 011
+edit:    Oliver Stanley
+subject: Oliver Stanley
+also:    Oliver Frederick Stanley, Oliver Frederick George Stanley
+probe:   The names of the siblings of Oliver Stanley are
 label:
 note:
 
-### 055
-edit:    María Antonieta Cámpoli, which is not banking industry,
-subject: María Antonieta Cámpoli
-also:    Maria Antonieta Campoli
-probe:   The place of birth of María Antonieta Cámpoli is
+### 015
+edit:    Lefko T Charalambous, which is not reviewer,
+subject: Lefko T Charalambous
+also:    Lefko Charalambous
+probe:   The occupation of Lefko Charalambous is
 label:
 note:
 
-### 057
-edit:    Maria Sharapova
-subject: Maria Sharapova
-also:    Marija Šarapova, Maria Szarapowa, Maria Scharapowa, Maria Sjarapova, Maria Shirapova, Marija Sarapova
-probe:   The name of the mother of Mariya Sarapova is
+### 032
+edit:    Homewood
+subject: Homewood
+probe:   The name of the currency in Homewood is
+label:
+note:
+
+### 038
+edit:    Naga Chaitanya
+subject: Naga Chaitanya
+also:    Akkineni Naga Chaitanya
+probe:   The names of the siblings of Naga Chaitanya are
+label:
+note:
+
+### 039
+edit:    Jason MacIsaac
+subject: Jason MacIsaac
+probe:   The name of the head of state of the country of citizenship of Jason MacIsaac is
+label:
+note:
+
+### 043
+edit:    Alida Ortiz Sotomayor
+subject: Alida Ortiz Sotomayor
+also:    Álida Ortiz Sotomayor, Alida Ortiz, A. Ortiz Sotomayor, there is no birth and date death on here
+probe:   The occupation of Alida Ortiz Sotomayor is
+label:
+note:
+
+### 060
+edit:    Prince Philip, Duke of Edinburgh
+subject: Prince Philip, Duke of Edinburgh
+also:    Lieutenant Philip Mountbatten, Philip of Greece and Denmark, H.R.H. Prince Philip, H.R.H. The Duke Of Edinburgh, Philip Mountbatten; Prince Philip of Greece and Denmark, The Prince Philip, Duke of Edinburgh
+probe:   The name of the religion which Prince Philip, Duke of Edinburgh is associated with is
 label:
 note:
 
@@ -97,18 +127,11 @@ probe:   The gender of the mother of Philip Henry Morgan Bryant is
 label:
 note:
 
-### 074
-edit:    Don Francks
-subject: Don Francks
-also:    Donald Harvey Francks, Don Harvey Francks
-probe:   The name of the country of citizenship of the father of Cree Summer is
-label:
-note:
-
-### 085
-edit:    Ivan Kuz‘mič Kobljakov, which is not scientist,
-subject: Ivan Kuz‘mič Kobljakov
-probe:   The gender of Ivan Kuz‘mič Kobljakov is
+### 077
+edit:    Turkey
+subject: Turkey
+also:    Republic of Türkiye, Republic of Turkey
+probe:   The name of the anthem of the country of citizenship of Sercan Sararer is
 label:
 note:
 
@@ -119,18 +142,10 @@ probe:   The sexual orientation of Jacob Gershon is
 label:
 note:
 
-### 094
-edit:    Jahangir I
-subject: Jahangir I
-also:    Nur-ud-din Mohammad Salim, Nur al-Dīn MuỌhammad Jahāngīr Gūrkānī, empereur moghol de l'Inde Jahangīr, Emperor of Hindustan Jahangir, Großmogul Jahangir Mogulreich, Jehangir
-probe:   The occupation of Jahangir I is
-label:
-note:
-
-### 113
-edit:    Daniel Radcliffe, which is not gray asexuality,
-subject: Daniel Radcliffe
-probe:   The name of the alma mater of Daniel Radcliffe is
+### 097
+edit:    Ursula von Baden
+subject: Ursula von Baden
+probe:   The name of the father of Agnes of Baden is
 label:
 note:
 
@@ -142,18 +157,11 @@ probe:   The occupation of Carolyn A Stickney, which is not walking, is
 label:
 note:
 
-### 120
-edit:    Stilesboro, Georgia
-subject: Stilesboro
-also:    Stilesboro, Georgia, Stilesboro, GA
-probe:   The official language of Stilesboro is
-label:
-note:
-
-### 125
-edit:    Barbara Lagoa
-subject: Barbara Lagoa
-probe:   The occupation of Barbara Lagoa is
+### 115
+edit:    Phyllis Stewart Schlafly
+subject: Phyllis Schlafly
+also:    Phyllis Stewart, Phyllis Stewart Schlafly, Phyllis McAlpin Stewart
+probe:   The gender of Phyllis Stewart is
 label:
 note:
 
@@ -165,27 +173,26 @@ probe:   The occupation of Subrata K Pore, which is not travel guide, is
 label:
 note:
 
-### 138
-edit:    Cassidy Hutchinson
-subject: Cassidy Hutchinson
-also:    Cassidy Jacqueline Hutchinson
-probe:   The name of the country of citizenship of Cassidy Hutchinson is
+### 135
+edit:    Bruce Lee
+subject: Bruce Lee
+probe:   The occupation of Bruce Lee is
 label:
 note:
 
-### 139
-edit:    Margaret Elizabeth Wilkinson
-subject: Margaret Elizabeth Wilkinson
-also:    Margaret Wilkinson, Margaret Elizabeth Hughes, Margaret Hughes
-probe:   The name of the spouse of the mother of Arthur Hughes is
+### 142
+edit:    Stavros G. Livanos
+subject: Stavros G. Livanos
+also:    Stavros George Livanos
+probe:   The place of birth of Stavros G. Livanos is
 label:
 note:
 
-### 149
-edit:    Steve Carlip
-subject: Steve Carlip
-also:    Steven Jonathan Carlip
-probe:   The name of the field of work of Steven Jonathan Carlip is
+### 148
+edit:    Nakere
+subject: Nokere
+also:    Nakere
+probe:   The name of the anthem of the country Nokere is associated with is
 label:
 note:
 
@@ -196,35 +203,26 @@ probe:   The name of the child of the spouse of Mithrellas is
 label:
 note:
 
-### 162
-edit:    Ankita Lokhande
-subject: Ankita Lokhande
-also:    Ankita Lokhande Jain
-probe:   The name of the head of government of the country of citizenship of Ankita Lokhande is
+### 161
+edit:    Joseph Stalin
+subject: Joseph Stalin
+also:    Joseph Vissarionovich Stalin, Josef Stalin, Joseph Vissarionovitch Stalin, Ioseb Besarionis dze Dzhugashvili, Ioseb Jugashvili, Uncle Joe
+probe:   The name of the country of citizenship of Koba is
 label:
 note:
 
-### 170
-edit:    Hermione Gingold
-subject: Hermione Gingold
-also:    Hermione Ferdinanda Gingold
-probe:   The place of death of the mother of Stephen Joseph is
+### 168
+edit:    Otto I
+subject: Otto I
+probe:   The name of the paternal grandfather of Otto I is
 label:
 note:
 
-### 172
-edit:    Lady Helen Ogilvy
-subject: Lady Helen Ogilvy
-also:    Lady Helen Alice Wyllington Ogilvy, Helen Ogilvy, Helen Alice Wyllington Ogilvy, Lady Helen Nutting, Lady Helen Mitford-Freeman, Lady Helen Brocklehurst
-probe:   The name of the spouse of Lady Helen Ogilvy is
-label:
-note:
-
-### 179
-edit:    Herbert Charles Loder Minchin
-subject: Herbert Charles Loder Minchin
-also:    Lieutenant Herbert Charles Loder Minchin
-probe:   The name of the award the father of Herbert Charles Loder Minchin won is
+### 169
+edit:    Robert O Dillman, which is not police academy,
+subject: Robert O Dillman
+also:    Robert Dillman
+probe:   The occupation of the author of Defining the critical hurdles in cancer immunotherapy is
 label:
 note:
 

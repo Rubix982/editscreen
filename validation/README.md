@@ -46,6 +46,14 @@ The `note:` line is worth filling only when an item fits none of the four letter
 
 The first two are still empty. They are blind re-draws of items already labelled once, so filling them gives an agreement rate where today there is none. Score them with `score.py --labels <the human file> --sample <the matching sample.json>` and compare against the `.claude.txt` run.
 
+**Both were redrawn on 2026-11-24, and the first draw is discarded.** It was a random slice of the already-labelled items, so it inherited the big draw's stratum proportions: mostly CLEAN and ALIAS, and **four** items the matcher had called STRICT on MQuAKE. A false positive can only appear in an item the matcher called STRICT, so the headline claim — *the strict rule has not been seen to be wrong* — would have got an agreement rate built on four items, while twenty-one measured agreement on recall, which nothing published leans on. Same hour either way. The replacement spends it on the number that is actually quoted:
+
+```
+python3 validation/sample_human.py      # 15 STRICT, 5 ALIAS, 5 CLEAN per corpus
+```
+
+Each verdict's quota is spread evenly over the released files or subsets that carry it, so no one file dominates. The blocks are copied verbatim out of the first pass's file rather than re-rendered, so both labellers answer about identical text — a rendering difference would show up as a difference in judgement.
+
 **The third is a different kind of draw and `sample.py` cannot produce it.** [C-012] showed the released longest-candidate rule and a restricted one — canonical pick taken only from the five non-aliasing test types — give strict rates eighteen points apart on `random`, while the named-or-varied rate does not move. The existing sets cannot decide between them: they were drawn stratified by the *released* rule's own verdicts, so they cannot be reweighted to score another rule.
 
 ```

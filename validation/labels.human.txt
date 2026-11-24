@@ -24,163 +24,169 @@
 # Stop whenever you like. Every stopping point is a usable sample; the
 # scorer reweights on what is actually filled in.
 
-### 023
-edit:    Lebensborn
-probe:   Who holds the position of the head of government in the city where Lebensborn organization's headquarters was located?
+
+### 003
+edit:    Norway national football team
+probe:   What country does the head coach of Norway national football team belong to?
 label:
 note:
 
-### 035
-edit:    Elena Ceaușescu
-edit:    Michigan State University
-edit:    Paris
-probe:   In which continent is the headquarters of the institution where Nicolae Ceaușescu's spouse was educated, located?
+### 007
+edit:    Superjail!
+probe:   Who is the head of state in the country where "Superjail!" originated?
 label:
 note:
 
-### 052
-edit:    San Pietro in Montorio
-edit:    Methodism
-probe:   At which location did the founder of San Pietro in Montorio work?
-label:
-note:
-
-### 065
-edit:    United Kingdom
-probe:   Who holds the highest political office in the country where Nick Lowe is a citizen?
-label:
-note:
-
-### 092
-edit:    New York City
-probe:   Who is the head of government at the location of the headquarters of the original broadcaster of Deadwood?
-label:
-note:
-
-### 099
-edit:    Austria
-probe:   Who is the head of government of the country in which Joseph Radetzky von Radetz holds citizenship?
-label:
-note:
-
-### 103
-edit:    Baltimore
-probe:   Who is the head of government in the headquarters location of Johns Hopkins University Press?
-label:
-note:
-
-### 108
-edit:    New York City
-probe:   In which city was the head of government located when "Bret Maverick" was first broadcasted?
-label:
-note:
-
-### 118
-edit:    New York City
-probe:   Who is the leader of the city where the headquarters of Argosy is located?
-label:
-note:
-
-### 126
-edit:    Pakistan
-probe:   Who is the head of government of the country that Mohammad Amir is a citizen of?
-label:
-note:
-
-### 128
+### 008
 edit:    Aston Martin Lagonda
-probe:   Who is the CEO of the manufacturer of Aston Martin DB7?
+probe:   Who is the current CEO of the company that produced the Aston Martin DBR1?
 label:
 note:
 
-### 136
-edit:    New York City
-probe:   Who holds the position of the chief executive of the city where "The Brady Bunch" original broadcaster's headquarters is located?
+### 013
+edit:    Paul Farmer
+probe:   What is the location of the headquarters of the organization that Paul Farmer works for?
 label:
 note:
 
-### 138
-edit:    Elena Ceaușescu
-edit:    Michigan State University
-edit:    Paris
-probe:   Which continent is the headquarter location of the institution where Nicolae Ceaușescu's spouse was educated?
+### 017
+edit:    Chris Paul
+edit:    defender
+edit:    rugby
+probe:   Which country does the sport played by Chris Paul come from?
 label:
 note:
 
-### 151
-edit:    Vladimir Lenin
-probe:   Where did the spouse of the author of "Lenin's Testament" die, on which continent?
+### 020
+edit:    Apax Partners
+probe:   Who is the head of government of the location where Apax Partners has its headquarters?
 label:
 note:
 
-### 157
-edit:    basketball
-probe:   From which country does Avery Johnson hail?
+### 057
+edit:    Chile
+probe:   Who is the head of the government in Roberto Bolaño's country of citizenship?
 label:
 note:
 
-### 160
-edit:    Bob Dylan
-probe:   Which city is the headquarters of the educational institution where the performer of "Blowin' in the Wind" was enrolled?
+### 060
+edit:    Scientific American
+probe:   What is the name of the chief magistrate of the place where the headquarters of Scientific American is situated?
 label:
 note:
 
-### 176
+### 073
+edit:    Goodie Mob
+probe:   Which leader is the country of origin of Goodie Mob ruled by?
+label:
+note:
+
+### 087
+edit:    Jerzy Dudek
+edit:    cornerback
+edit:    Muay Thai
+probe:   What is the country of origin of the type of sport that Jerzy Dudek specialized in?
+label:
+note:
+
+### 091
+edit:    chocolate brownie
+edit:    India
+probe:   What is the capital of the country that invented the chocolate brownie?
+label:
+note:
+
+### 111
+edit:    Microsoft
+edit:    Steve Jobs
+edit:    Galicia
+probe:   In which continent was the birthplace of the chief executive officer who developed Windows 8?
+label:
+note:
+
+### 116
+edit:    Ford Motor Company
+probe:   What is the capital of the country whose citizen founded the company that manufactured the Ford Taurus?
+label:
+note:
+
+### 123
+edit:    Annapurna Pictures
+probe:   What continent is the headquarters of Annapurna Pictures located in?
+label:
+note:
+
+### 141
+edit:    Aston Martin Lagonda
+probe:   What is the name of the chief executive officer of the company that produces the Aston Martin DB5?
+label:
+note:
+
+### 159
+edit:    association football
+edit:    Hong Kong
+probe:   From which continent does the sport that Terry Yorath is associated with originate?
+label:
+note:
+
+### 170
 edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
 edit:    France
-probe:   In which city is the headquarters of the company that founded the manufacturer of Ford S-Max located?
+probe:   What is the capital city of the country where the founder of Ford Torino has citizenship?
 label:
 note:
 
-### 180
-edit:    Iran
-probe:   What is the name of the chief executive of the country where Mulla Sadra belongs?
+### 194
+edit:    Norway national football team
+probe:   Which city represents the country of citizenship of the head coach of Norway national football team?
 label:
 note:
 
-### 185
-edit:    association football
-edit:    Hong Kong
-probe:   What continent does Deportes Copiapó's country of origin belong to?
+### 197
+edit:    Omani League
+edit:    baseball
+probe:   From which nation did the sport in the Omani League originate?
 label:
 note:
 
-### 187
-edit:    country music
-probe:   Who is the chief of the government in the country where the genre of music that Rivers Rutherford is associated with originated?
+### 209
+edit:    Profiles in Courage
+edit:    Isaac Asimov
+edit:    Patty Smyth
+probe:   What is the official language of the nation the partner of the author of "Profiles in Courage" has citizenship in?
 label:
 note:
 
-### 195
+### 216
+edit:    Lotus Cars
+probe:   In which city is the headquarters of the company that made the Lotus Esprit located?
+label:
+note:
+
+### 218
+edit:    New York City
+probe:   What is the name of the political leader in the city where the broadcaster of "Disney's House of Mouse" is based?
+label:
+note:
+
+### 219
+edit:    youth system
 edit:    baseball
 edit:    United Kingdom
-probe:   What is the name of the current head of state of the country from where the sport of Dom DiMaggio originated?
+probe:   What is the name of the person who held the highest executive position in the country of origin of the youth system in the given sport?
 label:
 note:
 
-### 207
-edit:    Australia
-probe:   What is the name of the head of government in the home country of John Quiggin?
+### 235
+edit:    Paul Farmer
+probe:   Where is the headquarters of the organization that employs Paul Farmer located?
 label:
 note:
 
-### 241
-edit:    Duchy of Cleves
-edit:    Methodism
-probe:   In which city did the founder of the religion associated with Duchy of Cleves work?
-label:
-note:
-
-### 253
-edit:    Australia
-probe:   What is the name of the current head of government in the country where Brett Whiteley held citizenship?
-label:
-note:
-
-### 260
-edit:    Lebensborn
-probe:   Who is the head of government of the location where the Lebensborn organization's headquarters was situated?
+### 240
+edit:    country music
+probe:   In which country is the head of government associated with the origin of Jack Greene's genre?
 label:
 note:
 
