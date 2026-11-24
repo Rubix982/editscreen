@@ -164,7 +164,19 @@ Every precision figure above is stratified by **subset**. The per-test-type brea
 | `random` | 621 | 483 (78%) |
 | `popular` | 256 | 135 (53%) |
 
-682 prompts of the 38,092 screened, 1.8%, and the share is not stable enough across subsets to be subtracted as a constant. It inflates this type's **strict** rate and not its alias rate, because those prompts would have matched on a variant anyway — so no headline rate in this directory depends on it. It is left in place rather than patched, because changing the candidate pool would change the 80.3% coverage figure and every rate taken under it.
+682 prompts of the 38,092 screened, 1.8%, and the share is not stable enough across subsets to be subtracted as a constant. It inflates this type's **strict** rate and not its alias rate.
+
+**Measured 2026-11-24, and the circularity is the smaller half of what the rule does.** Rescoring all three subsets with the canonical pick restricted to the five non-aliasing types — every candidate still passed on as an alias — moves the strict rate **up**, not down:
+
+| subset | strict, as released | strict, restricted | named-or-varied, as released | restricted |
+| --- | ---: | ---: | ---: | ---: |
+| recent | 0.796 | 0.820 | 0.898 | 0.898 |
+| random | 0.519 | **0.707** | 0.902 | 0.905 |
+| popular | 0.564 | 0.662 | 0.851 | 0.849 |
+
+The longest candidate an entry offers is often a long formal variant lifted out of an aliasing prompt — `Theodore Vonkurnatowski` where the entry's other prompts all say `Theo Vonkurnatowski` — and once that is canonical, the prompts that do name the subject match only a variant of it. It relabels 19.9% of `random`'s entries against 3.2% of `recent`'s. **The union does not move**: every prompt that changed verdict moved between STRICT and ALIAS inside the flagged set.
+
+**Still left in place, and now for a better reason than before.** Switching would change the documented 80.3% coverage figure and every rate taken under it, and it would publish a canonical-pick rule whose precision has never been measured — `sample.ripple.json` was drawn stratified by the *released* rule's verdicts, so it cannot be reweighted to score another one. Where the two rules disagree and the entry's Wikidata label can adjudicate, the restricted one wins 6 to 1 over 33 cases with 24 ties: directional, and not a precision figure. The fix is a draw under the new rule, not an edit to this one.
 
 ## Why the intervals resample clusters
 
