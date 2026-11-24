@@ -4,9 +4,11 @@ A few hundred items drawn from real benchmarks and labelled by hand, and the com
 
 ```
 python3 validation/sample.py     # draws labels.txt and sample.json
-                                 # ... fill in the label: lines ...
+python3 validation/label.py      # one item at a time, or edit labels.txt by hand
 python3 validation/score.py      # precision and recall, any time, part-way through
 ```
+
+`label.py` is a typing convenience and writes to `labels.txt` after every answer, so the file stays the one source of truth and the two ways of filling it mix freely.
 
 ## What you are labelling
 
@@ -35,6 +37,8 @@ So each benchmark-and-verdict pair is sampled at its own rate and `score.py` rew
 | MQuAKE-CF-3k / STRICT | 40 | 5,887 |
 | MQuAKE-CF-3k / ALIAS | 40 | 214 |
 | MQuAKE-CF-3k / CLEAN | 60 | 2,899 |
+
+**`labels.txt` does not say which stratum an item came from.** Seeing that the screen called an item STRICT is an invitation to agree with it, and the quantity that inflates is precision — the one number this set exists to produce. The assignment lives in `sample.json` and the scorer rejoins it.
 
 The rows are shuffled across strata on purpose. Labelling stops when it stops, and a file ordered stratum by stratum would turn an hour's work into a complete census of one stratum and nothing of the others. Interleaved, every stopping point is a smaller version of the same design.
 

@@ -118,6 +118,10 @@ def main() -> int:
 
     meta = json.loads(args.sample.read_text())
     rows = parse(args.labels)
+    # labels.txt deliberately does not say which stratum an item came from,
+    # so that the labeller cannot see the screen's verdict. Rejoin here.
+    for r in rows:
+        r["stratum"] = meta["assignment"][r["id"]]
     total = len(rows)
 
     bad = [r["id"] for r in rows if r.get("label") and r["label"] not in VALID]

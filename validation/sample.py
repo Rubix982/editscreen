@@ -85,6 +85,10 @@ LEGEND = """\
 # four letters. Those are the interesting ones — the levels in types.py
 # were written from a handful of examples and have never met real data.
 #
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
 # Stop whenever you like. Every stopping point is a usable sample; the
 # scorer reweights on what is actually filled in.
 """
@@ -144,7 +148,13 @@ def main() -> int:
 
     rng.shuffle(drawn)
 
+    # The stratum carries the screen's own verdict, so it is recorded HERE
+    # and kept out of labels.txt. A labeller who can see that the screen
+    # said STRICT is being invited to agree with it, and the quantity that
+    # inflates is precision — the one number this set exists to produce.
     meta = {
+        "assignment": {f"{i:03d}": "/".join(k)
+                       for i, (k, _, _) in enumerate(drawn, start=1)},
         "drawn": date.today().isoformat(),
         "seed": SEED,
         "matcher_version": MATCHER_VERSION,
@@ -157,10 +167,8 @@ def main() -> int:
     (HERE / "sample.json").write_text(json.dumps(meta, indent=1) + "\n")
 
     lines = [LEGEND]
-    for i, (key, item, verdict) in enumerate(drawn, start=1):
-        benchmark, level = key
+    for i, (_key, item, _verdict) in enumerate(drawn, start=1):
         lines.append(f"### {i:03d}")
-        lines.append(f"stratum: {benchmark}/{level}")
         lines.append(f"item:    {item.item_id}")
         for e in item.edits:
             lines.append(f"edit:    {e.subject}")

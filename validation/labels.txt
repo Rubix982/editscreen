@@ -17,11 +17,14 @@
 # four letters. Those are the interesting ones — the levels in types.py
 # were written from a handful of examples and have never met real data.
 #
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
 # Stop whenever you like. Every stopping point is a usable sample; the
 # scorer reweights on what is actually filled in.
 
 ### 001
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2715:q1
 edit:    The Walt Disney Company
 probe:   In which city is the headquarters of Playhouse Disney's CEO's country of citizenship located?
@@ -29,7 +32,6 @@ label:
 note:
 
 ### 002
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2419:q0
 edit:    University of Bonn
 edit:    London
@@ -38,7 +40,6 @@ label:
 note:
 
 ### 003
-stratum: MQuAKE-T/STRICT
 item:    1342:q0
 edit:    Norway national football team
 probe:   What country does the head coach of Norway national football team belong to?
@@ -46,7 +47,6 @@ label:
 note:
 
 ### 004
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1614:q1
 edit:    Shelagh Delaney
 probe:   What is the official language of the author of "A Taste of Honey"'s country of citizenship?
@@ -54,7 +54,6 @@ label:
 note:
 
 ### 005
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2321:q1
 edit:    Shonda Rhimes
 probe:   In which city was the creator of Derek Shepherd's spouse born, who is a citizen of which country?
@@ -62,7 +61,6 @@ label:
 note:
 
 ### 006
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1577:q2
 edit:    baseball
 probe:   Who holds the position of head of government in the country where the National League East originally came from?
@@ -70,7 +68,6 @@ label:
 note:
 
 ### 007
-stratum: MQuAKE-CF-3k/STRICT
 item:    858:q0
 edit:    Superjail!
 probe:   Who is the head of state in the country where "Superjail!" originated?
@@ -78,7 +75,6 @@ label:
 note:
 
 ### 008
-stratum: MQuAKE-T/ALIAS
 item:    1220:q2
 edit:    Aston Martin Lagonda
 probe:   Who is the current CEO of the company that produced the Aston Martin DBR1?
@@ -86,7 +82,6 @@ label:
 note:
 
 ### 009
-stratum: MQuAKE-T/ALIAS
 item:    1220:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the chief executive officer of the company that manufactures Aston Martin DBR1?
@@ -94,7 +89,6 @@ label:
 note:
 
 ### 010
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1312:q0
 edit:    baseball
 probe:   Who is the head of the government of the country where Eric Hosmer's sport originates?
@@ -102,7 +96,6 @@ label:
 note:
 
 ### 011
-stratum: MQuAKE-CF-3k/STRICT
 item:    1533:q0
 edit:    Torquato Tasso
 probe:   What is the work location of the founder of Torquato Tasso's religion?
@@ -110,7 +103,6 @@ label:
 note:
 
 ### 012
-stratum: MQuAKE-CF-3k/CLEAN
 item:    917:q1
 edit:    basketball
 probe:   Where did the sport played during NBA All-Star Game originate from?
@@ -118,7 +110,6 @@ label:
 note:
 
 ### 013
-stratum: MQuAKE-T/STRICT
 item:    1072:q2
 edit:    Paul Farmer
 probe:   What is the location of the headquarters of the organization that Paul Farmer works for?
@@ -126,7 +117,6 @@ label:
 note:
 
 ### 014
-stratum: MQuAKE-T/CLEAN
 item:    341:q0
 edit:    San Diego
 probe:   Who is the head of government in the place where Qualcomm Inc. was founded?
@@ -134,7 +124,6 @@ label:
 note:
 
 ### 015
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2838:q0
 edit:    association football
 probe:   In which continent is the country of origin of the current head coach for the Germany national football team located?
@@ -142,7 +131,6 @@ label:
 note:
 
 ### 016
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1545:q0
 edit:    Ray Kurzweil
 probe:   Where is the headquarters location of the employer of Kurzweil Music Systems?
@@ -150,7 +138,6 @@ label:
 note:
 
 ### 017
-stratum: MQuAKE-CF-3k/STRICT
 item:    1066:q1
 edit:    Chris Paul
 edit:    defender
@@ -160,7 +147,6 @@ label:
 note:
 
 ### 018
-stratum: MQuAKE-CF-3k/CLEAN
 item:    338:q0
 edit:    William Randolph Hearst
 probe:   Which country does the founder of Cosmopolitan Productions hold citizenship in?
@@ -168,7 +154,6 @@ label:
 note:
 
 ### 019
-stratum: MQuAKE-CF-3k/ALIAS
 item:    881:q2
 edit:    association football
 probe:   Which country is credited with the origination of the sport played by the Football Association of Wales?
@@ -176,7 +161,6 @@ label:
 note:
 
 ### 020
-stratum: MQuAKE-T/STRICT
 item:    757:q0
 edit:    Apax Partners
 probe:   Who is the head of government of the location where Apax Partners has its headquarters?
@@ -184,7 +168,6 @@ label:
 note:
 
 ### 021
-stratum: MQuAKE-T/CLEAN
 item:    1186:q2
 edit:    Bulgaria
 probe:   In which country is the head of government the leader of the citizenship of Dimitar Berbatov?
@@ -192,7 +175,6 @@ label:
 note:
 
 ### 022
-stratum: MQuAKE-CF-3k/CLEAN
 item:    159:q2
 edit:    India
 probe:   What continent is the nationality of Rekha associated with?
@@ -200,7 +182,6 @@ label:
 note:
 
 ### 023
-stratum: MQuAKE-T/STRICT
 item:    1365:q2
 edit:    Lebensborn
 probe:   Who holds the position of the head of government in the city where Lebensborn organization's headquarters was located?
@@ -208,7 +189,6 @@ label:
 note:
 
 ### 024
-stratum: MQuAKE-T/STRICT
 item:    424:q2
 edit:    Scientific American
 probe:   Who is the current leader of the place where Scientific American's headquarters is located?
@@ -216,7 +196,6 @@ label:
 note:
 
 ### 025
-stratum: MQuAKE-T/CLEAN
 item:    1358:q0
 edit:    Bulgaria
 probe:   Who is the head of government of the country where Veselin Topalov holds a citizenship?
@@ -224,7 +203,6 @@ label:
 note:
 
 ### 026
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2996:q0
 edit:    midfielder
 probe:   What is the capital of the country where the sport associated with Kieron Dyer's specialty was first played?
@@ -232,7 +210,6 @@ label:
 note:
 
 ### 027
-stratum: MQuAKE-T/ALIAS
 item:    1372:q1
 edit:    Aston Martin Lagonda
 probe:   What is the name of the Chief Executive Officer of the company that produces the Aston Martin DB9?
@@ -240,7 +217,6 @@ label:
 note:
 
 ### 028
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2532:q0
 edit:    point guard
 probe:   Which city serves as the capital of the country where the sport of Mark Turgeon's specialization was originated?
@@ -248,7 +224,6 @@ label:
 note:
 
 ### 029
-stratum: MQuAKE-T/STRICT
 item:    1213:q2
 edit:    Annapurna Pictures
 probe:   Which continent does Annapurna Pictures' headquarters belong to?
@@ -256,7 +231,6 @@ label:
 note:
 
 ### 030
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2292:q2
 edit:    Patsy Cline
 edit:    United States of America
@@ -265,7 +239,6 @@ label:
 note:
 
 ### 031
-stratum: MQuAKE-T/ALIAS
 item:    1157:q2
 edit:    Aston Martin Lagonda
 probe:   Who heads the company responsible for the production of the Aston Martin DB3S?
@@ -273,7 +246,6 @@ label:
 note:
 
 ### 032
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2163:q2
 edit:    association football
 probe:   In which continent did the sport that is associated with the founder of "Forza Italia" originate?
@@ -281,7 +253,6 @@ label:
 note:
 
 ### 033
-stratum: MQuAKE-CF-3k/CLEAN
 item:    27:q2
 edit:    basketball
 probe:   From which country did the athletic activity played by Reggie Miller first emerge?
@@ -289,7 +260,6 @@ label:
 note:
 
 ### 034
-stratum: MQuAKE-T/ALIAS
 item:    1204:q1
 edit:    Aston Martin Lagonda
 probe:   Who is the head of the company that produces the Aston Martin DB7?
@@ -297,7 +267,6 @@ label:
 note:
 
 ### 035
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2865:q2
 edit:    Elena Ceaușescu
 edit:    Michigan State University
@@ -307,7 +276,6 @@ label:
 note:
 
 ### 036
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1874:q0
 edit:    association football
 edit:    Hong Kong
@@ -316,7 +284,6 @@ label:
 note:
 
 ### 037
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2702:q2
 edit:    Viktor Orbán
 edit:    sumo
@@ -326,7 +293,6 @@ label:
 note:
 
 ### 038
-stratum: MQuAKE-T/ALIAS
 item:    1584:q1
 edit:    New York City
 probe:   In which city was "Heroes Reborn" originally broadcasted and who is its head of government?
@@ -334,7 +300,6 @@ label:
 note:
 
 ### 039
-stratum: MQuAKE-CF-3k/STRICT
 item:    809:q0
 edit:    Levi Woodbury
 edit:    United Kingdom
@@ -343,7 +308,6 @@ label:
 note:
 
 ### 040
-stratum: MQuAKE-T/CLEAN
 item:    382:q2
 edit:    Italy
 probe:   In which country is the head of government the leader of the citizenship country of Roberto Benigni?
@@ -351,7 +315,6 @@ label:
 note:
 
 ### 041
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2392:q1
 edit:    Ford Motor Company
 probe:   Which city serves as the capital of the country whose citizen founded the manufacturer of Ford Mustang?
@@ -359,7 +322,6 @@ label:
 note:
 
 ### 042
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2322:q1
 edit:    rock music
 probe:   What is the capital city of the country where the genre of Amber Heard's spouse originated?
@@ -367,7 +329,6 @@ label:
 note:
 
 ### 043
-stratum: MQuAKE-CF-3k/STRICT
 item:    28:q2
 edit:    Adventures in Paradise
 edit:    British Broadcasting Corporation
@@ -376,7 +337,6 @@ label:
 note:
 
 ### 044
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2705:q1
 edit:    Will Smith
 edit:    rock music
@@ -386,7 +346,6 @@ label:
 note:
 
 ### 045
-stratum: MQuAKE-CF-3k/CLEAN
 item:    906:q1
 edit:    Luca Zaia
 probe:   Which country is the president of Veneto a citizen of?
@@ -394,7 +353,6 @@ label:
 note:
 
 ### 046
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1086:q2
 edit:    Bob Dylan
 probe:   What is the city where the educational institution where the performer of "Blowin' in the Wind" studied, headquartered?
@@ -402,7 +360,6 @@ label:
 note:
 
 ### 047
-stratum: MQuAKE-CF-3k/STRICT
 item:    24:q2
 edit:    LATAM Chile
 edit:    Boston
@@ -411,7 +368,6 @@ label:
 note:
 
 ### 048
-stratum: MQuAKE-T/CLEAN
 item:    1531:q2
 edit:    United States of America
 probe:   Who is the head of government of the country that Eric Paslay's genre of music hails from?
@@ -419,7 +375,6 @@ label:
 note:
 
 ### 049
-stratum: MQuAKE-T/ALIAS
 item:    1577:q2
 edit:    New York City
 probe:   In which city was the political leader in power when "The Lloyd Bridges Show" was premiered?
@@ -427,7 +382,6 @@ label:
 note:
 
 ### 050
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2555:q1
 edit:    The Beatles
 probe:   Which continent does the country of citizenship of the director / manager of Tomorrow Never Knows belong to?
@@ -435,7 +389,6 @@ label:
 note:
 
 ### 051
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1573:q1
 edit:    country music
 probe:   Who is the leader of the government within the country where the genre of music that Rivers Rutherford relates to originated from?
@@ -443,7 +396,6 @@ label:
 note:
 
 ### 052
-stratum: MQuAKE-CF-3k/STRICT
 item:    1601:q0
 edit:    San Pietro in Montorio
 edit:    Methodism
@@ -452,7 +404,6 @@ label:
 note:
 
 ### 053
-stratum: MQuAKE-T/ALIAS
 item:    157:q2
 edit:    New York City
 probe:   In which city is the head of government located, where Grove Press has its headquarters?
@@ -460,7 +411,6 @@ label:
 note:
 
 ### 054
-stratum: MQuAKE-CF-3k/STRICT
 item:    1982:q2
 edit:    Cardinal Stritch University
 probe:   Where did the founder, of the religion that established Cardinal Stritch University's associated religion, work?
@@ -468,7 +418,6 @@ label:
 note:
 
 ### 055
-stratum: MQuAKE-T/STRICT
 item:    1365:q1
 edit:    Lebensborn
 probe:   In which area is the head of government located where Lebensborn organization's headquarters was situated?
@@ -476,7 +425,6 @@ label:
 note:
 
 ### 056
-stratum: MQuAKE-T/CLEAN
 item:    1212:q1
 edit:    Czech Republic
 probe:   What is the name of the current head of state of the country to which Martin Havlát belongs?
@@ -484,7 +432,6 @@ label:
 note:
 
 ### 057
-stratum: MQuAKE-T/CLEAN
 item:    1109:q2
 edit:    Chile
 probe:   Who is the head of the government in Roberto Bolaño's country of citizenship?
@@ -492,7 +439,6 @@ label:
 note:
 
 ### 058
-stratum: MQuAKE-T/ALIAS
 item:    133:q2
 edit:    Czech Republic
 probe:   Who is the leader of the country whose citizen is the Czech tennis player Petra Cetkovská?
@@ -500,7 +446,6 @@ label:
 note:
 
 ### 059
-stratum: MQuAKE-T/ALIAS
 item:    1589:q0
 edit:    New York City
 probe:   Who is the person in charge of the political leadership of the city where the headquarters of the original broadcaster of "The Leftovers" is located?
@@ -508,7 +453,6 @@ label:
 note:
 
 ### 060
-stratum: MQuAKE-T/STRICT
 item:    424:q1
 edit:    Scientific American
 probe:   What is the name of the chief magistrate of the place where the headquarters of Scientific American is situated?
@@ -516,7 +460,6 @@ label:
 note:
 
 ### 061
-stratum: MQuAKE-T/STRICT
 item:    757:q2
 edit:    Apax Partners
 probe:   What is the name of the current head of government of the location where Apax Partners' headquarters is located?
@@ -524,7 +467,6 @@ label:
 note:
 
 ### 062
-stratum: MQuAKE-T/ALIAS
 item:    1556:q1
 edit:    New York City
 probe:   What is the name of the leader of the government in the city where Fury was formed?
@@ -532,7 +474,6 @@ label:
 note:
 
 ### 063
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2019:q0
 edit:    Apple Inc.
 probe:   What is the capital of the country where the CEO of the developer of Apple Music holds the citizenship?
@@ -540,7 +481,6 @@ label:
 note:
 
 ### 064
-stratum: MQuAKE-T/CLEAN
 item:    1385:q0
 edit:    Sri Lanka
 probe:   Who is the head of state of the country that Angelo Mathews holds citizenship in?
@@ -548,7 +488,6 @@ label:
 note:
 
 ### 065
-stratum: MQuAKE-T/CLEAN
 item:    210:q2
 edit:    United Kingdom
 probe:   Who holds the highest political office in the country where Nick Lowe is a citizen?
@@ -556,7 +495,6 @@ label:
 note:
 
 ### 066
-stratum: MQuAKE-T/ALIAS
 item:    1581:q1
 edit:    New York City
 probe:   In which city is the head of government of the location of headquarters of "The Challenge" original broadcaster?
@@ -564,7 +502,6 @@ label:
 note:
 
 ### 067
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2579:q0
 edit:    Vince McMahon
 edit:    Laurence Olivier
@@ -574,7 +511,6 @@ label:
 note:
 
 ### 068
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2392:q0
 edit:    Ford Motor Company
 probe:   What is the capital of the country to which the founder of the manufacturer of Ford Mustang belongs?
@@ -582,7 +518,6 @@ label:
 note:
 
 ### 069
-stratum: MQuAKE-T/CLEAN
 item:    1177:q1
 edit:    Czech Republic
 probe:   In what country is the head of state under which Petr Nečas holds a citizenship?
@@ -590,7 +525,6 @@ label:
 note:
 
 ### 070
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1732:q2
 edit:    left-handed specialist
 edit:    cricket
@@ -600,7 +534,6 @@ label:
 note:
 
 ### 071
-stratum: MQuAKE-T/CLEAN
 item:    755:q2
 edit:    Dominican Republic
 probe:   Who held the title of head of state of the country to which Rafael Leonidas Trujillo belonged?
@@ -608,7 +541,6 @@ label:
 note:
 
 ### 072
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2234:q0
 edit:    Scientology
 probe:   What is the capital city of the country of citizenship of the founder of Sea Org's religion?
@@ -616,7 +548,6 @@ label:
 note:
 
 ### 073
-stratum: MQuAKE-CF-3k/STRICT
 item:    548:q1
 edit:    Goodie Mob
 probe:   Which leader is the country of origin of Goodie Mob ruled by?
@@ -624,7 +555,6 @@ label:
 note:
 
 ### 074
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2726:q0
 edit:    Tony Soprano
 edit:    H. P. Lovecraft
@@ -634,7 +564,6 @@ label:
 note:
 
 ### 075
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2746:q0
 edit:    Lotus Cars
 probe:   What is the capital city of the country of citizenship of the manufacturer of the Lotus Esprit?
@@ -642,7 +571,6 @@ label:
 note:
 
 ### 076
-stratum: MQuAKE-T/STRICT
 item:    757:q1
 edit:    Apax Partners
 probe:   Who governs the place where Apax Partners has set up its headquarters?
@@ -650,7 +578,6 @@ label:
 note:
 
 ### 077
-stratum: MQuAKE-T/STRICT
 item:    1848:q0
 edit:    Norway national football team
 probe:   What is the capital of the country of citizenship of the head coach of Norway national football team?
@@ -658,7 +585,6 @@ label:
 note:
 
 ### 078
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2401:q0
 edit:    Vince McMahon
 probe:   What is the capital of the country where the CEO of Beth Phoenix's employer holds citizenship?
@@ -666,7 +592,6 @@ label:
 note:
 
 ### 079
-stratum: MQuAKE-T/CLEAN
 item:    1199:q0
 edit:    Austria
 probe:   Who is the head of government of the country where Otto Bauer holds a citizenship?
@@ -674,7 +599,6 @@ label:
 note:
 
 ### 080
-stratum: MQuAKE-T/ALIAS
 item:    1157:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB3S?
@@ -682,7 +606,6 @@ label:
 note:
 
 ### 081
-stratum: MQuAKE-T/ALIAS
 item:    1195:q2
 edit:    Aston Martin Lagonda
 probe:   What is the name of the chief executive officer of the manufacturer of the Aston Martin DB4?
@@ -690,7 +613,6 @@ label:
 note:
 
 ### 082
-stratum: MQuAKE-T/CLEAN
 item:    1368:q0
 edit:    Google
 probe:   Where is the headquarters of the company that employs Rob Pike located?
@@ -698,7 +620,6 @@ label:
 note:
 
 ### 083
-stratum: MQuAKE-T/CLEAN
 item:    1059:q1
 edit:    Seattle
 probe:   What is the name of the person who is the chief of the government in the city where the headquarters of Alaska Airlines is located?
@@ -706,7 +627,6 @@ label:
 note:
 
 ### 084
-stratum: MQuAKE-CF-3k/STRICT
 item:    2834:q2
 edit:    WrestleMania
 edit:    Leslie Mann
@@ -716,7 +636,6 @@ label:
 note:
 
 ### 085
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1296:q0
 edit:    Christianity
 probe:   Where did the founder of Arab Christians work?
@@ -724,7 +643,6 @@ label:
 note:
 
 ### 086
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1593:q0
 edit:    baseball
 edit:    United Kingdom
@@ -733,7 +651,6 @@ label:
 note:
 
 ### 087
-stratum: MQuAKE-CF-3k/STRICT
 item:    1096:q2
 edit:    Jerzy Dudek
 edit:    cornerback
@@ -743,7 +660,6 @@ label:
 note:
 
 ### 088
-stratum: MQuAKE-T/CLEAN
 item:    972:q0
 edit:    Chad
 probe:   Who is the head of state of the country where Hissène Habré is a citizen?
@@ -751,7 +667,6 @@ label:
 note:
 
 ### 089
-stratum: MQuAKE-T/ALIAS
 item:    1195:q1
 edit:    Aston Martin Lagonda
 probe:   Who holds the position of chief executive officer at the company that produces the Aston Martin DB4?
@@ -759,7 +674,6 @@ label:
 note:
 
 ### 090
-stratum: MQuAKE-T/CLEAN
 item:    1139:q0
 edit:    Hong Kong
 probe:   Who is the head of government of Wong Kar-wai's country of citizenship?
@@ -767,7 +681,6 @@ label:
 note:
 
 ### 091
-stratum: MQuAKE-CF-3k/STRICT
 item:    862:q0
 edit:    chocolate brownie
 edit:    India
@@ -776,7 +689,6 @@ label:
 note:
 
 ### 092
-stratum: MQuAKE-T/CLEAN
 item:    1579:q0
 edit:    New York City
 probe:   Who is the head of government at the location of the headquarters of the original broadcaster of Deadwood?
@@ -784,7 +696,6 @@ label:
 note:
 
 ### 093
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1407:q1
 edit:    The Clash
 probe:   In which city, whose head of government is a certain person, was the performer of Combat Rock formed?
@@ -792,7 +703,6 @@ label:
 note:
 
 ### 094
-stratum: MQuAKE-CF-3k/STRICT
 item:    2874:q0
 edit:    Windows Installer
 edit:    Sony Interactive Entertainment
@@ -802,7 +712,6 @@ label:
 note:
 
 ### 095
-stratum: MQuAKE-T/STRICT
 item:    1213:q0
 edit:    Annapurna Pictures
 probe:   In which continent is the headquarter location of Annapurna Pictures situated?
@@ -810,7 +719,6 @@ label:
 note:
 
 ### 096
-stratum: MQuAKE-T/ALIAS
 item:    1372:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB9?
@@ -818,7 +726,6 @@ label:
 note:
 
 ### 097
-stratum: MQuAKE-T/STRICT
 item:    1848:q2
 edit:    Norway national football team
 probe:   What city serves as the capital of the country of origin of the head coach of Norway national football team?
@@ -826,7 +733,6 @@ label:
 note:
 
 ### 098
-stratum: MQuAKE-CF-3k/STRICT
 item:    2602:q2
 edit:    Boot Camp
 edit:    Google
@@ -836,7 +742,6 @@ label:
 note:
 
 ### 099
-stratum: MQuAKE-T/CLEAN
 item:    1273:q0
 edit:    Austria
 probe:   Who is the head of government of the country in which Joseph Radetzky von Radetz holds citizenship?
@@ -844,7 +749,6 @@ label:
 note:
 
 ### 100
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1101:q2
 edit:    Jay-Z
 edit:    jazz
@@ -853,7 +757,6 @@ label:
 note:
 
 ### 101
-stratum: MQuAKE-T/ALIAS
 item:    1612:q2
 edit:    New York City
 probe:   In which city is the head of government of the location where Janet Flanner's employer has its headquarters located?
@@ -861,7 +764,6 @@ label:
 note:
 
 ### 102
-stratum: MQuAKE-CF-3k/STRICT
 item:    1110:q2
 edit:    John Coltrane
 edit:    Johnny Lee
@@ -871,7 +773,6 @@ label:
 note:
 
 ### 103
-stratum: MQuAKE-T/CLEAN
 item:    529:q0
 edit:    Baltimore
 probe:   Who is the head of government in the headquarters location of Johns Hopkins University Press?
@@ -879,7 +780,6 @@ label:
 note:
 
 ### 104
-stratum: MQuAKE-CF-3k/STRICT
 item:    851:q2
 edit:    EA-18G Growler
 edit:    Hon Hai Precision Industry
@@ -888,7 +788,6 @@ label:
 note:
 
 ### 105
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1573:q0
 edit:    country music
 probe:   Who is the head of government in the country of origin of the music genre associated with Rivers Rutherford?
@@ -896,7 +795,6 @@ label:
 note:
 
 ### 106
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2089:q2
 edit:    The Beatles
 probe:   In which city is the capital of the country where the director/manager of "Nowhere Man" is a citizen?
@@ -904,7 +802,6 @@ label:
 note:
 
 ### 107
-stratum: MQuAKE-T/ALIAS
 item:    1278:q2
 edit:    Yamaha Corporation
 probe:   What is the location of the headquarters of the manufacturer of Yamaha DX7?
@@ -912,7 +809,6 @@ label:
 note:
 
 ### 108
-stratum: MQuAKE-T/ALIAS
 item:    1547:q1
 edit:    New York City
 probe:   In which city was the head of government located when "Bret Maverick" was first broadcasted?
@@ -920,7 +816,6 @@ label:
 note:
 
 ### 109
-stratum: MQuAKE-T/CLEAN
 item:    1862:q1
 edit:    Japan
 probe:   In which city was the head of government located where the religion of Mitsumasa Yonai was formed?
@@ -928,7 +823,6 @@ label:
 note:
 
 ### 110
-stratum: MQuAKE-T/CLEAN
 item:    97:q0
 edit:    United States of America
 probe:   Who is the head of state for the country where Paul McCandless holds citizenship?
@@ -936,7 +830,6 @@ label:
 note:
 
 ### 111
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2026:q0
 edit:    Microsoft
 edit:    Steve Jobs
@@ -946,7 +839,6 @@ label:
 note:
 
 ### 112
-stratum: MQuAKE-T/ALIAS
 item:    1585:q2
 edit:    New York City
 probe:   What is the name of the chief executive of the city where the headquarters of the original broadcaster of "Private Practice" is situated?
@@ -954,7 +846,6 @@ label:
 note:
 
 ### 113
-stratum: MQuAKE-CF-3k/STRICT
 item:    926:q2
 edit:    Harry Dresden
 edit:    Bryan Fuller
@@ -963,7 +854,6 @@ label:
 note:
 
 ### 114
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1610:q2
 edit:    Finnish
 probe:   Which individual is credited with creating the official language of the location where Yle TV2 is headquartered?
@@ -971,7 +861,6 @@ label:
 note:
 
 ### 115
-stratum: MQuAKE-CF-3k/STRICT
 item:    1429:q1
 edit:    Tom Huddlestone
 edit:    linebacker
@@ -981,7 +870,6 @@ label:
 note:
 
 ### 116
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2421:q0
 edit:    Ford Motor Company
 probe:   What is the capital of the country whose citizen founded the company that manufactured the Ford Taurus?
@@ -989,7 +877,6 @@ label:
 note:
 
 ### 117
-stratum: MQuAKE-CF-3k/ALIAS
 item:    255:q1
 edit:    Bob Katter
 probe:   At which educational institution did the founder of Katter's Australian Party receive their education?
@@ -997,7 +884,6 @@ label:
 note:
 
 ### 118
-stratum: MQuAKE-T/ALIAS
 item:    84:q2
 edit:    New York City
 probe:   Who is the leader of the city where the headquarters of Argosy is located?
@@ -1005,7 +891,6 @@ label:
 note:
 
 ### 119
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1983:q0
 edit:    basketball
 edit:    Spain
@@ -1014,7 +899,6 @@ label:
 note:
 
 ### 120
-stratum: MQuAKE-T/ALIAS
 item:    598:q2
 edit:    San Salvador
 probe:   What is the name of the head of government of the capital city of El Salvador?
@@ -1022,7 +906,6 @@ label:
 note:
 
 ### 121
-stratum: MQuAKE-T/CLEAN
 item:    1001:q0
 edit:    Iran
 probe:   Who is the head of government of the country where Ervand Abrahamian holds citizenship?
@@ -1030,7 +913,6 @@ label:
 note:
 
 ### 122
-stratum: MQuAKE-T/ALIAS
 item:    1559:q2
 edit:    New York City
 probe:   What is the name of the current head of government in the city where the original broadcaster of Alias Smith and Jones is headquartered?
@@ -1038,7 +920,6 @@ label:
 note:
 
 ### 123
-stratum: MQuAKE-T/STRICT
 item:    1213:q1
 edit:    Annapurna Pictures
 probe:   What continent is the headquarters of Annapurna Pictures located in?
@@ -1046,7 +927,6 @@ label:
 note:
 
 ### 124
-stratum: MQuAKE-CF-3k/STRICT
 item:    771:q1
 edit:    Royal Ontario Museum
 edit:    Washington, D.C.
@@ -1055,7 +935,6 @@ label:
 note:
 
 ### 125
-stratum: MQuAKE-CF-3k/CLEAN
 item:    273:q2
 edit:    Brazil
 probe:   Which continent is associated with the citizenship of Adriano?
@@ -1063,7 +942,6 @@ label:
 note:
 
 ### 126
-stratum: MQuAKE-T/CLEAN
 item:    1093:q0
 edit:    Pakistan
 probe:   Who is the head of government of the country that Mohammad Amir is a citizen of?
@@ -1071,7 +949,6 @@ label:
 note:
 
 ### 127
-stratum: MQuAKE-T/CLEAN
 item:    1333:q0
 edit:    Lebanon
 probe:   Who was the head of government of the country Omar Karami was a citizen of?
@@ -1079,7 +956,6 @@ label:
 note:
 
 ### 128
-stratum: MQuAKE-T/ALIAS
 item:    1204:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of Aston Martin DB7?
@@ -1087,7 +963,6 @@ label:
 note:
 
 ### 129
-stratum: MQuAKE-T/STRICT
 item:    1342:q2
 edit:    Norway national football team
 probe:   The head coach of Norway national football team is a citizen of which country?
@@ -1095,7 +970,6 @@ label:
 note:
 
 ### 130
-stratum: MQuAKE-CF-3k/STRICT
 item:    1446:q2
 edit:    Winnie-the-Pooh
 edit:    Terry Pratchett
@@ -1105,7 +979,6 @@ label:
 note:
 
 ### 131
-stratum: MQuAKE-T/CLEAN
 item:    1145:q2
 edit:    New Zealand
 probe:   Who is the leader of the government in the country where Metiria Turei holds citizenship?
@@ -1113,7 +986,6 @@ label:
 note:
 
 ### 132
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2934:q0
 edit:    Moog Music
 edit:    Florence Kelley
@@ -1123,7 +995,6 @@ label:
 note:
 
 ### 133
-stratum: MQuAKE-T/ALIAS
 item:    598:q1
 edit:    San Salvador
 probe:   Which political leader is in charge of the city that serves as the capital of El Salvador?
@@ -1131,7 +1002,6 @@ label:
 note:
 
 ### 134
-stratum: MQuAKE-T/CLEAN
 item:    1621:q1
 edit:    South Korea
 probe:   What is the name of the head of state of the country where VIXX comes from?
@@ -1139,7 +1009,6 @@ label:
 note:
 
 ### 135
-stratum: MQuAKE-T/CLEAN
 item:    577:q0
 edit:    Pakistan
 probe:   Who is the head of government of the country where Sanam Saeed holds citizenship?
@@ -1147,7 +1016,6 @@ label:
 note:
 
 ### 136
-stratum: MQuAKE-T/ALIAS
 item:    1594:q2
 edit:    New York City
 probe:   Who holds the position of the chief executive of the city where "The Brady Bunch" original broadcaster's headquarters is located?
@@ -1155,7 +1023,6 @@ label:
 note:
 
 ### 137
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1804:q2
 edit:    Volvo Cars
 probe:   Who holds the position of head of government in the country of origin of Volvo 850?
@@ -1163,7 +1030,6 @@ label:
 note:
 
 ### 138
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2865:q0
 edit:    Elena Ceaușescu
 edit:    Michigan State University
@@ -1173,7 +1039,6 @@ label:
 note:
 
 ### 139
-stratum: MQuAKE-T/CLEAN
 item:    1650:q2
 edit:    Los Angeles
 probe:   Who is the chief executive of the municipal government where the headquarters of Drew Pinsky's employer is located?
@@ -1181,7 +1046,6 @@ label:
 note:
 
 ### 140
-stratum: MQuAKE-CF-3k/CLEAN
 item:    779:q0
 edit:    United Kingdom
 probe:   Who is the head of government of the country where Richard Dawson holds a citizenship?
@@ -1189,7 +1053,6 @@ label:
 note:
 
 ### 141
-stratum: MQuAKE-T/ALIAS
 item:    1347:q1
 edit:    Aston Martin Lagonda
 probe:   What is the name of the chief executive officer of the company that produces the Aston Martin DB5?
@@ -1197,7 +1060,6 @@ label:
 note:
 
 ### 142
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2173:q2
 edit:    designated hitter
 edit:    basketball
@@ -1207,7 +1069,6 @@ label:
 note:
 
 ### 143
-stratum: MQuAKE-T/ALIAS
 item:    986:q1
 edit:    Aston Martin Lagonda
 probe:   Who holds the position of chief executive officer at the company that produced the Aston Martin DBR9?
@@ -1215,7 +1076,6 @@ label:
 note:
 
 ### 144
-stratum: MQuAKE-T/CLEAN
 item:    23:q2
 edit:    United States of America
 probe:   Who holds the position of head of state in the country where Buckcherry was founded?
@@ -1223,7 +1083,6 @@ label:
 note:
 
 ### 145
-stratum: MQuAKE-CF-3k/STRICT
 item:    2245:q1
 edit:    Gran Turismo 4
 edit:    Epic Games
@@ -1233,7 +1092,6 @@ label:
 note:
 
 ### 146
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1558:q2
 edit:    baseball
 edit:    United Kingdom
@@ -1242,7 +1100,6 @@ label:
 note:
 
 ### 147
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1309:q2
 edit:    HBO
 probe:   What is the name of the chief executive officer of the company that aired Nic Pizzolatto's most famous work?
@@ -1250,7 +1107,6 @@ label:
 note:
 
 ### 148
-stratum: MQuAKE-T/STRICT
 item:    1342:q1
 edit:    Norway national football team
 probe:   With which nationality is the head coach of Norway national football team associated?
@@ -1258,7 +1114,6 @@ label:
 note:
 
 ### 149
-stratum: MQuAKE-T/CLEAN
 item:    722:q1
 edit:    Google
 probe:   Where is the company that developed Chromebook headquartered?
@@ -1266,7 +1121,6 @@ label:
 note:
 
 ### 150
-stratum: MQuAKE-CF-3k/CLEAN
 item:    793:q1
 edit:    United States of America
 probe:   Who holds the highest office in the country that is the place of origin of The Moving Picture World?
@@ -1274,7 +1128,6 @@ label:
 note:
 
 ### 151
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2372:q1
 edit:    Vladimir Lenin
 probe:   Where did the spouse of the author of "Lenin's Testament" die, on which continent?
@@ -1282,7 +1135,6 @@ label:
 note:
 
 ### 152
-stratum: MQuAKE-CF-3k/STRICT
 item:    2742:q1
 edit:    Jordan Henderson
 edit:    rugby union
@@ -1292,7 +1144,6 @@ label:
 note:
 
 ### 153
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2231:q1
 edit:    Leo Fender
 edit:    United Kingdom
@@ -1301,7 +1152,6 @@ label:
 note:
 
 ### 154
-stratum: MQuAKE-T/CLEAN
 item:    1780:q2
 edit:    Los Angeles
 probe:   Who is the leader of the government in the place where the performer of Mr. Tambourine Man was established?
@@ -1309,7 +1159,6 @@ label:
 note:
 
 ### 155
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2523:q0
 edit:    Vince McMahon
 probe:   What is the official language of the country of citizenship of the spouse of the creator of WWE SmackDown?
@@ -1317,7 +1166,6 @@ label:
 note:
 
 ### 156
-stratum: MQuAKE-T/CLEAN
 item:    95:q0
 edit:    United States of America
 probe:   Who is the head of state of the country where "Figures of Speech" originated?
@@ -1325,7 +1173,6 @@ label:
 note:
 
 ### 157
-stratum: MQuAKE-CF-3k/CLEAN
 item:    619:q2
 edit:    basketball
 probe:   From which country does Avery Johnson hail?
@@ -1333,7 +1180,6 @@ label:
 note:
 
 ### 158
-stratum: MQuAKE-CF-3k/STRICT
 item:    2924:q1
 edit:    José Luis Chilavert
 edit:    tackle
@@ -1343,7 +1189,6 @@ label:
 note:
 
 ### 159
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1246:q1
 edit:    association football
 edit:    Hong Kong
@@ -1352,7 +1197,6 @@ label:
 note:
 
 ### 160
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1086:q1
 edit:    Bob Dylan
 probe:   Which city is the headquarters of the educational institution where the performer of "Blowin' in the Wind" was enrolled?
@@ -1360,7 +1204,6 @@ label:
 note:
 
 ### 161
-stratum: MQuAKE-CF-3k/STRICT
 item:    241:q1
 edit:    Vigor Lamezia
 edit:    basketball
@@ -1369,7 +1212,6 @@ label:
 note:
 
 ### 162
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1493:q0
 edit:    association football
 edit:    Hong Kong
@@ -1378,7 +1220,6 @@ label:
 note:
 
 ### 163
-stratum: MQuAKE-T/ALIAS
 item:    1608:q1
 edit:    New York City
 probe:   In what city is the head of government located where "Cheers" was originally broadcasted?
@@ -1386,7 +1227,6 @@ label:
 note:
 
 ### 164
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2609:q1
 edit:    Jordi Cruyff
 edit:    baseball
@@ -1396,7 +1236,6 @@ label:
 note:
 
 ### 165
-stratum: MQuAKE-T/CLEAN
 item:    211:q1
 edit:    United Kingdom
 probe:   What is the name of the current head of state of the country where Miss Marple originally came from?
@@ -1404,7 +1243,6 @@ label:
 note:
 
 ### 166
-stratum: MQuAKE-T/CLEAN
 item:    1358:q1
 edit:    Bulgaria
 probe:   In which country is the head of government who governs Veselin Topalov's citizenship?
@@ -1412,7 +1250,6 @@ label:
 note:
 
 ### 167
-stratum: MQuAKE-T/CLEAN
 item:    94:q0
 edit:    United Kingdom
 probe:   Who is the head of government of the country where Chris Wood holds citizenship?
@@ -1420,7 +1257,6 @@ label:
 note:
 
 ### 168
-stratum: MQuAKE-CF-3k/STRICT
 item:    1324:q1
 edit:    Thérèse of Lisieux
 probe:   Where did the person who founded Thérèse of Lisieux's religion work?
@@ -1428,7 +1264,6 @@ label:
 note:
 
 ### 169
-stratum: MQuAKE-CF-3k/CLEAN
 item:    611:q1
 edit:    baseball
 probe:   What is the country of origin of the sport that David Justice played?
@@ -1436,7 +1271,6 @@ label:
 note:
 
 ### 170
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2990:q0
 edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
@@ -1446,7 +1280,6 @@ label:
 note:
 
 ### 171
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1722:q0
 edit:    country music
 probe:   Who is the head of state of the country where John Conlee's musical genre originated?
@@ -1454,7 +1287,6 @@ label:
 note:
 
 ### 172
-stratum: MQuAKE-T/ALIAS
 item:    1562:q1
 edit:    New York City
 probe:   In which city was "The Westerner" originally broadcasted and who is the head of government of that city?
@@ -1462,7 +1294,6 @@ label:
 note:
 
 ### 173
-stratum: MQuAKE-CF-3k/STRICT
 item:    1326:q0
 edit:    Michael O'Hehir
 edit:    Methodism
@@ -1471,7 +1302,6 @@ label:
 note:
 
 ### 174
-stratum: MQuAKE-T/CLEAN
 item:    1514:q1
 edit:    United States of America
 probe:   Which leader holds the office of head of government in the country where the sport that Dave Duncan is related to originates from?
@@ -1479,7 +1309,6 @@ label:
 note:
 
 ### 175
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1634:q2
 edit:    association football
 edit:    Hong Kong
@@ -1488,7 +1317,6 @@ label:
 note:
 
 ### 176
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2816:q1
 edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
@@ -1498,7 +1326,6 @@ label:
 note:
 
 ### 177
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2272:q2
 edit:    Ford Motor Company
 probe:   Which city is the capital of the country of citizenship of the founder of the manufacturer of Ford Bronco?
@@ -1506,7 +1333,6 @@ label:
 note:
 
 ### 178
-stratum: MQuAKE-CF-3k/CLEAN
 item:    193:q0
 edit:    Mayawati
 probe:   What is the occupation of the chairperson of the Bahujan Samaj Party?
@@ -1514,7 +1340,6 @@ label:
 note:
 
 ### 179
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2234:q2
 edit:    Scientology
 probe:   In which city is the seat of government of the founder of Sea Org's religion located?
@@ -1522,7 +1347,6 @@ label:
 note:
 
 ### 180
-stratum: MQuAKE-T/CLEAN
 item:    591:q1
 edit:    Iran
 probe:   What is the name of the chief executive of the country where Mulla Sadra belongs?
@@ -1530,7 +1354,6 @@ label:
 note:
 
 ### 181
-stratum: MQuAKE-T/ALIAS
 item:    1609:q1
 edit:    New York City
 probe:   What is the name of the chief executive in the city where the headquarters of the original broadcaster of "16 and Pregnant" is located?
@@ -1538,7 +1361,6 @@ label:
 note:
 
 ### 182
-stratum: MQuAKE-T/ALIAS
 item:    1508:q1
 edit:    New York City
 probe:   In the city where the headquarter of the original broadcaster of The Larry Sanders Show is located, who serves as the chief executive?
@@ -1546,7 +1368,6 @@ label:
 note:
 
 ### 183
-stratum: MQuAKE-T/CLEAN
 item:    459:q1
 edit:    Italy
 probe:   What is the name of the chief magistrate of the country of citizenship of Arnaldo Pomodoro?
@@ -1554,7 +1375,6 @@ label:
 note:
 
 ### 184
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2047:q2
 edit:    Catelyn Stark
 edit:    United States of America
@@ -1563,7 +1383,6 @@ label:
 note:
 
 ### 185
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1377:q1
 edit:    association football
 edit:    Hong Kong
@@ -1572,7 +1391,6 @@ label:
 note:
 
 ### 186
-stratum: MQuAKE-T/CLEAN
 item:    561:q2
 edit:    Sweden
 probe:   Who governs the country where Johan Renck is a citizen?
@@ -1580,7 +1398,6 @@ label:
 note:
 
 ### 187
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1573:q2
 edit:    country music
 probe:   Who is the chief of the government in the country where the genre of music that Rivers Rutherford is associated with originated?
@@ -1588,7 +1405,6 @@ label:
 note:
 
 ### 188
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1371:q0
 edit:    association football
 edit:    Hong Kong
@@ -1597,7 +1413,6 @@ label:
 note:
 
 ### 189
-stratum: MQuAKE-T/CLEAN
 item:    302:q0
 edit:    Chile
 probe:   Who is the head of government of the country to which Iván Zamorano belongs?
@@ -1605,7 +1420,6 @@ label:
 note:
 
 ### 190
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2597:q2
 edit:    judo
 probe:   In which city is the capital of the country where the sport founder of Megumi Fujii's sport is a citizen located?
@@ -1613,7 +1427,6 @@ label:
 note:
 
 ### 191
-stratum: MQuAKE-T/STRICT
 item:    1072:q1
 edit:    Paul Farmer
 probe:   In what city is the organization that employs Paul Farmer headquartered?
@@ -1621,7 +1434,6 @@ label:
 note:
 
 ### 192
-stratum: MQuAKE-CF-3k/STRICT
 item:    1414:q0
 edit:    Diego Godín
 edit:    cricket
@@ -1631,7 +1443,6 @@ label:
 note:
 
 ### 193
-stratum: MQuAKE-CF-3k/STRICT
 item:    561:q1
 edit:    Packard
 edit:    Los Angeles
@@ -1640,7 +1451,6 @@ label:
 note:
 
 ### 194
-stratum: MQuAKE-T/STRICT
 item:    1848:q1
 edit:    Norway national football team
 probe:   Which city represents the country of citizenship of the head coach of Norway national football team?
@@ -1648,7 +1458,6 @@ label:
 note:
 
 ### 195
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1844:q2
 edit:    baseball
 edit:    United Kingdom
@@ -1657,7 +1466,6 @@ label:
 note:
 
 ### 196
-stratum: MQuAKE-T/CLEAN
 item:    896:q1
 edit:    San Juan
 probe:   Who was the predecessor of the head of government of Pedro Rosselló's birthplace?
@@ -1665,7 +1473,6 @@ label:
 note:
 
 ### 197
-stratum: MQuAKE-CF-3k/STRICT
 item:    780:q1
 edit:    Omani League
 edit:    baseball
@@ -1674,7 +1481,6 @@ label:
 note:
 
 ### 198
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2813:q1
 edit:    The Beatles
 probe:   What is the capital of the country where the director/manager of Paperback Writer holds citizenship?
@@ -1682,7 +1488,6 @@ label:
 note:
 
 ### 199
-stratum: MQuAKE-T/CLEAN
 item:    246:q2
 edit:    Germany
 probe:   Who served as the head of government of the country to which Gerhard Schröder belongs?
@@ -1690,7 +1495,6 @@ label:
 note:
 
 ### 200
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2178:q2
 edit:    United Kingdom
 probe:   Which continent is the country of origin of the spouse of the performer of the album "Blizzard of Ozz" located in?
@@ -1698,7 +1502,6 @@ label:
 note:
 
 ### 201
-stratum: MQuAKE-T/CLEAN
 item:    89:q1
 edit:    Italy
 probe:   What is the name of the current head of government of the origin country of the opera "Gianni Schicchi"?
@@ -1706,7 +1509,6 @@ label:
 note:
 
 ### 202
-stratum: MQuAKE-T/CLEAN
 item:    1540:q0
 edit:    United States of America
 probe:   Who is the head of state of the country where Tyson Chandler hails from?
@@ -1714,7 +1516,6 @@ label:
 note:
 
 ### 203
-stratum: MQuAKE-T/ALIAS
 item:    1347:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB5?
@@ -1722,7 +1523,6 @@ label:
 note:
 
 ### 204
-stratum: MQuAKE-T/ALIAS
 item:    1600:q1
 edit:    New York City
 probe:   What is the name of the chief magistrate of the city where "Bonanza" was originally broadcasted?
@@ -1730,7 +1530,6 @@ label:
 note:
 
 ### 205
-stratum: MQuAKE-T/CLEAN
 item:    1821:q0
 edit:    Boston
 probe:   Who is the head of government in the location where the headquarters of the institution where Mike Portnoy was educated is situated?
@@ -1738,7 +1537,6 @@ label:
 note:
 
 ### 206
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1134:q1
 edit:    Commodore International
 probe:   What is the name of the current head of government of the country where the Commodore Plus/4 was made?
@@ -1746,7 +1544,6 @@ label:
 note:
 
 ### 207
-stratum: MQuAKE-T/CLEAN
 item:    247:q1
 edit:    Australia
 probe:   What is the name of the head of government in the home country of John Quiggin?
@@ -1754,7 +1551,6 @@ label:
 note:
 
 ### 208
-stratum: MQuAKE-T/CLEAN
 item:    1069:q0
 edit:    Mongolia
 probe:   Who is the head of state of the country that Nambaryn Enkhbayar is a citizen of?
@@ -1762,7 +1558,6 @@ label:
 note:
 
 ### 209
-stratum: MQuAKE-CF-3k/STRICT
 item:    2587:q2
 edit:    Profiles in Courage
 edit:    Isaac Asimov
@@ -1772,7 +1567,6 @@ label:
 note:
 
 ### 210
-stratum: MQuAKE-T/CLEAN
 item:    890:q2
 edit:    Greece
 probe:   When George Papandreou was a citizen of a country, who was serving as the head of state at that time?
@@ -1780,7 +1574,6 @@ label:
 note:
 
 ### 211
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2818:q1
 edit:    The Beatles
 probe:   Which city is the capital of the country where the director/manager of the performer in "Helter Skelter" holds citizenship?
@@ -1788,7 +1581,6 @@ label:
 note:
 
 ### 212
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2152:q2
 edit:    Apple Inc.
 edit:    Saudi Arabia
@@ -1797,7 +1589,6 @@ label:
 note:
 
 ### 213
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2871:q2
 edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
@@ -1807,7 +1598,6 @@ label:
 note:
 
 ### 214
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2751:q0
 edit:    A. A. Milne
 probe:   What is the capital city of the country where the child of the creator of Piglet holds citizenship?
@@ -1815,7 +1605,6 @@ label:
 note:
 
 ### 215
-stratum: MQuAKE-CF-3k/STRICT
 item:    1540:q1
 edit:    Macau national football team
 edit:    basketball
@@ -1825,7 +1614,6 @@ label:
 note:
 
 ### 216
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2746:q1
 edit:    Lotus Cars
 probe:   In which city is the headquarters of the company that made the Lotus Esprit located?
@@ -1833,7 +1621,6 @@ label:
 note:
 
 ### 217
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1814:q2
 edit:    rugby union
 edit:    Brazil
@@ -1842,7 +1629,6 @@ label:
 note:
 
 ### 218
-stratum: MQuAKE-T/ALIAS
 item:    1548:q1
 edit:    New York City
 probe:   What is the name of the political leader in the city where the broadcaster of "Disney's House of Mouse" is based?
@@ -1850,7 +1636,6 @@ label:
 note:
 
 ### 219
-stratum: MQuAKE-CF-3k/STRICT
 item:    1856:q1
 edit:    youth system
 edit:    baseball
@@ -1860,7 +1645,6 @@ label:
 note:
 
 ### 220
-stratum: MQuAKE-T/ALIAS
 item:    1589:q2
 edit:    New York City
 probe:   What is the name of the person responsible for leading the government of the city where the headquarters of the original broadcaster of "The Leftovers" is situated?
@@ -1868,7 +1652,6 @@ label:
 note:
 
 ### 221
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1806:q2
 edit:    country music
 edit:    United Kingdom
@@ -1877,7 +1660,6 @@ label:
 note:
 
 ### 222
-stratum: MQuAKE-T/ALIAS
 item:    180:q1
 edit:    New York City
 probe:   In which city was the head of government when the Talking Heads was formed?
@@ -1885,7 +1667,6 @@ label:
 note:
 
 ### 223
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2272:q1
 edit:    Ford Motor Company
 probe:   Which city serves as the capital of the country of citizenship of the founder of the manufacturer of Ford Bronco?
@@ -1893,7 +1674,6 @@ label:
 note:
 
 ### 224
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1671:q2
 edit:    association football
 edit:    Hong Kong
@@ -1902,7 +1682,6 @@ label:
 note:
 
 ### 225
-stratum: MQuAKE-T/CLEAN
 item:    496:q2
 edit:    Israel
 probe:   Who holds the position of head of state in the country that Teddy Kollek belonged to?
@@ -1910,7 +1689,6 @@ label:
 note:
 
 ### 226
-stratum: MQuAKE-T/CLEAN
 item:    659:q1
 edit:    Norway
 probe:   What is the name of the current head of government of the country where Jo Nesbø holds citizenship?
@@ -1918,7 +1696,6 @@ label:
 note:
 
 ### 227
-stratum: MQuAKE-CF-3k/STRICT
 item:    2363:q0
 edit:    Nowhere Man
 edit:    Madonna
@@ -1927,7 +1704,6 @@ label:
 note:
 
 ### 228
-stratum: MQuAKE-CF-3k/CLEAN
 item:    815:q2
 edit:    Michel Foucault
 probe:   In which occupation is the author of the book "The History of Sexuality" engaged?
@@ -1935,7 +1711,6 @@ label:
 note:
 
 ### 229
-stratum: MQuAKE-T/CLEAN
 item:    1420:q1
 edit:    Malawi
 probe:   In which country was the head of state during the citizenship of Hastings Banda?
@@ -1943,7 +1718,6 @@ label:
 note:
 
 ### 230
-stratum: MQuAKE-CF-3k/STRICT
 item:    75:q2
 edit:    Epistle to the Philippians
 edit:    Abraham Ortelius
@@ -1952,7 +1726,6 @@ label:
 note:
 
 ### 231
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2213:q2
 edit:    Richard Dawkins
 edit:    Jacques Chirac
@@ -1962,7 +1735,6 @@ label:
 note:
 
 ### 232
-stratum: MQuAKE-CF-3k/CLEAN
 item:    589:q0
 edit:    United States of America
 probe:   What is the name of the head of state of the country where "A Delicate Balance" originated from?
@@ -1970,7 +1742,6 @@ label:
 note:
 
 ### 233
-stratum: MQuAKE-CF-3k/STRICT
 item:    1885:q2
 edit:    John Murphy Farley
 edit:    Buddhism
@@ -1980,7 +1751,6 @@ label:
 note:
 
 ### 234
-stratum: MQuAKE-CF-3k/STRICT
 item:    1600:q0
 edit:    Zdeněk Zeman
 edit:    baseball
@@ -1990,7 +1760,6 @@ label:
 note:
 
 ### 235
-stratum: MQuAKE-T/STRICT
 item:    1072:q0
 edit:    Paul Farmer
 probe:   Where is the headquarters of the organization that employs Paul Farmer located?
@@ -1998,7 +1767,6 @@ label:
 note:
 
 ### 236
-stratum: MQuAKE-T/CLEAN
 item:    1764:q1
 edit:    Sweden
 probe:   In which country, whose head of government is x3, was "Dancing Queen" produced?
@@ -2006,7 +1774,6 @@ label:
 note:
 
 ### 237
-stratum: MQuAKE-T/ALIAS
 item:    1588:q0
 edit:    New York City
 probe:   Who is the head of government for the city where "Parenthood" was formed?
@@ -2014,7 +1781,6 @@ label:
 note:
 
 ### 238
-stratum: MQuAKE-CF-3k/STRICT
 item:    2749:q1
 edit:    Abbey Road
 edit:    Madonna
@@ -2025,7 +1791,6 @@ label:
 note:
 
 ### 239
-stratum: MQuAKE-CF-3k/STRICT
 item:    236:q1
 edit:    Mauser C96
 edit:    Canada
@@ -2034,7 +1799,6 @@ label:
 note:
 
 ### 240
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1680:q2
 edit:    country music
 probe:   In which country is the head of government associated with the origin of Jack Greene's genre?
@@ -2042,7 +1806,6 @@ label:
 note:
 
 ### 241
-stratum: MQuAKE-CF-3k/STRICT
 item:    1801:q1
 edit:    Duchy of Cleves
 edit:    Methodism
@@ -2051,7 +1814,6 @@ label:
 note:
 
 ### 242
-stratum: MQuAKE-T/CLEAN
 item:    871:q0
 edit:    Czech Republic
 probe:   Who is the head of state of the country to which Martina Sáblíková belongs? 
@@ -2059,7 +1821,6 @@ label:
 note:
 
 ### 243
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1155:q1
 edit:    country music
 probe:   From which country does Shane McAnally's genre originate, and who is the head of state in that country?
@@ -2067,7 +1828,6 @@ label:
 note:
 
 ### 244
-stratum: MQuAKE-CF-3k/STRICT
 item:    84:q0
 edit:    Richard Herrnstein
 probe:   Who is the chairperson of the employer of Richard Herrnstein?
@@ -2075,7 +1835,6 @@ label:
 note:
 
 ### 245
-stratum: MQuAKE-T/ALIAS
 item:    598:q0
 edit:    San Salvador
 probe:   Who is the head of government of the capital of El Salvador?
@@ -2083,7 +1842,6 @@ label:
 note:
 
 ### 246
-stratum: MQuAKE-T/CLEAN
 item:    1349:q0
 edit:    Lebanon
 probe:   Who is the head of state of the country to which Pierre Gemayel belongs?
@@ -2091,7 +1849,6 @@ label:
 note:
 
 ### 247
-stratum: MQuAKE-T/STRICT
 item:    424:q0
 edit:    Scientific American
 probe:   Who is the head of government in the location where Scientific American has its headquarters?
@@ -2099,7 +1856,6 @@ label:
 note:
 
 ### 248
-stratum: MQuAKE-T/CLEAN
 item:    532:q1
 edit:    Lebanon
 probe:   What is the name of the current head of government of Nancy Ajram's country of citizenship?
@@ -2107,7 +1863,6 @@ label:
 note:
 
 ### 249
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2609:q0
 edit:    Jordi Cruyff
 edit:    baseball
@@ -2117,7 +1872,6 @@ label:
 note:
 
 ### 250
-stratum: MQuAKE-T/CLEAN
 item:    1292:q0
 edit:    Taipei
 probe:   Who was the head of government in the place where Chiang Ching-kuo died?
@@ -2125,7 +1879,6 @@ label:
 note:
 
 ### 251
-stratum: MQuAKE-CF-3k/CLEAN
 item:    2098:q0
 edit:    Neil Gaiman
 edit:    Henry Labouchère
@@ -2135,7 +1888,6 @@ label:
 note:
 
 ### 252
-stratum: MQuAKE-T/CLEAN
 item:    549:q1
 edit:    South Korea
 probe:   Which political figureheads preside over the country of origin of Got7? 
@@ -2143,7 +1895,6 @@ label:
 note:
 
 ### 253
-stratum: MQuAKE-T/CLEAN
 item:    393:q1
 edit:    Australia
 probe:   What is the name of the current head of government in the country where Brett Whiteley held citizenship?
@@ -2151,7 +1902,6 @@ label:
 note:
 
 ### 254
-stratum: MQuAKE-CF-3k/ALIAS
 item:    2728:q0
 edit:    Ford Motor Company
 probe:   What is the capital of the country where the founder of the manufacturer of Ford Granada holds citizenship?
@@ -2159,7 +1909,6 @@ label:
 note:
 
 ### 255
-stratum: MQuAKE-T/CLEAN
 item:    267:q2
 edit:    Germany
 probe:   Who is the head of the government in the country to which Giacomo Meyerbeer belongs?
@@ -2167,7 +1916,6 @@ label:
 note:
 
 ### 256
-stratum: MQuAKE-T/ALIAS
 item:    1195:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB4?
@@ -2175,7 +1923,6 @@ label:
 note:
 
 ### 257
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1520:q1
 edit:    Lewis Carroll
 probe:   In which city is the headquarters of the employer of the person who created White Rabbit located?
@@ -2183,7 +1930,6 @@ label:
 note:
 
 ### 258
-stratum: MQuAKE-T/CLEAN
 item:    458:q0
 edit:    Sri Lanka
 probe:   Who is the head of state of the country that Bandu Samarasinghe is a citizen of?
@@ -2191,7 +1937,6 @@ label:
 note:
 
 ### 259
-stratum: MQuAKE-CF-3k/CLEAN
 item:    1535:q1
 edit:    baseball
 edit:    United Kingdom
@@ -2200,7 +1945,6 @@ label:
 note:
 
 ### 260
-stratum: MQuAKE-T/STRICT
 item:    1365:q0
 edit:    Lebensborn
 probe:   Who is the head of government of the location where the Lebensborn organization's headquarters was situated?
@@ -2208,7 +1952,6 @@ label:
 note:
 
 ### 261
-stratum: MQuAKE-CF-3k/ALIAS
 item:    1337:q2
 edit:    Jaguar Cars
 probe:   What is the name of the head of state of the country where the manufacturer of Jaguar E-Type was based?
