@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.0a2 — 2026-11-24
+
+The matchers get measured, and one of them fails.
+
+- 261 MQuAKE items labelled by hand against a stratified draw, in `validation/`. The strict rule's precision is **100%**, so the decision to build the headline on it holds. The derived-alias rule's was **57.1% [45.1, 69.0]** — it fired on a name reduced to a generic word ("country music" matching "a genre of music") and on the tail of somebody else's name ("Nicolae Ceausescu" when the edited subject was Elena).
+- Both are fixed. On a **held-out** draw of 47 alias matches, disjoint from the labelled set and drawn after the fix was committed, the rule is right **90.2% [80.5, 97.6]**. Recall is unchanged.
+- **Rates move, and `STRICT` rates do not.** Under 0.1.x the combined strict-plus-alias rate read 1.57% on MQuAKE-T and 67.79% on MQuAKE-CF-3k. Corrected, they are **0.82%** and **66.96%**. Strict alone was 0.37% and 65.41% before and after. A lower bound built on strict survived the correction; one built on strict plus alias did not, which is the argument for the headline being what it is.
+- `screen_any` reports the strongest evidence rather than the numerically highest level, so a multi-edit verdict no longer depends on the order the edits arrive in.
+- MQuAKE item ids are namespaced by source file. `case_id` restarts at 0 in each release, so `"1614:q1"` named a record in two different files.
+- `MATCHER_VERSION` is `0.2.0`. **No rate from 0.1.x is comparable to one from this release.**
+
+**Two known failure modes remain**, both found on the held-out set and left unfixed so that set stays usable: a given name shared with another person, and a brand two steps removed from the person it is named for. `validation/README.md` has both.
+
 ## 0.2.0a1 — 2026-11-23
 
 MQuAKE, and the type change it forced.
