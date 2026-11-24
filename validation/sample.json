@@ -2,7 +2,7 @@
  "drawn": "2026-11-24",
  "seed": 20261124,
  "matcher_version": "0.1.1",
- "editscreen_commit": "0893bfcc402f2708ddc9a1b2f5df25affee9258a-dirty",
+ "editscreen_commit": "dc8417616c9d8be1ccc88eeb5a2138ff470f13cf",
  "stratum_sizes": {
   "MQuAKE-T/STRICT": 21,
   "MQuAKE-T/ALIAS": 67,
