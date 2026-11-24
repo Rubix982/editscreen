@@ -36,15 +36,15 @@ RippleEdits adds a fifth, and it beats the other four:
 
 The `note:` line is worth filling only when an item fits none of the four letters. Those are the interesting ones — the levels in `types.py` were written from a handful of examples and have never met real data, and the expectation is that two or three items will fit none of them.
 
-## Three sets are drawn and waiting for a human
+## Three label sets, one of them filled in
 
 | file | n | what it settles |
 | --- | ---: | --- |
 | `labels.human.txt` | 25 | whether the MQuAKE precision figures are agreement with one labeller or a measurement |
 | `labels.ripple.human.txt` | 25 | the same, on RippleEdits |
-| `labels.ripple-pairs.human.txt` | 39 | which of two recovery rules is right — [T-019] |
+| `labels.ripple-pairs.human.txt` | 39 | which of two recovery rules is right — [T-019]. **Filled in, both passes** |
 
-The first two are blind re-draws of items already labelled once, so filling them gives an agreement rate where today there is none. Score them with `score.py --labels <the human file> --sample <the matching sample.json>` and compare against the `.claude.txt` run.
+The first two are still empty. They are blind re-draws of items already labelled once, so filling them gives an agreement rate where today there is none. Score them with `score.py --labels <the human file> --sample <the matching sample.json>` and compare against the `.claude.txt` run.
 
 **The third is a different kind of draw and `sample.py` cannot produce it.** [C-012] showed the released longest-candidate rule and a restricted one — canonical pick taken only from the five non-aliasing test types — give strict rates eighteen points apart on `random`, while the named-or-varied rate does not move. The existing sets cannot decide between them: they were drawn stratified by the *released* rule's own verdicts, so they cannot be reweighted to score another rule.
 
@@ -55,6 +55,25 @@ python3 validation/sample_pairs.py      # redraw it; seed 20261124, deterministi
 **Only the items the two rules disagree on can separate them**, and 4,044 prompts of the 38,092 screened do. `sample_pairs.py` draws six from each subset × transition cell. One label settles both rules at once, because the scorer already knows what each decided — which is why that file shows neither verdict and, unlike the other two, **neither recovered string.** What it shows instead is the Wikidata label for the subject id the benchmark itself cites, because which of the two recovered strings is the subject's name is the entire question and showing them would be the circularity this draw exists to escape.
 
 `s` means the same thing in all three files: the name on the `subject:` line, written out in full. A name on the `aliases:` line is `a`.
+
+```
+python3 validation/score_pairs.py --labels validation/labels.ripple-pairs.human.txt
+```
+
+### Both passes are in, and the restricted rule wins both
+
+Reweighted to the 4,044 contested prompts:
+
+| labeller | released rule right | restricted rule right | neither |
+| --- | ---: | ---: | ---: |
+| model — `labels.ripple-pairs.claude.txt` | 9.4% | **89.7%** | 0.9% |
+| human — `labels.ripple-pairs.human.txt` | 10.3% | **87.7%** | 2.0% |
+
+It wins in both directions — on the prompts the restriction moves ALIAS→STRICT and on the ones it moves STRICT→ALIAS — so it is not an artifact of one rule flagging more.
+
+**Agreement between the two labellers: 35 of 39, 89.7%**, measured on the blind labels before anything was revisited. The four disagreements are where the rule is soft rather than where someone slipped. Two are a stage name (`Show Master of Africa` for Bob Pinodo) and a legal name (`Alison Moira Clarkson` for Betty Boo): *names* by the written rule, *descriptions* to a reader, so one labeller said `a` and the other `d`. One is a two-letter spelling difference, `Kaboeai Island` against the subject's `Kabuai Island`. The fourth, item 034, was a slip and was corrected afterwards **with the other labeller's answer visible** — it is marked NOT BLIND in the file and excluded from the agreement rate above. It moves the restricted rule from 85.9% to 87.7% and moves nothing else.
+
+**So this one number is no longer single-labeller. Every other precision figure in this directory still is**, and the two 25-item sets above are what would change that.
 
 ## Why it is stratified
 
