@@ -133,7 +133,17 @@ def main() -> int:
             print()
             break
 
-    print(f"all {total} labelled. run: python3 validation/score.py")
+    # The paired draw is scored by a different script, because its sample
+    # carries two verdicts per item rather than one. Naming the wrong scorer
+    # here sent a finished session to a file it cannot read.
+    if "pairs" in args.labels.name:
+        scorer = f"validation/score_pairs.py --labels {args.labels}"
+    elif args.labels.name == "labels.txt":
+        scorer = "validation/score.py"
+    else:
+        scorer = (f"validation/score.py --labels {args.labels} "
+                  f"--sample validation/sample{'.ripple' if 'ripple' in args.labels.name else ''}.json")
+    print(f"all {total} labelled. run: python3 {scorer}")
     return 0
 
 
