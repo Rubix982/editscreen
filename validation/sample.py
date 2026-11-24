@@ -148,13 +148,14 @@ def main() -> int:
 
     rng.shuffle(drawn)
 
-    # The stratum carries the screen's own verdict, so it is recorded HERE
-    # and kept out of labels.txt. A labeller who can see that the screen
-    # said STRICT is being invited to agree with it, and the quantity that
-    # inflates is precision — the one number this set exists to produce.
+    # The stratum carries the screen's own verdict, and the item id now
+    # carries the benchmark's name, which carries its base rate — MQuAKE-T
+    # is 98% clean and knowing that is a thumb on the scale. Both are
+    # recorded HERE and kept out of labels.txt, which shows a labeller the
+    # edits and the probe and nothing else. The block number is the key.
     meta = {
-        "assignment": {f"{i:03d}": "/".join(k)
-                       for i, (k, _, _) in enumerate(drawn, start=1)},
+        "assignment": {f"{i:03d}": {"stratum": "/".join(k), "item": it.item_id}
+                       for i, (k, it, _) in enumerate(drawn, start=1)},
         "drawn": date.today().isoformat(),
         "seed": SEED,
         "matcher_version": MATCHER_VERSION,
@@ -169,7 +170,6 @@ def main() -> int:
     lines = [LEGEND]
     for i, (_key, item, _verdict) in enumerate(drawn, start=1):
         lines.append(f"### {i:03d}")
-        lines.append(f"item:    {item.item_id}")
         for e in item.edits:
             lines.append(f"edit:    {e.subject}")
         lines.append(f"probe:   {item.probe}")

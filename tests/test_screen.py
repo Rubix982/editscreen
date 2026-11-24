@@ -189,3 +189,26 @@ class TestVerdictDoesNotDependOnEditOrder:
         absent = Edit(subject="Mary Shelley")
         for edits in ([absent, self.surname_only], [self.surname_only, absent]):
             assert screen_any(edits, self.probe).level is Level.ALIAS
+
+
+class TestItemIdsDoNotCollideAcrossFiles:
+    """MQuAKE's case_id restarts at 0 in each released file, so a bare
+    "1614:q1" names one record in MQuAKE-T and another in MQuAKE-CF-3k."""
+
+    case = {"case_id": 1614,
+            "requested_rewrite": [{"subject": "Shelagh Delaney"}],
+            "questions": ["Who wrote it?"]}
+
+    def test_load_prefixes_with_the_file_stem(self, tmp_path):
+        import json
+        ids = []
+        for name in ("MQuAKE-T", "MQuAKE-CF-3k"):
+            p = tmp_path / f"{name}.json"
+            p.write_text(json.dumps([self.case]))
+            ids += [it.item_id for it in mquake.load(p)]
+        assert ids == ["MQuAKE-T:1614:q0", "MQuAKE-CF-3k:1614:q0"]
+        assert len(set(ids)) == len(ids)
+
+    def test_bare_records_keep_the_unprefixed_form(self):
+        ids = [it.item_id for it in mquake.from_records([self.case])]
+        assert ids == ["1614:q0"]

@@ -25,14 +25,12 @@
 # scorer reweights on what is actually filled in.
 
 ### 001
-item:    2715:q1
 edit:    The Walt Disney Company
 probe:   In which city is the headquarters of Playhouse Disney's CEO's country of citizenship located?
 label:
 note:
 
 ### 002
-item:    2419:q0
 edit:    University of Bonn
 edit:    London
 probe:   On which continent is the headquarters location of the institution where the founder of Kaiser-Wilhelm-Gedächtniskirche was educated?
@@ -40,105 +38,90 @@ label:
 note:
 
 ### 003
-item:    1342:q0
 edit:    Norway national football team
 probe:   What country does the head coach of Norway national football team belong to?
 label:
 note:
 
 ### 004
-item:    1614:q1
 edit:    Shelagh Delaney
 probe:   What is the official language of the author of "A Taste of Honey"'s country of citizenship?
 label:
 note:
 
 ### 005
-item:    2321:q1
 edit:    Shonda Rhimes
 probe:   In which city was the creator of Derek Shepherd's spouse born, who is a citizen of which country?
 label:
 note:
 
 ### 006
-item:    1577:q2
 edit:    baseball
 probe:   Who holds the position of head of government in the country where the National League East originally came from?
 label:
 note:
 
 ### 007
-item:    858:q0
 edit:    Superjail!
 probe:   Who is the head of state in the country where "Superjail!" originated?
 label:
 note:
 
 ### 008
-item:    1220:q2
 edit:    Aston Martin Lagonda
 probe:   Who is the current CEO of the company that produced the Aston Martin DBR1?
 label:
 note:
 
 ### 009
-item:    1220:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the chief executive officer of the company that manufactures Aston Martin DBR1?
 label:
 note:
 
 ### 010
-item:    1312:q0
 edit:    baseball
 probe:   Who is the head of the government of the country where Eric Hosmer's sport originates?
 label:
 note:
 
 ### 011
-item:    1533:q0
 edit:    Torquato Tasso
 probe:   What is the work location of the founder of Torquato Tasso's religion?
 label:
 note:
 
 ### 012
-item:    917:q1
 edit:    basketball
 probe:   Where did the sport played during NBA All-Star Game originate from?
 label:
 note:
 
 ### 013
-item:    1072:q2
 edit:    Paul Farmer
 probe:   What is the location of the headquarters of the organization that Paul Farmer works for?
 label:
 note:
 
 ### 014
-item:    341:q0
 edit:    San Diego
 probe:   Who is the head of government in the place where Qualcomm Inc. was founded?
 label:
 note:
 
 ### 015
-item:    2838:q0
 edit:    association football
 probe:   In which continent is the country of origin of the current head coach for the Germany national football team located?
 label:
 note:
 
 ### 016
-item:    1545:q0
 edit:    Ray Kurzweil
 probe:   Where is the headquarters location of the employer of Kurzweil Music Systems?
 label:
 note:
 
 ### 017
-item:    1066:q1
 edit:    Chris Paul
 edit:    defender
 edit:    rugby
@@ -147,91 +130,78 @@ label:
 note:
 
 ### 018
-item:    338:q0
 edit:    William Randolph Hearst
 probe:   Which country does the founder of Cosmopolitan Productions hold citizenship in?
 label:
 note:
 
 ### 019
-item:    881:q2
 edit:    association football
 probe:   Which country is credited with the origination of the sport played by the Football Association of Wales?
 label:
 note:
 
 ### 020
-item:    757:q0
 edit:    Apax Partners
 probe:   Who is the head of government of the location where Apax Partners has its headquarters?
 label:
 note:
 
 ### 021
-item:    1186:q2
 edit:    Bulgaria
 probe:   In which country is the head of government the leader of the citizenship of Dimitar Berbatov?
 label:
 note:
 
 ### 022
-item:    159:q2
 edit:    India
 probe:   What continent is the nationality of Rekha associated with?
 label:
 note:
 
 ### 023
-item:    1365:q2
 edit:    Lebensborn
 probe:   Who holds the position of the head of government in the city where Lebensborn organization's headquarters was located?
 label:
 note:
 
 ### 024
-item:    424:q2
 edit:    Scientific American
 probe:   Who is the current leader of the place where Scientific American's headquarters is located?
 label:
 note:
 
 ### 025
-item:    1358:q0
 edit:    Bulgaria
 probe:   Who is the head of government of the country where Veselin Topalov holds a citizenship?
 label:
 note:
 
 ### 026
-item:    2996:q0
 edit:    midfielder
 probe:   What is the capital of the country where the sport associated with Kieron Dyer's specialty was first played?
 label:
 note:
 
 ### 027
-item:    1372:q1
 edit:    Aston Martin Lagonda
 probe:   What is the name of the Chief Executive Officer of the company that produces the Aston Martin DB9?
 label:
 note:
 
 ### 028
-item:    2532:q0
 edit:    point guard
 probe:   Which city serves as the capital of the country where the sport of Mark Turgeon's specialization was originated?
 label:
 note:
 
 ### 029
-item:    1213:q2
 edit:    Annapurna Pictures
 probe:   Which continent does Annapurna Pictures' headquarters belong to?
 label:
 note:
 
 ### 030
-item:    2292:q2
 edit:    Patsy Cline
 edit:    United States of America
 probe:   From which capital city does the genre of music to which "I Fall to Pieces" belongs come from?
@@ -239,35 +209,30 @@ label:
 note:
 
 ### 031
-item:    1157:q2
 edit:    Aston Martin Lagonda
 probe:   Who heads the company responsible for the production of the Aston Martin DB3S?
 label:
 note:
 
 ### 032
-item:    2163:q2
 edit:    association football
 probe:   In which continent did the sport that is associated with the founder of "Forza Italia" originate?
 label:
 note:
 
 ### 033
-item:    27:q2
 edit:    basketball
 probe:   From which country did the athletic activity played by Reggie Miller first emerge?
 label:
 note:
 
 ### 034
-item:    1204:q1
 edit:    Aston Martin Lagonda
 probe:   Who is the head of the company that produces the Aston Martin DB7?
 label:
 note:
 
 ### 035
-item:    2865:q2
 edit:    Elena Ceaușescu
 edit:    Michigan State University
 edit:    Paris
@@ -276,7 +241,6 @@ label:
 note:
 
 ### 036
-item:    1874:q0
 edit:    association football
 edit:    Hong Kong
 probe:   Which continent is the country where the sport played by the Singapore national football team originated?
@@ -284,7 +248,6 @@ label:
 note:
 
 ### 037
-item:    2702:q2
 edit:    Viktor Orbán
 edit:    sumo
 edit:    Mexico
@@ -293,14 +256,12 @@ label:
 note:
 
 ### 038
-item:    1584:q1
 edit:    New York City
 probe:   In which city was "Heroes Reborn" originally broadcasted and who is its head of government?
 label:
 note:
 
 ### 039
-item:    809:q0
 edit:    Levi Woodbury
 edit:    United Kingdom
 probe:   Who was the head of government of the country to which Levi Woodbury belonged?
@@ -308,28 +269,24 @@ label:
 note:
 
 ### 040
-item:    382:q2
 edit:    Italy
 probe:   In which country is the head of government the leader of the citizenship country of Roberto Benigni?
 label:
 note:
 
 ### 041
-item:    2392:q1
 edit:    Ford Motor Company
 probe:   Which city serves as the capital of the country whose citizen founded the manufacturer of Ford Mustang?
 label:
 note:
 
 ### 042
-item:    2322:q1
 edit:    rock music
 probe:   What is the capital city of the country where the genre of Amber Heard's spouse originated?
 label:
 note:
 
 ### 043
-item:    28:q2
 edit:    Adventures in Paradise
 edit:    British Broadcasting Corporation
 probe:   Where is the base of operations of the original broadcaster of "Adventures in Paradise"?
@@ -337,7 +294,6 @@ label:
 note:
 
 ### 044
-item:    2705:q1
 edit:    Will Smith
 edit:    rock music
 edit:    Germany
@@ -346,21 +302,18 @@ label:
 note:
 
 ### 045
-item:    906:q1
 edit:    Luca Zaia
 probe:   Which country is the president of Veneto a citizen of?
 label:
 note:
 
 ### 046
-item:    1086:q2
 edit:    Bob Dylan
 probe:   What is the city where the educational institution where the performer of "Blowin' in the Wind" studied, headquartered?
 label:
 note:
 
 ### 047
-item:    24:q2
 edit:    LATAM Chile
 edit:    Boston
 probe:   By whom was the entity that is the origin of LATAM Chile founded?
@@ -368,35 +321,30 @@ label:
 note:
 
 ### 048
-item:    1531:q2
 edit:    United States of America
 probe:   Who is the head of government of the country that Eric Paslay's genre of music hails from?
 label:
 note:
 
 ### 049
-item:    1577:q2
 edit:    New York City
 probe:   In which city was the political leader in power when "The Lloyd Bridges Show" was premiered?
 label:
 note:
 
 ### 050
-item:    2555:q1
 edit:    The Beatles
 probe:   Which continent does the country of citizenship of the director / manager of Tomorrow Never Knows belong to?
 label:
 note:
 
 ### 051
-item:    1573:q1
 edit:    country music
 probe:   Who is the leader of the government within the country where the genre of music that Rivers Rutherford relates to originated from?
 label:
 note:
 
 ### 052
-item:    1601:q0
 edit:    San Pietro in Montorio
 edit:    Methodism
 probe:   At which location did the founder of San Pietro in Montorio work?
@@ -404,105 +352,90 @@ label:
 note:
 
 ### 053
-item:    157:q2
 edit:    New York City
 probe:   In which city is the head of government located, where Grove Press has its headquarters?
 label:
 note:
 
 ### 054
-item:    1982:q2
 edit:    Cardinal Stritch University
 probe:   Where did the founder, of the religion that established Cardinal Stritch University's associated religion, work?
 label:
 note:
 
 ### 055
-item:    1365:q1
 edit:    Lebensborn
 probe:   In which area is the head of government located where Lebensborn organization's headquarters was situated?
 label:
 note:
 
 ### 056
-item:    1212:q1
 edit:    Czech Republic
 probe:   What is the name of the current head of state of the country to which Martin Havlát belongs?
 label:
 note:
 
 ### 057
-item:    1109:q2
 edit:    Chile
 probe:   Who is the head of the government in Roberto Bolaño's country of citizenship?
 label:
 note:
 
 ### 058
-item:    133:q2
 edit:    Czech Republic
 probe:   Who is the leader of the country whose citizen is the Czech tennis player Petra Cetkovská?
 label:
 note:
 
 ### 059
-item:    1589:q0
 edit:    New York City
 probe:   Who is the person in charge of the political leadership of the city where the headquarters of the original broadcaster of "The Leftovers" is located?
 label:
 note:
 
 ### 060
-item:    424:q1
 edit:    Scientific American
 probe:   What is the name of the chief magistrate of the place where the headquarters of Scientific American is situated?
 label:
 note:
 
 ### 061
-item:    757:q2
 edit:    Apax Partners
 probe:   What is the name of the current head of government of the location where Apax Partners' headquarters is located?
 label:
 note:
 
 ### 062
-item:    1556:q1
 edit:    New York City
 probe:   What is the name of the leader of the government in the city where Fury was formed?
 label:
 note:
 
 ### 063
-item:    2019:q0
 edit:    Apple Inc.
 probe:   What is the capital of the country where the CEO of the developer of Apple Music holds the citizenship?
 label:
 note:
 
 ### 064
-item:    1385:q0
 edit:    Sri Lanka
 probe:   Who is the head of state of the country that Angelo Mathews holds citizenship in?
 label:
 note:
 
 ### 065
-item:    210:q2
 edit:    United Kingdom
 probe:   Who holds the highest political office in the country where Nick Lowe is a citizen?
 label:
 note:
 
 ### 066
-item:    1581:q1
 edit:    New York City
 probe:   In which city is the head of government of the location of headquarters of "The Challenge" original broadcaster?
 label:
 note:
 
 ### 067
-item:    2579:q0
 edit:    Vince McMahon
 edit:    Laurence Olivier
 edit:    Australia
@@ -511,21 +444,18 @@ label:
 note:
 
 ### 068
-item:    2392:q0
 edit:    Ford Motor Company
 probe:   What is the capital of the country to which the founder of the manufacturer of Ford Mustang belongs?
 label:
 note:
 
 ### 069
-item:    1177:q1
 edit:    Czech Republic
 probe:   In what country is the head of state under which Petr Nečas holds a citizenship?
 label:
 note:
 
 ### 070
-item:    1732:q2
 edit:    left-handed specialist
 edit:    cricket
 edit:    Netherlands
@@ -534,28 +464,24 @@ label:
 note:
 
 ### 071
-item:    755:q2
 edit:    Dominican Republic
 probe:   Who held the title of head of state of the country to which Rafael Leonidas Trujillo belonged?
 label:
 note:
 
 ### 072
-item:    2234:q0
 edit:    Scientology
 probe:   What is the capital city of the country of citizenship of the founder of Sea Org's religion?
 label:
 note:
 
 ### 073
-item:    548:q1
 edit:    Goodie Mob
 probe:   Which leader is the country of origin of Goodie Mob ruled by?
 label:
 note:
 
 ### 074
-item:    2726:q0
 edit:    Tony Soprano
 edit:    H. P. Lovecraft
 edit:    Norway
@@ -564,70 +490,60 @@ label:
 note:
 
 ### 075
-item:    2746:q0
 edit:    Lotus Cars
 probe:   What is the capital city of the country of citizenship of the manufacturer of the Lotus Esprit?
 label:
 note:
 
 ### 076
-item:    757:q1
 edit:    Apax Partners
 probe:   Who governs the place where Apax Partners has set up its headquarters?
 label:
 note:
 
 ### 077
-item:    1848:q0
 edit:    Norway national football team
 probe:   What is the capital of the country of citizenship of the head coach of Norway national football team?
 label:
 note:
 
 ### 078
-item:    2401:q0
 edit:    Vince McMahon
 probe:   What is the capital of the country where the CEO of Beth Phoenix's employer holds citizenship?
 label:
 note:
 
 ### 079
-item:    1199:q0
 edit:    Austria
 probe:   Who is the head of government of the country where Otto Bauer holds a citizenship?
 label:
 note:
 
 ### 080
-item:    1157:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB3S?
 label:
 note:
 
 ### 081
-item:    1195:q2
 edit:    Aston Martin Lagonda
 probe:   What is the name of the chief executive officer of the manufacturer of the Aston Martin DB4?
 label:
 note:
 
 ### 082
-item:    1368:q0
 edit:    Google
 probe:   Where is the headquarters of the company that employs Rob Pike located?
 label:
 note:
 
 ### 083
-item:    1059:q1
 edit:    Seattle
 probe:   What is the name of the person who is the chief of the government in the city where the headquarters of Alaska Airlines is located?
 label:
 note:
 
 ### 084
-item:    2834:q2
 edit:    WrestleMania
 edit:    Leslie Mann
 edit:    United Kingdom
@@ -636,14 +552,12 @@ label:
 note:
 
 ### 085
-item:    1296:q0
 edit:    Christianity
 probe:   Where did the founder of Arab Christians work?
 label:
 note:
 
 ### 086
-item:    1593:q0
 edit:    baseball
 edit:    United Kingdom
 probe:   Who is the head of state of the country where Mike Mussina's sport originated?
@@ -651,7 +565,6 @@ label:
 note:
 
 ### 087
-item:    1096:q2
 edit:    Jerzy Dudek
 edit:    cornerback
 edit:    Muay Thai
@@ -660,28 +573,24 @@ label:
 note:
 
 ### 088
-item:    972:q0
 edit:    Chad
 probe:   Who is the head of state of the country where Hissène Habré is a citizen?
 label:
 note:
 
 ### 089
-item:    1195:q1
 edit:    Aston Martin Lagonda
 probe:   Who holds the position of chief executive officer at the company that produces the Aston Martin DB4?
 label:
 note:
 
 ### 090
-item:    1139:q0
 edit:    Hong Kong
 probe:   Who is the head of government of Wong Kar-wai's country of citizenship?
 label:
 note:
 
 ### 091
-item:    862:q0
 edit:    chocolate brownie
 edit:    India
 probe:   What is the capital of the country that invented the chocolate brownie?
@@ -689,21 +598,18 @@ label:
 note:
 
 ### 092
-item:    1579:q0
 edit:    New York City
 probe:   Who is the head of government at the location of the headquarters of the original broadcaster of Deadwood?
 label:
 note:
 
 ### 093
-item:    1407:q1
 edit:    The Clash
 probe:   In which city, whose head of government is a certain person, was the performer of Combat Rock formed?
 label:
 note:
 
 ### 094
-item:    2874:q0
 edit:    Windows Installer
 edit:    Sony Interactive Entertainment
 edit:    Marc Benioff
@@ -712,28 +618,24 @@ label:
 note:
 
 ### 095
-item:    1213:q0
 edit:    Annapurna Pictures
 probe:   In which continent is the headquarter location of Annapurna Pictures situated?
 label:
 note:
 
 ### 096
-item:    1372:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB9?
 label:
 note:
 
 ### 097
-item:    1848:q2
 edit:    Norway national football team
 probe:   What city serves as the capital of the country of origin of the head coach of Norway national football team?
 label:
 note:
 
 ### 098
-item:    2602:q2
 edit:    Boot Camp
 edit:    Google
 edit:    Luca Cordero di Montezemolo
@@ -742,14 +644,12 @@ label:
 note:
 
 ### 099
-item:    1273:q0
 edit:    Austria
 probe:   Who is the head of government of the country in which Joseph Radetzky von Radetz holds citizenship?
 label:
 note:
 
 ### 100
-item:    1101:q2
 edit:    Jay-Z
 edit:    jazz
 probe:   From which country does the music genre of "99 Problems" come from?
@@ -757,14 +657,12 @@ label:
 note:
 
 ### 101
-item:    1612:q2
 edit:    New York City
 probe:   In which city is the head of government of the location where Janet Flanner's employer has its headquarters located?
 label:
 note:
 
 ### 102
-item:    1110:q2
 edit:    John Coltrane
 edit:    Johnny Lee
 edit:    hip hop music
@@ -773,14 +671,12 @@ label:
 note:
 
 ### 103
-item:    529:q0
 edit:    Baltimore
 probe:   Who is the head of government in the headquarters location of Johns Hopkins University Press?
 label:
 note:
 
 ### 104
-item:    851:q2
 edit:    EA-18G Growler
 edit:    Hon Hai Precision Industry
 probe:   From whom did the manufacturer of the EA-18G Growler originate?
@@ -788,49 +684,42 @@ label:
 note:
 
 ### 105
-item:    1573:q0
 edit:    country music
 probe:   Who is the head of government in the country of origin of the music genre associated with Rivers Rutherford?
 label:
 note:
 
 ### 106
-item:    2089:q2
 edit:    The Beatles
 probe:   In which city is the capital of the country where the director/manager of "Nowhere Man" is a citizen?
 label:
 note:
 
 ### 107
-item:    1278:q2
 edit:    Yamaha Corporation
 probe:   What is the location of the headquarters of the manufacturer of Yamaha DX7?
 label:
 note:
 
 ### 108
-item:    1547:q1
 edit:    New York City
 probe:   In which city was the head of government located when "Bret Maverick" was first broadcasted?
 label:
 note:
 
 ### 109
-item:    1862:q1
 edit:    Japan
 probe:   In which city was the head of government located where the religion of Mitsumasa Yonai was formed?
 label:
 note:
 
 ### 110
-item:    97:q0
 edit:    United States of America
 probe:   Who is the head of state for the country where Paul McCandless holds citizenship?
 label:
 note:
 
 ### 111
-item:    2026:q0
 edit:    Microsoft
 edit:    Steve Jobs
 edit:    Galicia
@@ -839,14 +728,12 @@ label:
 note:
 
 ### 112
-item:    1585:q2
 edit:    New York City
 probe:   What is the name of the chief executive of the city where the headquarters of the original broadcaster of "Private Practice" is situated?
 label:
 note:
 
 ### 113
-item:    926:q2
 edit:    Harry Dresden
 edit:    Bryan Fuller
 probe:   Which country is associated with the citizenship of the creator of Harry Dresden?
@@ -854,14 +741,12 @@ label:
 note:
 
 ### 114
-item:    1610:q2
 edit:    Finnish
 probe:   Which individual is credited with creating the official language of the location where Yle TV2 is headquartered?
 label:
 note:
 
 ### 115
-item:    1429:q1
 edit:    Tom Huddlestone
 edit:    linebacker
 edit:    shinty
@@ -870,28 +755,24 @@ label:
 note:
 
 ### 116
-item:    2421:q0
 edit:    Ford Motor Company
 probe:   What is the capital of the country whose citizen founded the company that manufactured the Ford Taurus?
 label:
 note:
 
 ### 117
-item:    255:q1
 edit:    Bob Katter
 probe:   At which educational institution did the founder of Katter's Australian Party receive their education?
 label:
 note:
 
 ### 118
-item:    84:q2
 edit:    New York City
 probe:   Who is the leader of the city where the headquarters of Argosy is located?
 label:
 note:
 
 ### 119
-item:    1983:q0
 edit:    basketball
 edit:    Spain
 probe:   What is the official language of the country where Shaun Livingston's sport was originated?
@@ -899,35 +780,30 @@ label:
 note:
 
 ### 120
-item:    598:q2
 edit:    San Salvador
 probe:   What is the name of the head of government of the capital city of El Salvador?
 label:
 note:
 
 ### 121
-item:    1001:q0
 edit:    Iran
 probe:   Who is the head of government of the country where Ervand Abrahamian holds citizenship?
 label:
 note:
 
 ### 122
-item:    1559:q2
 edit:    New York City
 probe:   What is the name of the current head of government in the city where the original broadcaster of Alias Smith and Jones is headquartered?
 label:
 note:
 
 ### 123
-item:    1213:q1
 edit:    Annapurna Pictures
 probe:   What continent is the headquarters of Annapurna Pictures located in?
 label:
 note:
 
 ### 124
-item:    771:q1
 edit:    Royal Ontario Museum
 edit:    Washington, D.C.
 probe:   What is the name of the current head of government in the city where the Royal Ontario Museum has its headquarters?
@@ -935,42 +811,36 @@ label:
 note:
 
 ### 125
-item:    273:q2
 edit:    Brazil
 probe:   Which continent is associated with the citizenship of Adriano?
 label:
 note:
 
 ### 126
-item:    1093:q0
 edit:    Pakistan
 probe:   Who is the head of government of the country that Mohammad Amir is a citizen of?
 label:
 note:
 
 ### 127
-item:    1333:q0
 edit:    Lebanon
 probe:   Who was the head of government of the country Omar Karami was a citizen of?
 label:
 note:
 
 ### 128
-item:    1204:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of Aston Martin DB7?
 label:
 note:
 
 ### 129
-item:    1342:q2
 edit:    Norway national football team
 probe:   The head coach of Norway national football team is a citizen of which country?
 label:
 note:
 
 ### 130
-item:    1446:q2
 edit:    Winnie-the-Pooh
 edit:    Terry Pratchett
 edit:    Omurtag of Bulgaria
@@ -979,14 +849,12 @@ label:
 note:
 
 ### 131
-item:    1145:q2
 edit:    New Zealand
 probe:   Who is the leader of the government in the country where Metiria Turei holds citizenship?
 label:
 note:
 
 ### 132
-item:    2934:q0
 edit:    Moog Music
 edit:    Florence Kelley
 edit:    Philippines
@@ -995,42 +863,36 @@ label:
 note:
 
 ### 133
-item:    598:q1
 edit:    San Salvador
 probe:   Which political leader is in charge of the city that serves as the capital of El Salvador?
 label:
 note:
 
 ### 134
-item:    1621:q1
 edit:    South Korea
 probe:   What is the name of the head of state of the country where VIXX comes from?
 label:
 note:
 
 ### 135
-item:    577:q0
 edit:    Pakistan
 probe:   Who is the head of government of the country where Sanam Saeed holds citizenship?
 label:
 note:
 
 ### 136
-item:    1594:q2
 edit:    New York City
 probe:   Who holds the position of the chief executive of the city where "The Brady Bunch" original broadcaster's headquarters is located?
 label:
 note:
 
 ### 137
-item:    1804:q2
 edit:    Volvo Cars
 probe:   Who holds the position of head of government in the country of origin of Volvo 850?
 label:
 note:
 
 ### 138
-item:    2865:q0
 edit:    Elena Ceaușescu
 edit:    Michigan State University
 edit:    Paris
@@ -1039,28 +901,24 @@ label:
 note:
 
 ### 139
-item:    1650:q2
 edit:    Los Angeles
 probe:   Who is the chief executive of the municipal government where the headquarters of Drew Pinsky's employer is located?
 label:
 note:
 
 ### 140
-item:    779:q0
 edit:    United Kingdom
 probe:   Who is the head of government of the country where Richard Dawson holds a citizenship?
 label:
 note:
 
 ### 141
-item:    1347:q1
 edit:    Aston Martin Lagonda
 probe:   What is the name of the chief executive officer of the company that produces the Aston Martin DB5?
 label:
 note:
 
 ### 142
-item:    2173:q2
 edit:    designated hitter
 edit:    basketball
 edit:    Spain
@@ -1069,21 +927,18 @@ label:
 note:
 
 ### 143
-item:    986:q1
 edit:    Aston Martin Lagonda
 probe:   Who holds the position of chief executive officer at the company that produced the Aston Martin DBR9?
 label:
 note:
 
 ### 144
-item:    23:q2
 edit:    United States of America
 probe:   Who holds the position of head of state in the country where Buckcherry was founded?
 label:
 note:
 
 ### 145
-item:    2245:q1
 edit:    Gran Turismo 4
 edit:    Epic Games
 edit:    United Kingdom
@@ -1092,7 +947,6 @@ label:
 note:
 
 ### 146
-item:    1558:q2
 edit:    baseball
 edit:    United Kingdom
 probe:   What is the language used officially in the country of origin of Salem Red Sox?
@@ -1100,42 +954,36 @@ label:
 note:
 
 ### 147
-item:    1309:q2
 edit:    HBO
 probe:   What is the name of the chief executive officer of the company that aired Nic Pizzolatto's most famous work?
 label:
 note:
 
 ### 148
-item:    1342:q1
 edit:    Norway national football team
 probe:   With which nationality is the head coach of Norway national football team associated?
 label:
 note:
 
 ### 149
-item:    722:q1
 edit:    Google
 probe:   Where is the company that developed Chromebook headquartered?
 label:
 note:
 
 ### 150
-item:    793:q1
 edit:    United States of America
 probe:   Who holds the highest office in the country that is the place of origin of The Moving Picture World?
 label:
 note:
 
 ### 151
-item:    2372:q1
 edit:    Vladimir Lenin
 probe:   Where did the spouse of the author of "Lenin's Testament" die, on which continent?
 label:
 note:
 
 ### 152
-item:    2742:q1
 edit:    Jordan Henderson
 edit:    rugby union
 edit:    Brazil
@@ -1144,7 +992,6 @@ label:
 note:
 
 ### 153
-item:    2231:q1
 edit:    Leo Fender
 edit:    United Kingdom
 probe:   What is the capital of the country where the company that manufactures Fender Precision Bass was established?
@@ -1152,35 +999,30 @@ label:
 note:
 
 ### 154
-item:    1780:q2
 edit:    Los Angeles
 probe:   Who is the leader of the government in the place where the performer of Mr. Tambourine Man was established?
 label:
 note:
 
 ### 155
-item:    2523:q0
 edit:    Vince McMahon
 probe:   What is the official language of the country of citizenship of the spouse of the creator of WWE SmackDown?
 label:
 note:
 
 ### 156
-item:    95:q0
 edit:    United States of America
 probe:   Who is the head of state of the country where "Figures of Speech" originated?
 label:
 note:
 
 ### 157
-item:    619:q2
 edit:    basketball
 probe:   From which country does Avery Johnson hail?
 label:
 note:
 
 ### 158
-item:    2924:q1
 edit:    José Luis Chilavert
 edit:    tackle
 edit:    England
@@ -1189,7 +1031,6 @@ label:
 note:
 
 ### 159
-item:    1246:q1
 edit:    association football
 edit:    Hong Kong
 probe:   From which continent does the sport that Terry Yorath is associated with originate?
@@ -1197,14 +1038,12 @@ label:
 note:
 
 ### 160
-item:    1086:q1
 edit:    Bob Dylan
 probe:   Which city is the headquarters of the educational institution where the performer of "Blowin' in the Wind" was enrolled?
 label:
 note:
 
 ### 161
-item:    241:q1
 edit:    Vigor Lamezia
 edit:    basketball
 probe:   Where did the sport associated with Vigor Lamezia originate from?
@@ -1212,7 +1051,6 @@ label:
 note:
 
 ### 162
-item:    1493:q0
 edit:    association football
 edit:    Hong Kong
 probe:   In which continent is the country of origin of Marc Wilmots situated, who is associated with a particular sport?
@@ -1220,14 +1058,12 @@ label:
 note:
 
 ### 163
-item:    1608:q1
 edit:    New York City
 probe:   In what city is the head of government located where "Cheers" was originally broadcasted?
 label:
 note:
 
 ### 164
-item:    2609:q1
 edit:    Jordi Cruyff
 edit:    baseball
 edit:    United Kingdom
@@ -1236,42 +1072,36 @@ label:
 note:
 
 ### 165
-item:    211:q1
 edit:    United Kingdom
 probe:   What is the name of the current head of state of the country where Miss Marple originally came from?
 label:
 note:
 
 ### 166
-item:    1358:q1
 edit:    Bulgaria
 probe:   In which country is the head of government who governs Veselin Topalov's citizenship?
 label:
 note:
 
 ### 167
-item:    94:q0
 edit:    United Kingdom
 probe:   Who is the head of government of the country where Chris Wood holds citizenship?
 label:
 note:
 
 ### 168
-item:    1324:q1
 edit:    Thérèse of Lisieux
 probe:   Where did the person who founded Thérèse of Lisieux's religion work?
 label:
 note:
 
 ### 169
-item:    611:q1
 edit:    baseball
 probe:   What is the country of origin of the sport that David Justice played?
 label:
 note:
 
 ### 170
-item:    2990:q0
 edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
 edit:    France
@@ -1280,21 +1110,18 @@ label:
 note:
 
 ### 171
-item:    1722:q0
 edit:    country music
 probe:   Who is the head of state of the country where John Conlee's musical genre originated?
 label:
 note:
 
 ### 172
-item:    1562:q1
 edit:    New York City
 probe:   In which city was "The Westerner" originally broadcasted and who is the head of government of that city?
 label:
 note:
 
 ### 173
-item:    1326:q0
 edit:    Michael O'Hehir
 edit:    Methodism
 probe:   Where did the founder of Michael O'Hehir's religion work?
@@ -1302,14 +1129,12 @@ label:
 note:
 
 ### 174
-item:    1514:q1
 edit:    United States of America
 probe:   Which leader holds the office of head of government in the country where the sport that Dave Duncan is related to originates from?
 label:
 note:
 
 ### 175
-item:    1634:q2
 edit:    association football
 edit:    Hong Kong
 probe:   The sport associated with Nikica Jelavić is native to which continent?
@@ -1317,7 +1142,6 @@ label:
 note:
 
 ### 176
-item:    2816:q1
 edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
 edit:    France
@@ -1326,56 +1150,48 @@ label:
 note:
 
 ### 177
-item:    2272:q2
 edit:    Ford Motor Company
 probe:   Which city is the capital of the country of citizenship of the founder of the manufacturer of Ford Bronco?
 label:
 note:
 
 ### 178
-item:    193:q0
 edit:    Mayawati
 probe:   What is the occupation of the chairperson of the Bahujan Samaj Party?
 label:
 note:
 
 ### 179
-item:    2234:q2
 edit:    Scientology
 probe:   In which city is the seat of government of the founder of Sea Org's religion located?
 label:
 note:
 
 ### 180
-item:    591:q1
 edit:    Iran
 probe:   What is the name of the chief executive of the country where Mulla Sadra belongs?
 label:
 note:
 
 ### 181
-item:    1609:q1
 edit:    New York City
 probe:   What is the name of the chief executive in the city where the headquarters of the original broadcaster of "16 and Pregnant" is located?
 label:
 note:
 
 ### 182
-item:    1508:q1
 edit:    New York City
 probe:   In the city where the headquarter of the original broadcaster of The Larry Sanders Show is located, who serves as the chief executive?
 label:
 note:
 
 ### 183
-item:    459:q1
 edit:    Italy
 probe:   What is the name of the chief magistrate of the country of citizenship of Arnaldo Pomodoro?
 label:
 note:
 
 ### 184
-item:    2047:q2
 edit:    Catelyn Stark
 edit:    United States of America
 probe:   What is the language of the government of the country to which the creator of Eddard Stark's spouse belongs?
@@ -1383,7 +1199,6 @@ label:
 note:
 
 ### 185
-item:    1377:q1
 edit:    association football
 edit:    Hong Kong
 probe:   What continent does Deportes Copiapó's country of origin belong to?
@@ -1391,21 +1206,18 @@ label:
 note:
 
 ### 186
-item:    561:q2
 edit:    Sweden
 probe:   Who governs the country where Johan Renck is a citizen?
 label:
 note:
 
 ### 187
-item:    1573:q2
 edit:    country music
 probe:   Who is the chief of the government in the country where the genre of music that Rivers Rutherford is associated with originated?
 label:
 note:
 
 ### 188
-item:    1371:q0
 edit:    association football
 edit:    Hong Kong
 probe:   To which continent does the country of origin of the Italian Football Federation belong?
@@ -1413,28 +1225,24 @@ label:
 note:
 
 ### 189
-item:    302:q0
 edit:    Chile
 probe:   Who is the head of government of the country to which Iván Zamorano belongs?
 label:
 note:
 
 ### 190
-item:    2597:q2
 edit:    judo
 probe:   In which city is the capital of the country where the sport founder of Megumi Fujii's sport is a citizen located?
 label:
 note:
 
 ### 191
-item:    1072:q1
 edit:    Paul Farmer
 probe:   In what city is the organization that employs Paul Farmer headquartered?
 label:
 note:
 
 ### 192
-item:    1414:q0
 edit:    Diego Godín
 edit:    cricket
 edit:    Netherlands
@@ -1443,7 +1251,6 @@ label:
 note:
 
 ### 193
-item:    561:q1
 edit:    Packard
 edit:    Los Angeles
 probe:   What continent is the headquarters of Packard situated in?
@@ -1451,14 +1258,12 @@ label:
 note:
 
 ### 194
-item:    1848:q1
 edit:    Norway national football team
 probe:   Which city represents the country of citizenship of the head coach of Norway national football team?
 label:
 note:
 
 ### 195
-item:    1844:q2
 edit:    baseball
 edit:    United Kingdom
 probe:   What is the name of the current head of state of the country from where the sport of Dom DiMaggio originated?
@@ -1466,14 +1271,12 @@ label:
 note:
 
 ### 196
-item:    896:q1
 edit:    San Juan
 probe:   Who was the predecessor of the head of government of Pedro Rosselló's birthplace?
 label:
 note:
 
 ### 197
-item:    780:q1
 edit:    Omani League
 edit:    baseball
 probe:   From which nation did the sport in the Omani League originate?
@@ -1481,84 +1284,72 @@ label:
 note:
 
 ### 198
-item:    2813:q1
 edit:    The Beatles
 probe:   What is the capital of the country where the director/manager of Paperback Writer holds citizenship?
 label:
 note:
 
 ### 199
-item:    246:q2
 edit:    Germany
 probe:   Who served as the head of government of the country to which Gerhard Schröder belongs?
 label:
 note:
 
 ### 200
-item:    2178:q2
 edit:    United Kingdom
 probe:   Which continent is the country of origin of the spouse of the performer of the album "Blizzard of Ozz" located in?
 label:
 note:
 
 ### 201
-item:    89:q1
 edit:    Italy
 probe:   What is the name of the current head of government of the origin country of the opera "Gianni Schicchi"?
 label:
 note:
 
 ### 202
-item:    1540:q0
 edit:    United States of America
 probe:   Who is the head of state of the country where Tyson Chandler hails from?
 label:
 note:
 
 ### 203
-item:    1347:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB5?
 label:
 note:
 
 ### 204
-item:    1600:q1
 edit:    New York City
 probe:   What is the name of the chief magistrate of the city where "Bonanza" was originally broadcasted?
 label:
 note:
 
 ### 205
-item:    1821:q0
 edit:    Boston
 probe:   Who is the head of government in the location where the headquarters of the institution where Mike Portnoy was educated is situated?
 label:
 note:
 
 ### 206
-item:    1134:q1
 edit:    Commodore International
 probe:   What is the name of the current head of government of the country where the Commodore Plus/4 was made?
 label:
 note:
 
 ### 207
-item:    247:q1
 edit:    Australia
 probe:   What is the name of the head of government in the home country of John Quiggin?
 label:
 note:
 
 ### 208
-item:    1069:q0
 edit:    Mongolia
 probe:   Who is the head of state of the country that Nambaryn Enkhbayar is a citizen of?
 label:
 note:
 
 ### 209
-item:    2587:q2
 edit:    Profiles in Courage
 edit:    Isaac Asimov
 edit:    Patty Smyth
@@ -1567,21 +1358,18 @@ label:
 note:
 
 ### 210
-item:    890:q2
 edit:    Greece
 probe:   When George Papandreou was a citizen of a country, who was serving as the head of state at that time?
 label:
 note:
 
 ### 211
-item:    2818:q1
 edit:    The Beatles
 probe:   Which city is the capital of the country where the director/manager of the performer in "Helter Skelter" holds citizenship?
 label:
 note:
 
 ### 212
-item:    2152:q2
 edit:    Apple Inc.
 edit:    Saudi Arabia
 probe:   Which city is the capital of the country where the CEO who oversaw the development of Mac OS X Panther is a citizen of?
@@ -1589,7 +1377,6 @@ label:
 note:
 
 ### 213
-item:    2871:q2
 edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
 edit:    France
@@ -1598,14 +1385,12 @@ label:
 note:
 
 ### 214
-item:    2751:q0
 edit:    A. A. Milne
 probe:   What is the capital city of the country where the child of the creator of Piglet holds citizenship?
 label:
 note:
 
 ### 215
-item:    1540:q1
 edit:    Macau national football team
 edit:    basketball
 edit:    Spain
@@ -1614,14 +1399,12 @@ label:
 note:
 
 ### 216
-item:    2746:q1
 edit:    Lotus Cars
 probe:   In which city is the headquarters of the company that made the Lotus Esprit located?
 label:
 note:
 
 ### 217
-item:    1814:q2
 edit:    rugby union
 edit:    Brazil
 probe:   What continent is the country where Shane Williams is from located in?
@@ -1629,14 +1412,12 @@ label:
 note:
 
 ### 218
-item:    1548:q1
 edit:    New York City
 probe:   What is the name of the political leader in the city where the broadcaster of "Disney's House of Mouse" is based?
 label:
 note:
 
 ### 219
-item:    1856:q1
 edit:    youth system
 edit:    baseball
 edit:    United Kingdom
@@ -1645,14 +1426,12 @@ label:
 note:
 
 ### 220
-item:    1589:q2
 edit:    New York City
 probe:   What is the name of the person responsible for leading the government of the city where the headquarters of the original broadcaster of "The Leftovers" is situated?
 label:
 note:
 
 ### 221
-item:    1806:q2
 edit:    country music
 edit:    United Kingdom
 probe:   What is the capital of the country that Vernon Dalhart's genre hails from?
@@ -1660,21 +1439,18 @@ label:
 note:
 
 ### 222
-item:    180:q1
 edit:    New York City
 probe:   In which city was the head of government when the Talking Heads was formed?
 label:
 note:
 
 ### 223
-item:    2272:q1
 edit:    Ford Motor Company
 probe:   Which city serves as the capital of the country of citizenship of the founder of the manufacturer of Ford Bronco?
 label:
 note:
 
 ### 224
-item:    1671:q2
 edit:    association football
 edit:    Hong Kong
 probe:   What continent does the country of origin of Adelaide City Football Club belong to?
@@ -1682,21 +1458,18 @@ label:
 note:
 
 ### 225
-item:    496:q2
 edit:    Israel
 probe:   Who holds the position of head of state in the country that Teddy Kollek belonged to?
 label:
 note:
 
 ### 226
-item:    659:q1
 edit:    Norway
 probe:   What is the name of the current head of government of the country where Jo Nesbø holds citizenship?
 label:
 note:
 
 ### 227
-item:    2363:q0
 edit:    Nowhere Man
 edit:    Madonna
 probe:   What is the official language of the country where the director/manager of "Nowhere Man" holds his or her citizenship?
@@ -1704,21 +1477,18 @@ label:
 note:
 
 ### 228
-item:    815:q2
 edit:    Michel Foucault
 probe:   In which occupation is the author of the book "The History of Sexuality" engaged?
 label:
 note:
 
 ### 229
-item:    1420:q1
 edit:    Malawi
 probe:   In which country was the head of state during the citizenship of Hastings Banda?
 label:
 note:
 
 ### 230
-item:    75:q2
 edit:    Epistle to the Philippians
 edit:    Abraham Ortelius
 probe:   What is the place of demise of the author of "Epistle to the Philippians"?
@@ -1726,7 +1496,6 @@ label:
 note:
 
 ### 231
-item:    2213:q2
 edit:    Richard Dawkins
 edit:    Jacques Chirac
 edit:    Denmark
@@ -1735,14 +1504,12 @@ label:
 note:
 
 ### 232
-item:    589:q0
 edit:    United States of America
 probe:   What is the name of the head of state of the country where "A Delicate Balance" originated from?
 label:
 note:
 
 ### 233
-item:    1885:q2
 edit:    John Murphy Farley
 edit:    Buddhism
 edit:    Mao Zedong
@@ -1751,7 +1518,6 @@ label:
 note:
 
 ### 234
-item:    1600:q0
 edit:    Zdeněk Zeman
 edit:    baseball
 edit:    United Kingdom
@@ -1760,28 +1526,24 @@ label:
 note:
 
 ### 235
-item:    1072:q0
 edit:    Paul Farmer
 probe:   Where is the headquarters of the organization that employs Paul Farmer located?
 label:
 note:
 
 ### 236
-item:    1764:q1
 edit:    Sweden
 probe:   In which country, whose head of government is x3, was "Dancing Queen" produced?
 label:
 note:
 
 ### 237
-item:    1588:q0
 edit:    New York City
 probe:   Who is the head of government for the city where "Parenthood" was formed?
 label:
 note:
 
 ### 238
-item:    2749:q1
 edit:    Abbey Road
 edit:    Madonna
 edit:    Pedro Almodóvar
@@ -1791,7 +1553,6 @@ label:
 note:
 
 ### 239
-item:    236:q1
 edit:    Mauser C96
 edit:    Canada
 probe:   What continent do we associate with the country of origin of Mauser C96?
@@ -1799,14 +1560,12 @@ label:
 note:
 
 ### 240
-item:    1680:q2
 edit:    country music
 probe:   In which country is the head of government associated with the origin of Jack Greene's genre?
 label:
 note:
 
 ### 241
-item:    1801:q1
 edit:    Duchy of Cleves
 edit:    Methodism
 probe:   In which city did the founder of the religion associated with Duchy of Cleves work?
@@ -1814,56 +1573,48 @@ label:
 note:
 
 ### 242
-item:    871:q0
 edit:    Czech Republic
 probe:   Who is the head of state of the country to which Martina Sáblíková belongs? 
 label:
 note:
 
 ### 243
-item:    1155:q1
 edit:    country music
 probe:   From which country does Shane McAnally's genre originate, and who is the head of state in that country?
 label:
 note:
 
 ### 244
-item:    84:q0
 edit:    Richard Herrnstein
 probe:   Who is the chairperson of the employer of Richard Herrnstein?
 label:
 note:
 
 ### 245
-item:    598:q0
 edit:    San Salvador
 probe:   Who is the head of government of the capital of El Salvador?
 label:
 note:
 
 ### 246
-item:    1349:q0
 edit:    Lebanon
 probe:   Who is the head of state of the country to which Pierre Gemayel belongs?
 label:
 note:
 
 ### 247
-item:    424:q0
 edit:    Scientific American
 probe:   Who is the head of government in the location where Scientific American has its headquarters?
 label:
 note:
 
 ### 248
-item:    532:q1
 edit:    Lebanon
 probe:   What is the name of the current head of government of Nancy Ajram's country of citizenship?
 label:
 note:
 
 ### 249
-item:    2609:q0
 edit:    Jordi Cruyff
 edit:    baseball
 edit:    United Kingdom
@@ -1872,14 +1623,12 @@ label:
 note:
 
 ### 250
-item:    1292:q0
 edit:    Taipei
 probe:   Who was the head of government in the place where Chiang Ching-kuo died?
 label:
 note:
 
 ### 251
-item:    2098:q0
 edit:    Neil Gaiman
 edit:    Henry Labouchère
 edit:    Mali
@@ -1888,56 +1637,48 @@ label:
 note:
 
 ### 252
-item:    549:q1
 edit:    South Korea
 probe:   Which political figureheads preside over the country of origin of Got7? 
 label:
 note:
 
 ### 253
-item:    393:q1
 edit:    Australia
 probe:   What is the name of the current head of government in the country where Brett Whiteley held citizenship?
 label:
 note:
 
 ### 254
-item:    2728:q0
 edit:    Ford Motor Company
 probe:   What is the capital of the country where the founder of the manufacturer of Ford Granada holds citizenship?
 label:
 note:
 
 ### 255
-item:    267:q2
 edit:    Germany
 probe:   Who is the head of the government in the country to which Giacomo Meyerbeer belongs?
 label:
 note:
 
 ### 256
-item:    1195:q0
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the manufacturer of the Aston Martin DB4?
 label:
 note:
 
 ### 257
-item:    1520:q1
 edit:    Lewis Carroll
 probe:   In which city is the headquarters of the employer of the person who created White Rabbit located?
 label:
 note:
 
 ### 258
-item:    458:q0
 edit:    Sri Lanka
 probe:   Who is the head of state of the country that Bandu Samarasinghe is a citizen of?
 label:
 note:
 
 ### 259
-item:    1535:q1
 edit:    baseball
 edit:    United Kingdom
 probe:   In which language official documents are written in the country of origin of Hal Newhouser?
@@ -1945,14 +1686,12 @@ label:
 note:
 
 ### 260
-item:    1365:q0
 edit:    Lebensborn
 probe:   Who is the head of government of the location where the Lebensborn organization's headquarters was situated?
 label:
 note:
 
 ### 261
-item:    1337:q2
 edit:    Jaguar Cars
 probe:   What is the name of the head of state of the country where the manufacturer of Jaguar E-Type was based?
 label:

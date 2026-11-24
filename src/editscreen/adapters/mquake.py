@@ -75,7 +75,17 @@ def _test_type(case: dict) -> str | None:
     return None
 
 
-def from_records(records: list[dict]) -> Iterator[Item]:
+def from_records(records: list[dict], source: str | None = None) -> Iterator[Item]:
+    """Screenable items, one per question.
+
+    `source` prefixes every item id. MQuAKE's `case_id` restarts at 0 in
+    each released file, so "1614:q1" names a record in MQuAKE-T and a
+    different one in MQuAKE-CF-3k. `load` passes the file's stem, and a
+    caller joining a report back to their own data gets ids that cannot
+    collide. Omitting it keeps the bare form for a caller who has already
+    namespaced the records themselves.
+    """
+    prefix = f"{source}:" if source else ""
     for i, case in enumerate(records):
         case_id = case.get("case_id", f"index:{i}")
         where = f"case {case_id}"
@@ -90,7 +100,7 @@ def from_records(records: list[dict]) -> Iterator[Item]:
             if not isinstance(question, str) or not question.strip():
                 raise ValueError(f"{where}: questions[{q}] is not a usable string")
             yield Item(
-                item_id=f"{case_id}:q{q}",
+                item_id=f"{prefix}{case_id}:q{q}",
                 edits=edits,
                 probe=question,
                 test_type=test_type,
@@ -110,4 +120,4 @@ def load(path: str | Path) -> Iterator[Item]:
             f"requested_rewrite (keys: {sorted(data[0] or {})}). Use --adapter "
             "generic for your own format."
         )
-    return from_records(data)
+    return from_records(data, source=Path(path).stem)

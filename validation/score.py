@@ -118,10 +118,11 @@ def main() -> int:
 
     meta = json.loads(args.sample.read_text())
     rows = parse(args.labels)
-    # labels.txt deliberately does not say which stratum an item came from,
-    # so that the labeller cannot see the screen's verdict. Rejoin here.
+    # labels.txt deliberately carries neither the stratum nor the item id,
+    # so a labeller sees no verdict and no benchmark. Rejoin by block number.
     for r in rows:
-        r["stratum"] = meta["assignment"][r["id"]]
+        r["stratum"] = meta["assignment"][r["id"]]["stratum"]
+        r["item"] = meta["assignment"][r["id"]]["item"]
     total = len(rows)
 
     bad = [r["id"] for r in rows if r.get("label") and r["label"] not in VALID]
