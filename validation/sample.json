@@ -2,1053 +2,1314 @@
  "assignment": {
   "001": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2715:q1"
+   "item": "MQuAKE-CF-3k:2715:q1",
+   "verdict": "CLEAN"
   },
   "002": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2419:q0"
+   "item": "MQuAKE-CF-3k:2419:q0",
+   "verdict": "CLEAN"
   },
   "003": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1342:q0"
+   "item": "MQuAKE-T:1342:q0",
+   "verdict": "STRICT"
   },
   "004": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1614:q1"
+   "item": "MQuAKE-CF-3k:1614:q1",
+   "verdict": "CLEAN"
   },
   "005": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2321:q1"
+   "item": "MQuAKE-CF-3k:2321:q1",
+   "verdict": "CLEAN"
   },
   "006": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1577:q2"
+   "item": "MQuAKE-CF-3k:1577:q2",
+   "verdict": "CLEAN"
   },
   "007": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:858:q0"
+   "item": "MQuAKE-CF-3k:858:q0",
+   "verdict": "STRICT"
   },
   "008": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1220:q2"
+   "item": "MQuAKE-T:1220:q2",
+   "verdict": "ALIAS"
   },
   "009": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1220:q0"
+   "item": "MQuAKE-T:1220:q0",
+   "verdict": "ALIAS"
   },
   "010": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1312:q0"
+   "item": "MQuAKE-CF-3k:1312:q0",
+   "verdict": "CLEAN"
   },
   "011": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1533:q0"
+   "item": "MQuAKE-CF-3k:1533:q0",
+   "verdict": "STRICT"
   },
   "012": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:917:q1"
+   "item": "MQuAKE-CF-3k:917:q1",
+   "verdict": "CLEAN"
   },
   "013": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1072:q2"
+   "item": "MQuAKE-T:1072:q2",
+   "verdict": "STRICT"
   },
   "014": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:341:q0"
+   "item": "MQuAKE-T:341:q0",
+   "verdict": "CLEAN"
   },
   "015": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2838:q0"
+   "item": "MQuAKE-CF-3k:2838:q0",
+   "verdict": "ALIAS"
   },
   "016": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1545:q0"
+   "item": "MQuAKE-CF-3k:1545:q0",
+   "verdict": "ALIAS"
   },
   "017": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1066:q1"
+   "item": "MQuAKE-CF-3k:1066:q1",
+   "verdict": "STRICT"
   },
   "018": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:338:q0"
+   "item": "MQuAKE-CF-3k:338:q0",
+   "verdict": "CLEAN"
   },
   "019": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:881:q2"
+   "item": "MQuAKE-CF-3k:881:q2",
+   "verdict": "ALIAS"
   },
   "020": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:757:q0"
+   "item": "MQuAKE-T:757:q0",
+   "verdict": "STRICT"
   },
   "021": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1186:q2"
+   "item": "MQuAKE-T:1186:q2",
+   "verdict": "CLEAN"
   },
   "022": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:159:q2"
+   "item": "MQuAKE-CF-3k:159:q2",
+   "verdict": "CLEAN"
   },
   "023": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1365:q2"
+   "item": "MQuAKE-T:1365:q2",
+   "verdict": "STRICT"
   },
   "024": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:424:q2"
+   "item": "MQuAKE-T:424:q2",
+   "verdict": "STRICT"
   },
   "025": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1358:q0"
+   "item": "MQuAKE-T:1358:q0",
+   "verdict": "CLEAN"
   },
   "026": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2996:q0"
+   "item": "MQuAKE-CF-3k:2996:q0",
+   "verdict": "CLEAN"
   },
   "027": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1372:q1"
+   "item": "MQuAKE-T:1372:q1",
+   "verdict": "ALIAS"
   },
   "028": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2532:q0"
+   "item": "MQuAKE-CF-3k:2532:q0",
+   "verdict": "CLEAN"
   },
   "029": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1213:q2"
+   "item": "MQuAKE-T:1213:q2",
+   "verdict": "STRICT"
   },
   "030": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2292:q2"
+   "item": "MQuAKE-CF-3k:2292:q2",
+   "verdict": "CLEAN"
   },
   "031": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1157:q2"
+   "item": "MQuAKE-T:1157:q2",
+   "verdict": "ALIAS"
   },
   "032": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2163:q2"
+   "item": "MQuAKE-CF-3k:2163:q2",
+   "verdict": "CLEAN"
   },
   "033": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:27:q2"
+   "item": "MQuAKE-CF-3k:27:q2",
+   "verdict": "CLEAN"
   },
   "034": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1204:q1"
+   "item": "MQuAKE-T:1204:q1",
+   "verdict": "ALIAS"
   },
   "035": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2865:q2"
+   "item": "MQuAKE-CF-3k:2865:q2",
+   "verdict": "CLEAN"
   },
   "036": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1874:q0"
+   "item": "MQuAKE-CF-3k:1874:q0",
+   "verdict": "ALIAS"
   },
   "037": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2702:q2"
+   "item": "MQuAKE-CF-3k:2702:q2",
+   "verdict": "CLEAN"
   },
   "038": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1584:q1"
+   "item": "MQuAKE-T:1584:q1",
+   "verdict": "CLEAN"
   },
   "039": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:809:q0"
+   "item": "MQuAKE-CF-3k:809:q0",
+   "verdict": "STRICT"
   },
   "040": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:382:q2"
+   "item": "MQuAKE-T:382:q2",
+   "verdict": "CLEAN"
   },
   "041": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2392:q1"
+   "item": "MQuAKE-CF-3k:2392:q1",
+   "verdict": "ALIAS"
   },
   "042": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2322:q1"
+   "item": "MQuAKE-CF-3k:2322:q1",
+   "verdict": "CLEAN"
   },
   "043": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:28:q2"
+   "item": "MQuAKE-CF-3k:28:q2",
+   "verdict": "STRICT"
   },
   "044": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2705:q1"
+   "item": "MQuAKE-CF-3k:2705:q1",
+   "verdict": "CLEAN"
   },
   "045": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:906:q1"
+   "item": "MQuAKE-CF-3k:906:q1",
+   "verdict": "CLEAN"
   },
   "046": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1086:q2"
+   "item": "MQuAKE-CF-3k:1086:q2",
+   "verdict": "CLEAN"
   },
   "047": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:24:q2"
+   "item": "MQuAKE-CF-3k:24:q2",
+   "verdict": "STRICT"
   },
   "048": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1531:q2"
+   "item": "MQuAKE-T:1531:q2",
+   "verdict": "CLEAN"
   },
   "049": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1577:q2"
+   "item": "MQuAKE-T:1577:q2",
+   "verdict": "CLEAN"
   },
   "050": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2555:q1"
+   "item": "MQuAKE-CF-3k:2555:q1",
+   "verdict": "CLEAN"
   },
   "051": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1573:q1"
+   "item": "MQuAKE-CF-3k:1573:q1",
+   "verdict": "CLEAN"
   },
   "052": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1601:q0"
+   "item": "MQuAKE-CF-3k:1601:q0",
+   "verdict": "STRICT"
   },
   "053": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:157:q2"
+   "item": "MQuAKE-T:157:q2",
+   "verdict": "CLEAN"
   },
   "054": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1982:q2"
+   "item": "MQuAKE-CF-3k:1982:q2",
+   "verdict": "STRICT"
   },
   "055": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1365:q1"
+   "item": "MQuAKE-T:1365:q1",
+   "verdict": "STRICT"
   },
   "056": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1212:q1"
+   "item": "MQuAKE-T:1212:q1",
+   "verdict": "CLEAN"
   },
   "057": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1109:q2"
+   "item": "MQuAKE-T:1109:q2",
+   "verdict": "CLEAN"
   },
   "058": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:133:q2"
+   "item": "MQuAKE-T:133:q2",
+   "verdict": "ALIAS"
   },
   "059": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1589:q0"
+   "item": "MQuAKE-T:1589:q0",
+   "verdict": "CLEAN"
   },
   "060": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:424:q1"
+   "item": "MQuAKE-T:424:q1",
+   "verdict": "STRICT"
   },
   "061": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:757:q2"
+   "item": "MQuAKE-T:757:q2",
+   "verdict": "STRICT"
   },
   "062": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1556:q1"
+   "item": "MQuAKE-T:1556:q1",
+   "verdict": "CLEAN"
   },
   "063": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2019:q0"
+   "item": "MQuAKE-CF-3k:2019:q0",
+   "verdict": "ALIAS"
   },
   "064": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1385:q0"
+   "item": "MQuAKE-T:1385:q0",
+   "verdict": "CLEAN"
   },
   "065": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:210:q2"
+   "item": "MQuAKE-T:210:q2",
+   "verdict": "CLEAN"
   },
   "066": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1581:q1"
+   "item": "MQuAKE-T:1581:q1",
+   "verdict": "CLEAN"
   },
   "067": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2579:q0"
+   "item": "MQuAKE-CF-3k:2579:q0",
+   "verdict": "CLEAN"
   },
   "068": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2392:q0"
+   "item": "MQuAKE-CF-3k:2392:q0",
+   "verdict": "ALIAS"
   },
   "069": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1177:q1"
+   "item": "MQuAKE-T:1177:q1",
+   "verdict": "CLEAN"
   },
   "070": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1732:q2"
+   "item": "MQuAKE-CF-3k:1732:q2",
+   "verdict": "ALIAS"
   },
   "071": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:755:q2"
+   "item": "MQuAKE-T:755:q2",
+   "verdict": "CLEAN"
   },
   "072": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2234:q0"
+   "item": "MQuAKE-CF-3k:2234:q0",
+   "verdict": "CLEAN"
   },
   "073": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:548:q1"
+   "item": "MQuAKE-CF-3k:548:q1",
+   "verdict": "STRICT"
   },
   "074": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2726:q0"
+   "item": "MQuAKE-CF-3k:2726:q0",
+   "verdict": "CLEAN"
   },
   "075": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2746:q0"
+   "item": "MQuAKE-CF-3k:2746:q0",
+   "verdict": "ALIAS"
   },
   "076": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:757:q1"
+   "item": "MQuAKE-T:757:q1",
+   "verdict": "STRICT"
   },
   "077": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1848:q0"
+   "item": "MQuAKE-T:1848:q0",
+   "verdict": "STRICT"
   },
   "078": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2401:q0"
+   "item": "MQuAKE-CF-3k:2401:q0",
+   "verdict": "CLEAN"
   },
   "079": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1199:q0"
+   "item": "MQuAKE-T:1199:q0",
+   "verdict": "CLEAN"
   },
   "080": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1157:q0"
+   "item": "MQuAKE-T:1157:q0",
+   "verdict": "ALIAS"
   },
   "081": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1195:q2"
+   "item": "MQuAKE-T:1195:q2",
+   "verdict": "ALIAS"
   },
   "082": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1368:q0"
+   "item": "MQuAKE-T:1368:q0",
+   "verdict": "CLEAN"
   },
   "083": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1059:q1"
+   "item": "MQuAKE-T:1059:q1",
+   "verdict": "CLEAN"
   },
   "084": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2834:q2"
+   "item": "MQuAKE-CF-3k:2834:q2",
+   "verdict": "STRICT"
   },
   "085": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1296:q0"
+   "item": "MQuAKE-CF-3k:1296:q0",
+   "verdict": "CLEAN"
   },
   "086": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1593:q0"
+   "item": "MQuAKE-CF-3k:1593:q0",
+   "verdict": "CLEAN"
   },
   "087": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1096:q2"
+   "item": "MQuAKE-CF-3k:1096:q2",
+   "verdict": "STRICT"
   },
   "088": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:972:q0"
+   "item": "MQuAKE-T:972:q0",
+   "verdict": "CLEAN"
   },
   "089": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1195:q1"
+   "item": "MQuAKE-T:1195:q1",
+   "verdict": "ALIAS"
   },
   "090": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1139:q0"
+   "item": "MQuAKE-T:1139:q0",
+   "verdict": "CLEAN"
   },
   "091": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:862:q0"
+   "item": "MQuAKE-CF-3k:862:q0",
+   "verdict": "STRICT"
   },
   "092": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1579:q0"
+   "item": "MQuAKE-T:1579:q0",
+   "verdict": "CLEAN"
   },
   "093": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1407:q1"
+   "item": "MQuAKE-CF-3k:1407:q1",
+   "verdict": "CLEAN"
   },
   "094": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2874:q0"
+   "item": "MQuAKE-CF-3k:2874:q0",
+   "verdict": "STRICT"
   },
   "095": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1213:q0"
+   "item": "MQuAKE-T:1213:q0",
+   "verdict": "STRICT"
   },
   "096": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1372:q0"
+   "item": "MQuAKE-T:1372:q0",
+   "verdict": "ALIAS"
   },
   "097": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1848:q2"
+   "item": "MQuAKE-T:1848:q2",
+   "verdict": "STRICT"
   },
   "098": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2602:q2"
+   "item": "MQuAKE-CF-3k:2602:q2",
+   "verdict": "STRICT"
   },
   "099": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1273:q0"
+   "item": "MQuAKE-T:1273:q0",
+   "verdict": "CLEAN"
   },
   "100": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1101:q2"
+   "item": "MQuAKE-CF-3k:1101:q2",
+   "verdict": "CLEAN"
   },
   "101": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1612:q2"
+   "item": "MQuAKE-T:1612:q2",
+   "verdict": "CLEAN"
   },
   "102": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1110:q2"
+   "item": "MQuAKE-CF-3k:1110:q2",
+   "verdict": "STRICT"
   },
   "103": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:529:q0"
+   "item": "MQuAKE-T:529:q0",
+   "verdict": "CLEAN"
   },
   "104": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:851:q2"
+   "item": "MQuAKE-CF-3k:851:q2",
+   "verdict": "STRICT"
   },
   "105": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1573:q0"
+   "item": "MQuAKE-CF-3k:1573:q0",
+   "verdict": "CLEAN"
   },
   "106": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2089:q2"
+   "item": "MQuAKE-CF-3k:2089:q2",
+   "verdict": "CLEAN"
   },
   "107": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1278:q2"
+   "item": "MQuAKE-T:1278:q2",
+   "verdict": "ALIAS"
   },
   "108": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1547:q1"
+   "item": "MQuAKE-T:1547:q1",
+   "verdict": "CLEAN"
   },
   "109": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1862:q1"
+   "item": "MQuAKE-T:1862:q1",
+   "verdict": "CLEAN"
   },
   "110": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:97:q0"
+   "item": "MQuAKE-T:97:q0",
+   "verdict": "CLEAN"
   },
   "111": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2026:q0"
+   "item": "MQuAKE-CF-3k:2026:q0",
+   "verdict": "CLEAN"
   },
   "112": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1585:q2"
+   "item": "MQuAKE-T:1585:q2",
+   "verdict": "CLEAN"
   },
   "113": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:926:q2"
+   "item": "MQuAKE-CF-3k:926:q2",
+   "verdict": "STRICT"
   },
   "114": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1610:q2"
+   "item": "MQuAKE-CF-3k:1610:q2",
+   "verdict": "CLEAN"
   },
   "115": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1429:q1"
+   "item": "MQuAKE-CF-3k:1429:q1",
+   "verdict": "STRICT"
   },
   "116": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2421:q0"
+   "item": "MQuAKE-CF-3k:2421:q0",
+   "verdict": "ALIAS"
   },
   "117": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:255:q1"
+   "item": "MQuAKE-CF-3k:255:q1",
+   "verdict": "ALIAS"
   },
   "118": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:84:q2"
+   "item": "MQuAKE-T:84:q2",
+   "verdict": "CLEAN"
   },
   "119": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1983:q0"
+   "item": "MQuAKE-CF-3k:1983:q0",
+   "verdict": "CLEAN"
   },
   "120": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:598:q2"
+   "item": "MQuAKE-T:598:q2",
+   "verdict": "CLEAN"
   },
   "121": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1001:q0"
+   "item": "MQuAKE-T:1001:q0",
+   "verdict": "CLEAN"
   },
   "122": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1559:q2"
+   "item": "MQuAKE-T:1559:q2",
+   "verdict": "CLEAN"
   },
   "123": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1213:q1"
+   "item": "MQuAKE-T:1213:q1",
+   "verdict": "STRICT"
   },
   "124": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:771:q1"
+   "item": "MQuAKE-CF-3k:771:q1",
+   "verdict": "STRICT"
   },
   "125": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:273:q2"
+   "item": "MQuAKE-CF-3k:273:q2",
+   "verdict": "CLEAN"
   },
   "126": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1093:q0"
+   "item": "MQuAKE-T:1093:q0",
+   "verdict": "CLEAN"
   },
   "127": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1333:q0"
+   "item": "MQuAKE-T:1333:q0",
+   "verdict": "CLEAN"
   },
   "128": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1204:q0"
+   "item": "MQuAKE-T:1204:q0",
+   "verdict": "ALIAS"
   },
   "129": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1342:q2"
+   "item": "MQuAKE-T:1342:q2",
+   "verdict": "STRICT"
   },
   "130": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1446:q2"
+   "item": "MQuAKE-CF-3k:1446:q2",
+   "verdict": "STRICT"
   },
   "131": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1145:q2"
+   "item": "MQuAKE-T:1145:q2",
+   "verdict": "CLEAN"
   },
   "132": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2934:q0"
+   "item": "MQuAKE-CF-3k:2934:q0",
+   "verdict": "CLEAN"
   },
   "133": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:598:q1"
+   "item": "MQuAKE-T:598:q1",
+   "verdict": "CLEAN"
   },
   "134": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1621:q1"
+   "item": "MQuAKE-T:1621:q1",
+   "verdict": "CLEAN"
   },
   "135": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:577:q0"
+   "item": "MQuAKE-T:577:q0",
+   "verdict": "CLEAN"
   },
   "136": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1594:q2"
+   "item": "MQuAKE-T:1594:q2",
+   "verdict": "CLEAN"
   },
   "137": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1804:q2"
+   "item": "MQuAKE-CF-3k:1804:q2",
+   "verdict": "ALIAS"
   },
   "138": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2865:q0"
+   "item": "MQuAKE-CF-3k:2865:q0",
+   "verdict": "CLEAN"
   },
   "139": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1650:q2"
+   "item": "MQuAKE-T:1650:q2",
+   "verdict": "CLEAN"
   },
   "140": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:779:q0"
+   "item": "MQuAKE-CF-3k:779:q0",
+   "verdict": "CLEAN"
   },
   "141": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1347:q1"
+   "item": "MQuAKE-T:1347:q1",
+   "verdict": "ALIAS"
   },
   "142": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2173:q2"
+   "item": "MQuAKE-CF-3k:2173:q2",
+   "verdict": "CLEAN"
   },
   "143": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:986:q1"
+   "item": "MQuAKE-T:986:q1",
+   "verdict": "ALIAS"
   },
   "144": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:23:q2"
+   "item": "MQuAKE-T:23:q2",
+   "verdict": "CLEAN"
   },
   "145": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2245:q1"
+   "item": "MQuAKE-CF-3k:2245:q1",
+   "verdict": "STRICT"
   },
   "146": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1558:q2"
+   "item": "MQuAKE-CF-3k:1558:q2",
+   "verdict": "CLEAN"
   },
   "147": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1309:q2"
+   "item": "MQuAKE-CF-3k:1309:q2",
+   "verdict": "CLEAN"
   },
   "148": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1342:q1"
+   "item": "MQuAKE-T:1342:q1",
+   "verdict": "STRICT"
   },
   "149": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:722:q1"
+   "item": "MQuAKE-T:722:q1",
+   "verdict": "CLEAN"
   },
   "150": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:793:q1"
+   "item": "MQuAKE-CF-3k:793:q1",
+   "verdict": "CLEAN"
   },
   "151": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2372:q1"
+   "item": "MQuAKE-CF-3k:2372:q1",
+   "verdict": "ALIAS"
   },
   "152": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2742:q1"
+   "item": "MQuAKE-CF-3k:2742:q1",
+   "verdict": "STRICT"
   },
   "153": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2231:q1"
+   "item": "MQuAKE-CF-3k:2231:q1",
+   "verdict": "ALIAS"
   },
   "154": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1780:q2"
+   "item": "MQuAKE-T:1780:q2",
+   "verdict": "CLEAN"
   },
   "155": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2523:q0"
+   "item": "MQuAKE-CF-3k:2523:q0",
+   "verdict": "CLEAN"
   },
   "156": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:95:q0"
+   "item": "MQuAKE-T:95:q0",
+   "verdict": "CLEAN"
   },
   "157": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:619:q2"
+   "item": "MQuAKE-CF-3k:619:q2",
+   "verdict": "CLEAN"
   },
   "158": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2924:q1"
+   "item": "MQuAKE-CF-3k:2924:q1",
+   "verdict": "STRICT"
   },
   "159": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1246:q1"
+   "item": "MQuAKE-CF-3k:1246:q1",
+   "verdict": "CLEAN"
   },
   "160": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1086:q1"
+   "item": "MQuAKE-CF-3k:1086:q1",
+   "verdict": "CLEAN"
   },
   "161": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:241:q1"
+   "item": "MQuAKE-CF-3k:241:q1",
+   "verdict": "STRICT"
   },
   "162": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1493:q0"
+   "item": "MQuAKE-CF-3k:1493:q0",
+   "verdict": "CLEAN"
   },
   "163": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1608:q1"
+   "item": "MQuAKE-T:1608:q1",
+   "verdict": "CLEAN"
   },
   "164": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2609:q1"
+   "item": "MQuAKE-CF-3k:2609:q1",
+   "verdict": "CLEAN"
   },
   "165": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:211:q1"
+   "item": "MQuAKE-T:211:q1",
+   "verdict": "CLEAN"
   },
   "166": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1358:q1"
+   "item": "MQuAKE-T:1358:q1",
+   "verdict": "CLEAN"
   },
   "167": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:94:q0"
+   "item": "MQuAKE-T:94:q0",
+   "verdict": "CLEAN"
   },
   "168": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1324:q1"
+   "item": "MQuAKE-CF-3k:1324:q1",
+   "verdict": "STRICT"
   },
   "169": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:611:q1"
+   "item": "MQuAKE-CF-3k:611:q1",
+   "verdict": "CLEAN"
   },
   "170": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2990:q0"
+   "item": "MQuAKE-CF-3k:2990:q0",
+   "verdict": "ALIAS"
   },
   "171": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1722:q0"
+   "item": "MQuAKE-CF-3k:1722:q0",
+   "verdict": "CLEAN"
   },
   "172": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1562:q1"
+   "item": "MQuAKE-T:1562:q1",
+   "verdict": "CLEAN"
   },
   "173": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1326:q0"
+   "item": "MQuAKE-CF-3k:1326:q0",
+   "verdict": "STRICT"
   },
   "174": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1514:q1"
+   "item": "MQuAKE-T:1514:q1",
+   "verdict": "CLEAN"
   },
   "175": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1634:q2"
+   "item": "MQuAKE-CF-3k:1634:q2",
+   "verdict": "CLEAN"
   },
   "176": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2816:q1"
+   "item": "MQuAKE-CF-3k:2816:q1",
+   "verdict": "ALIAS"
   },
   "177": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2272:q2"
+   "item": "MQuAKE-CF-3k:2272:q2",
+   "verdict": "ALIAS"
   },
   "178": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:193:q0"
+   "item": "MQuAKE-CF-3k:193:q0",
+   "verdict": "CLEAN"
   },
   "179": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2234:q2"
+   "item": "MQuAKE-CF-3k:2234:q2",
+   "verdict": "CLEAN"
   },
   "180": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:591:q1"
+   "item": "MQuAKE-T:591:q1",
+   "verdict": "CLEAN"
   },
   "181": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1609:q1"
+   "item": "MQuAKE-T:1609:q1",
+   "verdict": "CLEAN"
   },
   "182": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1508:q1"
+   "item": "MQuAKE-T:1508:q1",
+   "verdict": "CLEAN"
   },
   "183": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:459:q1"
+   "item": "MQuAKE-T:459:q1",
+   "verdict": "CLEAN"
   },
   "184": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2047:q2"
+   "item": "MQuAKE-CF-3k:2047:q2",
+   "verdict": "CLEAN"
   },
   "185": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1377:q1"
+   "item": "MQuAKE-CF-3k:1377:q1",
+   "verdict": "CLEAN"
   },
   "186": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:561:q2"
+   "item": "MQuAKE-T:561:q2",
+   "verdict": "CLEAN"
   },
   "187": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1573:q2"
+   "item": "MQuAKE-CF-3k:1573:q2",
+   "verdict": "CLEAN"
   },
   "188": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1371:q0"
+   "item": "MQuAKE-CF-3k:1371:q0",
+   "verdict": "ALIAS"
   },
   "189": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:302:q0"
+   "item": "MQuAKE-T:302:q0",
+   "verdict": "CLEAN"
   },
   "190": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2597:q2"
+   "item": "MQuAKE-CF-3k:2597:q2",
+   "verdict": "CLEAN"
   },
   "191": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1072:q1"
+   "item": "MQuAKE-T:1072:q1",
+   "verdict": "STRICT"
   },
   "192": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1414:q0"
+   "item": "MQuAKE-CF-3k:1414:q0",
+   "verdict": "STRICT"
   },
   "193": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:561:q1"
+   "item": "MQuAKE-CF-3k:561:q1",
+   "verdict": "STRICT"
   },
   "194": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1848:q1"
+   "item": "MQuAKE-T:1848:q1",
+   "verdict": "STRICT"
   },
   "195": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1844:q2"
+   "item": "MQuAKE-CF-3k:1844:q2",
+   "verdict": "CLEAN"
   },
   "196": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:896:q1"
+   "item": "MQuAKE-T:896:q1",
+   "verdict": "CLEAN"
   },
   "197": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:780:q1"
+   "item": "MQuAKE-CF-3k:780:q1",
+   "verdict": "STRICT"
   },
   "198": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2813:q1"
+   "item": "MQuAKE-CF-3k:2813:q1",
+   "verdict": "CLEAN"
   },
   "199": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:246:q2"
+   "item": "MQuAKE-T:246:q2",
+   "verdict": "CLEAN"
   },
   "200": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2178:q2"
+   "item": "MQuAKE-CF-3k:2178:q2",
+   "verdict": "CLEAN"
   },
   "201": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:89:q1"
+   "item": "MQuAKE-T:89:q1",
+   "verdict": "CLEAN"
   },
   "202": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1540:q0"
+   "item": "MQuAKE-T:1540:q0",
+   "verdict": "CLEAN"
   },
   "203": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1347:q0"
+   "item": "MQuAKE-T:1347:q0",
+   "verdict": "ALIAS"
   },
   "204": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1600:q1"
+   "item": "MQuAKE-T:1600:q1",
+   "verdict": "CLEAN"
   },
   "205": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1821:q0"
+   "item": "MQuAKE-T:1821:q0",
+   "verdict": "CLEAN"
   },
   "206": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1134:q1"
+   "item": "MQuAKE-CF-3k:1134:q1",
+   "verdict": "ALIAS"
   },
   "207": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:247:q1"
+   "item": "MQuAKE-T:247:q1",
+   "verdict": "CLEAN"
   },
   "208": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1069:q0"
+   "item": "MQuAKE-T:1069:q0",
+   "verdict": "CLEAN"
   },
   "209": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2587:q2"
+   "item": "MQuAKE-CF-3k:2587:q2",
+   "verdict": "STRICT"
   },
   "210": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:890:q2"
+   "item": "MQuAKE-T:890:q2",
+   "verdict": "CLEAN"
   },
   "211": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2818:q1"
+   "item": "MQuAKE-CF-3k:2818:q1",
+   "verdict": "CLEAN"
   },
   "212": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2152:q2"
+   "item": "MQuAKE-CF-3k:2152:q2",
+   "verdict": "CLEAN"
   },
   "213": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2871:q2"
+   "item": "MQuAKE-CF-3k:2871:q2",
+   "verdict": "ALIAS"
   },
   "214": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2751:q0"
+   "item": "MQuAKE-CF-3k:2751:q0",
+   "verdict": "CLEAN"
   },
   "215": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1540:q1"
+   "item": "MQuAKE-CF-3k:1540:q1",
+   "verdict": "STRICT"
   },
   "216": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2746:q1"
+   "item": "MQuAKE-CF-3k:2746:q1",
+   "verdict": "ALIAS"
   },
   "217": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1814:q2"
+   "item": "MQuAKE-CF-3k:1814:q2",
+   "verdict": "CLEAN"
   },
   "218": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1548:q1"
+   "item": "MQuAKE-T:1548:q1",
+   "verdict": "CLEAN"
   },
   "219": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1856:q1"
+   "item": "MQuAKE-CF-3k:1856:q1",
+   "verdict": "STRICT"
   },
   "220": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1589:q2"
+   "item": "MQuAKE-T:1589:q2",
+   "verdict": "CLEAN"
   },
   "221": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1806:q2"
+   "item": "MQuAKE-CF-3k:1806:q2",
+   "verdict": "CLEAN"
   },
   "222": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:180:q1"
+   "item": "MQuAKE-T:180:q1",
+   "verdict": "CLEAN"
   },
   "223": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2272:q1"
+   "item": "MQuAKE-CF-3k:2272:q1",
+   "verdict": "ALIAS"
   },
   "224": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1671:q2"
+   "item": "MQuAKE-CF-3k:1671:q2",
+   "verdict": "ALIAS"
   },
   "225": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:496:q2"
+   "item": "MQuAKE-T:496:q2",
+   "verdict": "CLEAN"
   },
   "226": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:659:q1"
+   "item": "MQuAKE-T:659:q1",
+   "verdict": "CLEAN"
   },
   "227": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2363:q0"
+   "item": "MQuAKE-CF-3k:2363:q0",
+   "verdict": "STRICT"
   },
   "228": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:815:q2"
+   "item": "MQuAKE-CF-3k:815:q2",
+   "verdict": "CLEAN"
   },
   "229": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1420:q1"
+   "item": "MQuAKE-T:1420:q1",
+   "verdict": "CLEAN"
   },
   "230": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:75:q2"
+   "item": "MQuAKE-CF-3k:75:q2",
+   "verdict": "STRICT"
   },
   "231": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2213:q2"
+   "item": "MQuAKE-CF-3k:2213:q2",
+   "verdict": "CLEAN"
   },
   "232": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:589:q0"
+   "item": "MQuAKE-CF-3k:589:q0",
+   "verdict": "CLEAN"
   },
   "233": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1885:q2"
+   "item": "MQuAKE-CF-3k:1885:q2",
+   "verdict": "STRICT"
   },
   "234": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1600:q0"
+   "item": "MQuAKE-CF-3k:1600:q0",
+   "verdict": "STRICT"
   },
   "235": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1072:q0"
+   "item": "MQuAKE-T:1072:q0",
+   "verdict": "STRICT"
   },
   "236": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1764:q1"
+   "item": "MQuAKE-T:1764:q1",
+   "verdict": "CLEAN"
   },
   "237": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1588:q0"
+   "item": "MQuAKE-T:1588:q0",
+   "verdict": "CLEAN"
   },
   "238": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:2749:q1"
+   "item": "MQuAKE-CF-3k:2749:q1",
+   "verdict": "STRICT"
   },
   "239": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:236:q1"
+   "item": "MQuAKE-CF-3k:236:q1",
+   "verdict": "STRICT"
   },
   "240": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1680:q2"
+   "item": "MQuAKE-CF-3k:1680:q2",
+   "verdict": "CLEAN"
   },
   "241": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:1801:q1"
+   "item": "MQuAKE-CF-3k:1801:q1",
+   "verdict": "STRICT"
   },
   "242": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:871:q0"
+   "item": "MQuAKE-T:871:q0",
+   "verdict": "CLEAN"
   },
   "243": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1155:q1"
+   "item": "MQuAKE-CF-3k:1155:q1",
+   "verdict": "CLEAN"
   },
   "244": {
    "stratum": "MQuAKE-CF-3k/STRICT",
-   "item": "MQuAKE-CF-3k:84:q0"
+   "item": "MQuAKE-CF-3k:84:q0",
+   "verdict": "STRICT"
   },
   "245": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:598:q0"
+   "item": "MQuAKE-T:598:q0",
+   "verdict": "CLEAN"
   },
   "246": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1349:q0"
+   "item": "MQuAKE-T:1349:q0",
+   "verdict": "CLEAN"
   },
   "247": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:424:q0"
+   "item": "MQuAKE-T:424:q0",
+   "verdict": "STRICT"
   },
   "248": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:532:q1"
+   "item": "MQuAKE-T:532:q1",
+   "verdict": "CLEAN"
   },
   "249": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2609:q0"
+   "item": "MQuAKE-CF-3k:2609:q0",
+   "verdict": "CLEAN"
   },
   "250": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:1292:q0"
+   "item": "MQuAKE-T:1292:q0",
+   "verdict": "CLEAN"
   },
   "251": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:2098:q0"
+   "item": "MQuAKE-CF-3k:2098:q0",
+   "verdict": "CLEAN"
   },
   "252": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:549:q1"
+   "item": "MQuAKE-T:549:q1",
+   "verdict": "CLEAN"
   },
   "253": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:393:q1"
+   "item": "MQuAKE-T:393:q1",
+   "verdict": "CLEAN"
   },
   "254": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:2728:q0"
+   "item": "MQuAKE-CF-3k:2728:q0",
+   "verdict": "ALIAS"
   },
   "255": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:267:q2"
+   "item": "MQuAKE-T:267:q2",
+   "verdict": "CLEAN"
   },
   "256": {
    "stratum": "MQuAKE-T/ALIAS",
-   "item": "MQuAKE-T:1195:q0"
+   "item": "MQuAKE-T:1195:q0",
+   "verdict": "ALIAS"
   },
   "257": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1520:q1"
+   "item": "MQuAKE-CF-3k:1520:q1",
+   "verdict": "CLEAN"
   },
   "258": {
    "stratum": "MQuAKE-T/CLEAN",
-   "item": "MQuAKE-T:458:q0"
+   "item": "MQuAKE-T:458:q0",
+   "verdict": "CLEAN"
   },
   "259": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
-   "item": "MQuAKE-CF-3k:1535:q1"
+   "item": "MQuAKE-CF-3k:1535:q1",
+   "verdict": "CLEAN"
   },
   "260": {
    "stratum": "MQuAKE-T/STRICT",
-   "item": "MQuAKE-T:1365:q0"
+   "item": "MQuAKE-T:1365:q0",
+   "verdict": "STRICT"
   },
   "261": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
-   "item": "MQuAKE-CF-3k:1337:q2"
+   "item": "MQuAKE-CF-3k:1337:q2",
+   "verdict": "ALIAS"
   }
  },
  "drawn": "2026-11-24",
  "seed": 20261124,
- "matcher_version": "0.1.1",
- "editscreen_commit": "4e28a1ff0beddedcc75e121b30126e9832ec92fa-dirty",
+ "matcher_version": "0.2.0",
+ "editscreen_commit": "faaa8909f0ab31ce527827dc21af364b6bb0c645-dirty",
  "stratum_sizes": {
   "MQuAKE-T/STRICT": 21,
   "MQuAKE-T/ALIAS": 67,

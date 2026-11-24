@@ -12,7 +12,7 @@ from .types import Edit, Evidence, Item, Level, Verdict
 # report. A contamination rate from one version is not comparable to one
 # from another, and a number whose matcher cannot be identified is not
 # reproducible — the same discipline as recording a seed.
-MATCHER_VERSION = "0.1.1"
+MATCHER_VERSION = "0.2.0"
 
 
 def screen(edit: Edit, probe: str) -> Verdict:

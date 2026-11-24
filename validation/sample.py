@@ -111,11 +111,49 @@ def editscreen_commit() -> str | None:
         return None
 
 
+def rescore(data: Path) -> int:
+    """Refresh the verdicts on the draw already made, without redrawing.
+
+    A matcher change moves items between levels, and re-running the draw
+    would throw away labels that are still perfectly valid — they describe
+    the items, not the screen. But it cannot simply overwrite the stratum
+    either: the stratum is what each item's SELECTION PROBABILITY was based
+    on, so it is part of the design and stays fixed. The new verdict is
+    recorded beside it as one more measured attribute of the item, and
+    `score.py` weights by the first and flags by the second.
+    """
+    meta = json.loads((HERE / "sample.json").read_text())
+    verdicts = {}
+    for name in sorted({k.split("/")[0] for k in meta["stratum_sizes"]}):
+        for item in mquake.load(data / f"{name}.json"):
+            verdicts[item.item_id] = screen_any(item.edits, item.probe).level.name
+
+    moved = 0
+    for row in meta["assignment"].values():
+        was = row.get("verdict", row["stratum"].split("/")[1])
+        now = verdicts[row["item"]]
+        row["verdict"] = now
+        moved += was != now
+
+    meta["matcher_version"] = MATCHER_VERSION
+    meta["editscreen_commit"] = editscreen_commit()
+    (HERE / "sample.json").write_text(json.dumps(meta, indent=1) + "\n")
+    print(f"rescored {len(meta['assignment'])} items at matcher "
+          f"{MATCHER_VERSION}: {moved} changed level")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--data", type=Path, default=DEFAULT_DATA)
     ap.add_argument("--out", type=Path, default=HERE / "labels.txt")
+    ap.add_argument("--rescore", action="store_true",
+                    help="keep the existing draw and refresh its verdicts, "
+                         "for when a matcher changes")
     args = ap.parse_args()
+
+    if args.rescore:
+        return rescore(args.data)
 
     if not args.data.is_dir():
         print(f"no benchmark directory at {args.data} — pass --data", file=sys.stderr)
@@ -154,8 +192,9 @@ def main() -> int:
     # recorded HERE and kept out of labels.txt, which shows a labeller the
     # edits and the probe and nothing else. The block number is the key.
     meta = {
-        "assignment": {f"{i:03d}": {"stratum": "/".join(k), "item": it.item_id}
-                       for i, (k, it, _) in enumerate(drawn, start=1)},
+        "assignment": {f"{i:03d}": {"stratum": "/".join(k), "item": it.item_id,
+                                    "verdict": v.level.name}
+                       for i, (k, it, v) in enumerate(drawn, start=1)},
         "drawn": date.today().isoformat(),
         "seed": SEED,
         "matcher_version": MATCHER_VERSION,

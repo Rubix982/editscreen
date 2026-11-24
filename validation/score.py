@@ -121,8 +121,13 @@ def main() -> int:
     # labels.txt deliberately carries neither the stratum nor the item id,
     # so a labeller sees no verdict and no benchmark. Rejoin by block number.
     for r in rows:
-        r["stratum"] = meta["assignment"][r["id"]]["stratum"]
-        r["item"] = meta["assignment"][r["id"]]["item"]
+        a = meta["assignment"][r["id"]]
+        # The stratum is the DESIGN — what this item's chance of being drawn
+        # was based on — so it sets the weight and never moves. The verdict
+        # is what the screen says NOW, and moves whenever a matcher does.
+        r["stratum"] = a["stratum"]
+        r["item"] = a["item"]
+        r["verdict"] = a.get("verdict", a["stratum"].split("/")[1])
     total = len(rows)
 
     bad = [r["id"] for r in rows if r.get("label") and r["label"] not in VALID]
@@ -159,7 +164,7 @@ def main() -> int:
               "\n  that does not contain them. Label a few before quoting any of it.")
 
     rng = random.Random(SEED)
-    det = lambda r: not r["stratum"].endswith("/CLEAN")          # noqa: E731
+    det = lambda r: r["verdict"] != "CLEAN"                       # noqa: E731
     pres = lambda r: r["label"] in PRESENT                        # noqa: E731
     reach = lambda r: r["label"] in REACHABLE                     # noqa: E731
 
@@ -186,7 +191,7 @@ def main() -> int:
 
     print("\nPer level — did it also get the level right?")
     for level, want in (("STRICT", {"s"}), ("ALIAS", {"a"})):
-        sub = [r for r in done if r["stratum"].endswith("/" + level)]
+        sub = [r for r in done if r["verdict"] == level]
         if not sub:
             print(f"  {level:<34} —      (none labelled)")
             continue
