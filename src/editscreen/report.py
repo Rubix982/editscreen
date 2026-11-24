@@ -24,14 +24,28 @@ class Report:
         return len(self.rows)
 
     def rate(self, level: Level = Level.STRICT) -> float:
-        """Fraction of items at or above `level`.
+        """Fraction found by a rule NO LOOSER than `level`.
 
-        Default is STRICT, which is the lower bound, because that is the
-        number that should be quoted when only one number is quoted.
+        The ladder runs by how far from the undeniable a level had to go,
+        so this is a cumulative that grows as `level` loosens: `rate()` is
+        the strict rule alone, `rate(Level.ALIAS)` adds name variants.
+        Default is STRICT, because that is the number to quote when only
+        one is quoted.
+
+        It previously read `v.level >= level`, which is the same
+        comparison written against the enum's integer order and means the
+        opposite — `rate(Level.STRICT)` returned EVERY non-clean item and
+        `rate(Level.ALIAS)` returned the alias matches on their own, with
+        the strict ones excluded. On RippleEdits that printed a field
+        named `rate_strict` carrying 0.898 when the strict rule's own rate
+        was 0.796. The validation of 0.2.0a2 is what made the difference
+        matter: strict is right every time and alias is right nine times
+        in ten, so a figure that silently merges them cannot be quoted.
         """
         if not self.rows:
             return 0.0
-        return sum(1 for _, v in self.rows if v.level >= level) / len(self.rows)
+        return sum(1 for _, v in self.rows
+                   if v.level is not Level.CLEAN and v.level <= level) / len(self.rows)
 
     def counts(self) -> dict[Level, int]:
         c = Counter(v.level for _, v in self.rows)
@@ -48,7 +62,7 @@ class Report:
         for item, v in self.rows:
             b = buckets[item.test_type or "(unspecified)"]
             b[1] += 1
-            if v.level >= level:
+            if v.level is not Level.CLEAN and v.level <= level:
                 b[0] += 1
         return {k: (h, n, h / n if n else 0.0) for k, (h, n) in sorted(buckets.items())}
 
@@ -62,7 +76,7 @@ class Report:
         return tuple(
             item.item_id
             for item, v in self.rows
-            if (v.level >= level) is at_or_above
+            if (v.level is not Level.CLEAN and v.level <= level) is at_or_above
         )
 
     def summary(self) -> str:
@@ -74,10 +88,15 @@ class Report:
             f"  {'STRICT':<14}{c[Level.STRICT]:>7}   subject's own surface form in the probe",
             f"  {'ALIAS':<14}{c[Level.ALIAS]:>7}   a name variant only",
             "",
-            f"  contaminated at STRICT or above: {self.rate(Level.STRICT):.1%}",
+            f"  names the subject outright:      {self.rate(Level.STRICT):.1%}",
+            f"  including name variants:         {self.rate(Level.ALIAS):.1%}",
             "",
-            "  STRICT is a lower bound. Items naming the subject only by",
-            "  description are not detected in this release.",
+            "  Quote the first. Measured on 261 hand-labelled MQuAKE items,",
+            "  the strict rule is right every time and the alias rule nine",
+            "  times in ten, so the two are not worth merging into one number.",
+            "",
+            "  Neither is a bound on IDENTIFIABILITY. A probe that picks the",
+            "  subject out by description without naming it reads CLEAN here.",
         ]
         by_type = self.by_test_type()
         if len(by_type) > 1:

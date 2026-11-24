@@ -212,3 +212,110 @@ class TestItemIdsDoNotCollideAcrossFiles:
     def test_bare_records_keep_the_unprefixed_form(self):
         ids = [it.item_id for it in mquake.from_records([self.case])]
         assert ids == ["1614:q0"]
+
+
+class TestRateIsCumulativeTowardTheLooserRule:
+    """The ladder runs by how far from the undeniable a level had to go, so
+    a rate GROWS as the level loosens. Written against the enum's integer
+    order it meant the opposite, and shipped a field called `rate_strict`
+    holding every non-clean item."""
+
+    def _report(self):
+        from editscreen.report import Report
+        from editscreen.types import Evidence, Verdict
+        rows = []
+        # two strict, one alias, one clean
+        for i, lv in enumerate([Level.STRICT, Level.STRICT, Level.ALIAS, Level.CLEAN]):
+            item = Item(item_id=str(i), edits=(Edit(subject="x"),), probe="p")
+            rows.append((item, Verdict(level=lv, evidence=(Evidence(rule="t"),))))
+        return Report(rows=tuple(rows), matcher_version="test")
+
+    def test_strict_rate_counts_only_strict(self):
+        assert self._report().rate(Level.STRICT) == 0.5
+
+    def test_alias_rate_adds_strict_to_alias(self):
+        assert self._report().rate(Level.ALIAS) == 0.75
+
+    def test_clean_is_never_counted(self):
+        r = self._report()
+        assert r.rate(Level.IDENTIFIABLE) == 0.75
+
+    def test_ids_split_on_the_same_rule(self):
+        r = self._report()
+        assert r.ids(Level.STRICT) == ("0", "1")
+        assert set(r.ids(Level.STRICT, at_or_above=False)) == {"2", "3"}
+
+
+class TestRippleAdapter:
+    """Prompt shapes are real ones from `random.json`, not invented. The
+    patterns take the LEFTMOST " of " and reject a lowercase capture, so
+    "The place of birth of Leo Arons is" yields nothing — it captures
+    "birth of Leo Arons". That is why coverage is 80% and not higher, and
+    it is kept because changing it changes the recorded figure."""
+
+    entry = {
+        "example_type": "random",
+        "edit": {"subject_id": "Q42", "relation": "COUNTRY",
+                 "prompt": "The name of the field of work of  is photography."},
+        "Relation_Specificity": [{"test_queries": [
+            {"prompt": "The official language of Goursez Vreizh is"},
+            {"prompt": "The name of the country which Gorsedd of Brittany "
+                       "is associated with is"},
+        ]}],
+        "Subject_Aliasing": [{"test_queries": [
+            {"prompt": "The name of the country which  is associated with is"},
+        ]}],
+    }
+
+    def test_subject_is_the_longest_candidate(self):
+        from editscreen.adapters import ripple
+        assert ripple.subject_label(self.entry) == "Gorsedd of Brittany"
+
+    def test_shorter_forms_become_aliases(self):
+        from editscreen.adapters import ripple
+        item = next(iter(ripple.from_records([self.entry])))
+        assert item.edit.aliases == ("Goursez Vreizh",)
+
+    def test_candidates_are_sorted_so_ties_do_not_wobble(self):
+        """`max` over a set is nondeterministic on a length tie, and two runs
+        of the original measurement once differed by 15 prompts."""
+        from editscreen.adapters import ripple
+        got = ripple.candidates(self.entry)
+        assert got == sorted(got)
+
+    def test_a_prompt_naming_an_alias_is_still_caught(self):
+        """The subject is the longest form; a prompt carrying a shorter one
+        is reached through the aliases, which is why they are passed on."""
+        from editscreen.adapters import ripple
+        items = list(ripple.from_records([self.entry]))
+        by_probe = {it.probe: it for it in items}
+        short = by_probe["The official language of Goursez Vreizh is"]
+        assert screen_any(short.edits, short.probe).level is Level.ALIAS
+
+    def test_an_entry_with_no_recoverable_subject_is_skipped(self):
+        from editscreen.adapters import ripple
+        blank = {"edit": {"subject_id": "Q1"}, "Relation_Specificity": [
+            {"test_queries": [{"prompt": "The name of the field of work of  is"}]}]}
+        assert list(ripple.from_records([blank])) == []
+
+    def test_declared_criterion_becomes_the_test_type(self):
+        from editscreen.adapters import ripple
+        types = {it.test_type for it in ripple.from_records([self.entry])}
+        assert types == {"Relation_Specificity", "Subject_Aliasing"}
+
+    def test_a_blank_slot_prompt_really_is_clean(self):
+        """1,004 of 46,754 released test prompts leave the subject's slot
+        empty. Those genuinely do not name it."""
+        from editscreen.adapters import ripple
+        items = {it.test_type: it for it in ripple.from_records([self.entry])}
+        probe = items["Subject_Aliasing"]
+        assert screen_any(probe.edits, probe.probe).level is Level.CLEAN
+
+    def test_load_rejects_a_file_that_is_not_ripple(self, tmp_path):
+        import json
+        import pytest
+        from editscreen.adapters import ripple
+        p = tmp_path / "x.json"
+        p.write_text(json.dumps([{"case_id": 1}]))
+        with pytest.raises(ValueError, match="does not look like RippleEdits"):
+            list(ripple.load(p))

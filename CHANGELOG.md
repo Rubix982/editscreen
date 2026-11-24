@@ -1,6 +1,14 @@
 # Changelog
 
-## 0.2.0a2 — 2026-11-24
+## 0.2.0a3 — 2026-11-24
+
+RippleEdits, and a reporting bug the adapter exposed.
+
+- **RippleEdits adapter**: `editscreen random.json --adapter ripple`. The corpus names its subject by QID, so the label is read back out of the entry's own test prompts rather than resolved against a knowledge base. Coverage is **75.0% / 85.0% / 81.8%** on `recent` / `random` / `popular`, reported per subset because they differ by ten points. Unreadable entries are skipped and counted by `ripple.coverage(path)`; emitting them would report them CLEAN.
+- **`Report.rate(level)` ran the wrong way.** It read `v.level >= level`, the enum's integer order, which made `rate(Level.STRICT)` return every non-clean item and `rate(Level.ALIAS)` return alias matches with the strict ones excluded. On RippleEdits it printed a field named `rate_strict` holding 0.898 when the strict rule's own rate was 0.796. It is now a cumulative that grows as the level loosens, which is what the ladder means. `ids()` and `by_test_type()` had the same comparison. The JSON field `rate_alias_or_above` becomes `rate_strict_or_alias`. **Any rate from 0.2.0a2 or earlier was the combined figure whatever it was labelled.**
+- Tests pin both directions; 43 now, and the four that would have caught this did not exist.
+
+
 
 The matchers get measured, and one of them fails.
 

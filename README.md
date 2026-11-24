@@ -89,7 +89,25 @@ editscreen MQuAKE-CF-3k.json --adapter mquake
 
 Reads all four released MQuAKE files, which share one record shape. Each case's three questions are screened separately, and the hop count is read off the labelled chain rather than assumed, so the stratification can be checked against the source file.
 
-**Most MQuAKE cases edit more than one fact**, so an item carries several edits and the verdict is the highest level any of them reaches. `Item.edits` is a tuple for this reason.
+**Most MQuAKE cases edit more than one fact**, so an item carries several edits. The item is flagged if any of them matches, and the verdict reports the strongest evidence among those that did. `Item.edits` is a tuple for this reason.
+
+```bash
+editscreen random.json --adapter ripple
+```
+
+RippleEdits names its subject by Wikidata QID and leaves the slot blank in some prompts, so there is no string to look for. There is no knowledge base here and there is not going to be one. Instead the label is read back out of the entry's own test prompts, which materialise it — "The official language of Goursez Vreizh is". That recovers a subject for **75.0% of `recent`, 85.0% of `random` and 81.8% of `popular`**.
+
+Report those per subset and never pooled; the subsets are built from different slices of Wikidata and a single 80.3% describes no file anyone can download. Entries whose subject cannot be read are skipped entirely, the command says how many, and `ripple.coverage(path)` returns the numbers — because emitting them would report them CLEAN, and a false clean is the one error this package exists to prevent.
+
+## Which number to quote
+
+`rate_strict` counts probes containing the subject's own surface form. `rate_strict_or_alias` adds matches on a name variant. **Quote the first.**
+
+Measured on 261 hand-labelled MQuAKE items, the strict rule was right every time and the alias rule 90.2% [80.5, 97.6] on a held-out draw — and before it was fixed, 57.1%. When that fix landed, every alias-inclusive rate moved and every strict rate stayed exactly where it was. `validation/` has the method and the limits.
+
+Neither rate bounds **identifiability**. A probe that picks the subject out by description without naming it reads CLEAN. On MQuAKE that is almost every unnamed item, because its questions are rendered from the chain the edit sits on. What these rates measure is whether the probe hands the model the *name*, which is the thing a model can exploit without reasoning.
+
+The precision figures above were measured on MQuAKE only. Nothing here says how the matchers behave on RippleEdits, whose subjects include organisations, works and non-English names.
 
 ## Your own data
 
