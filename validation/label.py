@@ -28,7 +28,9 @@ HELP = """\
   w  RippleEdits only: the `edit:` line is not this entry's subject at all.
      Compare it with `subject:`, which is what Wikidata says the QID is.
      `w` beats every other letter, and the four above are answered about
-     `subject:`, the real one.
+     `subject:`, the real one. It applies only where an `edit:` line is
+     shown: the paired draw deliberately shows neither recovered string,
+     so there is nothing for `w` to be about there.
 
   For several edits, answer about the STRONGEST case among them.
   Add a note after the letter for anything that fits none of the four:
@@ -77,11 +79,21 @@ def main() -> int:
         edits = [lines[i].split(":", 1)[1].strip()
                  for i in range(*span) if lines[i].startswith("edit:")]
         _, probe = field(lines, span, "probe")
+        # The paired draw has no `edit:` line at all: it shows the Wikidata
+        # label for the subject rather than either recovered string, because
+        # which of those two is the subject's name is the question it asks.
+        # Printing only `edit:` lines would leave that file unlabellable.
+        _, subject = field(lines, span, "subject")
+        _, aliases = field(lines, span, "aliases")
 
         print(f"── {ident}   ({done}/{total} done)")
         for e in edits:
-            print(f"   edited: {e}")
-        print(f"   probe:  {probe}")
+            print(f"   edited:  {e}")
+        if subject:
+            print(f"   subject: {subject}")
+        if aliases:
+            print(f"   aliases: {aliases}")
+        print(f"   probe:   {probe}")
 
         while True:
             try:

@@ -66,9 +66,17 @@ def main() -> int:
     raw: collections.Counter = collections.Counter()
     per_cell: dict = collections.defaultdict(collections.Counter)
 
+    unknown: list[tuple[str, str]] = []
     for item_id, letter in labels.items():
         row = assign.get(item_id)
-        if row is None or letter not in RIGHT:
+        if row is None:
+            unknown.append((item_id, "not in this sample"))
+            continue
+        if letter not in RIGHT:
+            # Never skip in silence. A `w` here is a labeller using the other
+            # files' fifth letter on a draw that shows no recovered string, and
+            # dropping it quietly would shrink the denominator without saying so.
+            unknown.append((item_id, f"`{letter}` is not one of {sorted(RIGHT)}"))
             continue
         cell = row["stratum"]
         w = sizes[cell] / drawn[cell]
@@ -81,6 +89,14 @@ def main() -> int:
         per_cell[cell][key] += 1
 
     total = sum(won.values())
+    if unknown:
+        print(f"{len(unknown)} label(s) not scored:")
+        for item_id, why in unknown:
+            print(f"  {item_id}: {why}")
+        print()
+    if not total:
+        print("nothing scorable")
+        return 1
     print(f"labelled {len(labels)} of {len(assign)} drawn "
           f"({pathlib.Path(args.labels).name})\n")
     print(f"Over the {int(round(total)):,} contested prompts, reweighted by stratum:")
