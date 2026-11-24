@@ -150,6 +150,22 @@ Twenty-five of the 180 were called CLEAN while a variant really was present, and
 
 **None of this is fixed here.** Both faults were found by reading this sample's errors, and the 0.2.0a2 lesson is that a fix read off a sample scores 100% on it and 90.2% anywhere else. A fix is committed before a second draw exists, and that draw is what scores it.
 
+## `by_test_type()` on RippleEdits is checked differently, and one of its rows is partly circular
+
+Every precision figure above is stratified by **subset**. The per-test-type breakdown the CLI prints is a different cut of the same items and has never been given its own labelled draw. What it has been given is a check of a different kind, run as [C-011] in `edit-reach`: RippleEdits declares six test types and defines each one, so each definition predicts whether that type's queries should contain the edited subject's name. The predictions were written down before the counts were read, and all six hold in all three subsets — the three types that ask about the edited subject screen at the top, the type that asks about a different entity screens at the bottom, and the mixed type sits between them.
+
+**That is a check on the shape of the table, not on its precision.** It says the per-type numbers are not nonsense. It does not say how often a verdict on a given type is right, and a figure for that needs a draw stratified by type.
+
+**One row is partly manufactured by the adapter.** This corpus names its subject by QID, so `subject_label()` takes the longest candidate the entry's own prompts offer — and `Subject_Aliasing` prompts contribute candidates like every other type. When the longest string an entry offers is an alias lifted out of an aliasing prompt, the screen then reports that same prompt as naming the subject. It read the name out of the prompt and found it there.
+
+| subset | `Subject_Aliasing` strict hits | label came from an aliasing prompt |
+| --- | ---: | ---: |
+| `recent` | 190 | 64 (34%) |
+| `random` | 621 | 483 (78%) |
+| `popular` | 256 | 135 (53%) |
+
+682 prompts of the 38,092 screened, 1.8%, and the share is not stable enough across subsets to be subtracted as a constant. It inflates this type's **strict** rate and not its alias rate, because those prompts would have matched on a variant anyway — so no headline rate in this directory depends on it. It is left in place rather than patched, because changing the candidate pool would change the 80.3% coverage figure and every rate taken under it.
+
 ## Why the intervals resample clusters
 
 Items are not independent. Three MQuAKE questions share one case and one edited subject; dozens of RippleEdits prompts share one entry and one recovered label. A bootstrap over rows counts those as separate draws and reports an interval narrower than the evidence supports.
