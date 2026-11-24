@@ -58,6 +58,23 @@ Agreement is reported twice. Exact agreement counts matching letters. The one pr
 
 **Any precision figure from this set must be quoted with that agreement rate beside it.** Two error rates stacked, both named, is honest; one of them hidden is not.
 
+## The held-out set
+
+`labels.holdout.txt` is 47 alias matches drawn with a different seed and `--exclude`d from the 261, so no item appears in both.
+
+It exists because the alias fixes in 0.2.0 were derived by reading the false positives in the first sample. Scoring them there gave 100%, which is training-set performance and means nothing. The matcher was committed before this set was drawn.
+
+| | first sample | held out |
+| --- | --- | --- |
+| alias, flag is right | 57.1% [45.1, 69.0] | 90.2% [80.5, 97.6] |
+
+The intervals do not overlap, so the improvement is real; 100% was not.
+
+Two failure modes survive, both found here and **not** fixed, because fixing against this set would spend it the same way the first one was spent:
+
+- **A given name shared with someone else.** The edited subject is Mike Richardson and the probe says "Mike Mignola's employer". The neighbour guard reads the word *before* a match, and a given name is followed by the other person's surname rather than preceded by it.
+- **A brand two steps from the person.** The edited subject is Henry Ford and the probe says "the manufacturer of Ford Orion". The car is named for the company and the company for the man, and a reader meeting "Ford" there is not being handed Henry Ford. Item 019 is the same shape and goes the other way — the Browning M1919 is named directly for its designer — so this one is a judgement call, and it is recorded as one.
+
 ## A shortcut that does not work
 
 MQuAKE questions are rendered from the labelled chain in `orig.triples_labeled`, and the edited subject is a node on that chain in 100% of cases in both files. It is tempting to conclude that every unnamed subject is therefore reachable by description, and to derive the `d` label for free.

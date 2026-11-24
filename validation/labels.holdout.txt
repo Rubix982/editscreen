@@ -1,0 +1,334 @@
+# The labelled set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is ("the author of The Man of Feeling")
+#   n   none of the above: nothing in the probe points at the edited subject
+#
+# For an item with several edits, answer about the STRONGEST case among
+# them: if any one subject is named in full, the answer is `s`.
+#
+# `s` and `a` are what the screen claims to detect, so they decide its
+# precision and recall. `d` is what it deliberately does not detect, and
+# counting them is how we find out how loose the lower bound is.
+#
+# `note:` is optional and only worth filling when an item fits none of the
+# four letters. Those are the interesting ones — the levels in types.py
+# were written from a handful of examples and have never met real data.
+#
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
+# Stop whenever you like. Every stopping point is a usable sample; the
+# scorer reweights on what is actually filled in.
+
+### 001
+edit:    Johann Sebastian Bach
+probe:   What religion is associated with the performer of Bach-Werke-Verzeichnis?
+label: a
+note: "Bach" in the catalogue name does refer to him
+
+### 002
+edit:    Robert Moog
+probe:   Which capital city is the founder of the company that produced the Moog modular synthesizer associated with?
+label: a
+note:
+
+### 003
+edit:    Ford Motor Company
+edit:    William Morris, 1st Viscount Nuffield
+edit:    France
+probe:   What is the capital of the country of citizenship of the company that manufactured Ford Falcon (North America)?
+label: a
+note:
+
+### 004
+edit:    Gaelic football
+edit:    India
+probe:   In which continent did the sport that the Meath Senior Football Championship belongs to originate?
+label: a
+note: the championship is a Gaelic football competition, so "Football" names that sport
+
+### 005
+edit:    Ford Mustang
+edit:    Fiat S.p.A.
+probe:   Which individual was responsible for the founding of the company that manufactures Ford Mustangs?
+label: s
+note: the subject appears pluralised as "Ford Mustangs"
+
+### 006
+edit:    Henry Ford
+probe:   What is the capital of the country of citizenship of the founder of the manufacturer of Ford Orion?
+label: d
+note: "Ford" here is the car brand two steps from the man; Henry Ford is reached as "the founder of the manufacturer"
+
+### 007
+edit:    Ford Motor Company
+probe:   In what city is the headquarters of the country of citizenship of the founder of the manufacturer of the Ford Laser located?
+label: a
+note:
+
+### 008
+edit:    Kingdom of England
+probe:   Which continent does the country that Edward I of England holds citizenship in belong to?
+label: a
+note:
+
+### 009
+edit:    Ford Motor Company
+edit:    William Morris, 1st Viscount Nuffield
+edit:    France
+probe:   What is the capital of the country where the manufacturer of Ford S-Max was founded?
+label: a
+note:
+
+### 010
+edit:    Yamaha Corporation
+probe:   Where is the headquarters of the company that manufactured the Yamaha DX7 located?
+label: a
+note:
+
+### 011
+edit:    Ford Motor Company
+edit:    William Morris, 1st Viscount Nuffield
+probe:   Which city serves as the capital of the country where the maker of Ford Capri has its origin?
+label: a
+note:
+
+### 012
+edit:    Winston Churchill
+edit:    British Broadcasting Corporation
+probe:   What is the location of the headquarters of the employer of the head of government of Churchill war ministry?
+label: a
+note:
+
+### 013
+edit:    Aston Martin Lagonda
+probe:   Who is the chief executive officer of the manufacturer of Aston Martin DBR9?
+label: a
+note:
+
+### 014
+edit:    Commodore International
+edit:    United Kingdom
+probe:   What language was designated as the official language in the country of origin of the Commodore PET?
+label: a
+note:
+
+### 015
+edit:    Mike Richardson
+probe:   In which city is the capital of the country where the company that employs Mike Mignola's founder is located?
+label: d
+note: "Mike" matches the given name of Mike Mignola, a different person
+
+### 016
+edit:    Henry Ford
+probe:   Which city is the capital of the country of citizenship of the founder of the company that produced Ford Orion?
+label: d
+note: same as 006
+
+### 017
+edit:    Vladimir Lenin
+probe:   What continent is the place of death of the spouse of the author of "Lenin's Testament" located in?
+label: a
+note:
+
+### 018
+edit:    Aston Martin Lagonda
+probe:   Who leads the company responsible for manufacturing the Aston Martin DB5?
+label: a
+note:
+
+### 019
+edit:    John Browning
+probe:   Which city is the capital of the country where the founder of the manufacturer of the Browning M1919, which x1 is associated with, comes from?
+label: a
+note: close call: the gun is named directly after its designer, one step rather than two
+
+### 020
+edit:    Jaguar Cars
+probe:   Which leader serves as the head of state in the country where the Jaguar E-Type comes from?
+label: a
+note:
+
+### 021
+edit:    Apple Inc.
+edit:    Al-Waleed bin Talal
+edit:    British Empire
+probe:   Which capital city belongs to the country of citizenship of the CEO of Apple Pay?
+label: a
+note:
+
+### 022
+edit:    Ford Motor Company
+edit:    William Morris, 1st Viscount Nuffield
+edit:    France
+probe:   Where is the headquarters of the country to which the founder of the maker of Ford Torino belongs?
+label: a
+note:
+
+### 023
+edit:    Volvo Cars
+probe:   Who is the head of government of the country where Volvo 850 was manufactured?
+label: a
+note:
+
+### 024
+edit:    Lotus Cars
+probe:   What is the capital of the country where the company responsible for manufacturing the Lotus Esprit originated?
+label: a
+note:
+
+### 025
+edit:    Winston Churchill
+edit:    British Broadcasting Corporation
+probe:   In what city does the employer of the head of government of Churchill war ministry have their main headquarters?
+label: a
+note:
+
+### 026
+edit:    Ford Motor Company
+probe:   In which city is the capital of the native country of the founder of the manufacturer of the Ford Taurus?
+label: a
+note:
+
+### 027
+edit:    Commodore International
+edit:    United Kingdom
+probe:   What is the official language of the country where the Commodore PET was manufactured?
+label: a
+note:
+
+### 028
+edit:    Aston Martin Lagonda
+probe:   Who is the chief executive officer of the manufacturer of the Aston Martin DB7?
+label: a
+note:
+
+### 029
+edit:    Aston Martin Lagonda
+probe:   What is the name of the chief executive officer of the company that produces Aston Martin DB3S?
+label: a
+note:
+
+### 030
+edit:    Ray Kurzweil
+probe:   What city is the headquarter location of the company that employed the founders of Kurzweil Music Systems?
+label: a
+note:
+
+### 031
+edit:    left-handed specialist
+edit:    cricket
+edit:    Netherlands
+probe:   Which city serves as the capital of the country where left-handed specialists in sports come from?
+label: s
+note: the subject appears pluralised as "left-handed specialists"
+
+### 032
+edit:    Winston Churchill
+edit:    British Broadcasting Corporation
+probe:   Which city serves as the headquarters location of the employer of the head of government of Churchill war ministry?
+label: a
+note:
+
+### 033
+edit:    Ford Mustang
+edit:    Fiat S.p.A.
+probe:   Who founded the company behind the production of Ford Mustangs?
+label: s
+note: the subject appears pluralised as "Ford Mustangs"
+
+### 034
+edit:    Gaelic football
+edit:    India
+probe:   What continent does the sport where the Meath Senior Football Championship takes place have its country of origin in?
+label: a
+note:
+
+### 035
+edit:    Apple Inc.
+edit:    Al-Waleed bin Talal
+edit:    British Empire
+probe:   In which city is the capital of the country of citizenship of the CEO of Apple Pay located?
+label: a
+note:
+
+### 036
+edit:    Ford Motor Company
+probe:   Where is the headquarters of the company that produced the Ford GT40, whose founding company was founded in what capital city?
+label: a
+note:
+
+### 037
+edit:    Aston Martin Lagonda
+probe:   What is the name of the CEO of the manufacturer of Aston Martin DBR1?
+label: a
+note:
+
+### 038
+edit:    Ford Motor Company
+edit:    William Morris, 1st Viscount Nuffield
+edit:    France
+probe:   Which city serves as the capital of the country whose citizen founded the manufacturer of Ford Torino?
+label: a
+note:
+
+### 039
+edit:    Yamaha Corporation
+probe:   In which city is the company that produced the Yamaha DX7 based?
+label: a
+note:
+
+### 040
+edit:    Aston Martin Lagonda
+probe:   Who holds the position of Chief Executive Officer at the manufacturer of the Aston Martin DB9?
+label: a
+note:
+
+### 041
+edit:    Mike Richardson
+probe:   What is the capital city of the country where the founder of Mike Mignola's employer holds a citizenship?
+label: d
+note: "Mike" matches the given name of Mike Mignola, a different person
+
+### 042
+edit:    association football
+edit:    Hong Kong
+probe:   Cameroon national football team's country of origin is situated in which continent?
+label: a
+note:
+
+### 043
+edit:    association football
+edit:    Hong Kong
+probe:   In which continent is the country of origin of the Cameroon national football team located?
+label: a
+note:
+
+### 044
+edit:    Ford Motor Company
+probe:   What is the capital of the country where the Ford GT40 maker's founder held citizenship?
+label: a
+note:
+
+### 045
+edit:    Aston Martin Lagonda
+probe:   Who is the CEO of the company that manufactured the Aston Martin DBR9?
+label: a
+note:
+
+### 046
+edit:    association football
+probe:   From which country does the sport that the Football Association of Wales belongs to originate?
+label: a
+note:
+
+### 047
+edit:    association football
+edit:    Hong Kong
+probe:   From which continent does the country of origin of Adelaide City Football Club come?
+label: a
+note:

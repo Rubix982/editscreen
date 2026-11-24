@@ -1,0 +1,256 @@
+{
+ "assignment": {
+  "001": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:883:q0",
+   "verdict": "ALIAS"
+  },
+  "002": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2247:q1",
+   "verdict": "ALIAS"
+  },
+  "003": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2871:q0",
+   "verdict": "ALIAS"
+  },
+  "004": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1346:q0",
+   "verdict": "ALIAS"
+  },
+  "005": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:231:q1",
+   "verdict": "ALIAS"
+  },
+  "006": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2853:q0",
+   "verdict": "ALIAS"
+  },
+  "007": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2015:q2",
+   "verdict": "ALIAS"
+  },
+  "008": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:762:q2",
+   "verdict": "ALIAS"
+  },
+  "009": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2816:q0",
+   "verdict": "ALIAS"
+  },
+  "010": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:1278:q0",
+   "verdict": "ALIAS"
+  },
+  "011": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2692:q1",
+   "verdict": "ALIAS"
+  },
+  "012": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1618:q0",
+   "verdict": "ALIAS"
+  },
+  "013": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:986:q0",
+   "verdict": "ALIAS"
+  },
+  "014": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1957:q2",
+   "verdict": "ALIAS"
+  },
+  "015": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2228:q1",
+   "verdict": "ALIAS"
+  },
+  "016": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2853:q1",
+   "verdict": "ALIAS"
+  },
+  "017": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2372:q0",
+   "verdict": "ALIAS"
+  },
+  "018": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:1347:q2",
+   "verdict": "ALIAS"
+  },
+  "019": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2249:q2",
+   "verdict": "ALIAS"
+  },
+  "020": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1337:q1",
+   "verdict": "ALIAS"
+  },
+  "021": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2698:q1",
+   "verdict": "ALIAS"
+  },
+  "022": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2990:q2",
+   "verdict": "ALIAS"
+  },
+  "023": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1804:q0",
+   "verdict": "ALIAS"
+  },
+  "024": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2746:q2",
+   "verdict": "ALIAS"
+  },
+  "025": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1618:q1",
+   "verdict": "ALIAS"
+  },
+  "026": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2421:q2",
+   "verdict": "ALIAS"
+  },
+  "027": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1957:q0",
+   "verdict": "ALIAS"
+  },
+  "028": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:1204:q2",
+   "verdict": "ALIAS"
+  },
+  "029": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:1157:q1",
+   "verdict": "ALIAS"
+  },
+  "030": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1545:q1",
+   "verdict": "ALIAS"
+  },
+  "031": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1732:q1",
+   "verdict": "ALIAS"
+  },
+  "032": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1618:q2",
+   "verdict": "ALIAS"
+  },
+  "033": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:231:q0",
+   "verdict": "ALIAS"
+  },
+  "034": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1346:q1",
+   "verdict": "ALIAS"
+  },
+  "035": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2698:q2",
+   "verdict": "ALIAS"
+  },
+  "036": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2430:q2",
+   "verdict": "ALIAS"
+  },
+  "037": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:1220:q1",
+   "verdict": "ALIAS"
+  },
+  "038": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2990:q1",
+   "verdict": "ALIAS"
+  },
+  "039": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:1278:q1",
+   "verdict": "ALIAS"
+  },
+  "040": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:1372:q2",
+   "verdict": "ALIAS"
+  },
+  "041": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2228:q0",
+   "verdict": "ALIAS"
+  },
+  "042": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1210:q1",
+   "verdict": "ALIAS"
+  },
+  "043": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1210:q2",
+   "verdict": "ALIAS"
+  },
+  "044": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:2430:q0",
+   "verdict": "ALIAS"
+  },
+  "045": {
+   "stratum": "MQuAKE-T/ALIAS",
+   "item": "MQuAKE-T:986:q2",
+   "verdict": "ALIAS"
+  },
+  "046": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:881:q1",
+   "verdict": "ALIAS"
+  },
+  "047": {
+   "stratum": "MQuAKE-CF-3k/ALIAS",
+   "item": "MQuAKE-CF-3k:1671:q1",
+   "verdict": "ALIAS"
+  }
+ },
+ "drawn": "2026-11-24",
+ "seed": 31337,
+ "excluded_items": 261,
+ "matcher_version": "0.2.0",
+ "editscreen_commit": "e78d283abd95cd221c4d07bd49419f27048d0cf4-dirty",
+ "stratum_sizes": {
+  "MQuAKE-T/ALIAS": 9,
+  "MQuAKE-CF-3k/ALIAS": 114
+ },
+ "stratum_drawn": {
+  "MQuAKE-T/ALIAS": 9,
+  "MQuAKE-CF-3k/ALIAS": 38
+ },
+ "input_sha256": {
+  "MQuAKE-CF-3k": "ce27a39c39f2983512b9b5578fadea5fbe352e5368f49d64f38d37ce304edc80",
+  "MQuAKE-T": "58500a1d4aaf9e036c23a1d9dd6be2d73d693e35a695614842f211ea5aff59f2"
+ }
+}

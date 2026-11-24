@@ -137,7 +137,7 @@ def rescore(data: Path) -> int:
 
     meta["matcher_version"] = MATCHER_VERSION
     meta["editscreen_commit"] = editscreen_commit()
-    (HERE / "sample.json").write_text(json.dumps(meta, indent=1) + "\n")
+    args.meta.write_text(json.dumps(meta, indent=1) + "\n")
     print(f"rescored {len(meta['assignment'])} items at matcher "
           f"{MATCHER_VERSION}: {moved} changed level")
     return 0
@@ -147,6 +147,12 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--data", type=Path, default=DEFAULT_DATA)
     ap.add_argument("--out", type=Path, default=HERE / "labels.txt")
+    ap.add_argument("--meta", type=Path, default=HERE / "sample.json")
+    ap.add_argument("--seed", type=int, default=SEED)
+    ap.add_argument("--plan", help="stratum=n pairs, comma separated, to "
+                                   "override PLAN for a focused draw")
+    ap.add_argument("--exclude", type=Path, action="append", default=[],
+                    help="a sample.json whose items must not be drawn again")
     ap.add_argument("--rescore", action="store_true",
                     help="keep the existing draw and refresh its verdicts, "
                          "for when a matcher changes")
@@ -159,7 +165,22 @@ def main() -> int:
         print(f"no benchmark directory at {args.data} — pass --data", file=sys.stderr)
         return 1
 
-    rng = random.Random(SEED)
+    plan = dict(PLAN)
+    if args.plan:
+        plan = {}
+        for pair in args.plan.split(","):
+            key, _, n = pair.partition("=")
+            benchmark, _, level = key.strip().partition("/")
+            plan[(benchmark, level)] = int(n)
+
+    # A fix derived by reading one sample's errors cannot be scored on that
+    # sample. --exclude keeps a later draw disjoint from an earlier one.
+    seen: set[str] = set()
+    for other in args.exclude:
+        for row in json.loads(other.read_text())["assignment"].values():
+            seen.add(row["item"])
+
+    rng = random.Random(args.seed)
     strata: dict[tuple[str, str], list] = defaultdict(list)
     sizes: dict[str, int] = {}
     digests: dict[str, str] = {}
@@ -171,11 +192,13 @@ def main() -> int:
             return 1
         digests[name] = hashlib.sha256(path.read_bytes()).hexdigest()
         for item in mquake.load(path):
+            if item.item_id in seen:
+                continue
             verdict = screen_any(item.edits, item.probe)
             strata[(name, verdict.level.name)].append((item, verdict))
 
     drawn = []
-    for key, want in PLAN.items():
+    for key, want in plan.items():
         pool = strata.get(key, [])
         sizes["/".join(key)] = len(pool)
         if not pool:
@@ -196,15 +219,16 @@ def main() -> int:
                                     "verdict": v.level.name}
                        for i, (k, it, v) in enumerate(drawn, start=1)},
         "drawn": date.today().isoformat(),
-        "seed": SEED,
+        "seed": args.seed,
+        "excluded_items": len(seen),
         "matcher_version": MATCHER_VERSION,
         "editscreen_commit": editscreen_commit(),
         "stratum_sizes": sizes,
         "stratum_drawn": {"/".join(k): sum(1 for kk, _, _ in drawn if kk == k)
-                          for k in PLAN},
+                          for k in plan},
         "input_sha256": digests,
     }
-    (HERE / "sample.json").write_text(json.dumps(meta, indent=1) + "\n")
+    args.meta.write_text(json.dumps(meta, indent=1) + "\n")
 
     lines = [LEGEND]
     for i, (_key, item, _verdict) in enumerate(drawn, start=1):
