@@ -42,6 +42,28 @@ So each benchmark-and-verdict pair is sampled at its own rate and `score.py` rew
 
 The rows are shuffled across strata on purpose. Labelling stops when it stops, and a file ordered stratum by stratum would turn an hour's work into a complete census of one stratum and nothing of the others. Interleaved, every stopping point is a smaller version of the same design.
 
+## Who produced the labels
+
+`labels.claude.txt` holds all 261, labelled by a model. That is a usable way to get a few hundred items done and a bad thing to leave unstated: every figure scored against it inherits whatever that labeller gets wrong.
+
+So `check.py` draws a random subset, a person labels it without seeing the model's answers, and the agreement is reported beside the precision it qualifies:
+
+```
+python3 validation/check.py --draw 25
+python3 validation/label.py --labels validation/labels.human.txt
+python3 validation/check.py
+```
+
+Agreement is reported twice. Exact agreement counts matching letters. The one precision actually rests on is agreement on whether a name or variant is present at all — `s` or `a` against `d` or `n` — because an `s`-versus-`a` disagreement moves no reported number.
+
+**Any precision figure from this set must be quoted with that agreement rate beside it.** Two error rates stacked, both named, is honest; one of them hidden is not.
+
+## A shortcut that does not work
+
+MQuAKE questions are rendered from the labelled chain in `orig.triples_labeled`, and the edited subject is a node on that chain in 100% of cases in both files. It is tempting to conclude that every unnamed subject is therefore reachable by description, and to derive the `d` label for free.
+
+Three of the 120 clean items in this sample show it is not so. The chain holds the subject, but the question does not render the hop that reaches it — item 157 asks where Avery Johnson is from and never mentions a sport, while the edited subject is the sport. The chain is a property of the record; the probe is a property of the text, and only the text is what a model sees.
+
 ## What this set cannot establish
 
 **Recall on MQuAKE-T will have a wide interval whatever the labels say.** One real miss among 60 labelled clean items stands for about 92 items in the corpus, against the 88 the screen finds in total — so a single labelled item moves the estimate by more than the entire flagged population. Planting six misses as a test gave recall 13.8% with an interval of [8.0%, 32.4%]. Narrowing that needs roughly four times the clean items for half the width, and it is the one place extra labelling pays: raise `MQuAKE-T/CLEAN` in `PLAN` and redraw.

@@ -216,7 +216,7 @@ def main() -> int:
 
     notes = [r for r in done if r.get("note")]
     if notes:
-        print(f"\nItems that fitted none of the four letters ({len(notes)}):")
+        print(f"\nItems carrying a note ({len(notes)}):")
         for r in notes:
             print(f"  {r['id']} [{r['stratum']}] {r['note']}")
     return 0

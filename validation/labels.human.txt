@@ -1,0 +1,186 @@
+# The labelled set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is ("the author of The Man of Feeling")
+#   n   none of the above: nothing in the probe points at the edited subject
+#
+# For an item with several edits, answer about the STRONGEST case among
+# them: if any one subject is named in full, the answer is `s`.
+#
+# `s` and `a` are what the screen claims to detect, so they decide its
+# precision and recall. `d` is what it deliberately does not detect, and
+# counting them is how we find out how loose the lower bound is.
+#
+# `note:` is optional and only worth filling when an item fits none of the
+# four letters. Those are the interesting ones — the levels in types.py
+# were written from a handful of examples and have never met real data.
+#
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
+# Stop whenever you like. Every stopping point is a usable sample; the
+# scorer reweights on what is actually filled in.
+
+### 023
+edit:    Lebensborn
+probe:   Who holds the position of the head of government in the city where Lebensborn organization's headquarters was located?
+label:
+note:
+
+### 035
+edit:    Elena Ceaușescu
+edit:    Michigan State University
+edit:    Paris
+probe:   In which continent is the headquarters of the institution where Nicolae Ceaușescu's spouse was educated, located?
+label:
+note:
+
+### 052
+edit:    San Pietro in Montorio
+edit:    Methodism
+probe:   At which location did the founder of San Pietro in Montorio work?
+label:
+note:
+
+### 065
+edit:    United Kingdom
+probe:   Who holds the highest political office in the country where Nick Lowe is a citizen?
+label:
+note:
+
+### 092
+edit:    New York City
+probe:   Who is the head of government at the location of the headquarters of the original broadcaster of Deadwood?
+label:
+note:
+
+### 099
+edit:    Austria
+probe:   Who is the head of government of the country in which Joseph Radetzky von Radetz holds citizenship?
+label:
+note:
+
+### 103
+edit:    Baltimore
+probe:   Who is the head of government in the headquarters location of Johns Hopkins University Press?
+label:
+note:
+
+### 108
+edit:    New York City
+probe:   In which city was the head of government located when "Bret Maverick" was first broadcasted?
+label:
+note:
+
+### 118
+edit:    New York City
+probe:   Who is the leader of the city where the headquarters of Argosy is located?
+label:
+note:
+
+### 126
+edit:    Pakistan
+probe:   Who is the head of government of the country that Mohammad Amir is a citizen of?
+label:
+note:
+
+### 128
+edit:    Aston Martin Lagonda
+probe:   Who is the CEO of the manufacturer of Aston Martin DB7?
+label:
+note:
+
+### 136
+edit:    New York City
+probe:   Who holds the position of the chief executive of the city where "The Brady Bunch" original broadcaster's headquarters is located?
+label:
+note:
+
+### 138
+edit:    Elena Ceaușescu
+edit:    Michigan State University
+edit:    Paris
+probe:   Which continent is the headquarter location of the institution where Nicolae Ceaușescu's spouse was educated?
+label:
+note:
+
+### 151
+edit:    Vladimir Lenin
+probe:   Where did the spouse of the author of "Lenin's Testament" die, on which continent?
+label:
+note:
+
+### 157
+edit:    basketball
+probe:   From which country does Avery Johnson hail?
+label:
+note:
+
+### 160
+edit:    Bob Dylan
+probe:   Which city is the headquarters of the educational institution where the performer of "Blowin' in the Wind" was enrolled?
+label:
+note:
+
+### 176
+edit:    Ford Motor Company
+edit:    William Morris, 1st Viscount Nuffield
+edit:    France
+probe:   In which city is the headquarters of the company that founded the manufacturer of Ford S-Max located?
+label:
+note:
+
+### 180
+edit:    Iran
+probe:   What is the name of the chief executive of the country where Mulla Sadra belongs?
+label:
+note:
+
+### 185
+edit:    association football
+edit:    Hong Kong
+probe:   What continent does Deportes Copiapó's country of origin belong to?
+label:
+note:
+
+### 187
+edit:    country music
+probe:   Who is the chief of the government in the country where the genre of music that Rivers Rutherford is associated with originated?
+label:
+note:
+
+### 195
+edit:    baseball
+edit:    United Kingdom
+probe:   What is the name of the current head of state of the country from where the sport of Dom DiMaggio originated?
+label:
+note:
+
+### 207
+edit:    Australia
+probe:   What is the name of the head of government in the home country of John Quiggin?
+label:
+note:
+
+### 241
+edit:    Duchy of Cleves
+edit:    Methodism
+probe:   In which city did the founder of the religion associated with Duchy of Cleves work?
+label:
+note:
+
+### 253
+edit:    Australia
+probe:   What is the name of the current head of government in the country where Brett Whiteley held citizenship?
+label:
+note:
+
+### 260
+edit:    Lebensborn
+probe:   Who is the head of government of the location where the Lebensborn organization's headquarters was situated?
+label:
+note:
+
