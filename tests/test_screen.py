@@ -7,7 +7,7 @@ with, which is the one thing this release is built to avoid.
 
 import pytest
 
-from editscreen import Edit, Item, Level, screen
+from editscreen import Edit, Item, Level, screen, screen_any
 from editscreen.adapters import mquake
 from editscreen.matchers.alias import derived_variants
 
@@ -162,3 +162,30 @@ class TestMQuAKEAdapter:
     def test_a_case_without_rewrites_is_an_error_not_a_clean_verdict(self):
         with pytest.raises(ValueError, match="requested_rewrite"):
             list(mquake.from_records([self._case(requested_rewrite=[])]))
+
+
+class TestVerdictDoesNotDependOnEditOrder:
+    """36 of 9,000 MQuAKE-CF-3k items had one subject named outright and
+    another caught only by a surname. Which level came back depended on
+    which edit the adapter happened to emit first."""
+
+    named = Edit(subject="Henry Mackenzie")
+    surname_only = Edit(subject="Jane Austen")
+    probe = "Who wrote the novel by Henry Mackenzie that Austen admired?"
+
+    def test_same_verdict_either_way_round(self):
+        a = screen_any([self.named, self.surname_only], self.probe)
+        b = screen_any([self.surname_only, self.named], self.probe)
+        assert a.level is b.level
+
+    def test_reports_the_undeniable_match(self):
+        """STRICT, not ALIAS: the point of a verdict is the best evidence
+        behind it, and a full surface form cannot be argued with."""
+        for edits in ([self.named, self.surname_only],
+                      [self.surname_only, self.named]):
+            assert screen_any(edits, self.probe).level is Level.STRICT
+
+    def test_alias_still_wins_over_clean(self):
+        absent = Edit(subject="Mary Shelley")
+        for edits in ([absent, self.surname_only], [self.surname_only, absent]):
+            assert screen_any(edits, self.probe).level is Level.ALIAS

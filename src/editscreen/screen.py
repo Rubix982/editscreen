@@ -12,7 +12,7 @@ from .types import Edit, Evidence, Item, Level, Verdict
 # report. A contamination rate from one version is not comparable to one
 # from another, and a number whose matcher cannot be identified is not
 # reproducible — the same discipline as recording a seed.
-MATCHER_VERSION = "0.1.0"
+MATCHER_VERSION = "0.1.1"
 
 
 def screen(edit: Edit, probe: str) -> Verdict:
@@ -36,14 +36,35 @@ def screen(edit: Edit, probe: str) -> Verdict:
     )
 
 
+def _strength(level: Level) -> tuple[bool, int]:
+    """Sort key putting the strongest evidence first.
+
+    CLEAN sorts last whatever its numeric value, because it is the absence
+    of evidence rather than a weak kind of it. Among the rest, the ladder's
+    own order applies: STRICT assumed least, so it wins.
+    """
+    return (level is Level.CLEAN, int(level))
+
+
 def screen_any(edits: Sequence[Edit], probe: str) -> Verdict:
     """Does `probe` identify ANY of the subjects these edits changed?
 
-    Returns the highest level any single edit reaches. Taking the highest
-    is the only reading that keeps the lower-bound guarantee: if the probe
-    names one of four edited subjects, the item IS contaminated, and
-    reporting it clean because the other three were absent would make the
-    headline rate an under-count in a way the caller cannot see.
+    The item is contaminated if ANY edit matches: naming one of four
+    edited subjects contaminates the item, and reporting it clean because
+    the other three were absent would make the headline rate an
+    under-count in a way the caller cannot see.
+
+    Where several edits match, the verdict carries the STRONGEST evidence,
+    which is the LOWEST non-clean level. The ladder is ordered by how far
+    from the undeniable a level had to go — STRICT assumes least — so an
+    item with one subject named outright and another caught by a surname
+    is reported at STRICT, on the match nobody can argue with.
+
+    Taking the numeric maximum instead made the verdict depend on the
+    order the edits arrived in, which hit 36 of the 9,000 MQuAKE-CF-3k
+    items. The CLEAN-vs-contaminated split was never affected; the level
+    was, and a level that moves when a list is reordered is not a
+    measurement.
 
     The winning evidence carries the subject that produced it, because
     with four edits in play "STRICT" alone does not say which one fired.
@@ -54,10 +75,10 @@ def screen_any(edits: Sequence[Edit], probe: str) -> Verdict:
     best = None
     for edit in edits:
         verdict = screen(edit, probe)
-        if best is None or verdict.level > best[0].level:
+        if best is None or _strength(verdict.level) < _strength(best[0].level):
             best = (verdict, edit)
         if best[0].level is Level.STRICT:
-            break  # nothing implemented outranks it, so stop looking
+            break  # the strongest evidence there is; stop looking
 
     verdict, edit = best
     if len(edits) == 1:

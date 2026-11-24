@@ -14,9 +14,16 @@ from enum import IntEnum
 class Level(IntEnum):
     """How strongly an evaluation item identifies the edited subject.
 
-    Ordered, and the order is the point: a higher level is a stronger
-    claim that the item is contaminated, and every level above CLEAN
-    implies the levels below it would also have fired if asked.
+    Ordered, and the order is the point: it runs by HOW FAR FROM THE
+    UNDENIABLE a level had to go. STRICT assumes least and IDENTIFIABLE
+    most, so the rate rises as you read down and STRICT is the lower
+    bound everything else is quoted against.
+
+    It is NOT an order of evidential strength, and reading it as one is
+    what made `screen_any` order-dependent until 0.2. The levels are also
+    mutually exclusive in practice rather than nested: alias is only
+    asked where strict said no, and a mononym named in full is STRICT
+    while deriving no variants for ALIAS to find.
 
     CLEAN         nothing in the probe points at the edited subject.
     STRICT        the subject's own surface form occurs in the probe.

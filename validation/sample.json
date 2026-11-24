@@ -1,0 +1,26 @@
+{
+ "drawn": "2026-11-24",
+ "seed": 20261124,
+ "matcher_version": "0.1.1",
+ "editscreen_commit": "0893bfcc402f2708ddc9a1b2f5df25affee9258a-dirty",
+ "stratum_sizes": {
+  "MQuAKE-T/STRICT": 21,
+  "MQuAKE-T/ALIAS": 67,
+  "MQuAKE-T/CLEAN": 5516,
+  "MQuAKE-CF-3k/STRICT": 5887,
+  "MQuAKE-CF-3k/ALIAS": 214,
+  "MQuAKE-CF-3k/CLEAN": 2899
+ },
+ "stratum_drawn": {
+  "MQuAKE-T/STRICT": 21,
+  "MQuAKE-T/ALIAS": 40,
+  "MQuAKE-T/CLEAN": 60,
+  "MQuAKE-CF-3k/STRICT": 40,
+  "MQuAKE-CF-3k/ALIAS": 40,
+  "MQuAKE-CF-3k/CLEAN": 60
+ },
+ "input_sha256": {
+  "MQuAKE-CF-3k": "ce27a39c39f2983512b9b5578fadea5fbe352e5368f49d64f38d37ce304edc80",
+  "MQuAKE-T": "58500a1d4aaf9e036c23a1d9dd6be2d73d693e35a695614842f211ea5aff59f2"
+ }
+}
