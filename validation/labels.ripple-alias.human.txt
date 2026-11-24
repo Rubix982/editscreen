@@ -1,0 +1,131 @@
+# The labelled set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is ("the author of The Man of Feeling")
+#   n   none of the above: nothing in the probe points at the edited subject
+#   w   the `edit:` line is not this entry's subject at all — the adapter
+#       recovered the wrong string. `w` beats every other letter: answer it
+#       whenever it applies, whatever the probe says.
+#
+# RippleEdits names its subject by Wikidata QID, and the adapter has no
+# knowledge base, so it reads a label back out of the entry's own prompts.
+# `edit:` is what it recovered and `subject:` is what Wikidata says that
+# QID is. When they disagree, the item is `w` — that is a failure of the
+# recovery and not of the matcher, and the whole point of this draw is to
+# tell the two apart.
+#
+# Answer `s`, `a`, `d` and `n` about `subject:`, the real one. A probe that
+# names the recovered string but not the real subject is still `w`.
+#
+# `s` and `a` are what the screen claims to detect, so they decide its
+# precision and recall. `d` is what it deliberately does not detect, and
+# counting them is how we find out how loose the lower bound is.
+#
+# `note:` is optional and only worth filling when an item fits none of the
+# letters. Those are the interesting ones — the levels in types.py were
+# written from a handful of examples and have never met real data.
+#
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
+# Stop whenever you like. Every stopping point is a usable sample; the
+# scorer reweights on what is actually filled in.
+
+
+### 013
+edit:    Carrie Coon, which is not shiatsu,
+subject: Carrie Coon
+also:    Carrie Alexandra Coon
+probe:   The name of the alma mater of Carrie Coon is
+label:
+note:
+
+### 018
+edit:    Peter Scolari
+subject: Peter Scolari
+also:    Peter Thomas Scolari
+probe:   The place of birth of Peter Thomas Scolari is
+label:
+note:
+
+### 047
+edit:    Tetsuji Imanaka, which is not scientist,
+subject: Tetsuji Imanaka
+probe:   The place of birth of Tetsuji Imanaka is
+label:
+note:
+
+### 058
+edit:    St Illtyd Castle Mound
+subject: St Illtyd's Motte
+also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
+probe:   The official language of St Illtyd's Motte is
+label:
+note:
+
+### 064
+edit:    Bobby Joe Long, which is not banker,
+subject: Bobby Joe Long
+also:    Robert Joseph Long, The Classified Ad Rapist, The Adman Rapist, Robert Joe Long
+probe:   The occupation of The Adman Rapist is
+label:
+note:
+
+### 072
+edit:    Andrew Tate
+subject: Andrew Tate
+probe:   The name of the child of Sito Pons is
+label:
+note:
+
+### 102
+edit:    Amal Clooney
+subject: Amal Clooney
+also:    A. Alamuddin, Amal Ramzi Alamuddin, Amal Alamuddin Clooney, Amal Alamuddin
+probe:   The place of birth of Amal Alamuddin is
+label:
+note:
+
+### 122
+edit:    Battista Agnese
+subject: Battista Agnese
+also:    Battista Giovanni Agnese
+probe:   The date of birth of Battista Giovanni Agnese is
+label:
+note:
+
+### 123
+edit:    Bryan Arámbulo, which is not homosexuality,
+subject: Bryan Arámbulo
+also:    El Divo de la Cumbia Peruana
+probe:   The name of the country of citizenship of Bryan Arámbulo is
+label:
+note:
+
+### 146
+edit:    Anyer Island
+subject: Anyar
+also:    Anyer
+probe:   The name of the country which Pulau Anyer is associated with is
+label:
+note:
+
+### 147
+edit:    Decreto-Lei nº 8666, de 14 de janeiro de 1946
+subject: Law-decree No. 8666, of January 14, 1946
+also:    Decreto-Lei nº 8666, de 14 de janeiro de 1946
+probe:   The name of the anthem that is most likely to be performed in Law-decree No. 8666, of January 14, 1946 is
+label:
+note:
+
+### 157
+edit:    Jacinda Ardern
+subject: Jacinda Ardern
+also:    Jacinda Kate Laurell Ardern
+probe:   The name of the country of citizenship of Jacinda Ardern is
+label:
+note:
+

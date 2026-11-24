@@ -42,6 +42,21 @@ CORPORA = {
                "out": "labels.ripple.human.txt"},
 }
 
+# The alias draw, added after the first one. Weighting the subsets above towards
+# STRICT left five ALIAS items across three RippleEdits subsets, so the alias
+# rule came out of that pass still resting on one labeller. These sets buy it a
+# second, and they draw from where its published figure actually comes from: the
+# MQuAKE HELD-OUT set, which is where the 90.2% is measured, and RippleEdits'
+# alias stratum. Items already answered by the second labeller are excluded, so
+# this adds evidence rather than re-asking.
+ALIAS_PLAN = {"ALIAS": 10, "STRICT": 1, "CLEAN": 1}
+ALIAS_CORPORA = {
+    "mquake": {"sample": "holdout.json", "source": "labels.holdout.txt",
+               "out": "labels.alias.human.txt", "exclude": "labels.human.txt"},
+    "ripple": {"sample": "sample.ripple.json", "source": "labels.ripple.claude.txt",
+               "out": "labels.ripple-alias.human.txt", "exclude": "labels.ripple.human.txt"},
+}
+
 
 def _blocks(text: str) -> tuple[str, dict[str, str]]:
     parts = text.split("### ")
@@ -53,8 +68,14 @@ def _blank(block: str) -> str:
     return re.sub(r"^note:.*$", "note:", block, flags=re.M)
 
 
-def draw(name: str) -> None:
-    spec = CORPORA[name]
+def draw(name: str, alias: bool = False) -> None:
+    spec = (ALIAS_CORPORA if alias else CORPORA)[name]
+    plan = ALIAS_PLAN if alias else PLAN
+    # A second labeller answering the same item twice adds nothing. The draw
+    # skips whatever the first human pass already covered.
+    seen: set[str] = set()
+    if spec.get("exclude"):
+        seen = set(_blocks((HERE / spec["exclude"]).read_text(encoding="utf-8"))[1])
     sample = json.loads((HERE / spec["sample"]).read_text(encoding="utf-8"))
     header, blocks = _blocks((HERE / spec["source"]).read_text(encoding="utf-8"))
     assign = sample["assignment"]
@@ -63,14 +84,14 @@ def draw(name: str) -> None:
     # or subsets that carry it, so no single released file dominates the draw.
     by_verdict: dict[str, dict[str, list[str]]] = {}
     for item_id, row in assign.items():
-        if item_id not in blocks:
+        if item_id not in blocks or item_id in seen:
             continue
         cell = row["stratum"].rsplit("/", 1)[0]
         by_verdict.setdefault(row["verdict"], {}).setdefault(cell, []).append(item_id)
 
     rng = random.Random(SEED)
     picked: list[str] = []
-    for verdict, quota in PLAN.items():
+    for verdict, quota in plan.items():
         cells = sorted(by_verdict.get(verdict, {}))
         if not cells:
             continue
@@ -98,9 +119,16 @@ def draw(name: str) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--adapter", choices=sorted(CORPORA), default=None)
+    ap.add_argument("--alias", action="store_true",
+                    help="draw the alias-weighted sets instead")
     args = ap.parse_args()
     for name in ([args.adapter] if args.adapter else sorted(CORPORA)):
-        draw(name)
+        draw(name, alias=args.alias)
+    if args.alias:
+        print("\nNo verdicts in either file. Label with:")
+        print("  python3 validation/label.py --labels validation/labels.alias.human.txt")
+        print("  python3 validation/label.py --labels validation/labels.ripple-alias.human.txt")
+        return 0
     print("\nNo verdicts in either file. Label with:")
     print("  python3 validation/label.py --labels validation/labels.human.txt")
     print("  python3 validation/label.py --labels validation/labels.ripple.human.txt")

@@ -138,7 +138,13 @@ Strict precision reads 100% under the second labeller on both corpora, as it did
 
 All three RippleEdits disagreements sit on the same boundary, and none of them is on a STRICT item: **a name variant that Wikidata does not list.** `Jacob Gershon`, a Hebrew name for the subject, read as a variant by one labeller and as nothing by the other; `Koba`, likewise; and one item where a longer form was read as the name itself by one and as a variant by the other. That boundary is where this matcher is genuinely uncertain, and it is the alias rule's territory rather than the strict rule's.
 
-**What the redraw cost, stated because it was a deliberate choice.** Weighting to STRICT left **five ALIAS items across three RippleEdits subsets** — one, two and two. `score.py` duly reports alias precision of 0%, 50% and 100% on those. Those are not measurements of anything; at n=1 a single judgement call on an unlisted Hebrew name prints as 0.0%. The alias rule's figure remains the held-out 90.2% [75.8, 100.0] from the first pass, and it is still single-labeller. Buying a second labeller for it needs its own draw.
+**What the redraw cost, stated because it was a deliberate choice.** Weighting to STRICT left **five ALIAS items across three RippleEdits subsets** — one, two and two. `score.py` duly reports alias precision of 0%, 50% and 100% on those. Those are not measurements of anything; at n=1 a single judgement call on an unlisted Hebrew name prints as 0.0%. The alias rule's figure remains the held-out 90.2% [75.8, 100.0] from the first pass. **That draw now exists:**
+
+```
+python3 validation/sample_human.py --alias
+```
+
+`labels.alias.human.txt` is 10 items from the **held-out** MQuAKE set, which is where the 90.2% is measured — 5 from each released file, and that set is alias-only, so there is nothing else in it to draw. `labels.ripple-alias.human.txt` is 12, ten of them alias. Both exclude whatever the first human pass already answered, so they add evidence rather than re-asking. Score them the same way, against `holdout.json` and `sample.ripple.json`.
 
 ## The held-out set
 

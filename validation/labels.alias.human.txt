@@ -1,0 +1,90 @@
+# The labelled set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is ("the author of The Man of Feeling")
+#   n   none of the above: nothing in the probe points at the edited subject
+#
+# For an item with several edits, answer about the STRONGEST case among
+# them: if any one subject is named in full, the answer is `s`.
+#
+# `s` and `a` are what the screen claims to detect, so they decide its
+# precision and recall. `d` is what it deliberately does not detect, and
+# counting them is how we find out how loose the lower bound is.
+#
+# `note:` is optional and only worth filling when an item fits none of the
+# four letters. Those are the interesting ones — the levels in types.py
+# were written from a handful of examples and have never met real data.
+#
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
+# Stop whenever you like. Every stopping point is a usable sample; the
+# scorer reweights on what is actually filled in.
+
+
+### 001
+edit:    Johann Sebastian Bach
+probe:   What religion is associated with the performer of Bach-Werke-Verzeichnis?
+label:
+note:
+
+### 004
+edit:    Gaelic football
+edit:    India
+probe:   In which continent did the sport that the Meath Senior Football Championship belongs to originate?
+label:
+note:
+
+### 014
+edit:    Commodore International
+edit:    United Kingdom
+probe:   What language was designated as the official language in the country of origin of the Commodore PET?
+label:
+note:
+
+### 018
+edit:    Aston Martin Lagonda
+probe:   Who leads the company responsible for manufacturing the Aston Martin DB5?
+label:
+note:
+
+### 019
+edit:    John Browning
+probe:   Which city is the capital of the country where the founder of the manufacturer of the Browning M1919, which x1 is associated with, comes from?
+label:
+note:
+
+### 029
+edit:    Aston Martin Lagonda
+probe:   What is the name of the chief executive officer of the company that produces Aston Martin DB3S?
+label:
+note:
+
+### 039
+edit:    Yamaha Corporation
+probe:   In which city is the company that produced the Yamaha DX7 based?
+label:
+note:
+
+### 040
+edit:    Aston Martin Lagonda
+probe:   Who holds the position of Chief Executive Officer at the manufacturer of the Aston Martin DB9?
+label:
+note:
+
+### 043
+edit:    association football
+edit:    Hong Kong
+probe:   In which continent is the country of origin of the Cameroon national football team located?
+label:
+note:
+
+### 045
+edit:    Aston Martin Lagonda
+probe:   Who is the CEO of the company that manufactured the Aston Martin DBR9?
+label:
+note:
+
