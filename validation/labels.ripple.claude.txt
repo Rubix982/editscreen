@@ -1,0 +1,1439 @@
+# The labelled set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is ("the author of The Man of Feeling")
+#   n   none of the above: nothing in the probe points at the edited subject
+#   w   the `edit:` line is not this entry's subject at all — the adapter
+#       recovered the wrong string. `w` beats every other letter: answer it
+#       whenever it applies, whatever the probe says.
+#
+# RippleEdits names its subject by Wikidata QID, and the adapter has no
+# knowledge base, so it reads a label back out of the entry's own prompts.
+# `edit:` is what it recovered and `subject:` is what Wikidata says that
+# QID is. When they disagree, the item is `w` — that is a failure of the
+# recovery and not of the matcher, and the whole point of this draw is to
+# tell the two apart.
+#
+# Answer `s`, `a`, `d` and `n` about `subject:`, the real one. A probe that
+# names the recovered string but not the real subject is still `w`.
+#
+# `s` and `a` are what the screen claims to detect, so they decide its
+# precision and recall. `d` is what it deliberately does not detect, and
+# counting them is how we find out how loose the lower bound is.
+#
+# `note:` is optional and only worth filling when an item fits none of the
+# letters. Those are the interesting ones — the levels in types.py were
+# written from a handful of examples and have never met real data.
+#
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
+# Stop whenever you like. Every stopping point is a usable sample; the
+# scorer reweights on what is actually filled in.
+
+### 001
+edit:    Neri Maria Corsini
+subject: Neri Maria Corsini
+probe:   The place of death of Neri Maria Corsini is
+label: s
+note: 
+
+### 002
+edit:    Gleb Anrep
+subject: Gleb Anrep
+also:    Gleb Vasil’evič von Anrep, Gleb von Anrep, Gleb Vassilievitch von Anrep, Gleb Vasilyevich von Anrep
+probe:   The name of the father of Gleb Anrep is
+label: s
+note: 
+
+### 003
+edit:    Nicolas Cage
+subject: Nicolas Cage
+also:    Nicolas Kim Coppola
+probe:   The gender of Nicolas Cage is
+label: s
+note: 
+
+### 004
+edit:    Katharine Savile
+subject: Katharine Savile
+also:    Katherine Savile
+probe:   The name of the spouse of Katharine Savile is
+label: s
+note: 
+
+### 005
+edit:    Daniel G Gavin, which is not media consultant,
+subject: Daniel G Gavin
+also:    Daniel Gavin
+probe:   The occupation of the author of Abrupt Holocene climate change and potential response to solar forcing in western Canada is
+label: d
+note: the probe describes the subject as the author of a named paper; the recovered string also carries a trailing clause
+
+### 006
+edit:    Osman I
+subject: Osman I
+also:    Othman I, Osman Ghazi
+probe:   The names of the siblings of Elna Kiljander are
+label: n
+note: 
+
+### 007
+edit:    Whoopi Goldberg
+subject: Whoopi Goldberg
+probe:   The name of the alma mater of Whoopi Goldberg is
+label: s
+note: 
+
+### 008
+edit:    Nettle Cave
+subject: Nettle Cave
+also:    2J-5
+probe:   The name of the country which 2J-5 is associated with is
+label: a
+note: 
+
+### 009
+edit:    Laura Marie Kaeppeler
+subject: Laura Kaeppeler
+also:    Laura Marie Kaeppeler
+probe:   The place of birth of Laura Kaeppeler is
+label: s
+note: 
+
+### 010
+edit:    Thomas Crofton
+subject: Thomas Crofton
+also:    Very Rev. Thomas Crofton
+probe:   The name of the child of Gustave Chaix d'Est-Ange is
+label: d
+note: inverse relation: the probe names the father and asks for the child, who is the subject
+
+### 011
+edit:    Oliver Stanley
+subject: Oliver Stanley
+also:    Oliver Frederick Stanley, Oliver Frederick George Stanley
+probe:   The names of the siblings of Oliver Stanley are
+label: s
+note: 
+
+### 012
+edit:    Nisimkavičy
+subject: Nisimkavičy
+also:    Nisimkavichy
+probe:   The name of the country which Nisimkavichy is the capital of is
+label: a
+note: 
+
+### 013
+edit:    Carrie Coon, which is not shiatsu,
+subject: Carrie Coon
+also:    Carrie Alexandra Coon
+probe:   The name of the alma mater of Carrie Coon is
+label: s
+note: 
+
+### 014
+edit:    Adelajda Ludwika Sobieska
+subject: Adelajda Ludwika Sobieska
+probe:   The name of the mother of Theresa Kunegunda Sobieska is
+label: d
+note: inverse relation, shared surname; the probe asks for the subject by her child
+
+### 015
+edit:    Lefko T Charalambous, which is not reviewer,
+subject: Lefko T Charalambous
+also:    Lefko Charalambous
+probe:   The occupation of Lefko Charalambous is
+label: s
+note: 
+
+### 016
+edit:    Joseph James DeAngelo
+subject: Joseph James Dengelo
+also:    Diamond Knot Killer, East Bay Rapist, East Side Killer, Original Night Stalker, Visalia Ransacker, GSK
+probe:   The name of the country of citizenship of The Original Night Stalker is
+label: a
+note: 
+
+### 017
+edit:    College catholique Franco-Ouest
+subject: Collège catholique Franco-Ouest
+also:    College catholique Franco-Ouest, Franco-Ouest, Franco-Ouest High School
+probe:   The name of the country which Franco-Ouest High School is associated with is
+label: a
+note: 
+
+### 018
+edit:    Peter Scolari
+subject: Peter Scolari
+also:    Peter Thomas Scolari
+probe:   The place of birth of Peter Thomas Scolari is
+label: a
+note: 
+
+### 019
+edit:    St Illtyd Castle Mound
+subject: St Illtyd's Motte
+also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
+probe:   The name of the currency in St Illtyd's Motte is
+label: s
+note: 
+
+### 020
+edit:    Canada, which is not French,
+subject: Canada
+also:    CA, CAN
+probe:   The official language of the place of burial of Angus Walters is
+label: d
+note: the subject is a country, reached as the place of burial of a named person
+
+### 021
+edit:    Kanye West
+subject: Kanye West
+also:    Kanye Omari West, Ye, Yeezy, Kon the Louis Vuitton Don
+probe:   The name of the ethnic group which Kanye West is associated with is
+label: s
+note: 
+
+### 022
+edit:    Seymour Myron Hersh
+subject: Seymour Hersh
+probe:   The name of the field of work of Seymour Hersh is
+label: s
+note: 
+
+### 023
+edit:    Barack Hussein Obama II
+subject: Barack Obama
+probe:   The place of birth of Barack Obama is
+label: s
+note: 
+
+### 024
+edit:    Rait Maruste, which is not judge,
+subject: Rait Maruste
+probe:   The name of the award Rait Maruste won is
+label: s
+note: 
+
+### 025
+edit:    Märta Ulfsdotter
+subject: Märta Ulfsdotter
+probe:   The name of the child of Q is
+label: n
+note: the other entity in the probe renders as the bare letter Q
+
+### 026
+edit:    Alberta Bair Theater for the Performing Arts
+subject: Alberta Bair Theater
+also:    Fox Theatre, Alberta Bair Theater for the Performing Arts
+probe:   The name of the head of government of the country Alberta Bair Theater is associated with is
+label: s
+note: 
+
+### 027
+edit:    Mike Matthews
+subject: Mike Matthews
+also:    Michael Scott Matthews
+probe:   The name of the league which Michael Scott Matthews plays in is
+label: a
+note: 
+
+### 028
+edit:    Arthur Foulkes
+subject: Arthur Foulkes
+also:    Sir Arthur Alexander Foulkes
+probe:   The place of birth of Sir Arthur Alexander Foulkes is
+label: a
+note: 
+
+### 029
+edit:    Kaboeai Island
+subject: Kabuai Island
+also:    Kabuai, Kaboeai Island
+probe:   The name of the country which Kaboeai Island is associated with is
+label: a
+note: 
+
+### 030
+edit:    Qin
+subject: Qin
+also:    State of Qin, Qinguo, Ch'in, Chin, Tsine, Ch'in-kuo
+probe:   The name of the continent which the country of citizenship of Huan Yi is part of is
+label: d
+note: 
+
+### 031
+edit:    Hugo Smith
+subject: Hugo Smith
+also:    Hugo Jeremy Eric Smith
+probe:   The name of the mother of Hugo Smith is
+label: s
+note: 
+
+### 032
+edit:    Homewood
+subject: Homewood
+probe:   The name of the currency in Homewood is
+label: s
+note: 
+
+### 033
+edit:    Freddie Mercury
+subject: Freddie Mercury
+also:    Larry Lurex
+probe:   The place of birth of Freddie Mercury is
+label: s
+note: 
+
+### 034
+edit:    Edward Everett
+subject: Edward Everett
+probe:   The name of the religion which Edward Everett is associated with is
+label: s
+note: 
+
+### 035
+edit:    Ferdinand I of the Two Sicilies
+subject: Ferdinand I of the Two Sicilies
+also:    Ferdinand I
+probe:   The name of the position held by the father of Princess Luisa of Naples and Sicily is
+label: d
+note: 
+
+### 036
+edit:    Hugh Rollo Fagan
+subject: Hugh Rollo Fagan
+also:    Major Hugh Rollo Fagan
+probe:   The name of the child of the mother of Hugh Rollo Fagan is
+label: s
+note: 
+
+### 037
+edit:    Jahangir I
+subject: Jahangir I
+also:    Nur-ud-din Mohammad Salim, Nur al-Dīn MuỌhammad Jahāngīr Gūrkānī, empereur moghol de l'Inde Jahangīr, Emperor of Hindustan Jahangir, Großmogul Jahangir Mogulreich, Jehangir
+probe:   The name of the child of empereur moghol de l'Inde Jahangīr is
+label: a
+note: 
+
+### 038
+edit:    Naga Chaitanya
+subject: Naga Chaitanya
+also:    Akkineni Naga Chaitanya
+probe:   The names of the siblings of Naga Chaitanya are
+label: s
+note: 
+
+### 039
+edit:    Jason MacIsaac
+subject: Jason MacIsaac
+probe:   The name of the head of state of the country of citizenship of Jason MacIsaac is
+label: s
+note: 
+
+### 040
+edit:    Philippine presidential election, 2022
+subject: 2022 Philippine presidential election
+also:    Philippine presidential election, 2022
+probe:   The name of the continent which the country 2022 Philippine presidential election is associated with is part of is
+label: s
+note: 
+
+### 041
+edit:    Fujiwara no Shimeko
+subject: Fujiwara no Shimeko
+probe:   The name of the position held by Fujiwara no Shimeko is
+label: s
+note: 
+
+### 042
+edit:    Gao Yifeng
+subject: Gao Yifeng
+also:    Xiuzhi
+probe:   The name of the father of Xiuzhi is
+label: a
+note: the probe asks about the subject's father but names the subject by an alias
+
+### 043
+edit:    Alida Ortiz Sotomayor
+subject: Alida Ortiz Sotomayor
+also:    Álida Ortiz Sotomayor, Alida Ortiz, A. Ortiz Sotomayor, there is no birth and date death on here
+probe:   The occupation of Alida Ortiz Sotomayor is
+label: s
+note: 
+
+### 044
+edit:    Philip Robert Anstruther
+subject: Philip Robert Anstruther
+probe:   The name of the mother in law of Zaida Mary Erskine is
+label: d
+note: 
+
+### 045
+edit:    Denilson Gabionetta
+subject: Denilson Gabionetta
+also:    Denilson Martinho Gabionetta, Gabionetta
+probe:   The name of the sports team which Denilson Martinho Gabionetta is a member of is
+label: a
+note: 
+
+### 046
+edit:    Billy White
+subject: Billy White
+also:    Billy Roy White III
+probe:   The gender of Billy White is
+label: s
+note: 
+
+### 047
+edit:    Tetsuji Imanaka, which is not scientist,
+subject: Tetsuji Imanaka
+probe:   The place of birth of Tetsuji Imanaka is
+label: s
+note: 
+
+### 048
+edit:    Philippe Maximilien de Merode, Marquis de Westerloo
+subject: Philippe Maximilien de Merode, Marquis de Westerloo
+also:    Philippe Maximilien, Comte de Lannoy, Marquis de Westerloo
+probe:   The name of the father of Philippe Maximilien de Merode, Marquis de Westerloo is
+label: s
+note: 
+
+### 049
+edit:    Mäğsüm Säläxef, which is not scientist,
+subject: Mäğsüm Säläxef
+probe:   The occupation of Mäğsüm Säläxef, which is not scientist, is
+label: s
+note: 
+
+### 050
+edit:    Anatoliĭ Aleksandrovich
+subject: Anatoly Porokhovsky
+also:    Anatoliĭ Aleksandrovich
+probe:   The name of the award Anatoly Porokhovsky won is
+label: s
+note: 
+
+### 051
+edit:    Joseph Stalin
+subject: Joseph Stalin
+also:    Joseph Vissarionovich Stalin, Josef Stalin, Joseph Vissarionovitch Stalin, Ioseb Besarionis dze Dzhugashvili, Ioseb Jugashvili, Uncle Joe
+probe:   The name of the country of citizenship of Joseph Vissarionovitch Stalin is
+label: a
+note: 
+
+### 052
+edit:    Princess Margaret, Countess of Snowdon
+subject: Princess Margaret, Countess of Snowdon
+also:    Margaret Windsor, Margaret York
+probe:   The place of birth of Margaret York is
+label: a
+note: 
+
+### 053
+edit:    Embassy Hill
+subject: Embassy Hill
+also:    Embassy Racing With Graham Hill, Embassy Hill F1 team, Embassy Hill Formula One team
+probe:   The name of the founder of Embassy Hill Formula One team is
+label: s
+note: 
+
+### 054
+edit:    Dakhovskaya, which is not Russian,
+subject: Dakhovskaya
+probe:   The name of the country which Dakhovskaya is associated with is
+label: s
+note: 
+
+### 055
+edit:    María Antonieta Cámpoli, which is not banking industry,
+subject: María Antonieta Cámpoli
+also:    Maria Antonieta Campoli
+probe:   The place of birth of María Antonieta Cámpoli is
+label: s
+note: 
+
+### 056
+edit:    Billy Kametz
+subject: Billy Kametz
+also:    William Patrick Kametz
+probe:   The place of death of William Patrick Kametz is
+label: a
+note: 
+
+### 057
+edit:    Maria Sharapova
+subject: Maria Sharapova
+also:    Marija Šarapova, Maria Szarapowa, Maria Scharapowa, Maria Sjarapova, Maria Shirapova, Marija Sarapova
+probe:   The name of the mother of Mariya Sarapova is
+label: a
+note: a transliteration not in the Wikidata alias list
+
+### 058
+edit:    St Illtyd Castle Mound
+subject: St Illtyd's Motte
+also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
+probe:   The official language of St Illtyd's Motte is
+label: s
+note: 
+
+### 059
+edit:    Michael Savage
+subject: Mike Savage
+also:    Michael John Savage, Mike Savage (politician), Michael Savage (politician), Michael Savage
+probe:   The name of the anthem of the country of citizenship of Michael Savage is
+label: a
+note: 
+
+### 060
+edit:    Prince Philip, Duke of Edinburgh
+subject: Prince Philip, Duke of Edinburgh
+also:    Lieutenant Philip Mountbatten, Philip of Greece and Denmark, H.R.H. Prince Philip, H.R.H. The Duke Of Edinburgh, Philip Mountbatten; Prince Philip of Greece and Denmark, The Prince Philip, Duke of Edinburgh
+probe:   The name of the religion which Prince Philip, Duke of Edinburgh is associated with is
+label: s
+note: 
+
+### 061
+edit:    Ivan Johnson
+subject: Ivan Johnson
+also:    Ivan W. Johnson, Ivelisse Ramos Esquilin's man, Ivan Wilkerson Johnson
+probe:   The name of the league which Ivelisse Ramos Esquilin's man plays in is
+label: a
+note: the alias is a Wikidata oddity, "Ivelisse Ramos Esquilin's man"
+
+### 062
+edit:    Ramla bint Abi Sufyan
+subject: Ramla bint Abi Sufyan
+also:    Umm Habiba Ramla bint Abi Sufyan, Ramlah
+probe:   The name of the father of Muawiyah I is
+label: n
+note: the probe asks for the father of the subject's son, which points at neither
+
+### 063
+edit:    Mäğsüm Säläxef, which is not scientist,
+subject: Mäğsüm Säläxef
+probe:   The place of birth of Mäğsüm Säläxef is
+label: s
+note: 
+
+### 064
+edit:    Bobby Joe Long, which is not banker,
+subject: Bobby Joe Long
+also:    Robert Joseph Long, The Classified Ad Rapist, The Adman Rapist, Robert Joe Long
+probe:   The occupation of The Adman Rapist is
+label: a
+note: 
+
+### 065
+edit:    Charlbury, Oxfordshire
+subject: Charlbury
+also:    Charlbury, Oxfordshire
+probe:   The name of the anthem that is most likely to be performed in Charlbury is
+label: s
+note: 
+
+### 066
+edit:    Philip Henry Morgan Bryant
+subject: Philip Henry Morgan Bryant
+also:    Reverend Philip Henry Morgan Bryant
+probe:   The gender of the mother of Philip Henry Morgan Bryant is
+label: s
+note: 
+
+### 067
+edit:    Doug Emhoff
+subject: Doug Emhoff
+also:    Douglas C. Emhoff, Douglas Craig Emhoff, Douglas Emhoff, Doug C. Emhoff
+probe:   The occupation of Doug Emhoff is
+label: s
+note: 
+
+### 068
+edit:    Kate Winslet, which is not melt operations manager,
+subject: Kate Winslet
+probe:   The name of the mother of Kate Winslet is
+label: s
+note: 
+
+### 069
+edit:    Hulk, which is not scientist,
+subject: Hulk
+also:    The Incredible Hulk, David Banner, The Hulk, Green Hulk, Robert Bruce Banner
+probe:   The name of the spouse of Hulk is
+label: s
+note: 
+
+### 070
+edit:    Sembabule
+subject: Sembabule
+also:    Ssembabule, Shembabule
+probe:   The name of the continent which Sembabule is part of is
+label: s
+note: 
+
+### 071
+edit:    Elizabeth II
+subject: Elizabeth II
+also:    Elizabeth Windsor, Elizabeth Alexandra Mary Windsor
+probe:   The name of the award E.R. II won is
+label: a
+note: E.R. II, a variant not in the alias list
+
+### 072
+edit:    Andrew Tate
+subject: Andrew Tate
+probe:   The name of the child of Sito Pons is
+label: n
+note: 
+
+### 073
+edit:    Jill Tracy Jacobs Biden
+subject: Jill Biden
+also:    Jill Tracy Jacobs Biden, Jill Tracy Biden, Jill Stevenson, Jill Tracy Stevenson, Jill Jacobs-Biden, Dr. Biden
+probe:   The name of the country of citizenship of Jill Biden is
+label: s
+note: 
+
+### 074
+edit:    Don Francks
+subject: Don Francks
+also:    Donald Harvey Francks, Don Harvey Francks
+probe:   The name of the country of citizenship of the father of Cree Summer is
+label: d
+note: 
+
+### 075
+edit:    Informationsdienst Wissenschaft
+subject: Informationsdienst Wissenschaft
+also:    idw
+probe:   The name of the country which idw is associated with is
+label: a
+note: 
+
+### 076
+edit:    Marisa Chiazzese
+subject: Marisa Chiazzese
+also:    Maria Luisa Chiazzese, Maria Mattarella
+probe:   The place of burial of Maria Mattarella is
+label: a
+note: 
+
+### 077
+edit:    Turkey
+subject: Turkey
+also:    Republic of Türkiye, Republic of Turkey
+probe:   The name of the anthem of the country of citizenship of Sercan Sararer is
+label: d
+note: 
+
+### 078
+edit:    Siret
+subject: Siret
+also:    Szeretvásár, Sereth, Szeretvasar, Seret
+probe:   The name of the country which Szeretvasar is the capital of is
+label: a
+note: 
+
+### 079
+edit:    Emily Post
+subject: Emily Post
+also:    Emily Bruce Price, Emily Price Post, Emily Price
+probe:   The place of death of Emily Price is
+label: a
+note: 
+
+### 080
+edit:    Evangeliums-Rundfunk
+subject: ERF Plus
+also:    Evangeliums-Rundfunk
+probe:   The name of the country which Evangeliums-Rundfunk is associated with is
+label: a
+note: 
+
+### 081
+edit:    Klaus Høiland
+subject: Klaus Høiland
+also:    Høil.
+probe:   The name of the award Klaus Høiland won, which is not Librex Montale Prize, is
+label: s
+note: 
+
+### 082
+edit:    Lucia Agar-Ellis
+subject: Lucia Agar-Ellis
+also:    Hon. Lucia Caroline Elizabeth Agar-Ellis, Hon. Lucia Agar-Ellis, Lucia Caroline Elizabeth Agar-Ellis
+probe:   The gender of Lucia Agar-Ellis is
+label: s
+note: 
+
+### 083
+edit:    Oklahoma City bombing
+subject: Oklahoma City bombing
+probe:   The name of the continent which the country Oklahoma City bombing is associated with is part of is
+label: s
+note: 
+
+### 084
+edit:    Theodore Vonkurnatowski
+subject: Theo Von
+also:    Theodor Vonkurnatowski, Theodor von Kurnatowski
+probe:   The name of the country of citizenship of Theo Vonkurnatowski is
+label: a
+note: 
+
+### 085
+edit:    Ivan Kuz‘mič Kobljakov, which is not scientist,
+subject: Ivan Kuz‘mič Kobljakov
+probe:   The gender of Ivan Kuz‘mič Kobljakov is
+label: s
+note: 
+
+### 086
+edit:    Anya Taylor-Joy
+subject: Anya Taylor-Joy
+also:    Anya Josephine Maria Taylor-Joy, Anya-Josephine Maria Taylor-Joy, Anya Taylor
+probe:   The occupation of Anya Taylor-Joy is
+label: s
+note: 
+
+### 087
+edit:    Anne Forrester
+subject: Anne Forrester
+also:    Anne Forrester Holloway
+probe:   The name of the founder of the employer of Anne Forrester is
+label: s
+note: 
+
+### 088
+edit:    Henry Blyde
+subject: Henry Blyde
+also:    Henry Ernest Blyde, Sir Henry Blyde, Harry Blyde, Sir Harry Blyde
+probe:   The name of the award Sir Harry Blyde won is
+label: a
+note: 
+
+### 089
+edit:    Turkey
+subject: Turkey
+also:    Republic of Türkiye, Republic of Turkey
+probe:   The name of the head of state of the country 1993–94 Turkish Second Football League is associated with is
+label: d
+note: 
+
+### 090
+edit:    Fundão
+subject: Fundão
+probe:   The name of the head of government of the place of birth of Primo Broseghini is
+label: d
+note: 
+
+### 091
+edit:    Arlin V. Stevens
+subject: Arlin V. Stevens
+also:    Arlin Stevens, A. V. Stevens
+probe:   The gender of A. V. Stevens is
+label: a
+note: 
+
+### 092
+edit:    Daniel Radcliffe, which is not gray asexuality,
+subject: Daniel Radcliffe
+probe:   The sexual orientation of Jacob Gershon is
+label: a
+note: Jacob Gershon is the subject's Hebrew name and is not in the Wikidata alias list; judged a variant
+
+### 093
+edit:    Debdutta Ray, which is not striped bass,
+subject: Debdutta Ray
+also:    D. Ray
+probe:   The occupation of the author of Determining doping efficiency and mobility from conductivity and Seebeck data of n-doped C60layers is
+label: d
+note: 
+
+### 094
+edit:    Jahangir I
+subject: Jahangir I
+also:    Nur-ud-din Mohammad Salim, Nur al-Dīn MuỌhammad Jahāngīr Gūrkānī, empereur moghol de l'Inde Jahangīr, Emperor of Hindustan Jahangir, Großmogul Jahangir Mogulreich, Jehangir
+probe:   The occupation of Jahangir I is
+label: s
+note: 
+
+### 095
+edit:    Maria Katharine Hartmann
+subject: Maria Katharine Hartmann
+also:    Maria Katharina Hartmann
+probe:   The name of the child of Maria Katharine Hartmann, which is not Johann Adam Osiander, is
+label: s
+note: 
+
+### 096
+edit:    John Stuckey Reynolds, which is not Professional engineer,
+subject: John Stuckey Reynolds
+also:    John Reynolds
+probe:   The name of the country of citizenship of John Stuckey Reynolds is
+label: s
+note: 
+
+### 097
+edit:    Ursula von Baden
+subject: Ursula von Baden
+probe:   The name of the father of Agnes of Baden is
+label: d
+note: 
+
+### 098
+edit:    Wagner International Airport
+subject: Wagner International Airport
+also:    Wagner Intl Aerodrome
+probe:   The name of the currency in Wagner International Airport is
+label: s
+note: 
+
+### 099
+edit:    Moroa
+subject: Moroa
+also:    Marwa, Moro'a
+probe:   The name of the head of state of Marwa is
+label: a
+note: 
+
+### 100
+edit:    Jill Tracy Jacobs Biden
+subject: Jill Biden
+also:    Jill Tracy Jacobs Biden, Jill Tracy Biden, Jill Stevenson, Jill Tracy Stevenson, Jill Jacobs-Biden, Dr. Biden
+probe:   The gender of Jill Jacobs-Biden is
+label: a
+note: 
+
+### 101
+edit:    Lily Yam Kwan Pui-ying
+subject: Lily Yam
+also:    Lily Yam Kwan Pui-ying
+probe:   The name of the position held by Lily Yam is
+label: s
+note: 
+
+### 102
+edit:    Amal Clooney
+subject: Amal Clooney
+also:    A. Alamuddin, Amal Ramzi Alamuddin, Amal Alamuddin Clooney, Amal Alamuddin
+probe:   The place of birth of Amal Alamuddin is
+label: a
+note: 
+
+### 103
+edit:    Georges Lacour-Gayet
+subject: Georges Lacour-Gayet
+probe:   The place of death of the father of Jacques Lacour-Gayet is
+label: d
+note: 
+
+### 104
+edit:    Gao Yifeng
+subject: Gao Yifeng
+also:    Xiuzhi
+probe:   The names of the siblings of the father of Gao Yifeng are
+label: s
+note: 
+
+### 105
+edit:    Smiths S Lueong, which is not myrmecologist,
+subject: Smiths S Lueong
+also:    Smiths Lueong
+probe:   The occupation of the author of The transcription factor FLI1 promotes cancer progression by affecting cell cycle regulation is
+label: d
+note: 
+
+### 106
+edit:    Carolina Paz Santana de la Hoz
+subject: Leslie Santana
+also:    Carolina Paz Santana de la Hoz
+probe:   The name of the country of citizenship of Leslie Santana is
+label: s
+note: 
+
+### 107
+edit:    Joseph Stalin
+subject: Joseph Stalin
+also:    Joseph Vissarionovich Stalin, Josef Stalin, Joseph Vissarionovitch Stalin, Ioseb Besarionis dze Dzhugashvili, Ioseb Jugashvili, Uncle Joe
+probe:   The name of the country of citizenship of Ioseb Dzhugashvili is
+label: a
+note: 
+
+### 108
+edit:    Al-Amir bi-Ahkam Allah
+subject: Al-Amir bi-Ahkam Allah
+also:    al-Āmīr bi'Aḥkāmi’l-Lāh, Mansur ibn Ahamad al-Fatimi
+probe:   The name of the child of Valentin Sardou is
+label: n
+note: 
+
+### 109
+edit:    Melby Aerodrome
+subject: Melby Airport
+also:    Melby Aerodrome, 13MN
+probe:   The name of the country which 13MN is associated with is
+label: a
+note: 
+
+### 110
+edit:    Blaxhall, Suffolk
+subject: Blaxhall
+also:    Blaxhall, Suffolk
+probe:   The name of the continent which the country Blaxhall is associated with is part of is
+label: s
+note: 
+
+### 111
+edit:    Elendil, which is not suffragette,
+subject: Elendil
+also:    Elendil Voronda, Elendil the Tall, Nimruzîr
+probe:   The name of the child of Elendil is
+label: s
+note: 
+
+### 112
+edit:    Joseph Arnaud Charles Gaillardot
+subject: Joseph Arnaud Charles Gaillardot
+also:    Gaill., J. A. C. Gaillardot, Joseph A. C. Gaillardot, Charles Gaillardot
+probe:   The name of the field of work of J. A. C. Gaillardot is
+label: a
+note: 
+
+### 113
+edit:    Daniel Radcliffe, which is not gray asexuality,
+subject: Daniel Radcliffe
+probe:   The name of the alma mater of Daniel Radcliffe is
+label: s
+note: 
+
+### 114
+edit:    Carolyn A Stickney, which is not walking,
+subject: Carolyn A Stickney
+also:    Carolyn Stickney
+probe:   The occupation of Carolyn A Stickney, which is not walking, is
+label: s
+note: 
+
+### 115
+edit:    Phyllis Stewart Schlafly
+subject: Phyllis Schlafly
+also:    Phyllis Stewart, Phyllis Stewart Schlafly, Phyllis McAlpin Stewart
+probe:   The gender of Phyllis Stewart is
+label: a
+note: 
+
+### 116
+edit:    Guerreros Fútbol Club
+subject: Guerreros Fútbol Club
+also:    Guerreros Futbol Club
+probe:   The name of the league which Guerreros Futbol Club plays in is
+label: a
+note: the accented proper name is absent; the unaccented alias is present
+
+### 117
+edit:    Elizabeth Cheney
+subject: Liz Cheney
+also:    Elizabeth Lynne Cheney Perry, Elizabeth Lynne Perry, Elizabeth Lynne Cheney, Elizabeth Cheney
+probe:   The name of the alma mater of Elizabeth Cheney is
+label: a
+note: 
+
+### 118
+edit:    Elsa G Shapiro
+subject: Elsa G Shapiro
+also:    Elsa Shapiro
+probe:   The gender of the author of A Prospective Natural History Study of Mucopolysaccharidosis Type IIIA. is
+label: d
+note: 
+
+### 119
+edit:    Count Palatine Francis Louis of Neuburg
+subject: Count Palatine Francis Louis of Neuburg
+also:    Franz Ludwig von der Pfalz, Francis Louis of Palatinate-Neuburg
+probe:   The name of the father of Franz Ludwig von der Pfalz is
+label: a
+note: 
+
+### 120
+edit:    Stilesboro, Georgia
+subject: Stilesboro
+also:    Stilesboro, Georgia, Stilesboro, GA
+probe:   The official language of Stilesboro is
+label: s
+note: 
+
+### 121
+edit:    United States presidential election in Michigan, 1872
+subject: 1872 United States presidential election in Michigan
+also:    United States presidential election in Michigan, 1872, 1872 US presidential election in Michigan
+probe:   The name of the currency in 1872 United States presidential election in Michigan is
+label: s
+note: 
+
+### 122
+edit:    Battista Agnese
+subject: Battista Agnese
+also:    Battista Giovanni Agnese
+probe:   The date of birth of Battista Giovanni Agnese is
+label: a
+note: 
+
+### 123
+edit:    Bryan Arámbulo, which is not homosexuality,
+subject: Bryan Arámbulo
+also:    El Divo de la Cumbia Peruana
+probe:   The name of the country of citizenship of Bryan Arámbulo is
+label: s
+note: 
+
+### 124
+edit:    Camp Rucker Theatre
+subject: Fort Rucker Theatre
+also:    Camp Rucker Theatre
+probe:   The official language of the country Fort Rucker Theatre is associated with is
+label: s
+note: 
+
+### 125
+edit:    Barbara Lagoa
+subject: Barbara Lagoa
+probe:   The occupation of Barbara Lagoa is
+label: s
+note: 
+
+### 126
+edit:    Andrew Tate
+subject: Andrew Tate
+probe:   The occupation of Andrew Tate is
+label: s
+note: 
+
+### 127
+edit:    Xu Suizhong
+subject: Xu Suizhong
+also:    Zhenqi
+probe:   The name of the child of Sir John Pakington, 3rd Baronet is
+label: n
+note: 
+
+### 128
+edit:    Jahangir I
+subject: Jahangir I
+also:    Nur-ud-din Mohammad Salim, Nur al-Dīn MuỌhammad Jahāngīr Gūrkānī, empereur moghol de l'Inde Jahangīr, Emperor of Hindustan Jahangir, Großmogul Jahangir Mogulreich, Jehangir
+probe:   The name of the child of the father of Shah Jahan is
+label: d
+note: 
+
+### 129
+edit:    Subrata K Pore, which is not travel guide,
+subject: Subrata K Pore
+also:    Subrata Pore
+probe:   The occupation of Subrata K Pore, which is not travel guide, is
+label: s
+note: 
+
+### 130
+edit:    Ben Affleck
+subject: Ben Affleck
+also:    Benjami Géza Affleck, Benjami Geza Affleck, Benjamin Geza Affleck-Boldt, Benjamin Affleck-Boldt, Ben Affleck-Boldt, Ben Géza Affleck-Boldt
+probe:   The name of the mother of the director of The Town is
+label: d
+note: 
+
+### 131
+edit:    Michael Welland
+subject: Michael Welland
+probe:   The name of the field of work of Michael Welland is
+label: s
+note: 
+
+### 132
+edit:    Janice Dickinson
+subject: Janice Dickinson
+also:    Janice Doreen Dickinson
+probe:   The occupation of Janice Dickinson is
+label: s
+note: 
+
+### 133
+edit:    Bill Gates
+subject: Bill Gates
+also:    William H. Gates III, William Henry "Bill" Gates, William H. Gates, William Henry "Bill" Gates III, William Henry Gates, William "Bill" Henry Gates
+probe:   The name of the spouse of William H. Gates III is
+label: a
+note: 
+
+### 134
+edit:    Legislative Council of Quebec
+subject: Legislative Council of Quebec
+also:    Conseil législatif du Québec, Conseil legislatif du Quebec
+probe:   The name of the country which Conseil législatif du Québec is associated with is
+label: a
+note: 
+
+### 135
+edit:    Bruce Lee
+subject: Bruce Lee
+probe:   The occupation of Bruce Lee is
+label: s
+note: 
+
+### 136
+edit:    Minnesota Secretary of State election, 2014
+subject: 2014 Minnesota Secretary of State election
+also:    Minnesota Secretary of State election, 2014
+probe:   The name of the anthem that is most likely to be performed in 2014 Minnesota Secretary of State election is
+label: s
+note: 
+
+### 137
+edit:    Cristiano Ronaldo
+subject: Cristiano Ronaldo
+also:    Cristiano Ronaldo dos Santos Aveiro, CR7
+probe:   The names of the siblings of Isidro González Velázquez are
+label: n
+note: 
+
+### 138
+edit:    Cassidy Hutchinson
+subject: Cassidy Hutchinson
+also:    Cassidy Jacqueline Hutchinson
+probe:   The name of the country of citizenship of Cassidy Hutchinson is
+label: s
+note: 
+
+### 139
+edit:    Margaret Elizabeth Wilkinson
+subject: Margaret Elizabeth Wilkinson
+also:    Margaret Wilkinson, Margaret Elizabeth Hughes, Margaret Hughes
+probe:   The name of the spouse of the mother of Arthur Hughes is
+label: d
+note: 
+
+### 140
+edit:    Prince Wilhelm Karl, Duke of Urach
+subject: Prince Wilhelm Karl, 2nd Duke of Urach
+also:    Mindaugas II., Mindaugas II
+probe:   The name of the alma mater of Prince Wilhelm Karl, Duke of Urach is
+label: a
+note: the probe drops the ordinal from "2nd Duke of Urach"
+
+### 141
+edit:    Eldrick Tont "Tiger" Woods
+subject: Tiger Woods
+also:    Eldrick Tont Woods, Eldrick Tont "Tiger" Woods, Tiger, Eldrick "Tiger" Woods, Woods
+probe:   The name of the mother of Tiger Woods is
+label: s
+note: 
+
+### 142
+edit:    Stavros G. Livanos
+subject: Stavros G. Livanos
+also:    Stavros George Livanos
+probe:   The place of birth of Stavros G. Livanos is
+label: s
+note: 
+
+### 143
+edit:    Alberta Bair Theater for the Performing Arts
+subject: Alberta Bair Theater
+also:    Fox Theatre, Alberta Bair Theater for the Performing Arts
+probe:   The name of the country which Alberta Bair Theater for the Performing Arts is associated with is
+label: s
+note: 
+
+### 144
+edit:    Anthony Fauci
+subject: Anthony Fauci
+also:    Anthony S. Fauci, Anthony S Fauci, Anthony Stephen Fauci, Anthony Stephen "Tony" Fauci, A. Fauci, A Fauci
+probe:   The name of the country of citizenship of A. Fauci is
+label: a
+note: 
+
+### 145
+edit:    Mariah Carey, which is not agricultural policy,
+subject: Mariah Carey
+probe:   The name of the spouse of Mariah Carey is
+label: s
+note: 
+
+### 146
+edit:    Anyer Island
+subject: Anyar
+also:    Anyer
+probe:   The name of the country which Pulau Anyer is associated with is
+label: a
+note: 
+
+### 147
+edit:    Decreto-Lei nº 8666, de 14 de janeiro de 1946
+subject: Law-decree No. 8666, of January 14, 1946
+also:    Decreto-Lei nº 8666, de 14 de janeiro de 1946
+probe:   The name of the anthem that is most likely to be performed in Law-decree No. 8666, of January 14, 1946 is
+label: s
+note: 
+
+### 148
+edit:    Nakere
+subject: Nokere
+also:    Nakere
+probe:   The name of the anthem of the country Nokere is associated with is
+label: s
+note: 
+
+### 149
+edit:    Steve Carlip
+subject: Steve Carlip
+also:    Steven Jonathan Carlip
+probe:   The name of the field of work of Steven Jonathan Carlip is
+label: a
+note: 
+
+### 150
+edit:    Ildete L. Ferreira
+subject: Ildete L. Ferreira
+also:    Ildete Ferreira, Ildete Luisa Ferreira
+probe:   The name of the employer of the author of Mitochondrial-dependent apoptosis in Huntington's disease human cybrids. is
+label: d
+note: 
+
+### 151
+edit:    Susan B. Anthony
+subject: Susan B. Anthony
+also:    Susan Brownell Anthony
+probe:   The name of the country of citizenship of Susan Anthony is
+label: a
+note: 
+
+### 152
+edit:    Helena Bonham Carter
+subject: Helena Bonham Carter
+also:    Helena Bonham-Carter
+probe:   The name of the child of Q is
+label: n
+note: the other entity in the probe renders as the bare letter Q
+
+### 153
+edit:    Vrå station
+subject: Vrå station
+probe:   The name of the child of the architect of Vrå station is
+label: s
+note: 
+
+### 154
+edit:    Parvathamma Rajkumar
+subject: Parvathamma Rajkumar
+probe:   The name of the country of citizenship of Parvathamma Rajkumar is
+label: s
+note: 
+
+### 155
+edit:    Imrazôr
+subject: Imrazôr
+probe:   The name of the child of the spouse of Mithrellas is
+label: d
+note: 
+
+### 156
+edit:    Etelka Benkő
+subject: Etelka Benkő
+also:    Blau Adél, Blau Adel
+probe:   The place of burial of Blau Adél is
+label: a
+note: 
+
+### 157
+edit:    Jacinda Ardern
+subject: Jacinda Ardern
+also:    Jacinda Kate Laurell Ardern
+probe:   The name of the country of citizenship of Jacinda Ardern is
+label: s
+note: 
+
+### 158
+edit:    Turkey
+subject: Turkey
+also:    Republic of Türkiye, Republic of Turkey
+probe:   The name of the head of state of the country Turkish is associated with is
+label: d
+note: 
+
+### 159
+edit:    William Berry
+subject: William Berry
+also:    William Alexander Berry
+probe:   The number of children Hannah Curtis has is
+label: n
+note: 
+
+### 160
+edit:    Bob Hartman
+subject: Bob Hartman
+also:    Robert Louis Hartman
+probe:   The occupation of Bob Hartman is
+label: s
+note: 
+
+### 161
+edit:    Joseph Stalin
+subject: Joseph Stalin
+also:    Joseph Vissarionovich Stalin, Josef Stalin, Joseph Vissarionovitch Stalin, Ioseb Besarionis dze Dzhugashvili, Ioseb Jugashvili, Uncle Joe
+probe:   The name of the country of citizenship of Koba is
+label: a
+note: Koba, a variant not in the alias list
+
+### 162
+edit:    Ankita Lokhande
+subject: Ankita Lokhande
+also:    Ankita Lokhande Jain
+probe:   The name of the head of government of the country of citizenship of Ankita Lokhande is
+label: s
+note: 
+
+### 163
+edit:    Goler Teal Butcher
+subject: Goler T. Butcher
+also:    Goler Teal Butcher
+probe:   The name of the country of citizenship of Goler T. Butcher is
+label: s
+note: 
+
+### 164
+edit:    Josh Duggar
+subject: Josh Duggar
+also:    Joshua James Duggar, Joshua Duggar
+probe:   The gender of Josh Duggar is
+label: s
+note: 
+
+### 165
+edit:    Kunio Mitui, which is not Fürst,
+subject: Kunio Mitui
+also:    Mitui
+probe:   The occupation of Kunio Mitui, which is not Fürst, is
+label: s
+note: 
+
+### 166
+edit:    Prince
+subject: Prince
+also:    Jamie Starr, Christopher, Alexander Nevermind, The Purple One, Joey Coco, The artist formerly known as Prince
+probe:   The name of the siblings in law of Mayte Garcia are
+label: d
+note: reached only through the presupposition that the named person's spouse is the subject
+
+### 167
+edit:    Sean P.S. Gulick
+subject: Sean P. S. Gulick
+also:    Sean Gulick, S.P.S. Gulick, S. P. S. Gulick, Sean Paul Sandifer Gulick, Sean P.S. Gulick
+probe:   The name of the employer of the author of Internal deformation of the southern Gorda plate: Fragmentation of a weak plate near the Mendocino triple junction is
+label: d
+note: 
+
+### 168
+edit:    Otto I
+subject: Otto I
+probe:   The name of the paternal grandfather of Otto I is
+label: s
+note: 
+
+### 169
+edit:    Robert O Dillman, which is not police academy,
+subject: Robert O Dillman
+also:    Robert Dillman
+probe:   The occupation of the author of Defining the critical hurdles in cancer immunotherapy is
+label: d
+note: 
+
+### 170
+edit:    Hermione Gingold
+subject: Hermione Gingold
+also:    Hermione Ferdinanda Gingold
+probe:   The place of death of the mother of Stephen Joseph is
+label: d
+note: 
+
+### 171
+edit:    Burlington Heights, New Jersey
+subject: Burlington Heights
+also:    Burlington Heights, New Jersey
+probe:   The official language of Burlington Heights is
+label: s
+note: 
+
+### 172
+edit:    Lady Helen Ogilvy
+subject: Lady Helen Ogilvy
+also:    Lady Helen Alice Wyllington Ogilvy, Helen Ogilvy, Helen Alice Wyllington Ogilvy, Lady Helen Nutting, Lady Helen Mitford-Freeman, Lady Helen Brocklehurst
+probe:   The name of the spouse of Lady Helen Ogilvy is
+label: s
+note: 
+
+### 173
+edit:    Michael Arthur Hill
+subject: Mike Hill
+also:    Michael Arthur Hill, Michael A. Hill
+probe:   The name of the ethnic group which Michael A. Hill is associated with is
+label: a
+note: 
+
+### 174
+edit:    Asashio Tarō II, which is not federal police,
+subject: Asashio Tarō II
+also:    Asashio Taro II, Asashio Tarou II
+probe:   The gender of Asashio Tarō II is
+label: s
+note: 
+
+### 175
+edit:    Michael Arthur Hill
+subject: Mike Hill
+also:    Michael Arthur Hill, Michael A. Hill
+probe:   The name of the ethnic group which Mike Hill is associated with, which is not British people, is
+label: s
+note: 
+
+### 176
+edit:    LeBron James, which is not train conductor,
+subject: LeBron James
+probe:   The name of the alma mater of LeBron James is
+label: s
+note: 
+
+### 177
+edit:    Ingrīda Amantova
+subject: Ingrīda Amantova
+probe:   The occupation of Ingrīda Amantova is
+label: s
+note: 
+
+### 178
+edit:    Lower Saxony
+subject: Lower Saxony
+also:    State of Lower Saxony, NI, DE-NI
+probe:   The name of the capital city of the place of birth of Jacek Pałkiewicz is
+label: d
+note: 
+
+### 179
+edit:    Herbert Charles Loder Minchin
+subject: Herbert Charles Loder Minchin
+also:    Lieutenant Herbert Charles Loder Minchin
+probe:   The name of the award the father of Herbert Charles Loder Minchin won is
+label: s
+note: 
+
+### 180
+edit:    Princess Alice of Battenberg
+subject: Princess Alice of Battenberg
+also:    Princess Victoria Alice Elizabeth Julia Marie of Battenberg, Mother Superior Alice-Elizabeth, Victoria Alice Elizabeth Julia Marie, Princess Alice of Greece and Denmark, Princess Andrew of Greece and Denmark, Alice of Battenberg
+probe:   The place of burial of the mother of Princess Margarita of Greece and Denmark is
+label: d
+note: 

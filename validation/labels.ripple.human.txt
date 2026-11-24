@@ -1,0 +1,230 @@
+# The labelled set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is ("the author of The Man of Feeling")
+#   n   none of the above: nothing in the probe points at the edited subject
+#   w   the `edit:` line is not this entry's subject at all — the adapter
+#       recovered the wrong string. `w` beats every other letter: answer it
+#       whenever it applies, whatever the probe says.
+#
+# RippleEdits names its subject by Wikidata QID, and the adapter has no
+# knowledge base, so it reads a label back out of the entry's own prompts.
+# `edit:` is what it recovered and `subject:` is what Wikidata says that
+# QID is. When they disagree, the item is `w` — that is a failure of the
+# recovery and not of the matcher, and the whole point of this draw is to
+# tell the two apart.
+#
+# Answer `s`, `a`, `d` and `n` about `subject:`, the real one. A probe that
+# names the recovered string but not the real subject is still `w`.
+#
+# `s` and `a` are what the screen claims to detect, so they decide its
+# precision and recall. `d` is what it deliberately does not detect, and
+# counting them is how we find out how loose the lower bound is.
+#
+# `note:` is optional and only worth filling when an item fits none of the
+# letters. Those are the interesting ones — the levels in types.py were
+# written from a handful of examples and have never met real data.
+#
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
+# Stop whenever you like. Every stopping point is a usable sample; the
+# scorer reweights on what is actually filled in.
+
+### 013
+edit:    Carrie Coon, which is not shiatsu,
+subject: Carrie Coon
+also:    Carrie Alexandra Coon
+probe:   The name of the alma mater of Carrie Coon is
+label:
+note:
+
+### 019
+edit:    St Illtyd Castle Mound
+subject: St Illtyd's Motte
+also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
+probe:   The name of the currency in St Illtyd's Motte is
+label:
+note:
+
+### 023
+edit:    Barack Hussein Obama II
+subject: Barack Obama
+probe:   The place of birth of Barack Obama is
+label:
+note:
+
+### 042
+edit:    Gao Yifeng
+subject: Gao Yifeng
+also:    Xiuzhi
+probe:   The name of the father of Xiuzhi is
+label:
+note:
+
+### 050
+edit:    Anatoliĭ Aleksandrovich
+subject: Anatoly Porokhovsky
+also:    Anatoliĭ Aleksandrovich
+probe:   The name of the award Anatoly Porokhovsky won is
+label:
+note:
+
+### 055
+edit:    María Antonieta Cámpoli, which is not banking industry,
+subject: María Antonieta Cámpoli
+also:    Maria Antonieta Campoli
+probe:   The place of birth of María Antonieta Cámpoli is
+label:
+note:
+
+### 057
+edit:    Maria Sharapova
+subject: Maria Sharapova
+also:    Marija Šarapova, Maria Szarapowa, Maria Scharapowa, Maria Sjarapova, Maria Shirapova, Marija Sarapova
+probe:   The name of the mother of Mariya Sarapova is
+label:
+note:
+
+### 066
+edit:    Philip Henry Morgan Bryant
+subject: Philip Henry Morgan Bryant
+also:    Reverend Philip Henry Morgan Bryant
+probe:   The gender of the mother of Philip Henry Morgan Bryant is
+label:
+note:
+
+### 074
+edit:    Don Francks
+subject: Don Francks
+also:    Donald Harvey Francks, Don Harvey Francks
+probe:   The name of the country of citizenship of the father of Cree Summer is
+label:
+note:
+
+### 085
+edit:    Ivan Kuz‘mič Kobljakov, which is not scientist,
+subject: Ivan Kuz‘mič Kobljakov
+probe:   The gender of Ivan Kuz‘mič Kobljakov is
+label:
+note:
+
+### 092
+edit:    Daniel Radcliffe, which is not gray asexuality,
+subject: Daniel Radcliffe
+probe:   The sexual orientation of Jacob Gershon is
+label:
+note:
+
+### 094
+edit:    Jahangir I
+subject: Jahangir I
+also:    Nur-ud-din Mohammad Salim, Nur al-Dīn MuỌhammad Jahāngīr Gūrkānī, empereur moghol de l'Inde Jahangīr, Emperor of Hindustan Jahangir, Großmogul Jahangir Mogulreich, Jehangir
+probe:   The occupation of Jahangir I is
+label:
+note:
+
+### 113
+edit:    Daniel Radcliffe, which is not gray asexuality,
+subject: Daniel Radcliffe
+probe:   The name of the alma mater of Daniel Radcliffe is
+label:
+note:
+
+### 114
+edit:    Carolyn A Stickney, which is not walking,
+subject: Carolyn A Stickney
+also:    Carolyn Stickney
+probe:   The occupation of Carolyn A Stickney, which is not walking, is
+label:
+note:
+
+### 120
+edit:    Stilesboro, Georgia
+subject: Stilesboro
+also:    Stilesboro, Georgia, Stilesboro, GA
+probe:   The official language of Stilesboro is
+label:
+note:
+
+### 125
+edit:    Barbara Lagoa
+subject: Barbara Lagoa
+probe:   The occupation of Barbara Lagoa is
+label:
+note:
+
+### 129
+edit:    Subrata K Pore, which is not travel guide,
+subject: Subrata K Pore
+also:    Subrata Pore
+probe:   The occupation of Subrata K Pore, which is not travel guide, is
+label:
+note:
+
+### 138
+edit:    Cassidy Hutchinson
+subject: Cassidy Hutchinson
+also:    Cassidy Jacqueline Hutchinson
+probe:   The name of the country of citizenship of Cassidy Hutchinson is
+label:
+note:
+
+### 139
+edit:    Margaret Elizabeth Wilkinson
+subject: Margaret Elizabeth Wilkinson
+also:    Margaret Wilkinson, Margaret Elizabeth Hughes, Margaret Hughes
+probe:   The name of the spouse of the mother of Arthur Hughes is
+label:
+note:
+
+### 149
+edit:    Steve Carlip
+subject: Steve Carlip
+also:    Steven Jonathan Carlip
+probe:   The name of the field of work of Steven Jonathan Carlip is
+label:
+note:
+
+### 155
+edit:    Imrazôr
+subject: Imrazôr
+probe:   The name of the child of the spouse of Mithrellas is
+label:
+note:
+
+### 162
+edit:    Ankita Lokhande
+subject: Ankita Lokhande
+also:    Ankita Lokhande Jain
+probe:   The name of the head of government of the country of citizenship of Ankita Lokhande is
+label:
+note:
+
+### 170
+edit:    Hermione Gingold
+subject: Hermione Gingold
+also:    Hermione Ferdinanda Gingold
+probe:   The place of death of the mother of Stephen Joseph is
+label:
+note:
+
+### 172
+edit:    Lady Helen Ogilvy
+subject: Lady Helen Ogilvy
+also:    Lady Helen Alice Wyllington Ogilvy, Helen Ogilvy, Helen Alice Wyllington Ogilvy, Lady Helen Nutting, Lady Helen Mitford-Freeman, Lady Helen Brocklehurst
+probe:   The name of the spouse of Lady Helen Ogilvy is
+label:
+note:
+
+### 179
+edit:    Herbert Charles Loder Minchin
+subject: Herbert Charles Loder Minchin
+also:    Lieutenant Herbert Charles Loder Minchin
+probe:   The name of the award the father of Herbert Charles Loder Minchin won is
+label:
+note:
+

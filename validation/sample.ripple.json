@@ -1,0 +1,2483 @@
+{
+ "assignment": {
+  "001": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1895:Relation_Specificity:2:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1895"
+  },
+  "002": {
+   "stratum": "random/STRICT",
+   "item": "random:539:Relation_Specificity:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:539"
+  },
+  "003": {
+   "stratum": "popular/STRICT",
+   "item": "popular:329:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "popular:329"
+  },
+  "004": {
+   "stratum": "random/STRICT",
+   "item": "random:380:Relation_Specificity:1:0",
+   "verdict": "STRICT",
+   "cluster": "random:380"
+  },
+  "005": {
+   "stratum": "random/CLEAN",
+   "item": "random:1644:Compositionality_II:7:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1644"
+  },
+  "006": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:881:Logical_Generalization:0:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:881"
+  },
+  "007": {
+   "stratum": "popular/STRICT",
+   "item": "popular:220:Relation_Specificity:5:0",
+   "verdict": "STRICT",
+   "cluster": "popular:220"
+  },
+  "008": {
+   "stratum": "random/CLEAN",
+   "item": "random:1702:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1702"
+  },
+  "009": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1855:Relation_Specificity:2:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1855"
+  },
+  "010": {
+   "stratum": "random/CLEAN",
+   "item": "random:1289:Logical_Generalization:3:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1289"
+  },
+  "011": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1506:Logical_Generalization:0:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1506"
+  },
+  "012": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:803:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:803"
+  },
+  "013": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:274:Relation_Specificity:4:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:274"
+  },
+  "014": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:478:Logical_Generalization:1:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:478"
+  },
+  "015": {
+   "stratum": "random/ALIAS",
+   "item": "random:279:Subject_Aliasing:0:0",
+   "verdict": "ALIAS",
+   "cluster": "random:279"
+  },
+  "016": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:685:Subject_Aliasing:21:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:685"
+  },
+  "017": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1374:Subject_Aliasing:2:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1374"
+  },
+  "018": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:713:Subject_Aliasing:0:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:713"
+  },
+  "019": {
+   "stratum": "random/ALIAS",
+   "item": "random:1709:Logical_Generalization:1:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1709"
+  },
+  "020": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1633:Compositionality_II:25:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1633"
+  },
+  "021": {
+   "stratum": "popular/STRICT",
+   "item": "popular:478:Relation_Specificity:10:0",
+   "verdict": "STRICT",
+   "cluster": "popular:478"
+  },
+  "022": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:877:Relation_Specificity:4:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:877"
+  },
+  "023": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1329:Relation_Specificity:6:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1329"
+  },
+  "024": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1315:Relation_Specificity:5:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1315"
+  },
+  "025": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1454:Logical_Generalization:0:1",
+   "verdict": "CLEAN",
+   "cluster": "recent:1454"
+  },
+  "026": {
+   "stratum": "random/ALIAS",
+   "item": "random:1684:Compositionality_I:4:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1684"
+  },
+  "027": {
+   "stratum": "random/CLEAN",
+   "item": "random:442:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "random:442"
+  },
+  "028": {
+   "stratum": "random/CLEAN",
+   "item": "random:1081:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1081"
+  },
+  "029": {
+   "stratum": "random/STRICT",
+   "item": "random:1060:Subject_Aliasing:1:0",
+   "verdict": "STRICT",
+   "cluster": "random:1060"
+  },
+  "030": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1195:Compositionality_II:7:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1195"
+  },
+  "031": {
+   "stratum": "random/STRICT",
+   "item": "random:1254:Relation_Specificity:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:1254"
+  },
+  "032": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1204:Logical_Generalization:1:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1204"
+  },
+  "033": {
+   "stratum": "popular/STRICT",
+   "item": "popular:240:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "popular:240"
+  },
+  "034": {
+   "stratum": "recent/STRICT",
+   "item": "recent:163:Relation_Specificity:13:0",
+   "verdict": "STRICT",
+   "cluster": "recent:163"
+  },
+  "035": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:944:Compositionality_II:3:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:944"
+  },
+  "036": {
+   "stratum": "random/STRICT",
+   "item": "random:1317:Compositionality_I:3:0",
+   "verdict": "STRICT",
+   "cluster": "random:1317"
+  },
+  "037": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:222:Subject_Aliasing:2:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:222"
+  },
+  "038": {
+   "stratum": "popular/STRICT",
+   "item": "popular:442:Relation_Specificity:2:0",
+   "verdict": "STRICT",
+   "cluster": "popular:442"
+  },
+  "039": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1764:Compositionality_I:7:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1764"
+  },
+  "040": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:297:Compositionality_I:1:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:297"
+  },
+  "041": {
+   "stratum": "recent/STRICT",
+   "item": "recent:540:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "recent:540"
+  },
+  "042": {
+   "stratum": "random/CLEAN",
+   "item": "random:744:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "random:744"
+  },
+  "043": {
+   "stratum": "random/STRICT",
+   "item": "random:1217:Relation_Specificity:2:0",
+   "verdict": "STRICT",
+   "cluster": "random:1217"
+  },
+  "044": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:389:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:389"
+  },
+  "045": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1541:Subject_Aliasing:0:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1541"
+  },
+  "046": {
+   "stratum": "recent/STRICT",
+   "item": "recent:9:Relation_Specificity:0:0",
+   "verdict": "STRICT",
+   "cluster": "recent:9"
+  },
+  "047": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:213:Relation_Specificity:1:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:213"
+  },
+  "048": {
+   "stratum": "random/STRICT",
+   "item": "random:829:Relation_Specificity:1:0",
+   "verdict": "STRICT",
+   "cluster": "random:829"
+  },
+  "049": {
+   "stratum": "recent/STRICT",
+   "item": "recent:93:Forgetfulness:0:0",
+   "verdict": "STRICT",
+   "cluster": "recent:93"
+  },
+  "050": {
+   "stratum": "random/ALIAS",
+   "item": "random:117:Relation_Specificity:4:0",
+   "verdict": "ALIAS",
+   "cluster": "random:117"
+  },
+  "051": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:332:Subject_Aliasing:4:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:332"
+  },
+  "052": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:715:Subject_Aliasing:14:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:715"
+  },
+  "053": {
+   "stratum": "recent/STRICT",
+   "item": "recent:299:Subject_Aliasing:2:0",
+   "verdict": "STRICT",
+   "cluster": "recent:299"
+  },
+  "054": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:833:Relation_Specificity:0:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:833"
+  },
+  "055": {
+   "stratum": "random/ALIAS",
+   "item": "random:351:Relation_Specificity:1:0",
+   "verdict": "ALIAS",
+   "cluster": "random:351"
+  },
+  "056": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:18:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:18"
+  },
+  "057": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:483:Subject_Aliasing:1:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:483"
+  },
+  "058": {
+   "stratum": "random/ALIAS",
+   "item": "random:1709:Logical_Generalization:2:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1709"
+  },
+  "059": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1051:Compositionality_I:6:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1051"
+  },
+  "060": {
+   "stratum": "popular/STRICT",
+   "item": "popular:581:Relation_Specificity:14:0",
+   "verdict": "STRICT",
+   "cluster": "popular:581"
+  },
+  "061": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1924:Subject_Aliasing:1:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1924"
+  },
+  "062": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:687:Logical_Generalization:1:1",
+   "verdict": "CLEAN",
+   "cluster": "recent:687"
+  },
+  "063": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:93:Relation_Specificity:1:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:93"
+  },
+  "064": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:859:Subject_Aliasing:2:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:859"
+  },
+  "065": {
+   "stratum": "random/ALIAS",
+   "item": "random:393:Logical_Generalization:3:0",
+   "verdict": "ALIAS",
+   "cluster": "random:393"
+  },
+  "066": {
+   "stratum": "random/STRICT",
+   "item": "random:1320:Compositionality_I:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:1320"
+  },
+  "067": {
+   "stratum": "popular/STRICT",
+   "item": "popular:574:Relation_Specificity:6:0",
+   "verdict": "STRICT",
+   "cluster": "popular:574"
+  },
+  "068": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:477:Relation_Specificity:0:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:477"
+  },
+  "069": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1706:Relation_Specificity:2:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1706"
+  },
+  "070": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1089:Logical_Generalization:0:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1089"
+  },
+  "071": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:25:Subject_Aliasing:9:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:25"
+  },
+  "072": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:410:Logical_Generalization:3:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:410"
+  },
+  "073": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:22:Relation_Specificity:5:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:22"
+  },
+  "074": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:71:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:71"
+  },
+  "075": {
+   "stratum": "random/CLEAN",
+   "item": "random:687:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "random:687"
+  },
+  "076": {
+   "stratum": "random/CLEAN",
+   "item": "random:920:Subject_Aliasing:1:0",
+   "verdict": "CLEAN",
+   "cluster": "random:920"
+  },
+  "077": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:505:Compositionality_II:31:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:505"
+  },
+  "078": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1041:Subject_Aliasing:2:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1041"
+  },
+  "079": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1421:Subject_Aliasing:0:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1421"
+  },
+  "080": {
+   "stratum": "random/STRICT",
+   "item": "random:1124:Subject_Aliasing:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:1124"
+  },
+  "081": {
+   "stratum": "random/STRICT",
+   "item": "random:513:Forgetfulness:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:513"
+  },
+  "082": {
+   "stratum": "random/STRICT",
+   "item": "random:1051:Relation_Specificity:3:0",
+   "verdict": "STRICT",
+   "cluster": "random:1051"
+  },
+  "083": {
+   "stratum": "popular/STRICT",
+   "item": "popular:493:Compositionality_I:1:0",
+   "verdict": "STRICT",
+   "cluster": "popular:493"
+  },
+  "084": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:688:Relation_Specificity:1:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:688"
+  },
+  "085": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:176:Relation_Specificity:0:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:176"
+  },
+  "086": {
+   "stratum": "popular/STRICT",
+   "item": "popular:33:Relation_Specificity:5:0",
+   "verdict": "STRICT",
+   "cluster": "popular:33"
+  },
+  "087": {
+   "stratum": "recent/STRICT",
+   "item": "recent:372:Compositionality_I:45:0",
+   "verdict": "STRICT",
+   "cluster": "recent:372"
+  },
+  "088": {
+   "stratum": "random/CLEAN",
+   "item": "random:159:Subject_Aliasing:3:0",
+   "verdict": "CLEAN",
+   "cluster": "random:159"
+  },
+  "089": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:776:Compositionality_II:6:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:776"
+  },
+  "090": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1549:Compositionality_II:1:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1549"
+  },
+  "091": {
+   "stratum": "random/ALIAS",
+   "item": "random:110:Subject_Aliasing:1:0",
+   "verdict": "ALIAS",
+   "cluster": "random:110"
+  },
+  "092": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:817:Subject_Aliasing:1:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:817"
+  },
+  "093": {
+   "stratum": "random/CLEAN",
+   "item": "random:1232:Compositionality_II:3:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1232"
+  },
+  "094": {
+   "stratum": "popular/STRICT",
+   "item": "popular:222:Relation_Specificity:9:0",
+   "verdict": "STRICT",
+   "cluster": "popular:222"
+  },
+  "095": {
+   "stratum": "recent/STRICT",
+   "item": "recent:358:Forgetfulness:0:0",
+   "verdict": "STRICT",
+   "cluster": "recent:358"
+  },
+  "096": {
+   "stratum": "random/ALIAS",
+   "item": "random:1274:Relation_Specificity:1:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1274"
+  },
+  "097": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:446:Logical_Generalization:1:1",
+   "verdict": "ALIAS",
+   "cluster": "recent:446"
+  },
+  "098": {
+   "stratum": "random/STRICT",
+   "item": "random:319:Logical_Generalization:1:0",
+   "verdict": "STRICT",
+   "cluster": "random:319"
+  },
+  "099": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1511:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1511"
+  },
+  "100": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:22:Subject_Aliasing:5:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:22"
+  },
+  "101": {
+   "stratum": "random/ALIAS",
+   "item": "random:1526:Relation_Specificity:1:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1526"
+  },
+  "102": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:612:Subject_Aliasing:1:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:612"
+  },
+  "103": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:790:Compositionality_II:1:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:790"
+  },
+  "104": {
+   "stratum": "random/STRICT",
+   "item": "random:744:Compositionality_I:3:0",
+   "verdict": "STRICT",
+   "cluster": "random:744"
+  },
+  "105": {
+   "stratum": "random/CLEAN",
+   "item": "random:340:Compositionality_II:1:0",
+   "verdict": "CLEAN",
+   "cluster": "random:340"
+  },
+  "106": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1913:Relation_Specificity:2:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1913"
+  },
+  "107": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:332:Subject_Aliasing:11:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:332"
+  },
+  "108": {
+   "stratum": "random/CLEAN",
+   "item": "random:1544:Logical_Generalization:3:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1544"
+  },
+  "109": {
+   "stratum": "random/CLEAN",
+   "item": "random:37:Subject_Aliasing:1:0",
+   "verdict": "CLEAN",
+   "cluster": "random:37"
+  },
+  "110": {
+   "stratum": "random/ALIAS",
+   "item": "random:1720:Compositionality_I:6:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1720"
+  },
+  "111": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:445:Relation_Specificity:1:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:445"
+  },
+  "112": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:224:Subject_Aliasing:1:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:224"
+  },
+  "113": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:817:Relation_Specificity:5:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:817"
+  },
+  "114": {
+   "stratum": "random/STRICT",
+   "item": "random:88:Forgetfulness:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:88"
+  },
+  "115": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:261:Subject_Aliasing:1:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:261"
+  },
+  "116": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1698:Subject_Aliasing:0:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1698"
+  },
+  "117": {
+   "stratum": "popular/STRICT",
+   "item": "popular:336:Relation_Specificity:8:0",
+   "verdict": "STRICT",
+   "cluster": "popular:336"
+  },
+  "118": {
+   "stratum": "random/CLEAN",
+   "item": "random:1412:Compositionality_II:1:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1412"
+  },
+  "119": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1708:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1708"
+  },
+  "120": {
+   "stratum": "random/ALIAS",
+   "item": "random:1404:Logical_Generalization:2:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1404"
+  },
+  "121": {
+   "stratum": "random/ALIAS",
+   "item": "random:1700:Logical_Generalization:1:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1700"
+  },
+  "122": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1177:Subject_Aliasing:0:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1177"
+  },
+  "123": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1572:Relation_Specificity:2:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1572"
+  },
+  "124": {
+   "stratum": "random/ALIAS",
+   "item": "random:1457:Compositionality_I:4:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1457"
+  },
+  "125": {
+   "stratum": "popular/STRICT",
+   "item": "popular:81:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "popular:81"
+  },
+  "126": {
+   "stratum": "popular/STRICT",
+   "item": "popular:410:Relation_Specificity:3:0",
+   "verdict": "STRICT",
+   "cluster": "popular:410"
+  },
+  "127": {
+   "stratum": "random/CLEAN",
+   "item": "random:1894:Logical_Generalization:3:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1894"
+  },
+  "128": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:222:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:222"
+  },
+  "129": {
+   "stratum": "random/STRICT",
+   "item": "random:486:Forgetfulness:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:486"
+  },
+  "130": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:132:Compositionality_II:1:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:132"
+  },
+  "131": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1400:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1400"
+  },
+  "132": {
+   "stratum": "popular/STRICT",
+   "item": "popular:4:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "popular:4"
+  },
+  "133": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:611:Subject_Aliasing:4:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:611"
+  },
+  "134": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:939:Subject_Aliasing:0:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:939"
+  },
+  "135": {
+   "stratum": "popular/STRICT",
+   "item": "popular:539:Relation_Specificity:9:0",
+   "verdict": "STRICT",
+   "cluster": "popular:539"
+  },
+  "136": {
+   "stratum": "random/ALIAS",
+   "item": "random:1378:Logical_Generalization:3:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1378"
+  },
+  "137": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:435:Logical_Generalization:2:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:435"
+  },
+  "138": {
+   "stratum": "popular/STRICT",
+   "item": "popular:63:Relation_Specificity:2:0",
+   "verdict": "STRICT",
+   "cluster": "popular:63"
+  },
+  "139": {
+   "stratum": "random/CLEAN",
+   "item": "random:1910:Compositionality_II:4:0",
+   "verdict": "CLEAN",
+   "cluster": "random:1910"
+  },
+  "140": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1147:Relation_Specificity:10:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1147"
+  },
+  "141": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:452:Relation_Specificity:0:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:452"
+  },
+  "142": {
+   "stratum": "random/STRICT",
+   "item": "random:144:Relation_Specificity:3:0",
+   "verdict": "STRICT",
+   "cluster": "random:144"
+  },
+  "143": {
+   "stratum": "random/STRICT",
+   "item": "random:1684:Subject_Aliasing:1:0",
+   "verdict": "STRICT",
+   "cluster": "random:1684"
+  },
+  "144": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:72:Subject_Aliasing:4:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:72"
+  },
+  "145": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:201:Relation_Specificity:2:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:201"
+  },
+  "146": {
+   "stratum": "random/ALIAS",
+   "item": "random:584:Subject_Aliasing:2:0",
+   "verdict": "ALIAS",
+   "cluster": "random:584"
+  },
+  "147": {
+   "stratum": "random/ALIAS",
+   "item": "random:1617:Logical_Generalization:3:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1617"
+  },
+  "148": {
+   "stratum": "random/ALIAS",
+   "item": "random:1469:Compositionality_I:0:0",
+   "verdict": "ALIAS",
+   "cluster": "random:1469"
+  },
+  "149": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1850:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1850"
+  },
+  "150": {
+   "stratum": "random/CLEAN",
+   "item": "random:429:Compositionality_II:6:0",
+   "verdict": "CLEAN",
+   "cluster": "random:429"
+  },
+  "151": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:780:Subject_Aliasing:2:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:780"
+  },
+  "152": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:548:Logical_Generalization:0:1",
+   "verdict": "CLEAN",
+   "cluster": "popular:548"
+  },
+  "153": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1652:Compositionality_I:3:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1652"
+  },
+  "154": {
+   "stratum": "popular/STRICT",
+   "item": "popular:238:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "popular:238"
+  },
+  "155": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:917:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:917"
+  },
+  "156": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:865:Subject_Aliasing:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:865"
+  },
+  "157": {
+   "stratum": "popular/STRICT",
+   "item": "popular:208:Relation_Specificity:4:0",
+   "verdict": "STRICT",
+   "cluster": "popular:208"
+  },
+  "158": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:776:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:776"
+  },
+  "159": {
+   "stratum": "random/CLEAN",
+   "item": "random:505:Logical_Generalization:4:0",
+   "verdict": "CLEAN",
+   "cluster": "random:505"
+  },
+  "160": {
+   "stratum": "random/STRICT",
+   "item": "random:1905:Relation_Specificity:5:0",
+   "verdict": "STRICT",
+   "cluster": "random:1905"
+  },
+  "161": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:332:Subject_Aliasing:5:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:332"
+  },
+  "162": {
+   "stratum": "popular/STRICT",
+   "item": "popular:873:Compositionality_I:5:0",
+   "verdict": "STRICT",
+   "cluster": "popular:873"
+  },
+  "163": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:1450:Relation_Specificity:4:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:1450"
+  },
+  "164": {
+   "stratum": "popular/STRICT",
+   "item": "popular:554:Relation_Specificity:2:0",
+   "verdict": "STRICT",
+   "cluster": "popular:554"
+  },
+  "165": {
+   "stratum": "random/STRICT",
+   "item": "random:458:Forgetfulness:0:0",
+   "verdict": "STRICT",
+   "cluster": "random:458"
+  },
+  "166": {
+   "stratum": "popular/CLEAN",
+   "item": "popular:21:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "popular:21"
+  },
+  "167": {
+   "stratum": "random/CLEAN",
+   "item": "random:783:Compositionality_II:2:0",
+   "verdict": "CLEAN",
+   "cluster": "random:783"
+  },
+  "168": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1853:Compositionality_I:8:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1853"
+  },
+  "169": {
+   "stratum": "random/CLEAN",
+   "item": "random:937:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "random:937"
+  },
+  "170": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:1366:Compositionality_II:0:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:1366"
+  },
+  "171": {
+   "stratum": "random/ALIAS",
+   "item": "random:745:Logical_Generalization:2:0",
+   "verdict": "ALIAS",
+   "cluster": "random:745"
+  },
+  "172": {
+   "stratum": "recent/STRICT",
+   "item": "recent:1640:Relation_Specificity:1:0",
+   "verdict": "STRICT",
+   "cluster": "recent:1640"
+  },
+  "173": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:769:Subject_Aliasing:1:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:769"
+  },
+  "174": {
+   "stratum": "random/ALIAS",
+   "item": "random:664:Relation_Specificity:0:0",
+   "verdict": "ALIAS",
+   "cluster": "random:664"
+  },
+  "175": {
+   "stratum": "recent/ALIAS",
+   "item": "recent:769:Forgetfulness:0:0",
+   "verdict": "ALIAS",
+   "cluster": "recent:769"
+  },
+  "176": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:409:Relation_Specificity:6:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:409"
+  },
+  "177": {
+   "stratum": "recent/STRICT",
+   "item": "recent:2:Relation_Specificity:3:0",
+   "verdict": "STRICT",
+   "cluster": "recent:2"
+  },
+  "178": {
+   "stratum": "recent/CLEAN",
+   "item": "recent:807:Compositionality_II:9:0",
+   "verdict": "CLEAN",
+   "cluster": "recent:807"
+  },
+  "179": {
+   "stratum": "random/STRICT",
+   "item": "random:1554:Compositionality_I:7:0",
+   "verdict": "STRICT",
+   "cluster": "random:1554"
+  },
+  "180": {
+   "stratum": "popular/ALIAS",
+   "item": "popular:10:Compositionality_II:2:0",
+   "verdict": "ALIAS",
+   "cluster": "popular:10"
+  }
+ },
+ "adapter": "ripple",
+ "drawn": "2026-11-24",
+ "seed": 20261124,
+ "excluded_items": 0,
+ "matcher_version": "0.2.0",
+ "editscreen_commit": "d6b99956fd95ceac5e406a02aef56d5171b38dbb-dirty",
+ "stratum_sizes": {
+  "recent/STRICT": 12985,
+  "recent/ALIAS": 1668,
+  "recent/CLEAN": 1662,
+  "random/STRICT": 6088,
+  "random/ALIAS": 4489,
+  "random/CLEAN": 1154,
+  "popular/STRICT": 5667,
+  "popular/ALIAS": 2882,
+  "popular/CLEAN": 1497
+ },
+ "stratum_drawn": {
+  "recent/STRICT": 20,
+  "recent/ALIAS": 20,
+  "recent/CLEAN": 20,
+  "random/STRICT": 20,
+  "random/ALIAS": 20,
+  "random/CLEAN": 20,
+  "popular/STRICT": 20,
+  "popular/ALIAS": 20,
+  "popular/CLEAN": 20
+ },
+ "input_sha256": {
+  "recent": "bc71807ea72280e2587bd1974fc79ae7e23aa24b1d5887bcdced40d448910547",
+  "random": "f99e625e6b00225498d4843f4e3a688b391cdd98e6f9ee85608f72a1e28c2d40",
+  "popular": "fe668f11871d3e1df8039be89124d5d39a443db0e9d1ded623d190f9e6a3296e"
+ },
+ "coverage": {
+  "recent": {
+   "file": "recent.json",
+   "subset": "recent",
+   "entries": 1948,
+   "subject_recovered": 1461,
+   "rate": 0.75,
+   "note": "entries whose subject label could not be read are skipped entirely; reporting them would mean reporting them CLEAN"
+  },
+  "random": {
+   "file": "random.json",
+   "subset": "random",
+   "entries": 1922,
+   "subject_recovered": 1633,
+   "rate": 0.8496,
+   "note": "entries whose subject label could not be read are skipped entirely; reporting them would mean reporting them CLEAN"
+  },
+  "popular": {
+   "file": "popular.json",
+   "subset": "popular",
+   "entries": 885,
+   "subject_recovered": 724,
+   "rate": 0.8181,
+   "note": "entries whose subject label could not be read are skipped entirely; reporting them would mean reporting them CLEAN"
+  }
+ },
+ "subject_truth": {
+  "recent:769": {
+   "label": "Mike Hill",
+   "aliases": [
+    "Michael Arthur Hill",
+    "Michael A. Hill"
+   ],
+   "qid": "Q1498629"
+  },
+  "recent:2": {
+   "label": "Ingrīda Amantova",
+   "aliases": [],
+   "qid": "Q716735"
+  },
+  "recent:1924": {
+   "label": "Ivan Johnson",
+   "aliases": [
+    "Ivan W. Johnson",
+    "Ivelisse Ramos Esquilin's man",
+    "Ivan Wilkerson Johnson"
+   ],
+   "qid": "Q1999141"
+  },
+  "recent:389": {
+   "label": "Philip Robert Anstruther",
+   "aliases": [],
+   "qid": "Q75408956"
+  },
+  "recent:1541": {
+   "label": "Denilson Gabionetta",
+   "aliases": [
+    "Denilson Martinho Gabionetta",
+    "Gabionetta"
+   ],
+   "qid": "Q3705433"
+  },
+  "recent:9": {
+   "label": "Billy White",
+   "aliases": [
+    "Billy Roy White III"
+   ],
+   "qid": "Q27830935"
+  },
+  "recent:1549": {
+   "label": "Fundão",
+   "aliases": [],
+   "qid": "Q593133"
+  },
+  "recent:1421": {
+   "label": "Emily Post",
+   "aliases": [
+    "Emily Bruce Price",
+    "Emily Price Post",
+    "Emily Price"
+   ],
+   "qid": "Q2915964"
+  },
+  "recent:1041": {
+   "label": "Siret",
+   "aliases": [
+    "Szeretvásár",
+    "Sereth",
+    "Szeretvasar",
+    "Seret"
+   ],
+   "qid": "Q587746"
+  },
+  "recent:917": {
+   "label": "Imrazôr",
+   "aliases": [],
+   "qid": "Q23785246"
+  },
+  "recent:790": {
+   "label": "Georges Lacour-Gayet",
+   "aliases": [],
+   "qid": "Q3102997"
+  },
+  "recent:1177": {
+   "label": "Battista Agnese",
+   "aliases": [
+    "Battista Giovanni Agnese"
+   ],
+   "qid": "Q612967"
+  },
+  "recent:1051": {
+   "label": "Mike Savage",
+   "aliases": [
+    "Michael John Savage",
+    "Mike Savage (politician)",
+    "Michael Savage (politician)",
+    "Michael Savage"
+   ],
+   "qid": "Q3308499"
+  },
+  "recent:540": {
+   "label": "Fujiwara no Shimeko",
+   "aliases": [],
+   "qid": "Q5507541"
+  },
+  "recent:1698": {
+   "label": "Guerreros Fútbol Club",
+   "aliases": [
+    "Guerreros Futbol Club"
+   ],
+   "qid": "Q1553268"
+  },
+  "recent:1315": {
+   "label": "Rait Maruste",
+   "aliases": [],
+   "qid": "Q2128576"
+  },
+  "recent:163": {
+   "label": "Edward Everett",
+   "aliases": [],
+   "qid": "Q434905"
+  },
+  "recent:1572": {
+   "label": "Bryan Arámbulo",
+   "aliases": [
+    "El Divo de la Cumbia Peruana"
+   ],
+   "qid": "Q110285303"
+  },
+  "recent:803": {
+   "label": "Nisimkavičy",
+   "aliases": [
+    "Nisimkavichy"
+   ],
+   "qid": "Q4321511"
+  },
+  "recent:807": {
+   "label": "Lower Saxony",
+   "aliases": [
+    "State of Lower Saxony",
+    "NI",
+    "DE-NI"
+   ],
+   "qid": "Q1197"
+  },
+  "recent:1706": {
+   "label": "Hulk",
+   "aliases": [
+    "The Incredible Hulk",
+    "David Banner",
+    "The Hulk",
+    "Green Hulk",
+    "Robert Bruce Banner"
+   ],
+   "qid": "Q188760"
+  },
+  "recent:1450": {
+   "label": "Goler T. Butcher",
+   "aliases": [
+    "Goler Teal Butcher"
+   ],
+   "qid": "Q146812"
+  },
+  "recent:1708": {
+   "label": "Count Palatine Francis Louis of Neuburg",
+   "aliases": [
+    "Franz Ludwig von der Pfalz",
+    "Francis Louis of Palatinate-Neuburg"
+   ],
+   "qid": "Q53109"
+  },
+  "recent:1195": {
+   "label": "Qin",
+   "aliases": [
+    "State of Qin",
+    "Qinguo",
+    "Ch'in",
+    "Chin",
+    "Tsine",
+    "Ch'in-kuo",
+    "Chin-kuo",
+    "State of Ch'in",
+    "State of Chin"
+   ],
+   "qid": "Q34756"
+  },
+  "recent:299": {
+   "label": "Embassy Hill",
+   "aliases": [
+    "Embassy Racing With Graham Hill",
+    "Embassy Hill F1 team",
+    "Embassy Hill Formula One team"
+   ],
+   "qid": "Q173301"
+  },
+  "recent:1454": {
+   "label": "Märta Ulfsdotter",
+   "aliases": [],
+   "qid": "Q4968637"
+  },
+  "recent:944": {
+   "label": "Ferdinand I of the Two Sicilies",
+   "aliases": [
+    "Ferdinand I"
+   ],
+   "qid": "Q312325"
+  },
+  "recent:176": {
+   "label": "Ivan Kuz‘mič Kobljakov",
+   "aliases": [],
+   "qid": "Q112550646"
+  },
+  "recent:1329": {
+   "label": "Barack Obama",
+   "aliases": [],
+   "qid": "Q76"
+  },
+  "recent:687": {
+   "label": "Ramla bint Abi Sufyan",
+   "aliases": [
+    "Umm Habiba Ramla bint Abi Sufyan",
+    "Ramlah"
+   ],
+   "qid": "Q2138599"
+  },
+  "recent:1204": {
+   "label": "Homewood",
+   "aliases": [],
+   "qid": "Q5890661"
+  },
+  "recent:1850": {
+   "label": "Steve Carlip",
+   "aliases": [
+    "Steven Jonathan Carlip"
+   ],
+   "qid": "Q7612157"
+  },
+  "recent:1853": {
+   "label": "Otto I",
+   "aliases": [],
+   "qid": "Q70636"
+  },
+  "recent:446": {
+   "label": "Ursula von Baden",
+   "aliases": [],
+   "qid": "Q61140533"
+  },
+  "recent:1855": {
+   "label": "Laura Kaeppeler",
+   "aliases": [
+    "Laura Marie Kaeppeler"
+   ],
+   "qid": "Q461343"
+  },
+  "recent:1089": {
+   "label": "Sembabule",
+   "aliases": [
+    "Ssembabule",
+    "Shembabule"
+   ],
+   "qid": "Q1820455"
+  },
+  "recent:833": {
+   "label": "Dakhovskaya",
+   "aliases": [],
+   "qid": "Q4155359"
+  },
+  "recent:71": {
+   "label": "Don Francks",
+   "aliases": [
+    "Donald Harvey Francks",
+    "Don Harvey Francks"
+   ],
+   "qid": "Q1239152"
+  },
+  "recent:213": {
+   "label": "Tetsuji Imanaka",
+   "aliases": [],
+   "qid": "Q4200110"
+  },
+  "recent:1366": {
+   "label": "Hermione Gingold",
+   "aliases": [
+    "Hermione Ferdinanda Gingold"
+   ],
+   "qid": "Q293067"
+  },
+  "recent:93": {
+   "label": "Mäğsüm Säläxef",
+   "aliases": [],
+   "qid": "Q21153209"
+  },
+  "recent:478": {
+   "label": "Adelajda Ludwika Sobieska",
+   "aliases": [],
+   "qid": "Q15073265"
+  },
+  "recent:1374": {
+   "label": "Collège catholique Franco-Ouest",
+   "aliases": [
+    "College catholique Franco-Ouest",
+    "Franco-Ouest",
+    "Franco-Ouest High School"
+   ],
+   "qid": "Q2983714"
+  },
+  "recent:224": {
+   "label": "Joseph Arnaud Charles Gaillardot",
+   "aliases": [
+    "Gaill.",
+    "J. A. C. Gaillardot",
+    "Joseph A. C. Gaillardot",
+    "Charles Gaillardot"
+   ],
+   "qid": "Q18783417"
+  },
+  "recent:1633": {
+   "label": "Canada",
+   "aliases": [
+    "CA",
+    "CAN"
+   ],
+   "qid": "Q16"
+  },
+  "recent:1506": {
+   "label": "Oliver Stanley",
+   "aliases": [
+    "Oliver Frederick Stanley",
+    "Oliver Frederick George Stanley"
+   ],
+   "qid": "Q3497552"
+  },
+  "recent:865": {
+   "label": "Etelka Benkő",
+   "aliases": [
+    "Blau Adél",
+    "Blau Adel"
+   ],
+   "qid": "Q793000"
+  },
+  "recent:1764": {
+   "label": "Jason MacIsaac",
+   "aliases": [],
+   "qid": "Q6163013"
+  },
+  "recent:358": {
+   "label": "Maria Katharine Hartmann",
+   "aliases": [
+    "Maria Katharina Hartmann"
+   ],
+   "qid": "Q116182661"
+  },
+  "recent:1511": {
+   "label": "Moroa",
+   "aliases": [
+    "Marwa",
+    "Moro'a"
+   ],
+   "qid": "Q104858683"
+  },
+  "recent:1640": {
+   "label": "Lady Helen Ogilvy",
+   "aliases": [
+    "Lady Helen Alice Wyllington Ogilvy",
+    "Helen Ogilvy",
+    "Helen Alice Wyllington Ogilvy",
+    "Lady Helen Nutting",
+    "Lady Helen Mitford-Freeman",
+    "Lady Helen Brocklehurst"
+   ],
+   "qid": "Q75256980"
+  },
+  "recent:1895": {
+   "label": "Neri Maria Corsini",
+   "aliases": [],
+   "qid": "Q2424131"
+  },
+  "recent:372": {
+   "label": "Anne Forrester",
+   "aliases": [
+    "Anne Forrester Holloway"
+   ],
+   "qid": "Q4768340"
+  },
+  "recent:1652": {
+   "label": "Vrå station",
+   "aliases": [],
+   "qid": "Q12344087"
+  },
+  "recent:939": {
+   "label": "Legislative Council of Quebec",
+   "aliases": [
+    "Conseil législatif du Québec",
+    "Conseil legislatif du Quebec"
+   ],
+   "qid": "Q1812858"
+  },
+  "recent:1400": {
+   "label": "Michael Welland",
+   "aliases": [],
+   "qid": "Q6835275"
+  },
+  "recent:1913": {
+   "label": "Leslie Santana",
+   "aliases": [
+    "Carolina Paz Santana de la Hoz"
+   ],
+   "qid": "Q96748596"
+  },
+  "recent:1147": {
+   "label": "Prince Wilhelm Karl, 2nd Duke of Urach",
+   "aliases": [
+    "Mindaugas II.",
+    "Mindaugas II"
+   ],
+   "qid": "Q58010"
+  },
+  "popular:132": {
+   "label": "Ben Affleck",
+   "aliases": [
+    "Benjami Géza Affleck",
+    "Benjami Geza Affleck",
+    "Benjamin Geza Affleck-Boldt",
+    "Benjamin Affleck-Boldt",
+    "Ben Affleck-Boldt",
+    "Ben Géza Affleck-Boldt",
+    "Ben Geza Affleck-Boldt",
+    "Ben Géza Affleck",
+    "Ben Geza Affleck"
+   ],
+   "qid": "Q483118"
+  },
+  "popular:4": {
+   "label": "Janice Dickinson",
+   "aliases": [
+    "Janice Doreen Dickinson"
+   ],
+   "qid": "Q230911"
+  },
+  "popular:261": {
+   "label": "Phyllis Schlafly",
+   "aliases": [
+    "Phyllis Stewart",
+    "Phyllis Stewart Schlafly",
+    "Phyllis McAlpin Stewart"
+   ],
+   "qid": "Q434669"
+  },
+  "popular:776": {
+   "label": "Turkey",
+   "aliases": [
+    "Republic of Türkiye",
+    "Republic of Turkey"
+   ],
+   "qid": "Q43"
+  },
+  "popular:10": {
+   "label": "Princess Alice of Battenberg",
+   "aliases": [
+    "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+    "Mother Superior Alice-Elizabeth",
+    "Victoria Alice Elizabeth Julia Marie",
+    "Princess Alice of Greece and Denmark",
+    "Princess Andrew of Greece and Denmark",
+    "Alice of Battenberg",
+    "Victoria Alice Elizabeth Julia Marie of Battenberg",
+    "Alice",
+    "Alice, Princess Andrew of Greece and Denmark"
+   ],
+   "qid": "Q116062"
+  },
+  "popular:780": {
+   "label": "Susan B. Anthony",
+   "aliases": [
+    "Susan Brownell Anthony"
+   ],
+   "qid": "Q192245"
+  },
+  "popular:18": {
+   "label": "Billy Kametz",
+   "aliases": [
+    "William Patrick Kametz"
+   ],
+   "qid": "Q107636969"
+  },
+  "popular:274": {
+   "label": "Carrie Coon",
+   "aliases": [
+    "Carrie Alexandra Coon"
+   ],
+   "qid": "Q17317909"
+  },
+  "popular:21": {
+   "label": "Prince",
+   "aliases": [
+    "Jamie Starr",
+    "Christopher",
+    "Alexander Nevermind",
+    "The Purple One",
+    "Joey Coco",
+    "The artist formerly known as Prince",
+    "Artist Formerly Known as Prince",
+    "Prince Nelson",
+    "Camille",
+    "The Beautiful Experience",
+    "Yo Mama!",
+    "Austra Chanel",
+    "Ecnirp",
+    "Evolsidog",
+    "@PRINCE3EG",
+    "The Symbol",
+    "Yo Grandma!",
+    "Azifwekaré",
+    "His Royal Badness",
+    "Son Of A King",
+    "The Artist (Formerly Known As Prince)",
+    "P. Mann",
+    "Rocker Happyfeller",
+    "@3RDEYEGIRL",
+    "Love Symbol",
+    "Freddie The Phantom",
+    "Ƭ̵̬̊"
+   ],
+   "qid": "Q7542"
+  },
+  "popular:22": {
+   "label": "Jill Biden",
+   "aliases": [
+    "Jill Tracy Jacobs Biden",
+    "Jill Tracy Biden",
+    "Jill Stevenson",
+    "Jill Tracy Stevenson",
+    "Jill Jacobs-Biden",
+    "Dr. Biden",
+    "Dr. Jill Biden",
+    "FLOTUS Biden",
+    "FLOTUS 46",
+    "FLOTUS46",
+    "First Lady Jill Biden"
+   ],
+   "qid": "Q235349"
+  },
+  "popular:409": {
+   "label": "LeBron James",
+   "aliases": [],
+   "qid": "Q36159"
+  },
+  "popular:410": {
+   "label": "Andrew Tate",
+   "aliases": [],
+   "qid": "Q18637166"
+  },
+  "popular:539": {
+   "label": "Bruce Lee",
+   "aliases": [],
+   "qid": "Q16397"
+  },
+  "popular:25": {
+   "label": "Elizabeth II",
+   "aliases": [
+    "Elizabeth Windsor",
+    "Elizabeth Alexandra Mary Windsor"
+   ],
+   "qid": "Q9682"
+  },
+  "popular:33": {
+   "label": "Anya Taylor-Joy",
+   "aliases": [
+    "Anya Josephine Maria Taylor-Joy",
+    "Anya-Josephine Maria Taylor-Joy",
+    "Anya Taylor"
+   ],
+   "qid": "Q20882479"
+  },
+  "popular:548": {
+   "label": "Helena Bonham Carter",
+   "aliases": [
+    "Helena Bonham-Carter"
+   ],
+   "qid": "Q170428"
+  },
+  "popular:297": {
+   "label": "2022 Philippine presidential election",
+   "aliases": [
+    "Philippine presidential election, 2022"
+   ],
+   "qid": "Q55629870"
+  },
+  "popular:554": {
+   "label": "Josh Duggar",
+   "aliases": [
+    "Joshua James Duggar",
+    "Joshua Duggar"
+   ],
+   "qid": "Q19975809"
+  },
+  "popular:685": {
+   "label": "Joseph James Dengelo",
+   "aliases": [
+    "Diamond Knot Killer",
+    "East Bay Rapist",
+    "East Side Killer",
+    "Original Night Stalker",
+    "Visalia Ransacker",
+    "GSK",
+    "EARONS",
+    "Rancho Cordova Cat",
+    "EAR/ONS",
+    "East Area Rapist",
+    "Cordova Meadows Burglar",
+    "Cordova Cat Burglar",
+    "Exeter Ransacker",
+    "EAR",
+    "ONS",
+    "Golden State Killer",
+    "Joseph DeAngelo",
+    "Joe DeAngelo",
+    "JJD",
+    "The Night Stalker",
+    "Night Stalker",
+    "The Original Night Stalker"
+   ],
+   "qid": "Q4045981"
+  },
+  "popular:688": {
+   "label": "Theo Von",
+   "aliases": [
+    "Theodor Vonkurnatowski",
+    "Theodor von Kurnatowski"
+   ],
+   "qid": "Q7781503"
+  },
+  "popular:817": {
+   "label": "Daniel Radcliffe",
+   "aliases": [],
+   "qid": "Q38119"
+  },
+  "popular:435": {
+   "label": "Cristiano Ronaldo",
+   "aliases": [
+    "Cristiano Ronaldo dos Santos Aveiro",
+    "CR7"
+   ],
+   "qid": "Q11571"
+  },
+  "popular:442": {
+   "label": "Naga Chaitanya",
+   "aliases": [
+    "Akkineni Naga Chaitanya"
+   ],
+   "qid": "Q6958274"
+  },
+  "popular:445": {
+   "label": "Elendil",
+   "aliases": [
+    "Elendil Voronda",
+    "Elendil the Tall",
+    "Nimruzîr"
+   ],
+   "qid": "Q719736"
+  },
+  "popular:574": {
+   "label": "Doug Emhoff",
+   "aliases": [
+    "Douglas C. Emhoff",
+    "Douglas Craig Emhoff",
+    "Douglas Emhoff",
+    "Doug C. Emhoff"
+   ],
+   "qid": "Q65029113"
+  },
+  "popular:63": {
+   "label": "Cassidy Hutchinson",
+   "aliases": [
+    "Cassidy Jacqueline Hutchinson"
+   ],
+   "qid": "Q112768061"
+  },
+  "popular:452": {
+   "label": "Tiger Woods",
+   "aliases": [
+    "Eldrick Tont Woods",
+    "Eldrick Tont \"Tiger\" Woods",
+    "Tiger",
+    "Eldrick \"Tiger\" Woods",
+    "Woods"
+   ],
+   "qid": "Q10993"
+  },
+  "popular:581": {
+   "label": "Prince Philip, Duke of Edinburgh",
+   "aliases": [
+    "Lieutenant Philip Mountbatten",
+    "Philip of Greece and Denmark",
+    "H.R.H. Prince Philip",
+    "H.R.H. The Duke Of Edinburgh",
+    "Philip Mountbatten; Prince Philip of Greece and Denmark",
+    "The Prince Philip, Duke of Edinburgh",
+    "Prince Philip of Greece and Denmark",
+    "Philip Edinburgh"
+   ],
+   "qid": "Q80976"
+  },
+  "popular:72": {
+   "label": "Anthony Fauci",
+   "aliases": [
+    "Anthony S. Fauci",
+    "Anthony S Fauci",
+    "Anthony Stephen Fauci",
+    "Anthony Stephen \"Tony\" Fauci",
+    "A. Fauci",
+    "A Fauci",
+    "Tony Fauci",
+    "A. S. Fauci",
+    "Fauci",
+    "Fauci A",
+    "Fauci A.",
+    "Fauci A. S.",
+    "Fauci AS",
+    "Dr Fauci",
+    "Anthony S. Fauci, MD",
+    "Dr. Fauci"
+   ],
+   "qid": "Q573246"
+  },
+  "popular:201": {
+   "label": "Mariah Carey",
+   "aliases": [],
+   "qid": "Q41076"
+  },
+  "popular:329": {
+   "label": "Nicolas Cage",
+   "aliases": [
+    "Nicolas Kim Coppola"
+   ],
+   "qid": "Q42869"
+  },
+  "popular:715": {
+   "label": "Princess Margaret, Countess of Snowdon",
+   "aliases": [
+    "Margaret Windsor",
+    "Margaret York"
+   ],
+   "qid": "Q153815"
+  },
+  "popular:713": {
+   "label": "Peter Scolari",
+   "aliases": [
+    "Peter Thomas Scolari"
+   ],
+   "qid": "Q1740243"
+  },
+  "popular:332": {
+   "label": "Joseph Stalin",
+   "aliases": [
+    "Joseph Vissarionovich Stalin",
+    "Josef Stalin",
+    "Joseph Vissarionovitch Stalin",
+    "Ioseb Besarionis dze Dzhugashvili",
+    "Ioseb Jugashvili",
+    "Uncle Joe",
+    "Ioseb Dzhugashvili",
+    "Joey Stalin",
+    "General Secretary Joseph Stalin",
+    "Stavros Papadopoulos",
+    "Koba",
+    "General Secretary Stalin",
+    "Yosif Dzhugashvili",
+    "Iosif Vissarionovich Dzhugashvili"
+   ],
+   "qid": "Q855"
+  },
+  "popular:336": {
+   "label": "Liz Cheney",
+   "aliases": [
+    "Elizabeth Lynne Cheney Perry",
+    "Elizabeth Lynne Perry",
+    "Elizabeth Lynne Cheney",
+    "Elizabeth Cheney"
+   ],
+   "qid": "Q5362573"
+  },
+  "popular:208": {
+   "label": "Jacinda Ardern",
+   "aliases": [
+    "Jacinda Kate Laurell Ardern"
+   ],
+   "qid": "Q3606816"
+  },
+  "popular:81": {
+   "label": "Barbara Lagoa",
+   "aliases": [],
+   "qid": "Q4859076"
+  },
+  "popular:859": {
+   "label": "Bobby Joe Long",
+   "aliases": [
+    "Robert Joseph Long",
+    "The Classified Ad Rapist",
+    "The Adman Rapist",
+    "Robert Joe Long"
+   ],
+   "qid": "Q2157710"
+  },
+  "popular:220": {
+   "label": "Whoopi Goldberg",
+   "aliases": [],
+   "qid": "Q49001"
+  },
+  "popular:477": {
+   "label": "Kate Winslet",
+   "aliases": [],
+   "qid": "Q202765"
+  },
+  "popular:478": {
+   "label": "Kanye West",
+   "aliases": [
+    "Kanye Omari West",
+    "Ye",
+    "Yeezy",
+    "Kon the Louis Vuitton Don"
+   ],
+   "qid": "Q15935"
+  },
+  "popular:222": {
+   "label": "Jahangir I",
+   "aliases": [
+    "Nur-ud-din Mohammad Salim",
+    "Nur al-Dīn MuỌhammad Jahāngīr Gūrkānī",
+    "empereur moghol de l'Inde Jahangīr",
+    "Emperor of Hindustan Jahangir",
+    "Großmogul Jahangir Mogulreich",
+    "Jehangir"
+   ],
+   "qid": "Q83653"
+  },
+  "popular:483": {
+   "label": "Maria Sharapova",
+   "aliases": [
+    "Marija Šarapova",
+    "Maria Szarapowa",
+    "Maria Scharapowa",
+    "Maria Sjarapova",
+    "Maria Shirapova",
+    "Marija Sarapova",
+    "Sharapova",
+    "Mariya Sharapova"
+   ],
+   "qid": "Q11666"
+  },
+  "popular:611": {
+   "label": "Bill Gates",
+   "aliases": [
+    "William H. Gates III",
+    "William Henry \"Bill\" Gates",
+    "William H. Gates",
+    "William Henry \"Bill\" Gates III",
+    "William Henry Gates",
+    "William \"Bill\" Henry Gates"
+   ],
+   "qid": "Q5284"
+  },
+  "popular:612": {
+   "label": "Amal Clooney",
+   "aliases": [
+    "A. Alamuddin",
+    "Amal Ramzi Alamuddin",
+    "Amal Alamuddin Clooney",
+    "Amal Alamuddin"
+   ],
+   "qid": "Q16769592"
+  },
+  "popular:873": {
+   "label": "Ankita Lokhande",
+   "aliases": [
+    "Ankita Lokhande Jain"
+   ],
+   "qid": "Q2721485"
+  },
+  "popular:493": {
+   "label": "Oklahoma City bombing",
+   "aliases": [],
+   "qid": "Q217528"
+  },
+  "popular:238": {
+   "label": "Parvathamma Rajkumar",
+   "aliases": [],
+   "qid": "Q7141278"
+  },
+  "popular:877": {
+   "label": "Seymour Hersh",
+   "aliases": [],
+   "qid": "Q435792"
+  },
+  "popular:240": {
+   "label": "Freddie Mercury",
+   "aliases": [
+    "Larry Lurex"
+   ],
+   "qid": "Q15869"
+  },
+  "popular:881": {
+   "label": "Osman I",
+   "aliases": [
+    "Othman I",
+    "Osman Ghazi"
+   ],
+   "qid": "Q83100"
+  },
+  "popular:505": {
+   "label": "Turkey",
+   "aliases": [
+    "Republic of Türkiye",
+    "Republic of Turkey"
+   ],
+   "qid": "Q43"
+  },
+  "random:513": {
+   "label": "Klaus Høiland",
+   "aliases": [
+    "Høil."
+   ],
+   "qid": "Q14755036"
+  },
+  "random:1412": {
+   "label": "Elsa G Shapiro",
+   "aliases": [
+    "Elsa Shapiro"
+   ],
+   "qid": "Q87116671"
+  },
+  "random:1544": {
+   "label": "Al-Amir bi-Ahkam Allah",
+   "aliases": [
+    "al-Āmīr bi'Aḥkāmi’l-Lāh",
+    "Mansur ibn Ahamad al-Fatimi"
+   ],
+   "qid": "Q285678"
+  },
+  "random:1289": {
+   "label": "Thomas Crofton",
+   "aliases": [
+    "Very Rev. Thomas Crofton"
+   ],
+   "qid": "Q75769489"
+  },
+  "random:393": {
+   "label": "Charlbury",
+   "aliases": [
+    "Charlbury, Oxfordshire"
+   ],
+   "qid": "Q24669204"
+  },
+  "random:783": {
+   "label": "Sean P. S. Gulick",
+   "aliases": [
+    "Sean Gulick",
+    "S.P.S. Gulick",
+    "S. P. S. Gulick",
+    "Sean Paul Sandifer Gulick",
+    "Sean P.S. Gulick"
+   ],
+   "qid": "Q56550932"
+  },
+  "random:144": {
+   "label": "Stavros G. Livanos",
+   "aliases": [
+    "Stavros George Livanos"
+   ],
+   "qid": "Q7604851"
+  },
+  "random:1554": {
+   "label": "Herbert Charles Loder Minchin",
+   "aliases": [
+    "Lieutenant Herbert Charles Loder Minchin"
+   ],
+   "qid": "Q75800528"
+  },
+  "random:1684": {
+   "label": "Alberta Bair Theater",
+   "aliases": [
+    "Fox Theatre",
+    "Alberta Bair Theater for the Performing Arts"
+   ],
+   "qid": "Q24259332"
+  },
+  "random:279": {
+   "label": "Lefko T Charalambous",
+   "aliases": [
+    "Lefko Charalambous"
+   ],
+   "qid": "Q104739803"
+  },
+  "random:664": {
+   "label": "Asashio Tarō II",
+   "aliases": [
+    "Asashio Taro II",
+    "Asashio Tarou II"
+   ],
+   "qid": "Q11517684"
+  },
+  "random:1404": {
+   "label": "Stilesboro",
+   "aliases": [
+    "Stilesboro, Georgia",
+    "Stilesboro, GA"
+   ],
+   "qid": "Q7616963"
+  },
+  "random:920": {
+   "label": "Marisa Chiazzese",
+   "aliases": [
+    "Maria Luisa Chiazzese",
+    "Maria Mattarella"
+   ],
+   "qid": "Q18921193"
+  },
+  "random:1051": {
+   "label": "Lucia Agar-Ellis",
+   "aliases": [
+    "Hon. Lucia Caroline Elizabeth Agar-Ellis",
+    "Hon. Lucia Agar-Ellis",
+    "Lucia Caroline Elizabeth Agar-Ellis"
+   ],
+   "qid": "Q75271161"
+  },
+  "random:539": {
+   "label": "Gleb Anrep",
+   "aliases": [
+    "Gleb Vasil’evič von Anrep",
+    "Gleb von Anrep",
+    "Gleb Vassilievitch von Anrep",
+    "Gleb Vasilyevich von Anrep"
+   ],
+   "qid": "Q11699911"
+  },
+  "random:159": {
+   "label": "Henry Blyde",
+   "aliases": [
+    "Henry Ernest Blyde",
+    "Sir Henry Blyde",
+    "Harry Blyde",
+    "Sir Harry Blyde"
+   ],
+   "qid": "Q96834128"
+  },
+  "random:1060": {
+   "label": "Kabuai Island",
+   "aliases": [
+    "Kabuai",
+    "Kaboeai Island"
+   ],
+   "qid": "Q24885575"
+  },
+  "random:37": {
+   "label": "Melby Airport",
+   "aliases": [
+    "Melby Aerodrome",
+    "13MN"
+   ],
+   "qid": "Q35279838"
+  },
+  "random:1702": {
+   "label": "Nettle Cave",
+   "aliases": [
+    "2J-5"
+   ],
+   "qid": "Q23936430"
+  },
+  "random:1317": {
+   "label": "Hugh Rollo Fagan",
+   "aliases": [
+    "Major Hugh Rollo Fagan"
+   ],
+   "qid": "Q75893351"
+  },
+  "random:1700": {
+   "label": "1872 United States presidential election in Michigan",
+   "aliases": [
+    "United States presidential election in Michigan, 1872",
+    "1872 US presidential election in Michigan"
+   ],
+   "qid": "Q55636634"
+  },
+  "random:937": {
+   "label": "Robert O Dillman",
+   "aliases": [
+    "Robert Dillman"
+   ],
+   "qid": "Q90790989"
+  },
+  "random:1320": {
+   "label": "Philip Henry Morgan Bryant",
+   "aliases": [
+    "Reverend Philip Henry Morgan Bryant"
+   ],
+   "qid": "Q76288960"
+  },
+  "random:429": {
+   "label": "Ildete L. Ferreira",
+   "aliases": [
+    "Ildete Ferreira",
+    "Ildete Luisa Ferreira"
+   ],
+   "qid": "Q47504346"
+  },
+  "random:1709": {
+   "label": "St Illtyd's Motte",
+   "aliases": [
+    "St Illtyds Castle",
+    "Twyn Motte",
+    "St Illtyd Castle Mound"
+   ],
+   "qid": "Q24183410"
+  },
+  "random:687": {
+   "label": "Informationsdienst Wissenschaft",
+   "aliases": [
+    "idw"
+   ],
+   "qid": "Q1559701"
+  },
+  "random:1457": {
+   "label": "Fort Rucker Theatre",
+   "aliases": [
+    "Camp Rucker Theatre"
+   ],
+   "qid": "Q42310860"
+  },
+  "random:1720": {
+   "label": "Blaxhall",
+   "aliases": [
+    "Blaxhall, Suffolk"
+   ],
+   "qid": "Q24663651"
+  },
+  "random:1081": {
+   "label": "Arthur Foulkes",
+   "aliases": [
+    "Sir Arthur Alexander Foulkes"
+   ],
+   "qid": "Q175892"
+  },
+  "random:442": {
+   "label": "Mike Matthews",
+   "aliases": [
+    "Michael Scott Matthews"
+   ],
+   "qid": "Q6847847"
+  },
+  "random:1469": {
+   "label": "Nokere",
+   "aliases": [
+    "Nakere"
+   ],
+   "qid": "Q106491198"
+  },
+  "random:829": {
+   "label": "Philippe Maximilien de Merode, Marquis de Westerloo",
+   "aliases": [
+    "Philippe Maximilien, Comte de Lannoy, Marquis de Westerloo"
+   ],
+   "qid": "Q2854391"
+  },
+  "random:319": {
+   "label": "Wagner International Airport",
+   "aliases": [
+    "Wagner Intl Aerodrome"
+   ],
+   "qid": "Q49751690"
+  },
+  "random:1217": {
+   "label": "Alida Ortiz Sotomayor",
+   "aliases": [
+    "Álida Ortiz Sotomayor",
+    "Alida Ortiz",
+    "A. Ortiz Sotomayor",
+    "there is no birth and date death on here"
+   ],
+   "qid": "Q106307185"
+  },
+  "random:584": {
+   "label": "Anyar",
+   "aliases": [
+    "Anyer"
+   ],
+   "qid": "Q12472300"
+  },
+  "random:458": {
+   "label": "Kunio Mitui",
+   "aliases": [
+    "Mitui"
+   ],
+   "qid": "Q21521579"
+  },
+  "random:1232": {
+   "label": "Debdutta Ray",
+   "aliases": [
+    "D. Ray"
+   ],
+   "qid": "Q59094890"
+  },
+  "random:1617": {
+   "label": "Law-decree No. 8666, of January 14, 1946",
+   "aliases": [
+    "Decreto-Lei nº 8666, de 14 de janeiro de 1946"
+   ],
+   "qid": "Q105632089"
+  },
+  "random:340": {
+   "label": "Smiths S Lueong",
+   "aliases": [
+    "Smiths Lueong"
+   ],
+   "qid": "Q90482663"
+  },
+  "random:88": {
+   "label": "Carolyn A Stickney",
+   "aliases": [
+    "Carolyn Stickney"
+   ],
+   "qid": "Q96001480"
+  },
+  "random:351": {
+   "label": "María Antonieta Cámpoli",
+   "aliases": [
+    "Maria Antonieta Campoli"
+   ],
+   "qid": "Q3850593"
+  },
+  "random:1378": {
+   "label": "2014 Minnesota Secretary of State election",
+   "aliases": [
+    "Minnesota Secretary of State election, 2014"
+   ],
+   "qid": "Q17090576"
+  },
+  "random:1124": {
+   "label": "ERF Plus",
+   "aliases": [
+    "Evangeliums-Rundfunk"
+   ],
+   "qid": "Q1275779"
+  },
+  "random:1894": {
+   "label": "Xu Suizhong",
+   "aliases": [
+    "Zhenqi"
+   ],
+   "qid": "Q45619755"
+  },
+  "random:1254": {
+   "label": "Hugo Smith",
+   "aliases": [
+    "Hugo Jeremy Eric Smith"
+   ],
+   "qid": "Q75518490"
+  },
+  "random:486": {
+   "label": "Subrata K Pore",
+   "aliases": [
+    "Subrata Pore"
+   ],
+   "qid": "Q91557758"
+  },
+  "random:745": {
+   "label": "Burlington Heights",
+   "aliases": [
+    "Burlington Heights, New Jersey"
+   ],
+   "qid": "Q19460746"
+  },
+  "random:744": {
+   "label": "Gao Yifeng",
+   "aliases": [
+    "Xiuzhi"
+   ],
+   "qid": "Q45513661"
+  },
+  "random:1644": {
+   "label": "Daniel G Gavin",
+   "aliases": [
+    "Daniel Gavin"
+   ],
+   "qid": "Q47236246"
+  },
+  "random:110": {
+   "label": "Arlin V. Stevens",
+   "aliases": [
+    "Arlin Stevens",
+    "A. V. Stevens"
+   ],
+   "qid": "Q106636419"
+  },
+  "random:1905": {
+   "label": "Bob Hartman",
+   "aliases": [
+    "Robert Louis Hartman"
+   ],
+   "qid": "Q4932711"
+  },
+  "random:117": {
+   "label": "Anatoly Porokhovsky",
+   "aliases": [
+    "Anatoliĭ Aleksandrovich"
+   ],
+   "qid": "Q4373138"
+  },
+  "random:1526": {
+   "label": "Lily Yam",
+   "aliases": [
+    "Lily Yam Kwan Pui-ying"
+   ],
+   "qid": "Q6548576"
+  },
+  "random:1910": {
+   "label": "Margaret Elizabeth Wilkinson",
+   "aliases": [
+    "Margaret Wilkinson",
+    "Margaret Elizabeth Hughes",
+    "Margaret Hughes"
+   ],
+   "qid": "Q28170664"
+  },
+  "random:505": {
+   "label": "William Berry",
+   "aliases": [
+    "William Alexander Berry"
+   ],
+   "qid": "Q75538391"
+  },
+  "random:1274": {
+   "label": "John Stuckey Reynolds",
+   "aliases": [
+    "John Reynolds"
+   ],
+   "qid": "Q18783768"
+  },
+  "random:380": {
+   "label": "Katharine Savile",
+   "aliases": [
+    "Katherine Savile"
+   ],
+   "qid": "Q75580416"
+  }
+ }
+}

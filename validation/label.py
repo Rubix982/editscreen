@@ -18,13 +18,17 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-VALID = {"s", "a", "d", "n"}
+VALID = {"s", "a", "d", "n", "w"}
 
 HELP = """\
   s  the subject's own name appears in the probe, written out in full
   a  only a VARIANT appears — a surname alone, a given name, a pen name
   d  no name, but the probe describes the subject well enough to place it
   n  nothing in the probe points at the edited subject
+  w  RippleEdits only: the `edit:` line is not this entry's subject at all.
+     Compare it with `subject:`, which is what Wikidata says the QID is.
+     `w` beats every other letter, and the four above are answered about
+     `subject:`, the real one.
 
   For several edits, answer about the STRONGEST case among them.
   Add a note after the letter for anything that fits none of the four:

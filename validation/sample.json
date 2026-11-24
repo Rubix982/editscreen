@@ -3,1313 +3,1574 @@
   "001": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2715:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2715"
   },
   "002": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2419:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2419"
   },
   "003": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1342:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1342"
   },
   "004": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1614:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1614"
   },
   "005": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2321:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2321"
   },
   "006": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1577:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1577"
   },
   "007": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:858:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:858"
   },
   "008": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1220:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1220"
   },
   "009": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1220:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1220"
   },
   "010": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1312:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1312"
   },
   "011": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1533:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1533"
   },
   "012": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:917:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:917"
   },
   "013": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1072:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1072"
   },
   "014": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:341:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:341"
   },
   "015": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2838:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2838"
   },
   "016": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1545:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1545"
   },
   "017": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1066:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1066"
   },
   "018": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:338:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:338"
   },
   "019": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:881:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:881"
   },
   "020": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:757:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:757"
   },
   "021": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1186:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1186"
   },
   "022": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:159:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:159"
   },
   "023": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1365:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1365"
   },
   "024": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:424:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:424"
   },
   "025": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1358:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1358"
   },
   "026": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2996:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2996"
   },
   "027": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1372:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1372"
   },
   "028": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2532:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2532"
   },
   "029": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1213:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1213"
   },
   "030": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2292:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2292"
   },
   "031": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1157:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1157"
   },
   "032": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2163:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2163"
   },
   "033": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:27:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:27"
   },
   "034": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1204:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1204"
   },
   "035": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2865:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2865"
   },
   "036": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1874:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1874"
   },
   "037": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2702:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2702"
   },
   "038": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1584:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1584"
   },
   "039": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:809:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:809"
   },
   "040": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:382:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:382"
   },
   "041": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2392:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2392"
   },
   "042": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2322:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2322"
   },
   "043": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:28:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:28"
   },
   "044": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2705:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2705"
   },
   "045": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:906:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:906"
   },
   "046": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1086:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1086"
   },
   "047": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:24:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:24"
   },
   "048": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1531:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1531"
   },
   "049": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1577:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1577"
   },
   "050": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2555:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2555"
   },
   "051": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1573:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1573"
   },
   "052": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1601:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1601"
   },
   "053": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:157:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:157"
   },
   "054": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1982:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1982"
   },
   "055": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1365:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1365"
   },
   "056": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1212:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1212"
   },
   "057": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1109:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1109"
   },
   "058": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:133:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:133"
   },
   "059": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1589:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1589"
   },
   "060": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:424:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:424"
   },
   "061": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:757:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:757"
   },
   "062": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1556:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1556"
   },
   "063": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2019:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2019"
   },
   "064": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1385:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1385"
   },
   "065": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:210:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:210"
   },
   "066": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1581:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1581"
   },
   "067": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2579:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2579"
   },
   "068": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2392:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2392"
   },
   "069": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1177:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1177"
   },
   "070": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1732:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1732"
   },
   "071": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:755:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:755"
   },
   "072": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2234:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2234"
   },
   "073": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:548:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:548"
   },
   "074": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2726:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2726"
   },
   "075": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2746:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2746"
   },
   "076": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:757:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:757"
   },
   "077": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1848:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1848"
   },
   "078": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2401:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2401"
   },
   "079": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1199:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1199"
   },
   "080": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1157:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1157"
   },
   "081": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1195:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1195"
   },
   "082": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1368:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1368"
   },
   "083": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1059:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1059"
   },
   "084": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2834:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2834"
   },
   "085": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1296:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1296"
   },
   "086": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1593:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1593"
   },
   "087": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1096:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1096"
   },
   "088": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:972:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:972"
   },
   "089": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1195:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1195"
   },
   "090": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1139:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1139"
   },
   "091": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:862:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:862"
   },
   "092": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1579:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1579"
   },
   "093": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1407:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1407"
   },
   "094": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2874:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2874"
   },
   "095": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1213:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1213"
   },
   "096": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1372:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1372"
   },
   "097": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1848:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1848"
   },
   "098": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2602:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2602"
   },
   "099": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1273:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1273"
   },
   "100": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1101:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1101"
   },
   "101": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1612:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1612"
   },
   "102": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1110:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1110"
   },
   "103": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:529:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:529"
   },
   "104": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:851:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:851"
   },
   "105": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1573:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1573"
   },
   "106": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2089:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2089"
   },
   "107": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1278:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1278"
   },
   "108": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1547:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1547"
   },
   "109": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1862:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1862"
   },
   "110": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:97:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:97"
   },
   "111": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2026:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2026"
   },
   "112": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1585:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1585"
   },
   "113": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:926:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:926"
   },
   "114": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1610:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1610"
   },
   "115": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1429:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1429"
   },
   "116": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2421:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2421"
   },
   "117": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:255:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:255"
   },
   "118": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:84:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:84"
   },
   "119": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1983:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1983"
   },
   "120": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:598:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:598"
   },
   "121": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1001:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1001"
   },
   "122": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1559:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1559"
   },
   "123": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1213:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1213"
   },
   "124": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:771:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:771"
   },
   "125": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:273:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:273"
   },
   "126": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1093:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1093"
   },
   "127": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1333:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1333"
   },
   "128": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1204:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1204"
   },
   "129": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1342:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1342"
   },
   "130": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1446:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1446"
   },
   "131": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1145:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1145"
   },
   "132": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2934:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2934"
   },
   "133": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:598:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:598"
   },
   "134": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1621:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1621"
   },
   "135": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:577:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:577"
   },
   "136": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1594:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1594"
   },
   "137": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1804:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1804"
   },
   "138": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2865:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2865"
   },
   "139": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1650:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1650"
   },
   "140": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:779:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:779"
   },
   "141": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1347:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1347"
   },
   "142": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2173:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2173"
   },
   "143": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:986:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:986"
   },
   "144": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:23:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:23"
   },
   "145": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2245:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2245"
   },
   "146": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1558:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1558"
   },
   "147": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1309:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1309"
   },
   "148": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1342:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1342"
   },
   "149": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:722:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:722"
   },
   "150": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:793:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:793"
   },
   "151": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2372:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2372"
   },
   "152": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2742:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2742"
   },
   "153": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2231:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2231"
   },
   "154": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1780:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1780"
   },
   "155": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2523:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2523"
   },
   "156": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:95:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:95"
   },
   "157": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:619:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:619"
   },
   "158": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2924:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2924"
   },
   "159": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1246:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1246"
   },
   "160": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1086:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1086"
   },
   "161": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:241:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:241"
   },
   "162": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1493:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1493"
   },
   "163": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1608:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1608"
   },
   "164": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2609:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2609"
   },
   "165": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:211:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:211"
   },
   "166": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1358:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1358"
   },
   "167": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:94:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:94"
   },
   "168": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1324:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1324"
   },
   "169": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:611:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:611"
   },
   "170": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2990:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2990"
   },
   "171": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1722:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1722"
   },
   "172": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1562:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1562"
   },
   "173": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1326:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1326"
   },
   "174": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1514:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1514"
   },
   "175": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1634:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1634"
   },
   "176": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2816:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2816"
   },
   "177": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2272:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2272"
   },
   "178": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:193:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:193"
   },
   "179": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2234:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2234"
   },
   "180": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:591:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:591"
   },
   "181": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1609:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1609"
   },
   "182": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1508:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1508"
   },
   "183": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:459:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:459"
   },
   "184": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2047:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2047"
   },
   "185": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1377:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1377"
   },
   "186": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:561:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:561"
   },
   "187": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1573:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1573"
   },
   "188": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1371:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1371"
   },
   "189": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:302:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:302"
   },
   "190": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2597:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2597"
   },
   "191": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1072:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1072"
   },
   "192": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1414:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1414"
   },
   "193": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:561:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:561"
   },
   "194": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1848:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1848"
   },
   "195": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1844:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1844"
   },
   "196": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:896:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:896"
   },
   "197": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:780:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:780"
   },
   "198": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2813:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2813"
   },
   "199": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:246:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:246"
   },
   "200": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2178:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2178"
   },
   "201": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:89:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:89"
   },
   "202": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1540:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1540"
   },
   "203": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1347:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1347"
   },
   "204": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1600:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1600"
   },
   "205": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1821:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1821"
   },
   "206": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1134:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1134"
   },
   "207": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:247:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:247"
   },
   "208": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1069:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1069"
   },
   "209": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2587:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2587"
   },
   "210": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:890:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:890"
   },
   "211": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2818:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2818"
   },
   "212": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2152:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2152"
   },
   "213": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2871:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2871"
   },
   "214": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2751:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2751"
   },
   "215": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1540:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1540"
   },
   "216": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2746:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2746"
   },
   "217": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1814:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1814"
   },
   "218": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1548:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1548"
   },
   "219": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1856:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1856"
   },
   "220": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1589:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1589"
   },
   "221": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1806:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1806"
   },
   "222": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:180:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:180"
   },
   "223": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2272:q1",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2272"
   },
   "224": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1671:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1671"
   },
   "225": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:496:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:496"
   },
   "226": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:659:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:659"
   },
   "227": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2363:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2363"
   },
   "228": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:815:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:815"
   },
   "229": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1420:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1420"
   },
   "230": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:75:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:75"
   },
   "231": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2213:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2213"
   },
   "232": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:589:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:589"
   },
   "233": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1885:q2",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1885"
   },
   "234": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1600:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1600"
   },
   "235": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1072:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1072"
   },
   "236": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1764:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1764"
   },
   "237": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1588:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1588"
   },
   "238": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:2749:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:2749"
   },
   "239": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:236:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:236"
   },
   "240": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1680:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1680"
   },
   "241": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:1801:q1",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:1801"
   },
   "242": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:871:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:871"
   },
   "243": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1155:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1155"
   },
   "244": {
    "stratum": "MQuAKE-CF-3k/STRICT",
    "item": "MQuAKE-CF-3k:84:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-CF-3k:84"
   },
   "245": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:598:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:598"
   },
   "246": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1349:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1349"
   },
   "247": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:424:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:424"
   },
   "248": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:532:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:532"
   },
   "249": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2609:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2609"
   },
   "250": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:1292:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:1292"
   },
   "251": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:2098:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:2098"
   },
   "252": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:549:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:549"
   },
   "253": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:393:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:393"
   },
   "254": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:2728:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:2728"
   },
   "255": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:267:q2",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:267"
   },
   "256": {
    "stratum": "MQuAKE-T/ALIAS",
    "item": "MQuAKE-T:1195:q0",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-T:1195"
   },
   "257": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1520:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1520"
   },
   "258": {
    "stratum": "MQuAKE-T/CLEAN",
    "item": "MQuAKE-T:458:q0",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-T:458"
   },
   "259": {
    "stratum": "MQuAKE-CF-3k/CLEAN",
    "item": "MQuAKE-CF-3k:1535:q1",
-   "verdict": "CLEAN"
+   "verdict": "CLEAN",
+   "cluster": "MQuAKE-CF-3k:1535"
   },
   "260": {
    "stratum": "MQuAKE-T/STRICT",
    "item": "MQuAKE-T:1365:q0",
-   "verdict": "STRICT"
+   "verdict": "STRICT",
+   "cluster": "MQuAKE-T:1365"
   },
   "261": {
    "stratum": "MQuAKE-CF-3k/ALIAS",
    "item": "MQuAKE-CF-3k:1337:q2",
-   "verdict": "ALIAS"
+   "verdict": "ALIAS",
+   "cluster": "MQuAKE-CF-3k:1337"
   }
  },
  "drawn": "2026-11-24",
  "seed": 20261124,
  "matcher_version": "0.2.0",
- "editscreen_commit": "faaa8909f0ab31ce527827dc21af364b6bb0c645-dirty",
+ "editscreen_commit": "d6b99956fd95ceac5e406a02aef56d5171b38dbb-dirty",
  "stratum_sizes": {
   "MQuAKE-T/STRICT": 21,
   "MQuAKE-T/ALIAS": 67,

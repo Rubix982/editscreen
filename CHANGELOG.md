@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0a4 — 2026-11-24
+
+The strict rule meets a benchmark that does not hand it the subject.
+
+- **180 RippleEdits items labelled**, twenty from each of the three subsets crossed with the three verdicts. The strict rule's precision is **100% on all three** — `recent`, `random` and `popular` — and the derived-alias rule's is 95.0% [84.2, 100.0], 100%, 95.0% [84.2, 100.0]. Per subset and never pooled.
+- **The recovery was never wrong about the entity.** A fifth label, `w`, meaning *the recovered subject is not this entry's subject*, was added for this draw and never used: across 166 distinct entries the longest-candidate rule named the right entity every time, adjudicated against the Wikidata QID the benchmark itself cites. It gets the *shape* of the string wrong instead — 28 of the 180 carried a trailing clause — which costs recall and cannot cost precision.
+- So the advice to quote the strict rate now rests on two corpora, and the second recovers its subject rather than being handed it. `README.md` says so; it previously said the opposite was unknown.
+- **Intervals now resample clusters, not rows.** Three MQuAKE questions share a case and dozens of RippleEdits prompts share an entry, and a bootstrap over rows treats those as independent draws. `sample.json` records a `cluster` per row and the scorer resamples those inside each stratum. **This supersedes two published intervals**: the held-out alias figure is 90.2% **[75.8, 100.0]**, not [80.5, 97.6], and the pre-fix one 57.1% **[42.4, 71.4]**, not [45.1, 69.0]. Neither point estimate moved and the two still do not overlap, so the 0.2.0a2 conclusion stands.
+- `validation/sample.py` takes `--adapter`, and `validation/wikidata.py` resolves QIDs for adjudication only. Nothing in the package imports it; scoring reads its cache and never touches the network.
+- **No matcher changed.** `MATCHER_VERSION` is still `0.2.0` and every rate from 0.2.0a3 is unchanged. Two new failure modes were found on this draw — a title surviving as a derived variant, and a surname suppressed when it follows a middle initial — and both are **recorded unfixed**, because a fix read off a sample cannot be scored on it.
+
 ## 0.2.0a3 — 2026-11-24
 
 RippleEdits, and a reporting bug the adapter exposed.
@@ -9,6 +20,8 @@ RippleEdits, and a reporting bug the adapter exposed.
 - Tests pin both directions; 43 now, and the four that would have caught this did not exist.
 
 
+
+## 0.2.0a2 — 2026-11-24
 
 The matchers get measured, and one of them fails.
 

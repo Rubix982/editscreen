@@ -18,24 +18,33 @@ screen(Edit(subject="Henry Mackenzie"),
 
 ```
 $ editscreen mydata.json
-editscreen 0.1.0 — 5 items
+editscreen 0.2.0 — 5 items
 
   CLEAN               2
   STRICT              2   subject's own surface form in the probe
   ALIAS               1   a name variant only
 
-  contaminated at STRICT or above: 60.0%
+  names the subject outright:      40.0%
+  including name variants:         60.0%
+
+  Quote the first. Measured on 441 hand-labelled items from
+  MQuAKE and RippleEdits, the strict rule has not yet been seen
+  to be wrong and the alias rule is right nine times in ten, so
+  the two are not worth merging into one number.
+
+  Neither is a bound on IDENTIFIABILITY. A probe that picks the
+  subject out by description without naming it reads CLEAN here.
 
   by declared test type:
-    one-hop      3/3      100.0%
+    one-hop      2/3       66.7%
     two-hop      0/2        0.0%
 ```
 
-## This release is not validated yet
+## How often the matchers are wrong
 
-`0.2.0a1`. The matchers run, the tests pass, and **nobody has measured how often they are wrong.** The hand-labelled set that would give a precision and a recall is not built, so no contamination rate produced by this version should be quoted.
+Measured, on two benchmarks, against 441 items labelled by hand. The strict rule has not yet been seen to be wrong: **100%** on 261 MQuAKE items and **100%** on each of RippleEdits' three subsets. The derived-alias rule is right **90.2% [75.8, 100.0]** on a held-out MQuAKE draw and 95–100% per RippleEdits subset.
 
-That is the next piece of work and it is the one that matters. A screen that reports what it found without reporting how often it is mistaken is asking to be believed rather than checked.
+`validation/` holds the sample, the labels, the scorer and the limits — including the one that matters most, which is that the labels were produced by a model and the human agreement check is still outstanding.
 
 ## What it does not do
 
@@ -71,6 +80,8 @@ Stated here rather than discovered by a reader:
 - **Family names that are also common words fire.** "Bush", "Rice", "Baker" — the main source of derived false positives.
 - **Pronouns are invisible.** A probe saying "he" after a subject named in an earlier turn is scored `CLEAN`.
 - **One probe, no context.** Items whose probe depends on a surrounding conversation are screened on the probe alone.
+- **A surname after a middle initial is suppressed.** The guard that drops a match belonging to a neighbouring name reads the word before it, and in "William H. Gates III" that word is an initial. Found on the RippleEdits draw, where it accounts for most of the misses, and deliberately not fixed there — see `validation/README.md` on why a fix is never scored on the sample that produced it.
+- **Titles survive as derived variants.** "Princess", "Count", "Sir" are not in the generic-word list, so "Princess Alice of Battenberg" can match on "Princess" alone. Both of the two false positives in the RippleEdits draw were this shape or its family-name cousin, "Ursula von Baden" against "Agnes of Baden".
 
 ## Install
 
@@ -103,11 +114,13 @@ Report those per subset and never pooled; the subsets are built from different s
 
 `rate_strict` counts probes containing the subject's own surface form. `rate_strict_or_alias` adds matches on a name variant. **Quote the first.**
 
-Measured on 261 hand-labelled MQuAKE items, the strict rule was right every time and the alias rule 90.2% [80.5, 97.6] on a held-out draw — and before it was fixed, 57.1%. When that fix landed, every alias-inclusive rate moved and every strict rate stayed exactly where it was. `validation/` has the method and the limits.
+Measured on 261 hand-labelled MQuAKE items, the strict rule was right every time and the alias rule 90.2% [75.8, 100.0] on a held-out draw — and before it was fixed, 57.1% [42.4, 71.4]. When that fix landed, every alias-inclusive rate moved and every strict rate stayed exactly where it was. `validation/` has the method and the limits.
 
 Neither rate bounds **identifiability**. A probe that picks the subject out by description without naming it reads CLEAN. On MQuAKE that is almost every unnamed item, because its questions are rendered from the chain the edit sits on. What these rates measure is whether the probe hands the model the *name*, which is the thing a model can exploit without reasoning.
 
-The precision figures above were measured on MQuAKE only. Nothing here says how the matchers behave on RippleEdits, whose subjects include organisations, works and non-English names.
+**That advice now rests on two corpora rather than one, and the second does not hand the screen its subject.** 180 further items were drawn from RippleEdits — its three subsets crossed with the three verdicts — and labelled with a fifth letter meaning *the recovered subject is not this entry's subject at all*. The strict rule was right on every flagged item in all three subsets, and that fifth letter was never used: on 166 distinct entries the longest-candidate recovery named the right entity every time.
+
+So a strict hit means what it means on MQuAKE even where the subject had to be recovered rather than read. What the recovery gets wrong is the *shape* of the string, not the entity — 28 of the 180 carried a trailing clause from the benchmark's own phrasing, which costs recall and cannot cost precision.
 
 ## Your own data
 

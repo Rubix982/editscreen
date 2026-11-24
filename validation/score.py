@@ -26,6 +26,16 @@ The screen claims to detect a name or a name variant, nothing more. So:
 Precision and recall are `detected` against `present`. The gap between
 `present` and `reachable` is the part the screen declines to chase, and
 reporting it is how the lower bound gets a size instead of an adjective.
+
+WHY THE INTERVALS RESAMPLE CLUSTERS.
+
+Three MQuAKE questions share one case and one edited subject; dozens of
+RippleEdits prompts share one entry and one recovered subject label. Those
+are not independent draws, and resampling rows would report an interval
+narrower than the evidence supports. The bootstrap resamples the `cluster`
+each row records, inside its own stratum. Rows drawn before `cluster`
+existed fall back to standing alone, which reproduces the older, narrower
+numbers rather than silently changing them.
 """
 
 from __future__ import annotations
@@ -39,9 +49,14 @@ from collections import defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-VALID = {"s", "a", "d", "n"}
+VALID = {"s", "a", "d", "n", "w"}
 PRESENT = {"s", "a"}
 REACHABLE = {"s", "a", "d"}
+# `w` says the subject the screen was given is not this entry's subject at
+# all. It is neither present nor reachable — there is no right answer to
+# find — so it counts against precision exactly as `n` does, and is
+# reported separately because the fix for it is in a different file.
+WRONG_SUBJECT = "w"
 BOOTSTRAP = 10_000
 SEED = 7
 
@@ -87,12 +102,16 @@ def boot(rows, weights, num_p, den_p, rng) -> tuple[float, float] | None:
     which the design fixed on purpose; the uncertainty being estimated is
     about the items inside each stratum, not about how many were drawn.
     """
-    by = defaultdict(list)
+    by = defaultdict(lambda: defaultdict(list))
     for r in rows:
-        by[r["stratum"]].append(r)
+        by[r["stratum"]][r["cluster"]].append(r)
     out = []
     for _ in range(BOOTSTRAP):
-        sample = [rng.choice(v) for v in by.values() for _ in v]
+        sample = []
+        for clusters in by.values():
+            keys = list(clusters)
+            for _ in keys:
+                sample.extend(clusters[rng.choice(keys)])
         v = ratio(wsum(sample, weights, num_p), wsum(sample, weights, den_p))
         if v is not None:
             out.append(v)
@@ -128,6 +147,7 @@ def main() -> int:
         r["stratum"] = a["stratum"]
         r["item"] = a["item"]
         r["verdict"] = a.get("verdict", a["stratum"].split("/")[1])
+        r["cluster"] = a.get("cluster", a["item"])
     total = len(rows)
 
     bad = [r["id"] for r in rows if r.get("label") and r["label"] not in VALID]
@@ -188,6 +208,44 @@ def main() -> int:
         print("  " + line("recall", wsum(sub, weights, hit),
                           wsum(sub, weights, pres),
                           boot(sub, weights, hit, pres, rng)))
+
+    print("\nPrecision of each rule, per benchmark — never pooled")
+    for b in benchmarks:
+        print(f"  {b}")
+        for level in ("STRICT", "ALIAS"):
+            sub = [r for r in done
+                   if r["verdict"] == level and r["stratum"].startswith(b + "/")]
+            if not sub:
+                print(f"    {level:<32} —      (none labelled)")
+                continue
+            every = lambda r: True  # noqa: E731
+            print("  " + line(f"{level}", wsum(sub, weights, pres),
+                              wsum(sub, weights, every),
+                              boot(sub, weights, pres, every, rng)))
+
+    wrongs = [r for r in done if r["label"] == WRONG_SUBJECT]
+    if wrongs:
+        print("\nWhere the failures are — a wrong rule, or a wrong subject?")
+        print("  `w` means the string the screen was handed is not the entry's")
+        print("  subject. Those are the adapter's recoveries, not the matchers.")
+        for b in benchmarks:
+            sub = [r for r in done
+                   if r["stratum"].startswith(b + "/") and det(r)]
+            if not sub:
+                continue
+            miss = [r for r in sub if not pres(r)]
+            every = lambda r: True  # noqa: E731
+            print(f"  {b}")
+            print("  " + line("flagged items on a wrong subject",
+                              wsum(sub, weights, lambda r: r["label"] == "w"),
+                              wsum(sub, weights, every),
+                              boot(sub, weights, lambda r: r["label"] == "w",
+                                   every, rng)))
+            if miss:
+                share = (wsum(miss, weights, lambda r: r["label"] == "w")
+                         / wsum(miss, weights, every))
+                print(f"    {share:.0%} of the wrong flags are a wrong "
+                      f"subject, not a wrong rule")
 
     print("\nPer level — did it also get the level right?")
     for level, want in (("STRICT", {"s"}), ("ALIAS", {"a"})):
