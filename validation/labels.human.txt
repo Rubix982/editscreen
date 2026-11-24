@@ -28,25 +28,25 @@
 ### 003
 edit:    Norway national football team
 probe:   What country does the head coach of Norway national football team belong to?
-label:
+label: s
 note:
 
 ### 007
 edit:    Superjail!
 probe:   Who is the head of state in the country where "Superjail!" originated?
-label:
+label: s
 note:
 
 ### 008
 edit:    Aston Martin Lagonda
 probe:   Who is the current CEO of the company that produced the Aston Martin DBR1?
-label:
+label: a
 note:
 
 ### 013
 edit:    Paul Farmer
 probe:   What is the location of the headquarters of the organization that Paul Farmer works for?
-label:
+label: s
 note:
 
 ### 017
@@ -54,31 +54,31 @@ edit:    Chris Paul
 edit:    defender
 edit:    rugby
 probe:   Which country does the sport played by Chris Paul come from?
-label:
+label: s
 note:
 
 ### 020
 edit:    Apax Partners
 probe:   Who is the head of government of the location where Apax Partners has its headquarters?
-label:
+label: s
 note:
 
 ### 057
 edit:    Chile
 probe:   Who is the head of the government in Roberto Bolaño's country of citizenship?
-label:
+label: d
 note:
 
 ### 060
 edit:    Scientific American
 probe:   What is the name of the chief magistrate of the place where the headquarters of Scientific American is situated?
-label:
+label: s
 note:
 
 ### 073
 edit:    Goodie Mob
 probe:   Which leader is the country of origin of Goodie Mob ruled by?
-label:
+label: s
 note:
 
 ### 087
@@ -86,14 +86,14 @@ edit:    Jerzy Dudek
 edit:    cornerback
 edit:    Muay Thai
 probe:   What is the country of origin of the type of sport that Jerzy Dudek specialized in?
-label:
+label: s
 note:
 
 ### 091
 edit:    chocolate brownie
 edit:    India
 probe:   What is the capital of the country that invented the chocolate brownie?
-label:
+label: s
 note:
 
 ### 111
@@ -101,32 +101,32 @@ edit:    Microsoft
 edit:    Steve Jobs
 edit:    Galicia
 probe:   In which continent was the birthplace of the chief executive officer who developed Windows 8?
-label:
+label: d
 note:
 
 ### 116
 edit:    Ford Motor Company
 probe:   What is the capital of the country whose citizen founded the company that manufactured the Ford Taurus?
-label:
+label: a
 note:
 
 ### 123
 edit:    Annapurna Pictures
 probe:   What continent is the headquarters of Annapurna Pictures located in?
-label:
+label: s
 note:
 
 ### 141
 edit:    Aston Martin Lagonda
 probe:   What is the name of the chief executive officer of the company that produces the Aston Martin DB5?
-label:
+label: a
 note:
 
 ### 159
 edit:    association football
 edit:    Hong Kong
 probe:   From which continent does the sport that Terry Yorath is associated with originate?
-label:
+label: d
 note:
 
 ### 170
@@ -134,20 +134,20 @@ edit:    Ford Motor Company
 edit:    William Morris, 1st Viscount Nuffield
 edit:    France
 probe:   What is the capital city of the country where the founder of Ford Torino has citizenship?
-label:
+label: a
 note:
 
 ### 194
 edit:    Norway national football team
 probe:   Which city represents the country of citizenship of the head coach of Norway national football team?
-label:
+label: s
 note:
 
 ### 197
 edit:    Omani League
 edit:    baseball
 probe:   From which nation did the sport in the Omani League originate?
-label:
+label: s
 note:
 
 ### 209
@@ -155,19 +155,19 @@ edit:    Profiles in Courage
 edit:    Isaac Asimov
 edit:    Patty Smyth
 probe:   What is the official language of the nation the partner of the author of "Profiles in Courage" has citizenship in?
-label:
+label: s
 note:
 
 ### 216
 edit:    Lotus Cars
 probe:   In which city is the headquarters of the company that made the Lotus Esprit located?
-label:
+label: a
 note:
 
 ### 218
 edit:    New York City
 probe:   What is the name of the political leader in the city where the broadcaster of "Disney's House of Mouse" is based?
-label:
+label: d
 note:
 
 ### 219
@@ -175,18 +175,18 @@ edit:    youth system
 edit:    baseball
 edit:    United Kingdom
 probe:   What is the name of the person who held the highest executive position in the country of origin of the youth system in the given sport?
-label:
+label: s
 note:
 
 ### 235
 edit:    Paul Farmer
 probe:   Where is the headquarters of the organization that employs Paul Farmer located?
-label:
+label: s
 note:
 
 ### 240
 edit:    country music
 probe:   In which country is the head of government associated with the origin of Jack Greene's genre?
-label:
+label: d
 note:
 

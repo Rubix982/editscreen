@@ -39,7 +39,7 @@
 edit:    Neri Maria Corsini
 subject: Neri Maria Corsini
 probe:   The place of death of Neri Maria Corsini is
-label:
+label: s
 note:
 
 ### 003
@@ -47,14 +47,14 @@ edit:    Nicolas Cage
 subject: Nicolas Cage
 also:    Nicolas Kim Coppola
 probe:   The gender of Nicolas Cage is
-label:
+label: s
 note:
 
 ### 007
 edit:    Whoopi Goldberg
 subject: Whoopi Goldberg
 probe:   The name of the alma mater of Whoopi Goldberg is
-label:
+label: s
 note:
 
 ### 010
@@ -62,7 +62,7 @@ edit:    Thomas Crofton
 subject: Thomas Crofton
 also:    Very Rev. Thomas Crofton
 probe:   The name of the child of Gustave Chaix d'Est-Ange is
-label:
+label: d
 note:
 
 ### 011
@@ -70,7 +70,7 @@ edit:    Oliver Stanley
 subject: Oliver Stanley
 also:    Oliver Frederick Stanley, Oliver Frederick George Stanley
 probe:   The names of the siblings of Oliver Stanley are
-label:
+label: s
 note:
 
 ### 015
@@ -78,14 +78,14 @@ edit:    Lefko T Charalambous, which is not reviewer,
 subject: Lefko T Charalambous
 also:    Lefko Charalambous
 probe:   The occupation of Lefko Charalambous is
-label:
+label: s
 note:
 
 ### 032
 edit:    Homewood
 subject: Homewood
 probe:   The name of the currency in Homewood is
-label:
+label: s
 note:
 
 ### 038
@@ -93,14 +93,14 @@ edit:    Naga Chaitanya
 subject: Naga Chaitanya
 also:    Akkineni Naga Chaitanya
 probe:   The names of the siblings of Naga Chaitanya are
-label:
+label: s
 note:
 
 ### 039
 edit:    Jason MacIsaac
 subject: Jason MacIsaac
 probe:   The name of the head of state of the country of citizenship of Jason MacIsaac is
-label:
+label: s
 note:
 
 ### 043
@@ -108,7 +108,7 @@ edit:    Alida Ortiz Sotomayor
 subject: Alida Ortiz Sotomayor
 also:    Álida Ortiz Sotomayor, Alida Ortiz, A. Ortiz Sotomayor, there is no birth and date death on here
 probe:   The occupation of Alida Ortiz Sotomayor is
-label:
+label: s
 note:
 
 ### 060
@@ -116,7 +116,7 @@ edit:    Prince Philip, Duke of Edinburgh
 subject: Prince Philip, Duke of Edinburgh
 also:    Lieutenant Philip Mountbatten, Philip of Greece and Denmark, H.R.H. Prince Philip, H.R.H. The Duke Of Edinburgh, Philip Mountbatten; Prince Philip of Greece and Denmark, The Prince Philip, Duke of Edinburgh
 probe:   The name of the religion which Prince Philip, Duke of Edinburgh is associated with is
-label:
+label: s
 note:
 
 ### 066
@@ -124,7 +124,7 @@ edit:    Philip Henry Morgan Bryant
 subject: Philip Henry Morgan Bryant
 also:    Reverend Philip Henry Morgan Bryant
 probe:   The gender of the mother of Philip Henry Morgan Bryant is
-label:
+label: s
 note:
 
 ### 077
@@ -132,21 +132,21 @@ edit:    Turkey
 subject: Turkey
 also:    Republic of Türkiye, Republic of Turkey
 probe:   The name of the anthem of the country of citizenship of Sercan Sararer is
-label:
+label: d
 note:
 
 ### 092
 edit:    Daniel Radcliffe, which is not gray asexuality,
 subject: Daniel Radcliffe
 probe:   The sexual orientation of Jacob Gershon is
-label:
+label: n
 note:
 
 ### 097
 edit:    Ursula von Baden
 subject: Ursula von Baden
 probe:   The name of the father of Agnes of Baden is
-label:
+label: d
 note:
 
 ### 114
@@ -154,7 +154,7 @@ edit:    Carolyn A Stickney, which is not walking,
 subject: Carolyn A Stickney
 also:    Carolyn Stickney
 probe:   The occupation of Carolyn A Stickney, which is not walking, is
-label:
+label: s
 note:
 
 ### 115
@@ -162,7 +162,7 @@ edit:    Phyllis Stewart Schlafly
 subject: Phyllis Schlafly
 also:    Phyllis Stewart, Phyllis Stewart Schlafly, Phyllis McAlpin Stewart
 probe:   The gender of Phyllis Stewart is
-label:
+label: a
 note:
 
 ### 129
@@ -170,14 +170,14 @@ edit:    Subrata K Pore, which is not travel guide,
 subject: Subrata K Pore
 also:    Subrata Pore
 probe:   The occupation of Subrata K Pore, which is not travel guide, is
-label:
+label: s
 note:
 
 ### 135
 edit:    Bruce Lee
 subject: Bruce Lee
 probe:   The occupation of Bruce Lee is
-label:
+label: s
 note:
 
 ### 142
@@ -185,7 +185,7 @@ edit:    Stavros G. Livanos
 subject: Stavros G. Livanos
 also:    Stavros George Livanos
 probe:   The place of birth of Stavros G. Livanos is
-label:
+label: s
 note:
 
 ### 148
@@ -193,14 +193,14 @@ edit:    Nakere
 subject: Nokere
 also:    Nakere
 probe:   The name of the anthem of the country Nokere is associated with is
-label:
+label: a
 note:
 
 ### 155
 edit:    Imrazôr
 subject: Imrazôr
 probe:   The name of the child of the spouse of Mithrellas is
-label:
+label: d
 note:
 
 ### 161
@@ -208,14 +208,14 @@ edit:    Joseph Stalin
 subject: Joseph Stalin
 also:    Joseph Vissarionovich Stalin, Josef Stalin, Joseph Vissarionovitch Stalin, Ioseb Besarionis dze Dzhugashvili, Ioseb Jugashvili, Uncle Joe
 probe:   The name of the country of citizenship of Koba is
-label:
+label: d
 note:
 
 ### 168
 edit:    Otto I
 subject: Otto I
 probe:   The name of the paternal grandfather of Otto I is
-label:
+label: s
 note:
 
 ### 169
@@ -223,6 +223,6 @@ edit:    Robert O Dillman, which is not police academy,
 subject: Robert O Dillman
 also:    Robert Dillman
 probe:   The occupation of the author of Defining the critical hurdles in cancer immunotherapy is
-label:
+label: d
 note:
 
