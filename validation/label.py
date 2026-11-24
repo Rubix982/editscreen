@@ -21,6 +21,9 @@ HERE = Path(__file__).resolve().parent
 VALID = {"s", "a", "d", "n", "w"}
 
 HELP = """\
+  You are judging the probe, never answering it. The one question is
+  whether the probe contains the subject's name.
+
   s  the subject's own name appears in the probe, written out in full
   a  only a VARIANT appears — a surname alone, a given name, a pen name
   d  no name, but the probe describes the subject well enough to place it
@@ -97,7 +100,7 @@ def main() -> int:
 
         while True:
             try:
-                raw = input("   > ").strip()
+                raw = input("   does the probe name the subject? > ").strip()
             except (EOFError, KeyboardInterrupt):
                 print("\nstopped.")
                 return 0
@@ -112,7 +115,13 @@ def main() -> int:
                 break
             letter, _, note = raw.partition(" ")
             if letter not in VALID:
-                print(f"   want one of {sorted(VALID)}, or ? - q")
+                # The commonest wrong answer is the ANSWER to the probe. The
+                # probes end in "is", so a bare prompt reads as an invitation
+                # to complete them, and a labeller types a place or a date.
+                # Say what is actually being asked rather than only rejecting.
+                print("   not the answer to the probe — we never need that.")
+                print("   the question is whether the probe NAMES the subject:")
+                print(f"   {sorted(VALID)}, or ? for what each letter means, q to stop")
                 continue
             lines[li] = f"label: {letter}"
             if note.strip():
