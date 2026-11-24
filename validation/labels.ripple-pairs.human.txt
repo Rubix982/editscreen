@@ -1,0 +1,296 @@
+# The paired set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name,
+#       a longer or shorter form of the same name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is
+#   n   nothing in the probe points at the edited subject
+#
+# `subject:` is what Wikidata says the entry's subject id is, and `aliases:`
+# are the names Wikidata lists for it. Answer about THAT subject.
+#
+# WHY THESE ITEMS. The adapter has to work the subject's name out of the
+# benchmark's own prompts, and two reasonable ways of doing that disagree on
+# these items and only these. One of the two is wrong on each one. Your
+# letter decides which, so nothing here says what either of them decided —
+# and neither recovered name is shown, because which of those two strings is
+# the subject's name is the whole question.
+#
+# `s` versus `a` is the distinction that carries this draw, and it is the
+# same distinction as in the other label files: `s` only when the probe
+# carries the name on the `subject:` line, written out in full. A name on
+# the `aliases:` line is `a`, not `s` — the aliases are listed so you can
+# tell a real variant of this subject from a different person entirely.
+#
+# Stop whenever you like. Every stopping point is a usable sample.
+
+### 001
+subject: Josh Duggar
+aliases: Joshua James Duggar, Joshua Duggar
+probe:   The place of birth of Josh Duggar is
+label:
+note:
+
+### 002
+subject: Gloria Vanderbilt
+aliases: Gloria Laura Morgan Vanderbilt, Gloria Laura Madeleine Sophie Vanderbilt, Gloria Stokowski, Mrs. Leopold Stokowski, Gloria Laura Gloria Laura Madeleine Sophi
+probe:   The place of death of Gloria Vanderbilt is
+label:
+note:
+
+### 003
+subject: Jill Biden
+aliases: Jill Tracy Jacobs Biden, Jill Tracy Biden, Jill Stevenson, Jill Tracy Stevenson, Jill Jacobs-Biden, Dr. Biden, Dr. Jill Biden, FLOTUS Biden, FLOTUS 46, FLOTUS46, First Lady Jill Biden
+probe:   The gender of Jill Tracy Jacobs Biden is
+label:
+note:
+
+### 004
+subject: Bob Ross
+aliases: Robert Norman "Bob" Ross, Robert Ross, Bob Roos
+probe:   The gender of Robert Norman "Bob" Ross is
+label:
+note:
+
+### 005
+subject: Sino-Indian War
+aliases: 1962 Indo-China War, Indo-China War 1962
+probe:   The name of the country which 1962 Indo-China War is associated with is
+label:
+note:
+
+### 006
+subject: Super Bowl LIV
+aliases: Super Bowl 54, Super Bowl 2020, 2020 Super Bowl
+probe:   The name of the country which Super Bowl 2020 is associated with is
+label:
+note:
+
+### 007
+subject: Lesley Manville
+probe:   The gender of Lesley Ann Manville is
+label:
+note:
+
+### 008
+subject: Ghislaine Maxwell
+aliases: Ghislaine Noelle Marion Maxwell
+probe:   The name of the alma mater of Ghislaine Maxwell is
+label:
+note:
+
+### 009
+subject: Narendra Modi
+probe:   The name of the ethnic group which Narendra Modi is associated with is
+label:
+note:
+
+### 010
+subject: Theo Von
+aliases: Theodor Vonkurnatowski, Theodor von Kurnatowski
+probe:   The gender of Theodore Vonkurnatowski is
+label:
+note:
+
+### 011
+subject: Robin Williams
+aliases: Robin McLaurin Williams
+probe:   The name of the award Robin Williams won is
+label:
+note:
+
+### 012
+subject: John F. Kennedy
+aliases: Kennedy, John F Kennedy, President Kennedy, John Fitzgerald "Jack" Kennedy, JF Kennedy
+probe:   The gender of John Fitzgerald "Jack" Kennedy is
+label:
+note:
+
+### 013
+subject: Xolo Maridueña
+aliases: Ramario Xolo Maridueña, Ramario Xolo Ramirez
+probe:   The occupation of Xolo Maridueña is
+label:
+note:
+
+### 014
+subject: Corso Family Charitable Foundation
+aliases: Corso Family Charitable Foundation Inc.
+probe:   The name of the currency in the country Corso Family Charitable Foundation is associated with is
+label:
+note:
+
+### 015
+subject: Kabuai Island
+aliases: Kabuai, Kaboeai Island
+probe:   The name of the country which Kaboeai Island is associated with is
+label:
+note:
+
+### 016
+subject: Michiel M. Spapé
+aliases: Michiel Marten Sovijärvi-Spapé, Michiel Spapé, Michiel M. Spapé
+probe:   The name of the employer of Michiel M Spapé is
+label:
+note:
+
+### 017
+subject: Amaroo
+aliases: Amaroo, New South Wales, Amaroo, New South Wales, Australia
+probe:   The name of the capital city of the country Amaroo is associated with is
+label:
+note:
+
+### 018
+subject: Tampojung Tenggina
+aliases: Tampojungtenggina, Desa Tampojungtenggina
+probe:   The name of the country which Desa Tampojungtenggina is associated with is
+label:
+note:
+
+### 019
+subject: Bob Pinodo
+aliases: Show Master of Africa, Robert Kweku Idan
+probe:   The gender of Show Master of Africa is
+label:
+note:
+
+### 020
+subject: Joe-Warren Plant
+aliases: Joseph-Warren Plant
+probe:   The occupation of Joe-Warren Plant is
+label:
+note:
+
+### 021
+subject: Surinaamse Worstelfederatie
+aliases: Surinaamse Worstel Federatie
+probe:   The name of the country which Surinaamse Worstel Federatie is associated with is
+label:
+note:
+
+### 022
+subject: Bookplate: flower, circle
+probe:   The name of the country which Hong Kong Baptist University Library Digital Scholarship Services is associated with is
+label:
+note:
+
+### 023
+subject: BackType
+aliases: BackType, Inc.
+probe:   The official language of BackType is
+label:
+note:
+
+### 024
+subject: Fort Peck Theater
+aliases: Fort Peck Summer Theatre, Fort Peck Summer Theater
+probe:   The official language of the country Fort Peck Theater is associated with is
+label:
+note:
+
+### 025
+subject: Moss Vale Library
+aliases: Moss Vale Public Library
+probe:   The name of the country which Moss Vale Public Library is associated with is
+label:
+note:
+
+### 026
+subject: Buz Kohan
+aliases: Alan W. Kohan
+probe:   The name of the country of citizenship of Buz Kohan is
+label:
+note:
+
+### 027
+subject: Buz Kohan
+aliases: Alan W. Kohan
+probe:   The occupation of Buz Kohan is
+label:
+note:
+
+### 028
+subject: Tawana Petty
+aliases: Tawana "Honeycomb" Petty, Honeycomb
+probe:   The name of the ethnic group which Tawana "Honeycomb" Petty is associated with is
+label:
+note:
+
+### 029
+subject: John E. Dowell Jr.
+aliases: John E. Dowell, Jr, John Dowell, John Dowell, Jr., John E. Dowell, Jr., John E. Dowell, John Edward Dowell
+probe:   The name of the employer of John E. Dowell Jr. is
+label:
+note:
+
+### 030
+subject: Michael J. Knowles
+aliases: Michael Knowles, Michael John Knowles, Smokey Mike
+probe:   The name of the ethnic group which Michael John Knowles is associated with is
+label:
+note:
+
+### 031
+subject: Goler T. Butcher
+aliases: Goler Teal Butcher
+probe:   The name of the ethnic group which Goler Teal Butcher is associated with is
+label:
+note:
+
+### 032
+subject: Sam Egwu
+aliases: Sam Ominyi Egwu
+probe:   The name of the ethnic group which Sam Ominyi Egwu is associated with is
+label:
+note:
+
+### 033
+subject: Hal David
+aliases: Harold David, Kathy Griffin
+probe:   The name of the ethnic group which Harold Lane David is associated with is
+label:
+note:
+
+### 034
+subject: Lucky Kid
+aliases: Metehan Kocabaşoğlu, Metehan
+probe:   The place of birth of Lucky Kid is
+label:
+note:
+
+### 035
+subject: Betty Boo
+aliases: Alison Moira Clarkson, Alison Clarkson
+probe:   The gender of Alison Moira Clarkson is
+label:
+note:
+
+### 036
+subject: Tonto Dikeh
+aliases: Tonto Charity Dikeh, Mama king
+probe:   The occupation of Tonto Dikeh is
+label:
+note:
+
+### 037
+subject: Al-Adil Kitbugha
+aliases: Zayn al-Dīn, Zayn ad-Din Kitbugha, al-Malik al-‘Ādil Kitbughā, al-Malik al-Adil Zayn-ad-Din Kitbugha Ben Abd-Allah al-Mansuri al-Turki al-Mughli
+probe:   The name of the ethnic group which al-Malik al-‘Ādil Kitbughā is associated with is
+label:
+note:
+
+### 038
+subject: Al-Adil Kitbugha
+aliases: Zayn al-Dīn, Zayn ad-Din Kitbugha, al-Malik al-‘Ādil Kitbughā, al-Malik al-Adil Zayn-ad-Din Kitbugha Ben Abd-Allah al-Mansuri al-Turki al-Mughli
+probe:   The name of the ethnic group which al-Malik al-Adil Zayn-ad-Din Kitbugha Ben Abd-Allah al-Mansuri al-Turki al-Mughli is associated with is
+label:
+note:
+
+### 039
+subject: Armand David
+aliases: Père David, Pere David, David, Father David, Jean Pierre Armand David, Jean-Pierre-Armand David
+probe:   The place of death of Armand David is
+label:
+note:

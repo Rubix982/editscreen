@@ -1,4 +1,17 @@
 {
+ "Q10407367": {
+  "aliases": [
+   "Amaroo, New South Wales",
+   "Amaroo, New South Wales, Australia"
+  ],
+  "label": "Amaroo"
+ },
+ "Q104547531": {
+  "aliases": [
+   "Joseph-Warren Plant"
+  ],
+  "label": "Joe-Warren Plant"
+ },
  "Q104739803": {
   "aliases": [
    "Lefko Charalambous"
@@ -17,6 +30,10 @@
    "Decreto-Lei nº 8666, de 14 de janeiro de 1946"
   ],
   "label": "Law-decree No. 8666, of January 14, 1946"
+ },
+ "Q1058": {
+  "aliases": [],
+  "label": "Narendra Modi"
  },
  "Q106307185": {
   "aliases": [
@@ -40,11 +57,22 @@
   ],
   "label": "Arlin V. Stevens"
  },
+ "Q106868271": {
+  "aliases": [],
+  "label": "Bookplate: flower, circle"
+ },
  "Q107636969": {
   "aliases": [
    "William Patrick Kametz"
   ],
   "label": "Billy Kametz"
+ },
+ "Q108171933": {
+  "aliases": [
+   "Show Master of Africa",
+   "Robert Kweku Idan"
+  ],
+  "label": "Bob Pinodo"
  },
  "Q109270083": {
   "aliases": [
@@ -358,9 +386,24 @@
   ],
   "label": "Ivan Johnson"
  },
+ "Q20204363": {
+  "aliases": [
+   "Super Bowl 54",
+   "Super Bowl 2020",
+   "2020 Super Bowl"
+  ],
+  "label": "Super Bowl LIV"
+ },
  "Q202765": {
   "aliases": [],
   "label": "Kate Winslet"
+ },
+ "Q208694": {
+  "aliases": [
+   "1962 Indo-China War",
+   "Indo-China War 1962"
+  ],
+  "label": "Sino-Indian War"
  },
  "Q20882479": {
   "aliases": [
@@ -474,6 +517,23 @@
   ],
   "label": "Kabuai Island"
  },
+ "Q264730": {
+  "aliases": [
+   "Gloria Laura Morgan Vanderbilt",
+   "Gloria Laura Madeleine Sophie Vanderbilt",
+   "Gloria Stokowski",
+   "Mrs. Leopold Stokowski",
+   "Gloria Laura Gloria Laura Madeleine Sophi"
+  ],
+  "label": "Gloria Vanderbilt"
+ },
+ "Q26748408": {
+  "aliases": [
+   "Tampojungtenggina",
+   "Desa Tampojungtenggina"
+  ],
+  "label": "Tampojung Tenggina"
+ },
  "Q2721485": {
   "aliases": [
    "Ankita Lokhande Jain"
@@ -493,6 +553,17 @@
    "Margaret Hughes"
   ],
   "label": "Margaret Elizabeth Wilkinson"
+ },
+ "Q28542587": {
+  "aliases": [
+   "John E. Dowell, Jr",
+   "John Dowell",
+   "John Dowell, Jr.",
+   "John E. Dowell, Jr.",
+   "John E. Dowell",
+   "John Edward Dowell"
+  ],
+  "label": "John E. Dowell Jr."
  },
  "Q2854391": {
   "aliases": [
@@ -548,6 +619,17 @@
   ],
   "label": "Mike Savage"
  },
+ "Q346939": {
+  "aliases": [
+   "Père David",
+   "Pere David",
+   "David",
+   "Father David",
+   "Jean Pierre Armand David",
+   "Jean-Pierre-Armand David"
+  ],
+  "label": "Armand David"
+ },
  "Q34756": {
   "aliases": [
    "State of Qin",
@@ -568,6 +650,12 @@
    "Oliver Frederick George Stanley"
   ],
   "label": "Oliver Stanley"
+ },
+ "Q3510864": {
+  "aliases": [
+   "Sam Ominyi Egwu"
+  ],
+  "label": "Sam Egwu"
  },
  "Q35279838": {
   "aliases": [
@@ -603,6 +691,14 @@
   ],
   "label": "María Antonieta Cámpoli"
  },
+ "Q39798788": {
+  "aliases": [
+   "Michael Knowles",
+   "Michael John Knowles",
+   "Smokey Mike"
+  ],
+  "label": "Michael J. Knowles"
+ },
  "Q4045981": {
   "aliases": [
    "Diamond Knot Killer",
@@ -633,6 +729,14 @@
  "Q41076": {
   "aliases": [],
   "label": "Mariah Carey"
+ },
+ "Q41431454": {
+  "aliases": [
+   "Michiel Marten Sovijärvi-Spapé",
+   "Michiel Spapé",
+   "Michiel M. Spapé"
+  ],
+  "label": "Michiel M. Spapé"
  },
  "Q4155359": {
   "aliases": [],
@@ -693,11 +797,43 @@
   ],
   "label": "Anatoly Porokhovsky"
  },
+ "Q444410": {
+  "aliases": [],
+  "label": "Lesley Manville"
+ },
+ "Q449030": {
+  "aliases": [
+   "Harold David",
+   "Kathy Griffin"
+  ],
+  "label": "Hal David"
+ },
+ "Q45135329": {
+  "aliases": [
+   "Corso Family Charitable Foundation Inc."
+  ],
+  "label": "Corso Family Charitable Foundation"
+ },
  "Q45513661": {
   "aliases": [
    "Xiuzhi"
   ],
   "label": "Gao Yifeng"
+ },
+ "Q455511": {
+  "aliases": [
+   "Robert Norman \"Bob\" Ross",
+   "Robert Ross",
+   "Bob Roos"
+  ],
+  "label": "Bob Ross"
+ },
+ "Q456125": {
+  "aliases": [
+   "Alison Moira Clarkson",
+   "Alison Clarkson"
+  ],
+  "label": "Betty Boo"
  },
  "Q45619755": {
   "aliases": [
@@ -744,6 +880,12 @@
   ],
   "label": "Ben Affleck"
  },
+ "Q4839031": {
+  "aliases": [
+   "BackType, Inc."
+  ],
+  "label": "BackType"
+ },
  "Q4859076": {
   "aliases": [],
   "label": "Barbara Lagoa"
@@ -767,6 +909,12 @@
    "Wagner Intl Aerodrome"
   ],
   "label": "Wagner International Airport"
+ },
+ "Q5003407": {
+  "aliases": [
+   "Alan W. Kohan"
+  ],
+  "label": "Buz Kohan"
  },
  "Q5284": {
   "aliases": [
@@ -795,9 +943,29 @@
   ],
   "label": "Liz Cheney"
  },
+ "Q53870611": {
+  "aliases": [
+   "Ramario Xolo Maridueña",
+   "Ramario Xolo Ramirez"
+  ],
+  "label": "Xolo Maridueña"
+ },
+ "Q5471813": {
+  "aliases": [
+   "Fort Peck Summer Theatre",
+   "Fort Peck Summer Theater"
+  ],
+  "label": "Fort Peck Theater"
+ },
  "Q5507541": {
   "aliases": [],
   "label": "Fujiwara no Shimeko"
+ },
+ "Q5556756": {
+  "aliases": [
+   "Ghislaine Noelle Marion Maxwell"
+  ],
+  "label": "Ghislaine Maxwell"
  },
  "Q55629870": {
   "aliases": [
@@ -811,6 +979,15 @@
    "1872 US presidential election in Michigan"
   ],
   "label": "1872 United States presidential election in Michigan"
+ },
+ "Q558359": {
+  "aliases": [
+   "Zayn al-Dīn",
+   "Zayn ad-Din Kitbugha",
+   "al-Malik al-‘Ādil Kitbughā",
+   "al-Malik al-Adil Zayn-ad-Din Kitbugha Ben Abd-Allah al-Mansuri al-Turki al-Mughli"
+  ],
+  "label": "Al-Adil Kitbugha"
  },
  "Q56550932": {
   "aliases": [
@@ -1072,12 +1249,32 @@
   ],
   "label": "Theo Von"
  },
+ "Q7821713": {
+  "aliases": [
+   "Tonto Charity Dikeh",
+   "Mama king"
+  ],
+  "label": "Tonto Dikeh"
+ },
  "Q793000": {
   "aliases": [
    "Blau Adél",
    "Blau Adel"
   ],
   "label": "Etelka Benkő"
+ },
+ "Q80132895": {
+  "aliases": [
+   "Tawana \"Honeycomb\" Petty",
+   "Honeycomb"
+  ],
+  "label": "Tawana Petty"
+ },
+ "Q80932231": {
+  "aliases": [
+   "Surinaamse Worstel Federatie"
+  ],
+  "label": "Surinaamse Worstelfederatie"
  },
  "Q80976": {
   "aliases": [
@@ -1099,6 +1296,12 @@
   ],
   "label": "Osman I"
  },
+ "Q83338": {
+  "aliases": [
+   "Robin McLaurin Williams"
+  ],
+  "label": "Robin Williams"
+ },
  "Q83653": {
   "aliases": [
    "Nur-ud-din Mohammad Salim",
@@ -1109,6 +1312,12 @@
    "Jehangir"
   ],
   "label": "Jahangir I"
+ },
+ "Q83911895": {
+  "aliases": [
+   "Moss Vale Public Library"
+  ],
+  "label": "Moss Vale Library"
  },
  "Q855": {
   "aliases": [
@@ -1188,5 +1397,22 @@
    "Sir Harry Blyde"
   ],
   "label": "Henry Blyde"
+ },
+ "Q9696": {
+  "aliases": [
+   "Kennedy",
+   "John F Kennedy",
+   "President Kennedy",
+   "John Fitzgerald \"Jack\" Kennedy",
+   "JF Kennedy"
+  ],
+  "label": "John F. Kennedy"
+ },
+ "Q97166267": {
+  "aliases": [
+   "Metehan Kocabaşoğlu",
+   "Metehan"
+  ],
+  "label": "Lucky Kid"
  }
 }

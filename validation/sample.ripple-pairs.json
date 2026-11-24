@@ -1,0 +1,348 @@
+{
+ "assignment": {
+  "001": {
+   "stratum": "popular/ALIAS->STRICT",
+   "item": "popular:105:Relation_Specificity:3:0",
+   "cluster": "popular:105",
+   "qid": "Q19975809",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "002": {
+   "stratum": "popular/ALIAS->STRICT",
+   "item": "popular:15:Relation_Specificity:5:0",
+   "cluster": "popular:15",
+   "qid": "Q264730",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "003": {
+   "stratum": "popular/STRICT->ALIAS",
+   "item": "popular:22:Subject_Aliasing:0:0",
+   "cluster": "popular:22",
+   "qid": "Q235349",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "004": {
+   "stratum": "popular/STRICT->ALIAS",
+   "item": "popular:245:Subject_Aliasing:0:0",
+   "cluster": "popular:245",
+   "qid": "Q455511",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "005": {
+   "stratum": "popular/ALIAS->CLEAN",
+   "item": "popular:271:Subject_Aliasing:0:0",
+   "cluster": "popular:271",
+   "qid": "Q208694",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "CLEAN"
+  },
+  "006": {
+   "stratum": "popular/STRICT->ALIAS",
+   "item": "popular:568:Subject_Aliasing:1:0",
+   "cluster": "popular:568",
+   "qid": "Q20204363",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "007": {
+   "stratum": "popular/STRICT->ALIAS",
+   "item": "popular:594:Subject_Aliasing:0:0",
+   "cluster": "popular:594",
+   "qid": "Q444410",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "008": {
+   "stratum": "popular/ALIAS->STRICT",
+   "item": "popular:654:Relation_Specificity:4:0",
+   "cluster": "popular:654",
+   "qid": "Q5556756",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "009": {
+   "stratum": "popular/ALIAS->STRICT",
+   "item": "popular:657:Relation_Specificity:10:0",
+   "cluster": "popular:657",
+   "qid": "Q1058",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "010": {
+   "stratum": "popular/STRICT->ALIAS",
+   "item": "popular:688:Subject_Aliasing:0:0",
+   "cluster": "popular:688",
+   "qid": "Q7781503",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "011": {
+   "stratum": "popular/ALIAS->STRICT",
+   "item": "popular:766:Relation_Specificity:11:0",
+   "cluster": "popular:766",
+   "qid": "Q83338",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "012": {
+   "stratum": "popular/STRICT->ALIAS",
+   "item": "popular:781:Subject_Aliasing:7:0",
+   "cluster": "popular:781",
+   "qid": "Q9696",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "013": {
+   "stratum": "popular/ALIAS->STRICT",
+   "item": "popular:94:Relation_Specificity:3:0",
+   "cluster": "popular:94",
+   "qid": "Q53870611",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "014": {
+   "stratum": "random/ALIAS->STRICT",
+   "item": "random:1015:Compositionality_I:4:0",
+   "cluster": "random:1015",
+   "qid": "Q45135329",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "015": {
+   "stratum": "random/STRICT->ALIAS",
+   "item": "random:1060:Subject_Aliasing:1:0",
+   "cluster": "random:1060",
+   "qid": "Q24885575",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "016": {
+   "stratum": "random/ALIAS->STRICT",
+   "item": "random:1152:Relation_Specificity:2:0",
+   "cluster": "random:1152",
+   "qid": "Q41431454",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "017": {
+   "stratum": "random/ALIAS->STRICT",
+   "item": "random:1189:Compositionality_I:0:0",
+   "cluster": "random:1189",
+   "qid": "Q10407367",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "018": {
+   "stratum": "random/STRICT->ALIAS",
+   "item": "random:12:Subject_Aliasing:1:0",
+   "cluster": "random:12",
+   "qid": "Q26748408",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "019": {
+   "stratum": "random/STRICT->ALIAS",
+   "item": "random:1567:Subject_Aliasing:0:0",
+   "cluster": "random:1567",
+   "qid": "Q108171933",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "020": {
+   "stratum": "random/ALIAS->STRICT",
+   "item": "random:1738:Relation_Specificity:0:0",
+   "cluster": "random:1738",
+   "qid": "Q104547531",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "021": {
+   "stratum": "random/STRICT->ALIAS",
+   "item": "random:1868:Subject_Aliasing:0:0",
+   "cluster": "random:1868",
+   "qid": "Q80932231",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "022": {
+   "stratum": "random/STRICT->ALIAS",
+   "item": "random:527:Subject_Aliasing:0:0",
+   "cluster": "random:527",
+   "qid": "Q106868271",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "023": {
+   "stratum": "random/ALIAS->STRICT",
+   "item": "random:586:Logical_Generalization:2:0",
+   "cluster": "random:586",
+   "qid": "Q4839031",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "024": {
+   "stratum": "random/ALIAS->STRICT",
+   "item": "random:62:Compositionality_I:2:0",
+   "cluster": "random:62",
+   "qid": "Q5471813",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "025": {
+   "stratum": "random/STRICT->ALIAS",
+   "item": "random:832:Subject_Aliasing:0:0",
+   "cluster": "random:832",
+   "qid": "Q83911895",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "026": {
+   "stratum": "recent/ALIAS->STRICT",
+   "item": "recent:1134:Relation_Specificity:4:0",
+   "cluster": "recent:1134",
+   "qid": "Q5003407",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "027": {
+   "stratum": "recent/ALIAS->STRICT",
+   "item": "recent:1134:Relation_Specificity:5:0",
+   "cluster": "recent:1134",
+   "qid": "Q5003407",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "028": {
+   "stratum": "recent/STRICT->ALIAS",
+   "item": "recent:1326:Subject_Aliasing:0:0",
+   "cluster": "recent:1326",
+   "qid": "Q80132895",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "029": {
+   "stratum": "recent/ALIAS->STRICT",
+   "item": "recent:1351:Relation_Specificity:6:0",
+   "cluster": "recent:1351",
+   "qid": "Q28542587",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "030": {
+   "stratum": "recent/STRICT->ALIAS",
+   "item": "recent:1408:Subject_Aliasing:1:0",
+   "cluster": "recent:1408",
+   "qid": "Q39798788",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "031": {
+   "stratum": "recent/STRICT->ALIAS",
+   "item": "recent:1450:Subject_Aliasing:0:0",
+   "cluster": "recent:1450",
+   "qid": "Q146812",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "032": {
+   "stratum": "recent/STRICT->ALIAS",
+   "item": "recent:157:Subject_Aliasing:0:0",
+   "cluster": "recent:157",
+   "qid": "Q3510864",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "033": {
+   "stratum": "recent/STRICT->ALIAS",
+   "item": "recent:1889:Subject_Aliasing:0:0",
+   "cluster": "recent:1889",
+   "qid": "Q449030",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "034": {
+   "stratum": "recent/ALIAS->STRICT",
+   "item": "recent:1915:Relation_Specificity:1:0",
+   "cluster": "recent:1915",
+   "qid": "Q97166267",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "035": {
+   "stratum": "recent/STRICT->ALIAS",
+   "item": "recent:491:Subject_Aliasing:0:0",
+   "cluster": "recent:491",
+   "qid": "Q456125",
+   "released_verdict": "STRICT",
+   "restricted_verdict": "ALIAS"
+  },
+  "036": {
+   "stratum": "recent/ALIAS->STRICT",
+   "item": "recent:751:Relation_Specificity:4:0",
+   "cluster": "recent:751",
+   "qid": "Q7821713",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  },
+  "037": {
+   "stratum": "recent/ALIAS->CLEAN",
+   "item": "recent:835:Subject_Aliasing:2:0",
+   "cluster": "recent:835",
+   "qid": "Q558359",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "CLEAN"
+  },
+  "038": {
+   "stratum": "recent/ALIAS->CLEAN",
+   "item": "recent:835:Subject_Aliasing:3:0",
+   "cluster": "recent:835",
+   "qid": "Q558359",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "CLEAN"
+  },
+  "039": {
+   "stratum": "recent/ALIAS->STRICT",
+   "item": "recent:943:Relation_Specificity:2:0",
+   "cluster": "recent:943",
+   "qid": "Q346939",
+   "released_verdict": "ALIAS",
+   "restricted_verdict": "STRICT"
+  }
+ },
+ "adapter": "ripple",
+ "draw": "disagreement between the released and restricted recovery rules",
+ "drawn": "2026-11-24",
+ "seed": 20261124,
+ "per_cell": 6,
+ "matcher_version": "0.2.0",
+ "editscreen_commit": "314ba3c8df7909d5f3dbfbde6b97c2043d35676e",
+ "stratum_sizes": {
+  "recent/STRICT->ALIAS": 50,
+  "recent/ALIAS->STRICT": 433,
+  "recent/ALIAS->CLEAN": 2,
+  "random/ALIAS->STRICT": 2264,
+  "random/STRICT->ALIAS": 216,
+  "popular/ALIAS->STRICT": 977,
+  "popular/STRICT->ALIAS": 101,
+  "popular/ALIAS->CLEAN": 1
+ },
+ "stratum_drawn": {
+  "popular/ALIAS->CLEAN": 1,
+  "popular/ALIAS->STRICT": 6,
+  "popular/STRICT->ALIAS": 6,
+  "random/ALIAS->STRICT": 6,
+  "random/STRICT->ALIAS": 6,
+  "recent/ALIAS->CLEAN": 2,
+  "recent/ALIAS->STRICT": 6,
+  "recent/STRICT->ALIAS": 6
+ },
+ "input_sha256": {
+  "recent": "bc71807ea72280e2587bd1974fc79ae7e23aa24b1d5887bcdced40d448910547",
+  "random": "f99e625e6b00225498d4843f4e3a688b391cdd98e6f9ee85608f72a1e28c2d40",
+  "popular": "fe668f11871d3e1df8039be89124d5d39a443db0e9d1ded623d190f9e6a3296e"
+ }
+}

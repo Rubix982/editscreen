@@ -36,6 +36,26 @@ RippleEdits adds a fifth, and it beats the other four:
 
 The `note:` line is worth filling only when an item fits none of the four letters. Those are the interesting ones — the levels in `types.py` were written from a handful of examples and have never met real data, and the expectation is that two or three items will fit none of them.
 
+## Three sets are drawn and waiting for a human
+
+| file | n | what it settles |
+| --- | ---: | --- |
+| `labels.human.txt` | 25 | whether the MQuAKE precision figures are agreement with one labeller or a measurement |
+| `labels.ripple.human.txt` | 25 | the same, on RippleEdits |
+| `labels.ripple-pairs.human.txt` | 39 | which of two recovery rules is right — [T-019] |
+
+The first two are blind re-draws of items already labelled once, so filling them gives an agreement rate where today there is none. Score them with `score.py --labels <the human file> --sample <the matching sample.json>` and compare against the `.claude.txt` run.
+
+**The third is a different kind of draw and `sample.py` cannot produce it.** [C-012] showed the released longest-candidate rule and a restricted one — canonical pick taken only from the five non-aliasing test types — give strict rates eighteen points apart on `random`, while the named-or-varied rate does not move. The existing sets cannot decide between them: they were drawn stratified by the *released* rule's own verdicts, so they cannot be reweighted to score another rule.
+
+```
+python3 validation/sample_pairs.py      # redraw it; seed 20261124, deterministic
+```
+
+**Only the items the two rules disagree on can separate them**, and 4,044 prompts of the 38,092 screened do. `sample_pairs.py` draws six from each subset × transition cell. One label settles both rules at once, because the scorer already knows what each decided — which is why that file shows neither verdict and, unlike the other two, **neither recovered string.** What it shows instead is the Wikidata label for the subject id the benchmark itself cites, because which of the two recovered strings is the subject's name is the entire question and showing them would be the circularity this draw exists to escape.
+
+`s` means the same thing in all three files: the name on the `subject:` line, written out in full. A name on the `aliases:` line is `a`.
+
 ## Why it is stratified
 
 Precision and recall need different items, and one uniform draw supplies neither well. Precision needs items the screen flagged. Recall needs the ones it missed, which live among the items it called clean. In MQuAKE-T only 1.57% of items are flagged at all, so a uniform sample of 200 would hold about three flagged items.
