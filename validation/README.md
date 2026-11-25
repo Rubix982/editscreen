@@ -144,7 +144,32 @@ All three RippleEdits disagreements sit on the same boundary, and none of them i
 python3 validation/sample_human.py --alias
 ```
 
-`labels.alias.human.txt` is 10 items from the **held-out** MQuAKE set, which is where the 90.2% is measured — 5 from each released file, and that set is alias-only, so there is nothing else in it to draw. `labels.ripple-alias.human.txt` is 12, ten of them alias. Both exclude whatever the first human pass already answered, so they add evidence rather than re-asking. Score them the same way, against `holdout.json` and `sample.ripple.json`.
+`labels.alias.human.txt` is 10 items from the **held-out** MQuAKE set, which is where the 90.2% is measured — 5 from each released file, and that set is alias-only, so there is nothing else in it to draw. `labels.ripple-alias.human.txt` is 12, ten of them alias. Score them against `holdout.json` and `sample.ripple.json` respectively — **not** against `sample.json`, whose item ids collide with the holdout's and would rejoin the labels to the wrong items without erroring.
+
+### The MQuAKE half did not buy a second labeller, and is a test–retest instead
+
+**It drew from the wrong file, and the mistake is instructive rather than fatal.** The RippleEdits half takes its items from `labels.ripple.claude.txt`, blanks them, and asks the human — which is how a second labeller is bought. The MQuAKE half takes its items from `labels.holdout.txt`, and that file is the **human's own** first pass. There is no model pass on the held-out set to draw from, so by this route a second labeller was never available. The draw blanked the human's answers and asked the same person again.
+
+What that produced is a **test–retest reliability check**: the same labeller, the same ten items, verdicts hidden, one day apart.
+
+| id | subset | first pass | retest |
+| --- | --- | --- | --- |
+| 001 | MQuAKE-CF-3k | `a` | `a` |
+| 004 | MQuAKE-CF-3k | `a` | **`d`** |
+| 014 | MQuAKE-CF-3k | `a` | `a` |
+| 018 | MQuAKE-T | `a` | `a` |
+| 019 | MQuAKE-CF-3k | `a` | **`d`** |
+| 029 | MQuAKE-T | `a` | `a` |
+| 039 | MQuAKE-T | `a` | **`d`** |
+| 040 | MQuAKE-T | `a` | **`d`** |
+| 043 | MQuAKE-CF-3k | `a` | `a` |
+| 045 | MQuAKE-T | `a` | **`d`** |
+
+**Agreement is 5 of 10, and every one of the five changes runs the same way, `a` to `d`.** A one-directional shift is not noise. The reading of one boundary moved between passes, and on the retest `score.py` reports alias precision of 60.0% [20.0, 100.0] on MQuAKE-CF-3k and 40.0% [0.0, 80.0] on MQuAKE-T, against 100% on these same ten items the first time.
+
+**One boundary accounts for all of it: a subject's name embedded inside a product or work name.** Nine of the ten items have that shape, and the retest split it against itself — `Aston Martin DB5` and `DB3S` read as `a` while `DB9` and `DBR9`, on near-identical probes with the same subject, read as `d`; `Commodore PET` as `a` but `Yamaha DX7` as `d`. Item 019, the Browning M1919, is the case this file already recorded below as a judgement call before the retest existed, and it is one of the five that moved.
+
+**So the 90.2% is not a second-labeller number and it now carries a reliability problem.** It stands as the published figure because the retest does not replace it — n is 5 per subset, the intervals are [20, 100] and [0, 80], and nothing here says which reading is correct. What the retest establishes is narrower and worth more: **the written instruction does not settle the embedded-name case, so the figure is partly a measurement of how that case happened to be called.** Settling the instruction and relabelling is the work; buying a genuine second labeller for MQuAKE needs a model pass on `holdout.json` first, which does not exist yet.
 
 ## The held-out set
 

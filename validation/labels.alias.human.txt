@@ -28,63 +28,63 @@
 ### 001
 edit:    Johann Sebastian Bach
 probe:   What religion is associated with the performer of Bach-Werke-Verzeichnis?
-label:
+label: a
 note:
 
 ### 004
 edit:    Gaelic football
 edit:    India
 probe:   In which continent did the sport that the Meath Senior Football Championship belongs to originate?
-label:
+label: d
 note:
 
 ### 014
 edit:    Commodore International
 edit:    United Kingdom
 probe:   What language was designated as the official language in the country of origin of the Commodore PET?
-label:
+label: a
 note:
 
 ### 018
 edit:    Aston Martin Lagonda
 probe:   Who leads the company responsible for manufacturing the Aston Martin DB5?
-label:
+label: a
 note:
 
 ### 019
 edit:    John Browning
 probe:   Which city is the capital of the country where the founder of the manufacturer of the Browning M1919, which x1 is associated with, comes from?
-label:
+label: d
 note:
 
 ### 029
 edit:    Aston Martin Lagonda
 probe:   What is the name of the chief executive officer of the company that produces Aston Martin DB3S?
-label:
+label: a
 note:
 
 ### 039
 edit:    Yamaha Corporation
 probe:   In which city is the company that produced the Yamaha DX7 based?
-label:
+label: d
 note:
 
 ### 040
 edit:    Aston Martin Lagonda
 probe:   Who holds the position of Chief Executive Officer at the manufacturer of the Aston Martin DB9?
-label:
+label: d
 note:
 
 ### 043
 edit:    association football
 edit:    Hong Kong
 probe:   In which continent is the country of origin of the Cameroon national football team located?
-label:
+label: a
 note:
 
 ### 045
 edit:    Aston Martin Lagonda
 probe:   Who is the CEO of the company that manufactured the Aston Martin DBR9?
-label:
+label: d
 note:
 

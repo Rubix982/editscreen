@@ -49,10 +49,26 @@ CORPORA = {
 # MQuAKE HELD-OUT set, which is where the 90.2% is measured, and RippleEdits'
 # alias stratum. Items already answered by the second labeller are excluded, so
 # this adds evidence rather than re-asking.
+#
+# THE MQUAKE HALF OF THIS DRAW DOES NOT DO WHAT THE PARAGRAPH ABOVE SAYS, AND
+# THE FILE IT PRODUCED IS A TEST-RETEST RATHER THAN A SECOND LABELLER.
+# `source` is the file items are drawn from and blanked. For ripple that is
+# `labels.ripple.claude.txt`, the MODEL's pass, so blanking it and asking the
+# human buys a second labeller. For mquake it is `labels.holdout.txt`, which is
+# the HUMAN's own first pass - there is no model pass on the held-out set, so a
+# second labeller was never reachable this way. The draw re-asked the same
+# person, who changed 5 of 10, every change in the same direction. That is a
+# useful measurement and it is not the one the draw claimed. See README,
+# "The MQuAKE half did not buy a second labeller".
+#
+# `exclude` was also wrong here and is now None: it pointed at
+# `labels.human.txt`, the human pass over `sample.json`, a DIFFERENT sample
+# whose item ids collide with the holdout's. It excluded ten arbitrary items by
+# id collision rather than ten already-answered ones.
 ALIAS_PLAN = {"ALIAS": 10, "STRICT": 1, "CLEAN": 1}
 ALIAS_CORPORA = {
     "mquake": {"sample": "holdout.json", "source": "labels.holdout.txt",
-               "out": "labels.alias.human.txt", "exclude": "labels.human.txt"},
+               "out": "labels.alias.human.txt", "exclude": None},
     "ripple": {"sample": "sample.ripple.json", "source": "labels.ripple.claude.txt",
                "out": "labels.ripple-alias.human.txt", "exclude": "labels.ripple.human.txt"},
 }
@@ -75,7 +91,20 @@ def draw(name: str, alias: bool = False) -> None:
     # skips whatever the first human pass already covered.
     seen: set[str] = set()
     if spec.get("exclude"):
-        seen = set(_blocks((HERE / spec["exclude"]).read_text(encoding="utf-8"))[1])
+        # Item ids are per-sample and every sample numbers from 001, so an
+        # exclude file drawn from a different sample excludes by collision.
+        # Refuse rather than silently drop the wrong items.
+        ex_blocks = _blocks((HERE / spec["exclude"]).read_text(encoding="utf-8"))[1]
+        src_ids = set(_blocks((HERE / spec["source"]).read_text(encoding="utf-8"))[1])
+        stray = set(ex_blocks) - src_ids
+        if stray:
+            raise SystemExit(
+                f"{spec['exclude']} holds {len(stray)} item id(s) absent from "
+                f"{spec['source']}, so the two are labellings of DIFFERENT samples "
+                f"and excluding by id would exclude the wrong items. "
+                f"A non-empty overlap is not enough to rule this out: the wrong "
+                f"config this guard was written for shared 6 ids out of 25.")
+        seen = set(ex_blocks)
     sample = json.loads((HERE / spec["sample"]).read_text(encoding="utf-8"))
     header, blocks = _blocks((HERE / spec["source"]).read_text(encoding="utf-8"))
     assign = sample["assignment"]
