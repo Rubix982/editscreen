@@ -76,6 +76,20 @@ LETTERS = """\
 #   d   no name appears, but the probe describes the subject well enough
 #       that a reader could say who it is ("the author of The Man of Feeling")
 #   n   none of the above: nothing in the probe points at the edited subject
+#
+# When the match sits INSIDE a longer name, ask which entity that longer
+# name denotes. The test is the entity, never the string.
+#   - it denotes the subject, or a product carrying the subject's own name
+#     -> `a`.  "Aston Martin DB9" and "Ford Taurus" carry the maker's name,
+#     and the maker is the subject.
+#   - it denotes something else that merely shares a name part -> `d`.
+#     "Mike Mignola" is not Mike Richardson. "Ford Orion" is not Henry Ford:
+#     the man is reached only as "the founder of the manufacturer".
+#
+# This was not written down for the first held-out pass. It is what that
+# pass did, reconstructed from its own four `note:` lines and checked to
+# hold across all 47 of its items. Writing it down is what stops the next
+# pass from drifting, which one of them already did.
 """
 
 LEGEND_TAIL = """\

@@ -169,7 +169,28 @@ What that produced is a **test–retest reliability check**: the same labeller, 
 
 **One boundary accounts for all of it: a subject's name embedded inside a product or work name.** Nine of the ten items have that shape, and the retest split it against itself — `Aston Martin DB5` and `DB3S` read as `a` while `DB9` and `DBR9`, on near-identical probes with the same subject, read as `d`; `Commodore PET` as `a` but `Yamaha DX7` as `d`. Item 019, the Browning M1919, is the case this file already recorded below as a judgement call before the retest existed, and it is one of the five that moved.
 
-**So the 90.2% is not a second-labeller number and it now carries a reliability problem.** It stands as the published figure because the retest does not replace it — n is 5 per subset, the intervals are [20, 100] and [0, 80], and nothing here says which reading is correct. What the retest establishes is narrower and worth more: **the written instruction does not settle the embedded-name case, so the figure is partly a measurement of how that case happened to be called.** Settling the instruction and relabelling is the work; buying a genuine second labeller for MQuAKE needs a model pass on `holdout.json` first, which does not exist yet.
+**The embedded-name case is most of the held-out set, not a corner of it.** Running the alias matcher over all 47 items and looking at what follows each match: **37 of 47 are a derived single-token match followed by a capitalised token** — `Bach`-Werke-Verzeichnis, `Commodore` PET, `Yamaha` DX7, `Browning` M1919, `Ford` Taurus, `Aston` Martin DB9, `Apple` Pay, `Mike` Mignola. So whichever way this case is called sets the 90.2% almost by itself.
+
+**The first pass did settle it, and the rule is recoverable from its own notes.** It labelled exactly four items `d`, and each carries a note saying why:
+
+| id | subject | match sits in | note | label |
+| --- | --- | --- | --- | --- |
+| 015, 041 | Mike Richardson | `Mike Mignola's` | *a different person* | `d` |
+| 006, 016 | Henry Ford | `Ford Orion` | *the car brand two steps from the man* | `d` |
+
+and the other 43 `a`, including seven where the subject is **Ford Motor Company** and the probe says `Ford Taurus`, `Ford GT40`, `Ford Capri`. Those two groups are not inconsistent. They are one rule applied twice:
+
+> **When the match sits inside a longer name, ask which entity that longer name denotes. The test is the entity, never the string.** It denotes the subject, or a product carrying the subject's own name → `a`. It denotes something else that merely shares a name part → `d`.
+
+`Ford Taurus` carries the maker's name and the maker is the subject, so `a`. `Ford Orion` carries the maker's name and the subject is the *man*, who is reached only as "the founder of the manufacturer", so `d`. `Mike Mignola` is a different person, so `d`. **That rule is consistent across all 47 items of the first pass.**
+
+**The retest is the pass that broke it.** Its five `a`→`d` moves are all on `Aston Martin DB*`, `Commodore PET`, `Yamaha DX7` and `Browning M1919` — company-or-maker subjects whose own name the product carries, which the rule calls `a` and which the first pass called `a` seven more times under the Ford Motor Company subject that the retest never saw. So the five are errors against the first pass's own standard rather than a competing reading of an undecided case.
+
+**What stands, and what this cost.** The 90.2% [75.8, 100.0] stands, and now rests on a stated rule rather than an unstated habit — the rule is written into `sample.py`'s legend and `label.py`'s help as of this commit. The honest limit is that **it was written down after the fact.** It was reconstructed from four `note:` lines and verified against the pass it came from, which cannot be an independent check of that pass. What it does buy is that the next labeller is given the rule instead of having to re-derive it, which is the thing the retest shows does not survive a day.
+
+**A genuine second labeller for MQuAKE is still unbought**, and needs a model pass on `holdout.json`, which does not exist yet.
+
+**One thing the retest found that the first pass got wrong is in the instrument, not the labels.** `matchers/alias.py` already guards this class — `_belongs_to_another_name` declines a match when the capitalised word *before* it belongs to someone else, and its comment names the Ceausescu and Pinkett Smith cases. It only looks backwards. `Mike` in `Mike Mignola's` is the same error with the parts the other way round, and the guard cannot see it; items 015 and 041 were caught by the human and not by the screen. Extending the guard to a following token is **not** a safe fix, because the same shape covers `Ford Taurus`, where the match is correct. Any fix has to separate those two, and nothing here establishes how.
 
 ## The held-out set
 

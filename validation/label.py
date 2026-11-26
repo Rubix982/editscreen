@@ -28,6 +28,16 @@ HELP = """\
   a  only a VARIANT appears — a surname alone, a given name, a pen name
   d  no name, but the probe describes the subject well enough to place it
   n  nothing in the probe points at the edited subject
+
+  When the match sits INSIDE a longer name, ask which entity that longer
+  name denotes. The test is the entity, never the string.
+    - it denotes the subject, or a product carrying the subject's own name
+      -> `a`.  "Aston Martin DB9" and "Ford Taurus" carry the maker's name,
+      and the maker is the subject.
+    - it denotes something else that merely shares a name part -> `d`.
+      "Mike Mignola" is not Mike Richardson. "Ford Orion" is not Henry Ford:
+      the man is reached only as "the founder of the manufacturer".
+
   w  RippleEdits only: the `edit:` line is not this entry's subject at all.
      Compare it with `subject:`, which is what Wikidata says the QID is.
      `w` beats every other letter, and the four above are answered about
