@@ -146,6 +146,41 @@ python3 validation/sample_human.py --alias
 
 `labels.alias.human.txt` is 10 items from the **held-out** MQuAKE set, which is where the 90.2% is measured — 5 from each released file, and that set is alias-only, so there is nothing else in it to draw. `labels.ripple-alias.human.txt` is 12, ten of them alias. Score them against `holdout.json` and `sample.ripple.json` respectively — **not** against `sample.json`, whose item ids collide with the holdout's and would rejoin the labels to the wrong items without erroring.
 
+### The second RippleEdits alias draw: the rule passes, and the LEVEL is what fails
+
+Twelve fresh items, drawn 2026-11-28 with `sample_human.py --alias2`, disjoint from both earlier human passes and from each other. It exists because the first twelve were labelled while `label.py` was failing to print the `also:` line — see below — so the alias list the file was holding was never on screen.
+
+**Alias precision is 100% on all three subsets, and so is strict precision where it was labelled.** Every item the screen flagged does name its subject. That is the alias rule's first confirmation by a labeller who did not produce the pass being checked, and it passed.
+
+**The number that matters is the one beside it.**
+
+```
+ALIAS: flag is right    100.0%  [100.0%, 100.0%]
+ALIAS: level is right    20.3%  [  6.2%,  36.2%]
+```
+
+**The screen knows a name is present and gets the level wrong four times in five.** Seven of the twelve are `ALIAS` where the human read `s` — the subject named in full. In every one the probe does contain the full name; what differs is the string the adapter *recovered*, so `STRICT` cannot fire and the item falls through to a derived part-match. Two separable causes:
+
+| cause | items | what the recovery produced |
+| --- | ---: | --- |
+| a trailing clause survives | 054, 096, 111, 176 | `Dakhovskaya, which is not Russian,` |
+| the wrong form of the name | 019, 040, 121 | `Philippine presidential election, 2022` for the subject `2022 Philippine presidential election`; `St Illtyd Castle Mound` for `St Illtyd's Motte` |
+
+**This is the recovery rule's defect, not the matcher's**, and it is now measured rather than noted: 7 of 12, by two mechanisms that need different fixes. The trailing clause was already on the recorded-unfixed list from 0.2.0a4; the wrong-form half was not.
+
+**Item 016 is the only miss, and it is a boundary rather than a bug.** The screen said `CLEAN`; the human said `a`. The probe names the subject as *"The Original Night Stalker"*, a genuine Wikidata alias, printed on the item's own `also:` line. The screen cannot see it: `grep -rn wikidata src/editscreen/` returns nothing, and `validation/wikidata.py` is adjudication-only by design. **A string screen with no knowledge base cannot catch a nickname the benchmark never supplied**, and that is what the 85.1% recall on `popular` is made of. It is the clearest single demonstration of the lower bound this package advertises.
+
+**Against the first twelve, which is the comparison worth drawing.** Same corpus, same rule, non-overlapping items:
+
+| draw | alias list shown? | alias precision, popular / random / recent |
+| --- | --- | --- |
+| `labels.ripple-alias.human.txt` | no | 75.0% / 66.7% / 100% |
+| `labels.ripple-alias2.human.txt` | yes | 100% / 100% / 100% |
+
+**Showing the labeller the evidence the file already held moved alias precision to a clean sweep.** That is the strongest available argument that the first draw measured a labeller working half-blind rather than the instrument. Both sets are kept and both are scored; neither is re-asked, because re-asking the same person the same items is a test–retest and this file already records one.
+
+**n is four per subset.** The point estimates are not publishable and are not published. The level figure is the one to quote, and it is the one with a mechanism behind it.
+
 ### The MQuAKE half did not buy a second labeller, and is a test–retest instead
 
 **It drew from the wrong file, and the mistake is instructive rather than fatal.** The RippleEdits half takes its items from `labels.ripple.claude.txt`, blanks them, and asks the human — which is how a second labeller is bought. The MQuAKE half takes its items from `labels.holdout.txt`, and that file is the **human's own** first pass. There is no model pass on the held-out set to draw from, so by this route a second labeller was never available. The draw blanked the human's answers and asked the same person again.

@@ -54,7 +54,7 @@ edit:    Joseph James DeAngelo
 subject: Joseph James Dengelo
 also:    Diamond Knot Killer, East Bay Rapist, East Side Killer, Original Night Stalker, Visalia Ransacker, GSK
 probe:   The name of the country of citizenship of The Original Night Stalker is
-label:
+label: a
 note:
 
 ### 019
@@ -62,7 +62,7 @@ edit:    St Illtyd Castle Mound
 subject: St Illtyd's Motte
 also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
 probe:   The name of the currency in St Illtyd's Motte is
-label:
+label: s
 note:
 
 ### 040
@@ -70,14 +70,14 @@ edit:    Philippine presidential election, 2022
 subject: 2022 Philippine presidential election
 also:    Philippine presidential election, 2022
 probe:   The name of the continent which the country 2022 Philippine presidential election is associated with is part of is
-label:
+label: s
 note:
 
 ### 054
 edit:    Dakhovskaya, which is not Russian,
 subject: Dakhovskaya
 probe:   The name of the country which Dakhovskaya is associated with is
-label:
+label: s
 note:
 
 ### 079
@@ -85,7 +85,7 @@ edit:    Emily Post
 subject: Emily Post
 also:    Emily Bruce Price, Emily Price Post, Emily Price
 probe:   The place of death of Emily Price is
-label:
+label: a
 note:
 
 ### 096
@@ -93,7 +93,7 @@ edit:    John Stuckey Reynolds, which is not Professional engineer,
 subject: John Stuckey Reynolds
 also:    John Reynolds
 probe:   The name of the country of citizenship of John Stuckey Reynolds is
-label:
+label: s
 note:
 
 ### 111
@@ -101,7 +101,7 @@ edit:    Elendil, which is not suffragette,
 subject: Elendil
 also:    Elendil Voronda, Elendil the Tall, Nimruzîr
 probe:   The name of the child of Elendil is
-label:
+label: s
 note:
 
 ### 121
@@ -109,7 +109,7 @@ edit:    United States presidential election in Michigan, 1872
 subject: 1872 United States presidential election in Michigan
 also:    United States presidential election in Michigan, 1872, 1872 US presidential election in Michigan
 probe:   The name of the currency in 1872 United States presidential election in Michigan is
-label:
+label: s
 note:
 
 ### 134
@@ -117,7 +117,7 @@ edit:    Legislative Council of Quebec
 subject: Legislative Council of Quebec
 also:    Conseil législatif du Québec, Conseil legislatif du Quebec
 probe:   The name of the country which Conseil législatif du Québec is associated with is
-label:
+label: a
 note:
 
 ### 151
@@ -125,7 +125,7 @@ edit:    Susan B. Anthony
 subject: Susan B. Anthony
 also:    Susan Brownell Anthony
 probe:   The name of the country of citizenship of Susan Anthony is
-label:
+label: a
 note:
 
 ### 164
@@ -133,13 +133,13 @@ edit:    Josh Duggar
 subject: Josh Duggar
 also:    Joshua James Duggar, Joshua Duggar
 probe:   The gender of Josh Duggar is
-label:
+label: s
 note:
 
 ### 176
 edit:    LeBron James, which is not train conductor,
 subject: LeBron James
 probe:   The name of the alma mater of LeBron James is
-label:
+label: s
 note:
 
