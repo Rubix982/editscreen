@@ -29,6 +29,7 @@ import json
 import pathlib
 import random
 import re
+import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 SEED = 20261124
@@ -70,8 +71,38 @@ ALIAS_CORPORA = {
     "mquake": {"sample": "holdout.json", "source": "labels.holdout.txt",
                "out": "labels.alias.human.txt", "exclude": None},
     "ripple": {"sample": "sample.ripple.json", "source": "labels.ripple.claude.txt",
-               "out": "labels.ripple-alias.human.txt", "exclude": "labels.ripple.human.txt"},
+               "out": "labels.ripple-alias.human.txt",
+               "exclude": ("labels.ripple.human.txt",)},
 }
+
+#: A SECOND alias draw over the same corpus, 2026-11-28. The first one was
+#: labelled while `label.py` was failing to print the `also:` line, so the
+#: Wikidata alias list was never on screen -- item 064's probe is "The
+#: occupation of The Adman Rapist is" and The Adman Rapist is a listed alias of
+#: the subject, which the labeller had no way to know. Three of twelve answers
+#: were given without evidence the file was holding.
+#:
+#: That makes the first twelve a measurement of a labeller working half blind.
+#: They are KEPT and still scored -- re-asking the same items of the same person
+#: is a test-retest, which this project already has one of and does not need
+#: another. This draws fresh items instead, excluding everything either human
+#: pass has answered, so the two sets add rather than overlap.
+ALIAS2_SEED = 20261128
+ALIAS2_CORPORA = {
+    "ripple": {"sample": "sample.ripple.json", "source": "labels.ripple.claude.txt",
+               "out": "labels.ripple-alias2.human.txt",
+               "exclude": ("labels.ripple.human.txt", "labels.ripple-alias.human.txt")},
+}
+
+
+def _legend(name: str) -> str:
+    """The live legend for this corpus, imported rather than inherited."""
+    sys.path.insert(0, str(HERE))
+    try:
+        import sample  # noqa: PLC0415 - same directory, not a package
+    finally:
+        sys.path.pop(0)
+    return sample.RIPPLE_LEGEND if name == "ripple" else sample.MQUAKE_LEGEND
 
 
 def _blocks(text: str) -> tuple[str, dict[str, str]]:
@@ -84,29 +115,37 @@ def _blank(block: str) -> str:
     return re.sub(r"^note:.*$", "note:", block, flags=re.M)
 
 
-def draw(name: str, alias: bool = False) -> None:
-    spec = (ALIAS_CORPORA if alias else CORPORA)[name]
-    plan = ALIAS_PLAN if alias else PLAN
+def draw(name: str, alias: bool = False, *, table: dict | None = None,
+         seed: int | None = None) -> None:
+    spec = (table if table is not None else (ALIAS_CORPORA if alias else CORPORA))[name]
+    plan = ALIAS_PLAN if (alias or table is not None) else PLAN
     # A second labeller answering the same item twice adds nothing. The draw
     # skips whatever the first human pass already covered.
     seen: set[str] = set()
-    if spec.get("exclude"):
+    src_ids = set(_blocks((HERE / spec["source"]).read_text(encoding="utf-8"))[1])
+    for ex in (spec.get("exclude") or ()):
         # Item ids are per-sample and every sample numbers from 001, so an
         # exclude file drawn from a different sample excludes by collision.
         # Refuse rather than silently drop the wrong items.
-        ex_blocks = _blocks((HERE / spec["exclude"]).read_text(encoding="utf-8"))[1]
-        src_ids = set(_blocks((HERE / spec["source"]).read_text(encoding="utf-8"))[1])
+        ex_blocks = _blocks((HERE / ex).read_text(encoding="utf-8"))[1]
         stray = set(ex_blocks) - src_ids
         if stray:
             raise SystemExit(
-                f"{spec['exclude']} holds {len(stray)} item id(s) absent from "
+                f"{ex} holds {len(stray)} item id(s) absent from "
                 f"{spec['source']}, so the two are labellings of DIFFERENT samples "
                 f"and excluding by id would exclude the wrong items. "
                 f"A non-empty overlap is not enough to rule this out: the wrong "
                 f"config this guard was written for shared 6 ids out of 25.")
-        seen = set(ex_blocks)
+        seen |= set(ex_blocks)
     sample = json.loads((HERE / spec["sample"]).read_text(encoding="utf-8"))
-    header, blocks = _blocks((HERE / spec["source"]).read_text(encoding="utf-8"))
+    _, blocks = _blocks((HERE / spec["source"]).read_text(encoding="utf-8"))
+    # The header comes from sample.py's CURRENT legend, not from the source
+    # file's. Inheriting it meant a draw carried whatever instruction was in
+    # force when its SOURCE was written: the embedded-name rule was added to
+    # `LETTERS` on 2026-11-27 and the draw made the day after still shipped the
+    # pre-rule text. The blocks are still copied verbatim -- it is the
+    # instruction that must be current and the item that must not change.
+    header = _legend(name)
     assign = sample["assignment"]
 
     # Group by verdict, then spread each verdict's quota evenly over the files
@@ -118,7 +157,7 @@ def draw(name: str, alias: bool = False) -> None:
         cell = row["stratum"].rsplit("/", 1)[0]
         by_verdict.setdefault(row["verdict"], {}).setdefault(cell, []).append(item_id)
 
-    rng = random.Random(SEED)
+    rng = random.Random(SEED if seed is None else seed)
     picked: list[str] = []
     for verdict, quota in plan.items():
         cells = sorted(by_verdict.get(verdict, {}))
@@ -150,7 +189,17 @@ def main() -> int:
     ap.add_argument("--adapter", choices=sorted(CORPORA), default=None)
     ap.add_argument("--alias", action="store_true",
                     help="draw the alias-weighted sets instead")
+    ap.add_argument("--alias2", action="store_true",
+                    help="draw a FRESH alias set, excluding every item either "
+                         "human pass has already answered")
     args = ap.parse_args()
+    if args.alias2:
+        for name in sorted(ALIAS2_CORPORA):
+            draw(name, table=ALIAS2_CORPORA, seed=ALIAS2_SEED)
+        print("\nNo verdicts in the file. Label with:")
+        print("  python3 validation/label.py --labels "
+              "validation/labels.ripple-alias2.human.txt")
+        return 0
     for name in ([args.adapter] if args.adapter else sorted(CORPORA)):
         draw(name, alias=args.alias)
     if args.alias:

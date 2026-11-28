@@ -1,0 +1,145 @@
+# The labelled set — fill in every `label:` with ONE letter.
+#
+#   s   the subject's own name appears in the probe, written out in full
+#   a   only a VARIANT appears — a surname alone, a given name, a pen name
+#   d   no name appears, but the probe describes the subject well enough
+#       that a reader could say who it is ("the author of The Man of Feeling")
+#   n   none of the above: nothing in the probe points at the edited subject
+#
+# When the match sits INSIDE a longer name, ask which entity that longer
+# name denotes. The test is the entity, never the string.
+#   - it denotes the subject, or a product carrying the subject's own name
+#     -> `a`.  "Aston Martin DB9" and "Ford Taurus" carry the maker's name,
+#     and the maker is the subject.
+#   - it denotes something else that merely shares a name part -> `d`.
+#     "Mike Mignola" is not Mike Richardson. "Ford Orion" is not Henry Ford:
+#     the man is reached only as "the founder of the manufacturer".
+#
+# This was not written down for the first held-out pass. It is what that
+# pass did, reconstructed from its own four `note:` lines and checked to
+# hold across all 47 of its items. Writing it down is what stops the next
+# pass from drifting, which one of them already did.
+#   w   the `edit:` line is not this entry's subject at all — the adapter
+#       recovered the wrong string. `w` beats every other letter: answer it
+#       whenever it applies, whatever the probe says.
+#
+# RippleEdits names its subject by Wikidata QID, and the adapter has no
+# knowledge base, so it reads a label back out of the entry's own prompts.
+# `edit:` is what it recovered and `subject:` is what Wikidata says that
+# QID is. When they disagree, the item is `w` — that is a failure of the
+# recovery and not of the matcher, and the whole point of this draw is to
+# tell the two apart.
+#
+# Answer `s`, `a`, `d` and `n` about `subject:`, the real one. A probe that
+# names the recovered string but not the real subject is still `w`.
+#
+# `s` and `a` are what the screen claims to detect, so they decide its
+# precision and recall. `d` is what it deliberately does not detect, and
+# counting them is how we find out how loose the lower bound is.
+#
+# `note:` is optional and only worth filling when an item fits none of the
+# letters. Those are the interesting ones — the levels in types.py were
+# written from a handful of examples and have never met real data.
+#
+# Nothing here says what the screen decided. That is deliberate: seeing its
+# verdict would invite you to agree with it, and the number that inflates
+# is precision. The verdicts are in sample.json and the scorer rejoins them.
+#
+# Stop whenever you like. Every stopping point is a usable sample; the
+# scorer reweights on what is actually filled in.
+
+
+### 016
+edit:    Joseph James DeAngelo
+subject: Joseph James Dengelo
+also:    Diamond Knot Killer, East Bay Rapist, East Side Killer, Original Night Stalker, Visalia Ransacker, GSK
+probe:   The name of the country of citizenship of The Original Night Stalker is
+label:
+note:
+
+### 019
+edit:    St Illtyd Castle Mound
+subject: St Illtyd's Motte
+also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
+probe:   The name of the currency in St Illtyd's Motte is
+label:
+note:
+
+### 040
+edit:    Philippine presidential election, 2022
+subject: 2022 Philippine presidential election
+also:    Philippine presidential election, 2022
+probe:   The name of the continent which the country 2022 Philippine presidential election is associated with is part of is
+label:
+note:
+
+### 054
+edit:    Dakhovskaya, which is not Russian,
+subject: Dakhovskaya
+probe:   The name of the country which Dakhovskaya is associated with is
+label:
+note:
+
+### 079
+edit:    Emily Post
+subject: Emily Post
+also:    Emily Bruce Price, Emily Price Post, Emily Price
+probe:   The place of death of Emily Price is
+label:
+note:
+
+### 096
+edit:    John Stuckey Reynolds, which is not Professional engineer,
+subject: John Stuckey Reynolds
+also:    John Reynolds
+probe:   The name of the country of citizenship of John Stuckey Reynolds is
+label:
+note:
+
+### 111
+edit:    Elendil, which is not suffragette,
+subject: Elendil
+also:    Elendil Voronda, Elendil the Tall, Nimruzîr
+probe:   The name of the child of Elendil is
+label:
+note:
+
+### 121
+edit:    United States presidential election in Michigan, 1872
+subject: 1872 United States presidential election in Michigan
+also:    United States presidential election in Michigan, 1872, 1872 US presidential election in Michigan
+probe:   The name of the currency in 1872 United States presidential election in Michigan is
+label:
+note:
+
+### 134
+edit:    Legislative Council of Quebec
+subject: Legislative Council of Quebec
+also:    Conseil législatif du Québec, Conseil legislatif du Quebec
+probe:   The name of the country which Conseil législatif du Québec is associated with is
+label:
+note:
+
+### 151
+edit:    Susan B. Anthony
+subject: Susan B. Anthony
+also:    Susan Brownell Anthony
+probe:   The name of the country of citizenship of Susan Anthony is
+label:
+note:
+
+### 164
+edit:    Josh Duggar
+subject: Josh Duggar
+also:    Joshua James Duggar, Joshua Duggar
+probe:   The gender of Josh Duggar is
+label:
+note:
+
+### 176
+edit:    LeBron James, which is not train conductor,
+subject: LeBron James
+probe:   The name of the alma mater of LeBron James is
+label:
+note:
+
