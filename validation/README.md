@@ -163,7 +163,7 @@ ALIAS: level is right    20.3%  [  6.2%,  36.2%]
 
 | cause | items | what the recovery produced |
 | --- | ---: | --- |
-| a trailing clause survives | 054, 096, 111, 176 | `Dakhovskaya, which is not Russian,` |
+| a trailing clause survives | 054, 096, 111, 176 | `Dakhovskaya, which is not Russian,` — **fixed 2026-11-28, and not scored here**, see below |
 | the wrong form of the name | 019, 040, 121 | `Philippine presidential election, 2022` for the subject `2022 Philippine presidential election`; `St Illtyd Castle Mound` for `St Illtyd's Motte` |
 
 **This is the recovery rule's defect, not the matcher's**, and it is now measured rather than noted: 7 of 12, by two mechanisms that need different fixes. The trailing clause was already on the recorded-unfixed list from 0.2.0a4; the wrong-form half was not.
@@ -180,6 +180,12 @@ ALIAS: level is right    20.3%  [  6.2%,  36.2%]
 **Showing the labeller the evidence the file already held moved alias precision to a clean sweep.** That is the strongest available argument that the first draw measured a labeller working half-blind rather than the instrument. Both sets are kept and both are scored; neither is re-asked, because re-asking the same person the same items is a test–retest and this file already records one.
 
 **n is four per subset.** The point estimates are not publishable and are not published. The level figure is the one to quote, and it is the one with a mechanism behind it.
+
+**The trailing clause is fixed, and this draw cannot score the fix.** `adapters/ripple.py` now trims a candidate at a relative-clause marker before adding it, so the clean form and the clause-laden form collapse to one candidate instead of competing on length. Corpus-wide, the longest candidate carried a clause for **577 of 3,818 entries (15.1%)** — 95 `recent`, 387 `random`, 95 `popular` — and none do now. Entry coverage is unchanged at 1461 / 1633 / 724, which was the risk: the candidate is trimmed rather than rejected, because rejecting would lose entries whose only candidate carries one.
+
+**No rate in this file is re-reported from it, deliberately.** This fix was read off the items above, and 0.2.0a2's lesson is that a fix read off a sample scores perfectly on that sample and worse everywhere else. Every labelled set here was drawn stratified by the *old* verdicts and cannot be reweighted to score the new recovery. **A fresh draw is what scores this**, and until one exists the published RippleEdits rates are the pre-fix ones. `RECOVERY_VERSION` is added to the adapter and bumped to `0.3.0` for exactly this reason: `MATCHER_VERSION` is still `0.2.0` and correctly so — no matcher changed — so it cannot be the thing that tells two incomparable rates apart.
+
+**The wrong-form half is NOT fixed.** `Philippine presidential election, 2022` against the subject `2022 Philippine presidential election` is a different mechanism — the recovery picked a real string that is a different rendering of the name, not a string with prompt text glued on. Trimming does nothing for it, and it stays on the recorded-unfixed list.
 
 ### The MQuAKE half did not buy a second labeller, and is a test–retest instead
 

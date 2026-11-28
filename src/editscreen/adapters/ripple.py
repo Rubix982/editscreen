@@ -80,6 +80,26 @@ PATTERNS = (
 )
 
 
+#: A relative clause is prompt text, never part of a name. RippleEdits writes
+#: negated attributes inline -- "Dakhovskaya, which is not Russian, is ..." --
+#: and the pattern ` which (.+?) is associated` captures the clause along with
+#: the subject. `subject_label` then prefers that string precisely BECAUSE the
+#: clause makes it the longest, so longest-wins selects the damaged form over
+#: the clean one sitting beside it in the same candidate set.
+#:
+#: Measured over the three released files: the longest candidate carries a
+#: clause for **577 of 3,818 entries (15.1%)** -- 95 recent, 387 random, 95
+#: popular. It is trimmed rather than rejected: rejecting would lose entries
+#: whose only candidate carries one, and this function's docstring records that
+#: taking a worse candidate once left 17,206 prompts unclassifiable.
+_CLAUSE = re.compile(r",\s+which\b")
+
+#: Bumped whenever the recovered string can change for the same input. Rates
+#: taken under different values are NOT comparable, and the matcher version does
+#: not capture this because the matchers are untouched.
+RECOVERY_VERSION = "0.3.0"
+
+
 def candidates(entry: dict) -> list[str]:
     """Every subject-shaped string this entry's own prompts offer.
 
@@ -98,7 +118,13 @@ def candidates(entry: dict) -> list[str]:
                 for pattern in PATTERNS:
                     m = re.search(pattern, prompt)
                     if m and m.group(1) and m.group(1)[0].isupper():
-                        found.add(m.group(1).strip())
+                        # Trim before adding, so the clean form and the
+                        # clause-laden one collapse to one candidate instead of
+                        # competing on length.
+                        cand = _CLAUSE.split(m.group(1).strip(), 1)[0]
+                        cand = cand.strip().rstrip(",").strip()
+                        if cand:
+                            found.add(cand)
     return sorted(found)
 
 

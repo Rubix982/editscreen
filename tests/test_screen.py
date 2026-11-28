@@ -319,3 +319,29 @@ class TestRippleAdapter:
         p.write_text(json.dumps([{"case_id": 1}]))
         with pytest.raises(ValueError, match="does not look like RippleEdits"):
             list(ripple.load(p))
+
+
+def test_a_relative_clause_never_survives_into_the_recovered_subject() -> None:
+    """RippleEdits writes negated attributes inline, and longest-wins preferred them.
+
+    `" which (.+?) is associated"` captures the clause along with the subject, and
+    the clause is what made that string the longest, so `subject_label` chose the
+    damaged form over the clean one sitting beside it in the same set. Measured at
+    577 of 3,818 entries (15.1%) across the three released files before the trim.
+    """
+    from editscreen.adapters.ripple import candidates, subject_label
+
+    entry = {
+        "Logical_Generalization": [{
+            "test_queries": [
+                {"prompt": "The name of the country which Dakhovskaya, "
+                           "which is not Russian, is associated with is"},
+                {"prompt": "The place of birth of Dakhovskaya is"},
+            ]
+        }]
+    }
+    cands = candidates(entry)
+    assert all("which" not in c for c in cands), cands
+    # The two prompts must collapse to ONE candidate, not compete on length.
+    assert cands == ["Dakhovskaya"], cands
+    assert subject_label(entry) == "Dakhovskaya"
