@@ -19,6 +19,20 @@
 # Answer `s`, `a`, `d` and `n` about `subject:`, the real one. A probe that
 # names the recovered string but not the real subject is still `w`.
 #
+# When the match sits INSIDE a longer name, ask which entity that longer
+# name denotes. The test is the entity, never the string.
+#   - it denotes the subject, or a product carrying the subject's own name
+#     -> `a`.  "Aston Martin DB9" and "Ford Taurus" carry the maker's name,
+#     and the maker is the subject.
+#   - it denotes something else that merely shares a name part -> `d`.
+#     "Mike Mignola" is not Mike Richardson. "Ford Orion" is not Henry Ford:
+#     the man is reached only as "the founder of the manufacturer".
+#
+# This file was generated before that rule was written down, so the rule was
+# inserted afterwards rather than produced by sample.py. Later draws carry it
+# from the generator. Nothing else in this file was touched: the draw, its
+# seed and its twelve items are exactly as they were drawn.
+#
 # `s` and `a` are what the screen claims to detect, so they decide its
 # precision and recall. `d` is what it deliberately does not detect, and
 # counting them is how we find out how loose the lower bound is.
