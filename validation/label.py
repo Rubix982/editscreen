@@ -97,7 +97,15 @@ def main() -> int:
         # which of those two is the subject's name is the question it asks.
         # Printing only `edit:` lines would leave that file unlabellable.
         _, subject = field(lines, span, "subject")
-        _, aliases = field(lines, span, "aliases")
+        # The draws write this field as `also:`; this looked for `aliases:` and
+        # so printed NOTHING, on every run, for every draw that carried one.
+        # Item 064 of the ripple-alias draw turns on it: the probe says "The
+        # Adman Rapist", which is a listed Wikidata alias of the subject and is
+        # the whole answer, and the labeller could not see it. Both spellings
+        # are read now so an older file keeps working.
+        _, aliases = field(lines, span, "also")
+        if not aliases:
+            _, aliases = field(lines, span, "aliases")
 
         print(f"── {ident}   ({done}/{total} done)")
         for e in edits:

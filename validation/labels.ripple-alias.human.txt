@@ -54,7 +54,7 @@ edit:    Carrie Coon, which is not shiatsu,
 subject: Carrie Coon
 also:    Carrie Alexandra Coon
 probe:   The name of the alma mater of Carrie Coon is
-label:
+label: s
 note:
 
 ### 018
@@ -62,14 +62,14 @@ edit:    Peter Scolari
 subject: Peter Scolari
 also:    Peter Thomas Scolari
 probe:   The place of birth of Peter Thomas Scolari is
-label:
+label: a
 note:
 
 ### 047
 edit:    Tetsuji Imanaka, which is not scientist,
 subject: Tetsuji Imanaka
 probe:   The place of birth of Tetsuji Imanaka is
-label:
+label: s
 note:
 
 ### 058
@@ -77,7 +77,7 @@ edit:    St Illtyd Castle Mound
 subject: St Illtyd's Motte
 also:    St Illtyds Castle, Twyn Motte, St Illtyd Castle Mound
 probe:   The official language of St Illtyd's Motte is
-label:
+label: a
 note:
 
 ### 064
@@ -85,14 +85,14 @@ edit:    Bobby Joe Long, which is not banker,
 subject: Bobby Joe Long
 also:    Robert Joseph Long, The Classified Ad Rapist, The Adman Rapist, Robert Joe Long
 probe:   The occupation of The Adman Rapist is
-label:
+label: d
 note:
 
 ### 072
 edit:    Andrew Tate
 subject: Andrew Tate
 probe:   The name of the child of Sito Pons is
-label:
+label: d
 note:
 
 ### 102
@@ -100,7 +100,7 @@ edit:    Amal Clooney
 subject: Amal Clooney
 also:    A. Alamuddin, Amal Ramzi Alamuddin, Amal Alamuddin Clooney, Amal Alamuddin
 probe:   The place of birth of Amal Alamuddin is
-label:
+label: a
 note:
 
 ### 122
@@ -108,7 +108,7 @@ edit:    Battista Agnese
 subject: Battista Agnese
 also:    Battista Giovanni Agnese
 probe:   The date of birth of Battista Giovanni Agnese is
-label:
+label: a
 note:
 
 ### 123
@@ -116,7 +116,7 @@ edit:    Bryan Arámbulo, which is not homosexuality,
 subject: Bryan Arámbulo
 also:    El Divo de la Cumbia Peruana
 probe:   The name of the country of citizenship of Bryan Arámbulo is
-label:
+label: s
 note:
 
 ### 146
@@ -124,7 +124,7 @@ edit:    Anyer Island
 subject: Anyar
 also:    Anyer
 probe:   The name of the country which Pulau Anyer is associated with is
-label:
+label: a
 note:
 
 ### 147
@@ -132,7 +132,7 @@ edit:    Decreto-Lei nº 8666, de 14 de janeiro de 1946
 subject: Law-decree No. 8666, of January 14, 1946
 also:    Decreto-Lei nº 8666, de 14 de janeiro de 1946
 probe:   The name of the anthem that is most likely to be performed in Law-decree No. 8666, of January 14, 1946 is
-label:
+label: d
 note:
 
 ### 157
@@ -140,6 +140,6 @@ edit:    Jacinda Ardern
 subject: Jacinda Ardern
 also:    Jacinda Kate Laurell Ardern
 probe:   The name of the country of citizenship of Jacinda Ardern is
-label:
+label: s
 note:
 
